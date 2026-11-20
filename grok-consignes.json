@@ -1,0 +1,36 @@
+{
+  "client": "Compagnie la Virevoltée",
+  "activite": "formation",
+  "direction": "Virevolte",
+  "date": "2026-11-20T15:29:50.902Z",
+  "images": [
+    {
+      "nom": "grok/transmission-coaching",
+      "fichier": "transmission-coaching.jpg",
+      "page": "transmission",
+      "emplacement": "Transmission · Coaching scénique",
+      "role": "galerie",
+      "format": "3:2",
+      "grok": "1168×784",
+      "priorite": "Conseillée",
+      "gabarit": "scene-metier",
+      "pieges": [
+        "visages"
+      ],
+      "consigne": "A small rock band (guitar, bass, drummer) rehearsing on the low wooden stage of a small concert hall during the afternoon, seen from the side of the stage; in the foreground, a woman dance coach seen from behind, in a dark loose shirt, raising one arm to show a stage movement to the singer; warm work lights and a few colored stage lights, haze, motion blur on the musicians, no visible faces, no brand names on instruments or amplifiers, no audience. Landscape composition, aspect ratio 3:2. Warm natural-light editorial photography, 35mm film look, lively, organic and energetic, documentary dance photography mood, palette of warm linen white, deep brick red accents, soft charcoal shadows, natural daylight mixed with warm stage work lights, tactile worn wooden stage floor, light grey dance floor, cotton and linen clothes, set in a small French town arts venue on an ordinary weekday in autumn, gentle shallow depth of field, calm, reassuring and friendly, generous empty space. No brand logo on any device, no readable screen, no readable notebook, no teacher or learner face, no diploma, no certificate, no children unless the plan asks for hands only. Seen strictly from behind, face never visible, head turned away, or cropped at the shoulders. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    },
+    {
+      "nom": "grok/transmission-dada",
+      "fichier": "transmission-dada.jpg",
+      "page": "transmission",
+      "emplacement": "Transmission · Dada Collectif",
+      "role": "galerie",
+      "format": "3:2",
+      "grok": "1168×784",
+      "priorite": "Conseillée",
+      "gabarit": "scene-metier",
+      "pieges": [],
+      "consigne": "Four contemporary dancers training floorwork together in a bright dance studio with a light grey floor and tall windows, late morning daylight; bodies rolling and pushing off the floor, loose everyday clothes in muted colors, strong motion blur on the moving limbs, faces turned away or hidden by hair and movement; calm, focused, generous mood; nothing on the walls, no mirror reflections of faces, no text. Landscape composition, aspect ratio 3:2. Warm natural-light editorial photography, 35mm film look, lively, organic and energetic, documentary dance photography mood, palette of warm linen white, deep brick red accents, soft charcoal shadows, natural daylight mixed with warm stage work lights, tactile worn wooden stage floor, light grey dance floor, cotton and linen clothes, set in a small French town arts venue on an ordinary weekday in autumn, gentle shallow depth of field, calm, reassuring and friendly, generous empty space. No brand logo on any device, no readable screen, no readable notebook, no teacher or learner face, no diploma, no certificate, no children unless the plan asks for hands only. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    }
+  ]
+}

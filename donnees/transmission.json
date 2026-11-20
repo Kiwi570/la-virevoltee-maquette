@@ -1,0 +1,14 @@
+{
+  "eac": [
+    { "saison": "2025-2026", "projets": ["Coaching scénique de lycéens pour leur concert au Nouveau Festival", "Enseignante, formatrice et regard extérieur aux Rencontres chorégraphiques de Lomé (Togo)", "Ateliers et création avec six classes de l’école élémentaire du Vigenal, Limoges, avec l’association Peanuts", "Atelier danse à la fête du quartier du Val de l’Aurence"] },
+    { "saison": "2024-2025", "projets": ["Ateliers et créations avec deux classes de l’école d’Aigueperse, Limoges (Compagnie des Singuliers associés, DRAC)", "Si Marceau m’était dansé, création avec une classe du conservatoire de Limoges (Ligue de l’enseignement, DRAC, rectorat)"] },
+    { "saison": "2023-2024", "projets": ["Stage d’acrodanse et de floorwork, maison de quartier du Val de l’Aurence", "Hall’ons danser !, avec une classe de CE2-CM1 du Vigenal (Ligue de l’enseignement, DRAC, rectorat)", "ORIG17NES, avec les élèves de 1re SAPAT du lycée des Vaseix (DRAC)", "Alors on danse, aide au projet d’une classe de seconde du lycée Jean-Giraudoux de Bellac (DRAC, OARA)", "Atelier danse et musique avec Antoine Petit autour de Souffle"] }
+  ],
+  "regard": [
+    { "annee": "2026", "items": ["Chorégraphe et danseuse du clip « Razaz » de Sūr", "Coaching scénique de Hemingway Effect avant les Inouïs du Printemps de Bourges"] },
+    { "annee": "2025", "items": ["Chorégraphie et mise en scène de « Garces à vues ! » pour l’ensemble vocal Les Méliades", "Danse pour Agri & Culture avec la Cie AlixM, restitution au Festival Présent", "Projet CTAEC dans deux collèges de Creuse autour de « Le Jeune Facho »", "LI.EL.E.UX avec le Dada Collectif"] },
+    { "annee": "2024", "items": ["Création danse et musique avec Sébastien Farge, Cité de l’accordéon de Tulle", "Regard extérieur pour la Compagnie GZ, « Le petit veston rouge »", "Clips « Rosa Alba » (Rémi Geffroy) et « Quiet Embrace » (Ollen)", "Danse, chorégraphie et modèle pour Olak"] },
+    { "annee": "2023", "items": ["« Tempus Fugit », danse et musique ancienne avec l’ensemble Beatus", "Clip « Café 1930 » pour le Duo Dëma"] },
+    { "annee": "2020-2021", "items": ["Clips « Digital » (Initial Data), « Need to Move » (The Fall Up), « Homéostasie » (Rémi Geffroy)"] }
+  ]
+}

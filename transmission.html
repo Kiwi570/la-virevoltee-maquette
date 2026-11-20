@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="fr" data-v="1">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Transmission : éducation artistique, coaching scénique, Dada Collectif</title>
+<meta name="description" content="Ateliers et créations avec les élèves, coaching scénique pour les groupes de musique, entraînement gratuit du Dada Collectif à Limoges.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://la-virevoltee-maquette.vercel.app/transmission">
+<style>:root{--fond:#F3EDE4;--texte:#1C1618;--voile-fond:#8C3C3C;--ouverture-fond:#F3EDE4;--menu-fond:#18131A}:root { --entete-h: 72px; --barres-h: 0px; } html { background: var(--fond); color: var(--texte); scrollbar-gutter: stable; } body { margin: 0; background: var(--fond); } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime] { opacity: 0; } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime].vu { opacity: 1; } [data-voile] { position: fixed; inset: 0; z-index: 900; background: var(--voile-fond); transform: translateY(100%); visibility: hidden; pointer-events: none; } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) [data-voile] { transform: none; visibility: visible; } html.secours [data-voile] { visibility: hidden !important; } .ouverture-panneau { position: fixed; inset: 0; z-index: 850; display: none; place-content: center; justify-items: center; background: var(--ouverture-fond, var(--voile-fond)); color: var(--fond); text-align: center; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) .ouverture-panneau { display: grid; } html.defilement-bloque, html.defilement-bloque body, html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie), html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) body, html[data-arrivee="voile"]:not(.voile-leve):not(.secours), html[data-arrivee="voile"]:not(.voile-leve):not(.secours) body { overflow: hidden; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) { background-color: var(--ouverture-fond, var(--voile-fond)); } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) { background-color: var(--voile-fond); }</style>
+<script>(function () {
+var d = document.documentElement, ss = null, ls = null;
+try { ss = window.sessionStorage; ls = window.localStorage; } catch (e) {}
+d.classList.add('js');
+var nav = performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
+var type = nav ? nav.type : 'navigate';
+var depart = null;
+try { depart = JSON.parse(ss.getItem('socle:depart') || 'null'); ss.removeItem('socle:depart'); } catch (e) {}
+if (depart && !(Date.now() - depart.t < 15000)) depart = null;
+var mode = type === 'back_forward' ? 'retour' : type === 'reload' ? 'intro' : depart ? 'voile' : 'intro';
+d.setAttribute('data-arrivee', mode);
+if (mode === 'voile' && depart.couleur) d.style.setProperty('--voile-fond', depart.couleur);
+if (type === 'reload' && 'scrollRestoration' in history) {
+history.scrollRestoration = 'manual';
+}
+try {
+var choisie = ls && ls.getItem('socle:langue');
+var langue = (d.lang || '').slice(0, 2);
+if (choisie && choisie !== langue && type === 'navigate' && !depart) {
+var alt = document.querySelector('link[rel="alternate"][hreflang="' + choisie + '"]');
+if (alt) location.replace(new URL(alt.href).pathname + location.search + location.hash);
+}
+} catch (e) {}
+setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
+})();</script>
+<link rel="preload" href="/assets/fonts/syne-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/manrope-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/socle.css?v=1">
+<link rel="stylesheet" href="/assets/css/site.css?v=1">
+<link rel="modulepreload" href="/assets/js/site.js?v=1">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<script src="/assets/vendor/gsap.min.js" defer></script>
+<script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="/assets/vendor/SplitText.min.js" defer></script>
+<script type="module" src="/assets/js/site.js?v=1"></script>
+<meta name="theme-color" content="#F3EDE4">
+<link rel="icon" href="/assets/images/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Compagnie la Virevoltée">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Transmission : éducation artistique, coaching scénique, Dada Collectif">
+<meta property="og:description" content="Ateliers et créations avec les élèves, coaching scénique pour les groupes de musique, entraînement gratuit du Dada Collectif à Limoges.">
+<meta property="og:url" content="https://la-virevoltee-maquette.vercel.app/transmission">
+<meta property="og:image" content="https://la-virevoltee-maquette.vercel.app/assets/partage/transmission-fr.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Deux bras qui se tiennent : la transmission selon la Virevoltée">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"PerformingGroup","name":"Compagnie la Virevoltée","url":"https://la-virevoltee-maquette.vercel.app/","telephone":"+33615031678","email":"cie.lavirevoltee@gmail.com","foundingDate":"2020-10","founder":{"@type":"Person","name":"Mathilde Rader"},"address":{"@type":"PostalAddress","streetAddress":"57b avenue Garibaldi","postalCode":"87000","addressLocality":"Limoges","addressCountry":"FR"},"sameAs":["https://www.instagram.com/cie_la.virevoltee/","https://www.facebook.com/Cie-la-Virevolt%C3%A9e-Mathilde-Rader-115902940333047"],"description":"Compagnie de danse contemporaine basée à Limoges, créée en 2020 par la danseuse Mathilde Rader : spectacles pour la rue et la scène, éducation artistique, coaching scénique."}</script>
+</head>
+<body id="haut">
+<div data-voile data-forme="iris" aria-hidden="true"><div class="voile-contenu"><img src="/assets/images/logo-160.png" alt="" width="72" height="72"><span data-voile-libelle>Transmission</span></div></div>
+<div class="ouverture-panneau" data-ouverture aria-hidden="true">
+  <div class="ouverture-objet" data-ouverture-objet>
+    <svg class="toupie-anneau" viewBox="0 0 200 200" aria-hidden="true"><defs><path id="anneau-intro" d="M100 100 m-82 0 a82 82 0 1 1 164 0 a82 82 0 1 1 -164 0"/></defs><text><textPath href="#anneau-intro" textLength="508">Compagnie de danse contemporaine · Limoges · depuis 2020 · </textPath></text></svg>
+    <img class="ouverture-logo" src="/assets/images/logo-160.png" alt="" width="120" height="120">
+  </div>
+</div>
+<a class="evitement" href="#contenu">Aller au contenu</a>
+<header data-entete>
+  <div class="entete-rangee">
+    <a class="entete-logo" href="/" aria-label="Compagnie la Virevoltée, accueil" data-libelle="Accueil">
+      <img src="/assets/images/logo-160.png" alt="" width="44" height="44"><span class="entete-nom">la Virevoltée</span>
+    </a>
+    <nav data-nav aria-label="Navigation principale">
+      <ul><li><a href="/creations" data-libelle="Créations">Créations</a></li><li><a href="/agenda" data-libelle="Agenda">Agenda</a></li><li><a href="/transmission" data-libelle="Transmission" aria-current="page">Transmission</a></li><li><a href="/contact" data-libelle="Contact">Contact</a></li></ul>
+    </nav>
+    <div class="entete-actions">
+      <a class="bouton" href="/contact?sujet=programmation#demande" data-libelle="Contact">Programmer</a>
+      <button type="button" data-menu-bouton aria-controls="menu" aria-expanded="false" data-libelle-ouvrir="Menu" data-libelle-fermer="Fermer"><span data-libelle-bouton>Menu</span></button>
+      <a class="menu-sansjs" href="#menu" data-menu-lien>Menu</a>
+    </div>
+  </div>
+</header>
+<script>/* Avant le premier affichage : rangées de la navigation (même règle que ajusterNav dans assets/js/socle/entete.js)
+   et hauteur réelle de l'en-tête, pour que rien ne saute quand le JavaScript du site prend la main. */
+(function () {
+  var h = document.documentElement, u = document.querySelector('[data-nav] ul'), e = document.querySelector('[data-entete]');
+  if (u) {
+    var deborde = function () { return u.scrollWidth > u.clientWidth + 1; }, c = deborde();
+    if (c && window.matchMedia('(min-width: 900px)').matches) {
+      h.classList.add('nav-deux-rangees'); c = deborde();
+      if (c) { h.classList.add('nav-deux-lignes'); var a = u.querySelector('a'); c = !a || u.getBoundingClientRect().height > a.getBoundingClientRect().height * 2.5; }
+      if (c) h.classList.remove('nav-deux-rangees', 'nav-deux-lignes');
+    }
+    if (c) h.classList.add('nav-compacte');
+  }
+  if (e) h.style.setProperty('--entete-h', Math.round(e.getBoundingClientRect().height) + 'px');
+})();</script>
+<span id="menu-ferme" aria-hidden="true"></span>
+<div id="menu" data-menu role="dialog" aria-modal="true" aria-label="Menu">
+  <p class="menu-sansjs-fermer"><a href="#menu-ferme">Fermer</a></p>
+  <ul><li style="--i:0"><a href="/" class="menu-lien" data-libelle="Accueil">Accueil</a></li><li style="--i:1"><a href="/creations" class="menu-lien" data-libelle="Créations">Créations</a></li><li style="--i:2"><a href="/agenda" class="menu-lien" data-libelle="Agenda">Agenda</a></li><li style="--i:3"><a href="/transmission" class="menu-lien" data-libelle="Transmission" aria-current="page">Transmission</a></li><li style="--i:4"><a href="/contact" class="menu-lien" data-libelle="Contact">Contact</a></li></ul>
+  <p class="menu-contact"><a class="bouton" href="tel:+33615031678">Appeler 06 15 03 16 78</a> <a class="menu-mail" href="mailto:cie.lavirevoltee@gmail.com">cie.lavirevoltee@gmail.com</a></p>
+</div>
+<main id="contenu" tabindex="-1">
+<section class="ouv ouv--transmission" id="debut" aria-labelledby="titre-transmission">
+  <div class="ouv-trans-grille">
+    <figure class="media ouv-trans-media" data-fx="parallaxe" data-fx-force="6" style="--cadrage:40% 50%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/transmission-ouverture-mobile-640.webp 640w, /assets/images/transmission-ouverture-mobile-1080.webp 1080w" sizes="(max-width: 760px) 100vw, 45vw">
+    <img src="/assets/images/transmission-ouverture-1200.webp" srcset="/assets/images/transmission-ouverture-480.webp 480w, /assets/images/transmission-ouverture-800.webp 800w, /assets/images/transmission-ouverture-1200.webp 1200w" sizes="(max-width: 760px) 100vw, 45vw" alt="Deux bras qui se tiennent : une main serre l’avant-bras de l’autre danseur" width="1200" height="1500" fetchpriority="high" loading="eager" decoding="async">
+  </picture>
+</figure>
+    <div class="ouv-trans-texte">
+      <div class="toupie toupie--page toupie--trans" data-iris-centre="disque" data-effet="toupie" aria-hidden="true">
+  <svg class="toupie-anneau" viewBox="0 0 200 200" data-audit-ignorer><defs><path id="anneau-4" d="M100 100 m-82 0 a82 82 0 1 1 164 0 a82 82 0 1 1 -164 0"/></defs><text><textPath href="#anneau-4" textLength="508">Compagnie de danse contemporaine · Limoges · depuis 2020 · </textPath></text></svg>
+  <img class="toupie-logo" src="/assets/images/logo-160.png" alt="" width="160" height="160">
+</div>
+      <p class="surtitre" data-ouv>Transmission</p>
+      <h1 class="titre-geant titre-geant--encre titre-geant--moyen" id="titre-transmission" data-anime="gsap"><span class="l">Transmettre</span> <span class="l">la danse,</span> <span class="l l--accent">de corps à corps</span></h1>
+      <p class="ouv-intro masque-ecran-tres-bas" data-ouv>Ateliers et créations avec les élèves, coaching scénique pour les groupes de musique, entraînement partagé entre danseurs : la compagnie transmet autant qu’elle crée.</p>
+      <p class="ouv-actions" data-ouv><a href="/contact?sujet=mediation#demande" class="bouton" data-libelle="Contact" data-action-principale data-survol="magnetique">Monter un projet</a></p>
+      <p class="ouv-info ouv-info--encre" data-info-cle data-ouv>Dada Collectif : chaque jeudi, 11 h – 13 h, gratuit</p>
+    </div>
+  </div>
+  <p class="credit credit--trans">Photo © Kathleen Missud</p>
+</section>
+<section class="eac" id="eac" aria-labelledby="eac-titre">
+  <div class="conteneur eac-grille">
+    <div class="eac-tete">
+      <p class="surtitre" data-anime>Éducation artistique et culturelle</p>
+      <h2 id="eac-titre" class="titre-section" data-anime="lignes">Créer avec les élèves</h2>
+      <p data-anime>Avec les écoles, les collèges, les lycées et les conservatoires : des ateliers, puis un spectacle créé avec les élèves et joué devant un public.</p>
+      <div class="eac-photos">
+        <figure class="media eac-photo" data-fx="vitesse" data-fx-force="2" style="--cadrage:50% 50%;aspect-ratio:3 / 2">
+  <picture>
+    <img src="/assets/images/transmission-eac-640.webp" srcset="/assets/images/transmission-eac-480.webp 480w, /assets/images/transmission-eac-640.webp 640w" sizes="(max-width: 760px) 50vw, 18vw" alt="Atelier d’éducation artistique : élèves et danseuse en mouvement" width="640" height="427" loading="lazy" decoding="async">
+  </picture>
+</figure>
+        <figure class="media eac-photo" data-fx="vitesse" data-fx-force="2" style="--cadrage:50% 50%;aspect-ratio:3 / 2">
+  <picture>
+    <img src="/assets/images/transmission-marceau-640.webp" srcset="/assets/images/transmission-marceau-480.webp 480w, /assets/images/transmission-marceau-640.webp 640w" sizes="(max-width: 760px) 50vw, 18vw" alt="Si Marceau m’était dansé : les élèves dansent devant la caserne Marceau" width="640" height="427" loading="lazy" decoding="async">
+  </picture>
+</figure>
+      </div>
+      <p data-anime><a href="/contact?sujet=mediation#demande" class="lien-fleche" data-libelle="Contact">Proposer un projet à la compagnie</a></p>
+    </div>
+    <div class="frise">
+      <svg class="frise-trait" viewBox="0 0 4 100" preserveAspectRatio="none" aria-hidden="true" data-fx="trace"><path d="M2 0 V100" fill="none" stroke="currentColor" stroke-width="2" vector-effect="non-scaling-stroke"/></svg>
+      <ol class="frise-liste">
+      <li class="frise-saison">
+        <p class="frise-annee" data-anime>2025-2026</p>
+        <ul data-anime="cascade"><li>Coaching scénique de lycéens pour leur concert au Nouveau Festival</li><li>Enseignante, formatrice et regard extérieur aux Rencontres chorégraphiques de Lomé (Togo)</li><li>Ateliers et création avec six classes de l’école élémentaire du Vigenal, Limoges, avec l’association Peanuts</li><li>Atelier danse à la fête du quartier du Val de l’Aurence</li></ul>
+      </li><li class="frise-saison">
+        <p class="frise-annee" data-anime>2024-2025</p>
+        <ul data-anime="cascade"><li>Ateliers et créations avec deux classes de l’école d’Aigueperse, Limoges (Compagnie des Singuliers associés, DRAC)</li><li>Si Marceau m’était dansé, création avec une classe du conservatoire de Limoges (Ligue de l’enseignement, DRAC, rectorat)</li></ul>
+      </li><li class="frise-saison">
+        <p class="frise-annee" data-anime>2023-2024</p>
+        <ul data-anime="cascade"><li>Stage d’acrodanse et de floorwork, maison de quartier du Val de l’Aurence</li><li>Hall’ons danser !, avec une classe de CE2-CM1 du Vigenal (Ligue de l’enseignement, DRAC, rectorat)</li><li>ORIG17NES, avec les élèves de 1re SAPAT du lycée des Vaseix (DRAC)</li><li>Alors on danse, aide au projet d’une classe de seconde du lycée Jean-Giraudoux de Bellac (DRAC, OARA)</li><li>Atelier danse et musique avec Antoine Petit autour de Souffle</li></ul>
+      </li>
+      </ol>
+    </div>
+  </div>
+</section>
+<section class="coaching plateau" id="coaching" aria-labelledby="coaching-titre">
+  <div class="conteneur coaching-grille">
+    <figure class="media coaching-media" data-grok data-anime="rideau" style="--cadrage:50% 50%;aspect-ratio:3 / 2">
+  <picture>
+    <img src="/assets/images/grok/transmission-coaching-1200.webp" srcset="/assets/images/grok/transmission-coaching-640.webp 640w, /assets/images/grok/transmission-coaching-1200.webp 1200w" sizes="(max-width: 760px) 100vw, 50vw" alt="Un groupe de musique répète sur une petite scène pendant qu’une danseuse lui montre un geste" width="1200" height="800" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+    <div>
+      <p class="surtitre" data-anime>Coaching scénique</p>
+      <h2 id="coaching-titre" class="titre-section" data-anime="lignes">Du studio à la scène</h2>
+      <p data-anime>Pour les groupes de musique professionnels, en voie de professionnalisation ou amateurs : construire une présence scénique qui respecte les choix artistiques et l’identité du groupe.</p>
+      <p class="note" data-anime>Mathilde Rader est formée à l’accompagnement artistique (« Quelles postures pédagogiques ? », Collectif RPM, 2021).</p>
+      <p class="coaching-ref" data-anime>En 2026, elle a préparé Hemingway Effect aux Inouïs du Printemps de Bourges.</p>
+      <p data-anime><a href="/contact?sujet=coaching#demande" class="bouton bouton--clair" data-libelle="Contact">Demander un coaching</a></p>
+    </div>
+  </div>
+</section>
+<section class="dada" id="dada" aria-labelledby="dada-titre">
+  <div class="conteneur dada-grille">
+    <div>
+      <p class="surtitre" data-anime>Dada Collectif</p>
+      <h2 id="dada-titre" class="titre-section" data-anime="lignes">S’entraîner ensemble, chaque jeudi</h2>
+      <p data-anime>Créé en septembre 2022 et porté par l’association, le Dada Collectif propose un entraînement régulier du danseur. Les intervenants, bénévoles, se relaient chaque semaine.</p>
+      <dl class="fiche fiche--dada" data-anime="cascade">
+        <div><dt>Quand</dt><dd>Le jeudi, de 11 h à 13 h, de septembre à juin</dd></div>
+        <div><dt>Où</dt><dd>MAD Jean-Moulin, quartier de Beaubreuil, Limoges</dd></div>
+        <div><dt>Pour qui</dt><dd>Toute personne ayant une pratique régulière du mouvement</dd></div>
+        <div><dt>Prix</dt><dd><strong>Gratuit</strong></dd></div>
+      </dl>
+      <p class="note" data-anime>Membres : Audrey Allafort, Pascal Delétage, Eléonor Lemaire, Laura Messina, Mathilde Rader.</p>
+      <p data-anime><a href="/contact?sujet=dada#demande" class="bouton" data-libelle="Contact">Venir à un entraînement</a></p>
+    </div>
+    <div class="dada-visuels">
+      <figure class="media dada-media" data-grok data-fx="zoom" style="--cadrage:50% 50%;aspect-ratio:3 / 2">
+  <picture>
+    <img src="/assets/images/grok/transmission-dada-1200.webp" srcset="/assets/images/grok/transmission-dada-640.webp 640w, /assets/images/grok/transmission-dada-1200.webp 1200w" sizes="(max-width: 760px) 100vw, 50vw" alt="Entraînement de danseurs au sol dans un studio baigné de lumière" width="1200" height="800" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+      <figure class="media dada-logo" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/dada-logo-480.webp" srcset="/assets/images/dada-logo-240.webp 240w, /assets/images/dada-logo-480.webp 480w" sizes="160px" alt="Logo du Dada Collectif" width="480" height="660" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    </div>
+  </div>
+</section>
+<section class="regard" id="regard" aria-labelledby="regard-titre">
+  <div class="conteneur regard-grille">
+    <div class="regard-tete">
+      <p class="surtitre" data-anime>Chorégraphie et regard extérieur</p>
+      <h2 id="regard-titre" class="titre-section" data-anime="lignes">Danser pour les autres</h2>
+      <p data-anime>Clips, ensembles vocaux, musique ancienne, théâtre : Mathilde Rader chorégraphie, danse et accompagne d’autres artistes.</p>
+      <dl class="annees" data-anime="cascade"><div><dt>2026</dt><dd><ul><li>Chorégraphe et danseuse du clip « Razaz » de Sūr</li><li>Coaching scénique de Hemingway Effect avant les Inouïs du Printemps de Bourges</li></ul></dd></div><div><dt>2025</dt><dd><ul><li>Chorégraphie et mise en scène de « Garces à vues ! » pour l’ensemble vocal Les Méliades</li><li>Danse pour Agri &amp; Culture avec la Cie AlixM, restitution au Festival Présent</li><li>Projet CTAEC dans deux collèges de Creuse autour de « Le Jeune Facho »</li><li>LI.EL.E.UX avec le Dada Collectif</li></ul></dd></div><div><dt>2024</dt><dd><ul><li>Création danse et musique avec Sébastien Farge, Cité de l’accordéon de Tulle</li><li>Regard extérieur pour la Compagnie GZ, « Le petit veston rouge »</li><li>Clips « Rosa Alba » (Rémi Geffroy) et « Quiet Embrace » (Ollen)</li><li>Danse, chorégraphie et modèle pour Olak</li></ul></dd></div><div><dt>2023</dt><dd><ul><li>« Tempus Fugit », danse et musique ancienne avec l’ensemble Beatus</li><li>Clip « Café 1930 » pour le Duo Dëma</li></ul></dd></div><div><dt>2020-2021</dt><dd><ul><li>Clips « Digital » (Initial Data), « Need to Move » (The Fall Up), « Homéostasie » (Rémi Geffroy)</li></ul></dd></div></dl>
+    </div>
+    <div class="regard-photos">
+      <figure class="media regard-photo" data-fx="parallaxe" style="--cadrage:50% 50%;aspect-ratio:3 / 2">
+  <picture>
+    <img src="/assets/images/choregraphie-beatus-1200.webp" srcset="/assets/images/choregraphie-beatus-640.webp 640w, /assets/images/choregraphie-beatus-1200.webp 1200w" sizes="(max-width: 760px) 100vw, 45vw" alt="Une danseuse en robe rouge face à un musicien jouant d’un instrument ancien à archet" width="1200" height="800" loading="lazy" decoding="async">
+  </picture>
+</figure>
+      <figure class="media regard-photo regard-photo--2" data-fx="parallaxe" data-fx-force="12" style="--cadrage:50% 50%;aspect-ratio:3 / 2">
+  <picture>
+    <img src="/assets/images/choregraphie-foret-1200.webp" srcset="/assets/images/choregraphie-foret-640.webp 640w, /assets/images/choregraphie-foret-1200.webp 1200w" sizes="(max-width: 760px) 100vw, 35vw" alt="Une danseuse en trench immobile au milieu d’une forêt d’automne" width="1200" height="800" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    </div>
+  </div>
+</section>
+<section class="appel plateau" id="appel" aria-labelledby="appel-titre">
+  <div class="appel-disque" data-effet="disque-final" data-visuel aria-hidden="true"><img src="/assets/images/logo-160.png" alt="" width="160" height="160" loading="lazy"></div>
+  <div class="conteneur appel-texte">
+    <h2 id="appel-titre" class="titre-section" data-anime="lignes">Un projet avec la compagnie ?</h2>
+    <p data-anime>Établissement scolaire, groupe de musique, structure culturelle : racontez-nous votre projet.</p>
+    <p class="appel-actions" data-anime><a href="/contact?sujet=mediation#demande" class="bouton bouton--clair" data-libelle="Contact" data-survol="magnetique">Écrire à la compagnie</a>
+      <a class="lien-fleche" href="tel:+33615031678">Appeler 06 15 03 16 78</a></p>
+  </div>
+</section>
+</main>
+<footer class="pied" id="pied">
+  <div class="conteneur pied-grille">
+    <div class="pied-marque">
+      <img src="/assets/images/logo-160.png" alt="" width="72" height="72" loading="lazy">
+      <p><strong>Compagnie la Virevoltée</strong><br>57b avenue Garibaldi, 87000 Limoges</p>
+      <p><a href="tel:+33615031678">06 15 03 16 78</a><br><a href="mailto:cie.lavirevoltee@gmail.com">cie.lavirevoltee@gmail.com</a></p>
+    </div>
+    <nav aria-label="Sommaire">
+      <p class="pied-titre">Sommaire</p>
+      <ul><li><a href="/" data-libelle="Accueil">Accueil</a></li><li><a href="/creations" data-libelle="Créations">Créations</a></li><li><a href="/agenda" data-libelle="Agenda">Agenda</a></li><li><a href="/transmission" data-libelle="Transmission" aria-current="page">Transmission</a></li><li><a href="/contact" data-libelle="Contact">Contact</a></li><li><a href="#haut" data-sans-transition>Retour en haut</a></li></ul>
+    </nav>
+    <div>
+      <p class="pied-titre">Suivre la compagnie</p>
+      <ul>
+        <li><a href="https://www.instagram.com/cie_la.virevoltee/" target="_blank" rel="noopener">Instagram <span class="visuellement-cache">(nouvel onglet)</span></a></li>
+        <li><a href="https://www.facebook.com/Cie-la-Virevolt%C3%A9e-Mathilde-Rader-115902940333047" target="_blank" rel="noopener">Facebook <span class="visuellement-cache">(nouvel onglet)</span></a></li>
+        <li><a href="https://www.helloasso.com/associations/compagnie-la-virevoltee/adhesions/adhesion" target="_blank" rel="noopener">Adhérer à l’association <span class="visuellement-cache">(nouvel onglet)</span></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="conteneur pied-bas"><p>Mentions légales : à compléter · Politique de confidentialité : à compléter</p><p>Maquette de démonstration : formulaires simulés, rien n’est envoyé.</p><p>© Compagnie la Virevoltée</p></div>
+</footer>
+<div data-barre-fixe>
+  <a class="bouton bouton--contour" href="tel:+33615031678">Appeler</a>
+  <a class="bouton" href="/contact?sujet=programmation#demande" data-libelle="Contact">Programmer</a>
+</div>
+</body>
+</html>

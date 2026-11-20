@@ -1,0 +1,521 @@
+<!doctype html>
+<html lang="fr" data-v="1">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Créations : InShift, NOCTURNES, L’écho d’une chute, DOLINE, Souffle</title>
+<meta name="description" content="Les cinq créations de la Compagnie la Virevoltée : format, durée, équipe, teasers et dates, pour les programmateurs et le public.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://la-virevoltee-maquette.vercel.app/creations">
+<style>:root{--fond:#F3EDE4;--texte:#1C1618;--voile-fond:#8C3C3C;--ouverture-fond:#F3EDE4;--menu-fond:#18131A}:root { --entete-h: 72px; --barres-h: 0px; } html { background: var(--fond); color: var(--texte); scrollbar-gutter: stable; } body { margin: 0; background: var(--fond); } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime] { opacity: 0; } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime].vu { opacity: 1; } [data-voile] { position: fixed; inset: 0; z-index: 900; background: var(--voile-fond); transform: translateY(100%); visibility: hidden; pointer-events: none; } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) [data-voile] { transform: none; visibility: visible; } html.secours [data-voile] { visibility: hidden !important; } .ouverture-panneau { position: fixed; inset: 0; z-index: 850; display: none; place-content: center; justify-items: center; background: var(--ouverture-fond, var(--voile-fond)); color: var(--fond); text-align: center; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) .ouverture-panneau { display: grid; } html.defilement-bloque, html.defilement-bloque body, html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie), html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) body, html[data-arrivee="voile"]:not(.voile-leve):not(.secours), html[data-arrivee="voile"]:not(.voile-leve):not(.secours) body { overflow: hidden; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) { background-color: var(--ouverture-fond, var(--voile-fond)); } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) { background-color: var(--voile-fond); }</style>
+<script>(function () {
+var d = document.documentElement, ss = null, ls = null;
+try { ss = window.sessionStorage; ls = window.localStorage; } catch (e) {}
+d.classList.add('js');
+var nav = performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
+var type = nav ? nav.type : 'navigate';
+var depart = null;
+try { depart = JSON.parse(ss.getItem('socle:depart') || 'null'); ss.removeItem('socle:depart'); } catch (e) {}
+if (depart && !(Date.now() - depart.t < 15000)) depart = null;
+var mode = type === 'back_forward' ? 'retour' : type === 'reload' ? 'intro' : depart ? 'voile' : 'intro';
+d.setAttribute('data-arrivee', mode);
+if (mode === 'voile' && depart.couleur) d.style.setProperty('--voile-fond', depart.couleur);
+if (type === 'reload' && 'scrollRestoration' in history) {
+history.scrollRestoration = 'manual';
+}
+try {
+var choisie = ls && ls.getItem('socle:langue');
+var langue = (d.lang || '').slice(0, 2);
+if (choisie && choisie !== langue && type === 'navigate' && !depart) {
+var alt = document.querySelector('link[rel="alternate"][hreflang="' + choisie + '"]');
+if (alt) location.replace(new URL(alt.href).pathname + location.search + location.hash);
+}
+} catch (e) {}
+setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
+})();</script>
+<link rel="preload" href="/assets/fonts/syne-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/manrope-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/socle.css?v=1">
+<link rel="stylesheet" href="/assets/css/site.css?v=1">
+<link rel="modulepreload" href="/assets/js/site.js?v=1">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<script src="/assets/vendor/gsap.min.js" defer></script>
+<script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="/assets/vendor/SplitText.min.js" defer></script>
+<script type="module" src="/assets/js/site.js?v=1"></script>
+<meta name="theme-color" content="#F3EDE4">
+<link rel="icon" href="/assets/images/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Compagnie la Virevoltée">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Créations : InShift, NOCTURNES, L’écho d’une chute, DOLINE, Souffle">
+<meta property="og:description" content="Les cinq créations de la Compagnie la Virevoltée : format, durée, équipe, teasers et dates, pour les programmateurs et le public.">
+<meta property="og:url" content="https://la-virevoltee-maquette.vercel.app/creations">
+<meta property="og:image" content="https://la-virevoltee-maquette.vercel.app/assets/partage/creations-fr.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Les cinq créations de la Compagnie la Virevoltée">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"PerformingGroup","name":"Compagnie la Virevoltée","url":"https://la-virevoltee-maquette.vercel.app/","telephone":"+33615031678","email":"cie.lavirevoltee@gmail.com","foundingDate":"2020-10","founder":{"@type":"Person","name":"Mathilde Rader"},"address":{"@type":"PostalAddress","streetAddress":"57b avenue Garibaldi","postalCode":"87000","addressLocality":"Limoges","addressCountry":"FR"},"sameAs":["https://www.instagram.com/cie_la.virevoltee/","https://www.facebook.com/Cie-la-Virevolt%C3%A9e-Mathilde-Rader-115902940333047"],"description":"Compagnie de danse contemporaine basée à Limoges, créée en 2020 par la danseuse Mathilde Rader : spectacles pour la rue et la scène, éducation artistique, coaching scénique."}</script>
+</head>
+<body id="haut">
+<div data-voile data-forme="iris" aria-hidden="true"><div class="voile-contenu"><img src="/assets/images/logo-160.png" alt="" width="72" height="72"><span data-voile-libelle>Créations</span></div></div>
+<div class="ouverture-panneau" data-ouverture aria-hidden="true">
+  <div class="ouverture-objet" data-ouverture-objet>
+    <svg class="toupie-anneau" viewBox="0 0 200 200" aria-hidden="true"><defs><path id="anneau-intro" d="M100 100 m-82 0 a82 82 0 1 1 164 0 a82 82 0 1 1 -164 0"/></defs><text><textPath href="#anneau-intro" textLength="508">Compagnie de danse contemporaine · Limoges · depuis 2020 · </textPath></text></svg>
+    <img class="ouverture-logo" src="/assets/images/logo-160.png" alt="" width="120" height="120">
+  </div>
+</div>
+<a class="evitement" href="#contenu">Aller au contenu</a>
+<header data-entete>
+  <div class="entete-rangee">
+    <a class="entete-logo" href="/" aria-label="Compagnie la Virevoltée, accueil" data-libelle="Accueil">
+      <img src="/assets/images/logo-160.png" alt="" width="44" height="44"><span class="entete-nom">la Virevoltée</span>
+    </a>
+    <nav data-nav aria-label="Navigation principale">
+      <ul><li><a href="/creations" data-libelle="Créations" aria-current="page">Créations</a></li><li><a href="/agenda" data-libelle="Agenda">Agenda</a></li><li><a href="/transmission" data-libelle="Transmission">Transmission</a></li><li><a href="/contact" data-libelle="Contact">Contact</a></li></ul>
+    </nav>
+    <div class="entete-actions">
+      <a class="bouton" href="/contact?sujet=programmation#demande" data-libelle="Contact">Programmer</a>
+      <button type="button" data-menu-bouton aria-controls="menu" aria-expanded="false" data-libelle-ouvrir="Menu" data-libelle-fermer="Fermer"><span data-libelle-bouton>Menu</span></button>
+      <a class="menu-sansjs" href="#menu" data-menu-lien>Menu</a>
+    </div>
+  </div>
+</header>
+<script>/* Avant le premier affichage : rangées de la navigation (même règle que ajusterNav dans assets/js/socle/entete.js)
+   et hauteur réelle de l'en-tête, pour que rien ne saute quand le JavaScript du site prend la main. */
+(function () {
+  var h = document.documentElement, u = document.querySelector('[data-nav] ul'), e = document.querySelector('[data-entete]');
+  if (u) {
+    var deborde = function () { return u.scrollWidth > u.clientWidth + 1; }, c = deborde();
+    if (c && window.matchMedia('(min-width: 900px)').matches) {
+      h.classList.add('nav-deux-rangees'); c = deborde();
+      if (c) { h.classList.add('nav-deux-lignes'); var a = u.querySelector('a'); c = !a || u.getBoundingClientRect().height > a.getBoundingClientRect().height * 2.5; }
+      if (c) h.classList.remove('nav-deux-rangees', 'nav-deux-lignes');
+    }
+    if (c) h.classList.add('nav-compacte');
+  }
+  if (e) h.style.setProperty('--entete-h', Math.round(e.getBoundingClientRect().height) + 'px');
+})();</script>
+<span id="menu-ferme" aria-hidden="true"></span>
+<div id="menu" data-menu role="dialog" aria-modal="true" aria-label="Menu">
+  <p class="menu-sansjs-fermer"><a href="#menu-ferme">Fermer</a></p>
+  <ul><li style="--i:0"><a href="/" class="menu-lien" data-libelle="Accueil">Accueil</a></li><li style="--i:1"><a href="/creations" class="menu-lien" data-libelle="Créations" aria-current="page">Créations</a></li><li style="--i:2"><a href="/agenda" class="menu-lien" data-libelle="Agenda">Agenda</a></li><li style="--i:3"><a href="/transmission" class="menu-lien" data-libelle="Transmission">Transmission</a></li><li style="--i:4"><a href="/contact" class="menu-lien" data-libelle="Contact">Contact</a></li></ul>
+  <p class="menu-contact"><a class="bouton" href="tel:+33615031678">Appeler 06 15 03 16 78</a> <a class="menu-mail" href="mailto:cie.lavirevoltee@gmail.com">cie.lavirevoltee@gmail.com</a></p>
+</div>
+<main id="contenu" tabindex="-1">
+<section class="ouv ouv--creations" id="debut" aria-labelledby="titre-creations">
+  <div class="conteneur ouv-creations-haut">
+    <div class="ouv-titre-boite">
+      <p class="surtitre" data-ouv>Créations</p>
+      <h1 class="titre-geant titre-geant--encre" id="titre-creations" data-anime="gsap"><span class="l">Cinq créations,</span> <span class="l">de la rue</span> <span class="l l--accent">à la scène</span></h1>
+    </div>
+    <div class="ouv-creations-cote">
+      <div class="toupie toupie--page" data-iris-centre="disque" data-effet="toupie" aria-hidden="true">
+  <svg class="toupie-anneau" viewBox="0 0 200 200" data-audit-ignorer><defs><path id="anneau-3" d="M100 100 m-82 0 a82 82 0 1 1 164 0 a82 82 0 1 1 -164 0"/></defs><text><textPath href="#anneau-3" textLength="508">Compagnie de danse contemporaine · Limoges · depuis 2020 · </textPath></text></svg>
+  <img class="toupie-logo" src="/assets/images/logo-160.png" alt="" width="160" height="160">
+</div>
+      <p class="ouv-intro" data-ouv>Solos, duos et ciné-concert : chaque pièce mêle la danse à une musique jouée en direct, et toutes sont tout public.</p>
+      <p class="ouv-actions" data-ouv><a href="/contact?sujet=programmation#demande" class="bouton" data-libelle="Contact" data-action-principale data-survol="magnetique">Programmer un spectacle</a></p>
+      <p class="ouv-info ouv-info--encre" data-info-cle data-ouv>Solo ou duo · 20 min à 1 h · rue ou salle</p>
+    </div>
+  </div>
+  <nav class="bandeau-ronds" aria-label="Les cinq créations">
+    <ol data-effet="bandeau" data-ouv-cascade>
+      <li><a href="#inshift" class="bandeau-rond" data-sans-transition><figure class="media bandeau-media" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/rond-inshift-900.webp" srcset="/assets/images/rond-inshift-320.webp 320w, /assets/images/rond-inshift-640.webp 640w, /assets/images/rond-inshift-900.webp 900w" sizes="(max-width: 760px) 40vw, 18vw" alt="" width="900" height="900" loading="lazy" decoding="async">
+  </picture>
+</figure><span class="bandeau-nom">InShift</span><span class="bandeau-annee">2027</span></a></li><li><a href="#nocturnes" class="bandeau-rond" data-sans-transition><figure class="media bandeau-media" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/rond-nocturnes-900.webp" srcset="/assets/images/rond-nocturnes-320.webp 320w, /assets/images/rond-nocturnes-640.webp 640w, /assets/images/rond-nocturnes-900.webp 900w" sizes="(max-width: 760px) 40vw, 18vw" alt="" width="900" height="900" loading="lazy" decoding="async">
+  </picture>
+</figure><span class="bandeau-nom">NOCTURNES</span><span class="bandeau-annee">2025</span></a></li><li><a href="#echo" class="bandeau-rond" data-sans-transition><figure class="media bandeau-media" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/rond-echo-900.webp" srcset="/assets/images/rond-echo-320.webp 320w, /assets/images/rond-echo-640.webp 640w, /assets/images/rond-echo-900.webp 900w" sizes="(max-width: 760px) 40vw, 18vw" alt="" width="900" height="900" loading="lazy" decoding="async">
+  </picture>
+</figure><span class="bandeau-nom">L’écho d’une chute</span><span class="bandeau-annee">2025</span></a></li><li><a href="#doline" class="bandeau-rond" data-sans-transition><figure class="media bandeau-media" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/rond-doline-900.webp" srcset="/assets/images/rond-doline-320.webp 320w, /assets/images/rond-doline-640.webp 640w, /assets/images/rond-doline-900.webp 900w" sizes="(max-width: 760px) 40vw, 18vw" alt="" width="900" height="900" loading="lazy" decoding="async">
+  </picture>
+</figure><span class="bandeau-nom">DOLINE</span><span class="bandeau-annee">2022</span></a></li><li><a href="#souffle" class="bandeau-rond" data-sans-transition><figure class="media bandeau-media" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/rond-souffle-900.webp" srcset="/assets/images/rond-souffle-320.webp 320w, /assets/images/rond-souffle-640.webp 640w, /assets/images/rond-souffle-900.webp 900w" sizes="(max-width: 760px) 40vw, 18vw" alt="" width="900" height="900" loading="lazy" decoding="async">
+  </picture>
+</figure><span class="bandeau-nom">Souffle</span><span class="bandeau-annee">2021</span></a></li>
+    </ol>
+  </nav>
+</section>
+<article class="chapitre chapitre--clair" id="inshift" aria-labelledby="titre-inshift">
+  <div class="conteneur chapitre-grille">
+    <header class="chapitre-tete">
+      <p class="chapitre-num" data-anime>01 / 05 · Création 2027</p>
+      <h2 class="chapitre-titre" id="titre-inshift" data-anime="lettres">InShift</h2>
+      <p class="chapitre-sous" data-anime>ou comment bouger les lignes</p>
+      <p class="chapitre-accroche" data-anime="mots">« Une performance qui se joue et déjoue des codes du spectacle vivant. »</p>
+    </header>
+    <figure class="media chapitre-media" data-fx="parallaxe" data-fx-force="7" style="--cadrage:51% 46%;aspect-ratio:3 / 2">
+  <picture>
+    <img src="/assets/images/inshift-1-1600.webp" srcset="/assets/images/inshift-1-640.webp 640w, /assets/images/inshift-1-1200.webp 1200w, /assets/images/inshift-1-1600.webp 1600w" sizes="(max-width: 760px) 100vw, 55vw" alt="InShift au Togo : la danseuse se plie au-dessus d’un cercle de corde, le public assis autour" width="1600" height="1066" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    <div class="chapitre-texte">
+      <dl class="fiche" data-anime="cascade">
+        <div><dt>Format</dt><dd>Solo de danse pour la rue, les lieux non dédiés et l’intérieur</dd></div>
+        <div><dt>Durée</dt><dd>29 min environ</dd></div>
+        <div><dt>Public</dt><dd>Tout public</dd></div>
+      </dl>
+      <p class="chapitre-propos" data-anime>Un solo qui parle des changements qui nous traversent : personnels, émotionnels, physiques, psychiques, et de ce qu’ils déplacent. Sur une musique originale, la danse change de rythme, de gestuelle et d’espace pour surprendre le public là où il ne l’attend pas.</p>
+      <h3 class="mini-titre" data-anime>Équipe</h3>
+      <ul class="equipe-mini" data-anime="cascade"><li><strong>Mathilde Rader</strong>, chorégraphie et interprétation</li><li><strong>Antoine Petit</strong>, composition musicale</li><li><strong>Etienne Gaillochet</strong>, regard extérieur</li></ul>
+      <p class="chapitre-actions" data-anime><a href="/contact?sujet=programmation&amp;creation=inshift#demande" class="bouton" data-libelle="Contact">Programmer InShift</a></p>
+    </div>
+    <div class="chapitre-galerie">
+      <figure class="media chapitre-photo" data-fx="vitesse" data-fx-force="2" style="--cadrage:50% 49%;aspect-ratio:4 / 5">
+  <picture>
+    <img src="/assets/images/inshift-2-800.webp" srcset="/assets/images/inshift-2-480.webp 480w, /assets/images/inshift-2-800.webp 800w" sizes="(max-width: 760px) 50vw, 22vw" alt="InShift : en noir et blanc, la danseuse tire une corde, concentrée" width="800" height="1000" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media chapitre-photo" data-fx="vitesse" data-fx-force="2" style="--cadrage:83% 44%;aspect-ratio:4 / 5">
+  <picture>
+    <img src="/assets/images/inshift-3-800.webp" srcset="/assets/images/inshift-3-480.webp 480w, /assets/images/inshift-3-800.webp 800w" sizes="(max-width: 760px) 50vw, 22vw" alt="InShift : agenouillée, la danseuse enroule la corde à terre" width="800" height="1000" loading="lazy" decoding="async">
+  </picture>
+</figure>
+      <p class="credit">Photos © Yao Bobby, 300 Records Média, Abobolais, Komlan Ametogbe</p>
+    </div>
+    <div class="chapitre-plus">
+      <div class="chapitre-reperes">
+        <h3 class="mini-titre" data-anime>Repères</h3>
+        <ul class="liste-filet" data-anime="cascade"><li>Étapes de travail les 15 et 20 novembre 2025 aux Rencontres chorégraphiques de Lomé (Togo)</li><li>Première les 27 et 28 mai 2027 au festival Prêt-à-jouer, Fribourg (Suisse)</li></ul>
+        <h3 class="mini-titre" data-anime>Soutiens</h3>
+        <ul class="liste-filet" data-anime="cascade"><li>Coproduction : New Danse Studio, Brive ; Rencontres chorégraphiques de Lomé – FA’ARTS Festival</li><li>Soutien : Le Regard du Cygne, Paris</li><li>Partenariats en cours</li></ul>
+      </div>
+      <div class="chapitre-dates">
+        <h3 class="mini-titre" data-anime>Prochaines dates</h3>
+        <ol class="dates-liste dates-liste--compacte" data-anime="cascade"><li class="date" data-debut="2027-05-27" data-fin="2027-05-28">
+  <figure class="media date-rond" style="--cadrage:50% 50%;aspect-ratio:1 / 1">
+  <picture>
+    <img src="/assets/images/rond-inshift-900.webp" srcset="/assets/images/rond-inshift-320.webp 320w, /assets/images/rond-inshift-640.webp 640w, /assets/images/rond-inshift-900.webp 900w" sizes="96px" alt="" width="900" height="900" loading="lazy" decoding="async">
+  </picture>
+</figure>
+  <p class="date-jour" aria-hidden="true"><span>27-28</span>mai</p>
+  <div class="date-corps">
+    <h3 class="date-titre"><a href="/creations#inshift" data-libelle="Créations">InShift</a></h3>
+    <p class="date-quand"><time datetime="2027-05-27">27-28 mai 2027</time> · Première</p>
+    <p class="date-lieu">Festival Prêt-à-jouer, Fribourg, Suisse</p>
+  </div>
+</li></ol>
+        <p class="sans-date" hidden data-sans-date data-anime>Pas de date publique annoncée : la pièce est disponible en tournée.</p>
+      </div>
+    </div>
+  </div>
+</article><article class="chapitre chapitre--plateau chapitre--inverse plateau" id="nocturnes" aria-labelledby="titre-nocturnes">
+  <div class="conteneur chapitre-grille">
+    <header class="chapitre-tete">
+      <p class="chapitre-num" data-anime>02 / 05 · Création 2025</p>
+      <h2 class="chapitre-titre" id="titre-nocturnes" data-anime="lettres">NOCTURNES</h2>
+      <p class="chapitre-sous" data-anime>concert spectacle</p>
+      <p class="chapitre-accroche" data-anime="mots">« Entre crépuscules et aubes nocturnes. »</p>
+    </header>
+    <figure class="media chapitre-media" data-fx="parallaxe" data-fx-force="7" style="--cadrage:44% 58%;aspect-ratio:3 / 2">
+  <picture>
+    <img src="/assets/images/nocturnes-1-1600.webp" srcset="/assets/images/nocturnes-1-640.webp 640w, /assets/images/nocturnes-1-1200.webp 1200w, /assets/images/nocturnes-1-1600.webp 1600w" sizes="(max-width: 760px) 100vw, 55vw" alt="NOCTURNES : le guitariste joue d’une guitare électrique, la danseuse floue au premier plan" width="1600" height="1066" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    <div class="chapitre-texte">
+      <dl class="fiche" data-anime="cascade">
+        <div><dt>Format</dt><dd>Duo danse et musique, forme hybride entre spectacle et concert</dd></div>
+        <div><dt>Durée</dt><dd>1 h</dd></div>
+        <div><dt>Public</dt><dd>Tout public</dd></div>
+      </dl>
+      <p class="chapitre-propos" data-anime>Deuxième duo de Mathilde Rader et Antoine Petit après Souffle. Une traversée des ambiances de la nuit : la danse passe de l’énergie à l’explosion puis à la poésie ; la musique mêle guitare électrique, électro et sound design, sous une lumière créée en direct.</p>
+      <h3 class="mini-titre" data-anime>Équipe</h3>
+      <ul class="equipe-mini" data-anime="cascade"><li><strong>Mathilde Rader</strong>, danse, création et interprétation</li><li><strong>Antoine Petit</strong>, musique, création et interprétation</li><li><strong>Sébastien Budria</strong>, lumières, création et interprétation</li></ul>
+      <p class="chapitre-actions" data-anime><a href="/contact?sujet=programmation&amp;creation=nocturnes#demande" class="bouton" data-libelle="Contact">Programmer NOCTURNES</a></p>
+    </div>
+    <div class="chapitre-galerie">
+      <figure class="media chapitre-photo" data-fx="vitesse" data-fx-force="2" style="--cadrage:50% 55%;aspect-ratio:4 / 5">
+  <picture>
+    <img src="/assets/images/nocturnes-2-800.webp" srcset="/assets/images/nocturnes-2-480.webp 480w, /assets/images/nocturnes-2-800.webp 800w" sizes="(max-width: 760px) 50vw, 22vw" alt="NOCTURNES en noir et blanc : le musicien à son clavier, la danseuse en mouvement" width="800" height="1000" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media chapitre-photo" data-fx="vitesse" data-fx-force="2" style="--cadrage:46% 44%;aspect-ratio:4 / 5">
+  <picture>
+    <img src="/assets/images/nocturnes-3-800.webp" srcset="/assets/images/nocturnes-3-480.webp 480w, /assets/images/nocturnes-3-800.webp 800w" sizes="(max-width: 760px) 50vw, 22vw" alt="NOCTURNES : la danseuse et le musicien sur le plateau sombre" width="800" height="1000" loading="lazy" decoding="async">
+  </picture>
+</figure>
+      <p class="credit">Photos © Alex Overton</p>
+    </div>
+    <div class="chapitre-plus">
+      <div data-anime><div class="teaser teaser--chapitre" data-youtube="6UYM9atbzvA" data-titre="NOCTURNES">
+  <figure class="media teaser-media" style="--cadrage:50% 50%;aspect-ratio:16 / 9">
+  <picture>
+    <img src="/assets/images/teaser-nocturnes-1280.webp" srcset="/assets/images/teaser-nocturnes-640.webp 640w, /assets/images/teaser-nocturnes-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 50vw" alt="" width="1280" height="720" loading="lazy" decoding="async">
+  </picture>
+</figure>
+  <button type="button" class="teaser-bouton"><span class="teaser-play" aria-hidden="true"></span><span class="teaser-libelle">Lancer le teaser de NOCTURNES</span></button>
+  <p class="teaser-nom" aria-hidden="true">NOCTURNES <span>2025</span></p>
+</div></div>
+      <div class="chapitre-reperes">
+        <h3 class="mini-titre" data-anime>Repères</h3>
+        <ul class="liste-filet" data-anime="cascade"><li>Première le 21 février 2025, Centre culturel John-Lennon, Limoges</li><li>Résidences : centres culturels Jean-Gagnant et John-Lennon, Opéra – Maison des arts et de la danse (Limoges), La Mégisserie (Saint-Junien)</li></ul>
+        <h3 class="mini-titre" data-anime>Soutiens</h3>
+        <ul class="liste-filet" data-anime="cascade"><li>Ville de Limoges</li><li>Opéra de Limoges – Maison des arts et de la danse (soutien à la création lumière)</li></ul>
+      </div>
+      <div class="chapitre-dates">
+        <h3 class="mini-titre" data-anime>Prochaines dates</h3>
+        <ol class="dates-liste dates-liste--compacte" data-anime="cascade"><li class="date" data-debut="2027-02-05" data-fin="">
+  <figure class="media date-rond" style="--cadrage:50% 50%;aspect-ratio:1 / 1">
+  <picture>
+    <img src="/assets/images/rond-nocturnes-900.webp" srcset="/assets/images/rond-nocturnes-320.webp 320w, /assets/images/rond-nocturnes-640.webp 640w, /assets/images/rond-nocturnes-900.webp 900w" sizes="96px" alt="" width="900" height="900" loading="lazy" decoding="async">
+  </picture>
+</figure>
+  <p class="date-jour" aria-hidden="true"><span>5</span>févr.</p>
+  <div class="date-corps">
+    <h3 class="date-titre"><a href="/creations#nocturnes" data-libelle="Créations">NOCTURNES</a></h3>
+    <p class="date-quand"><time datetime="2027-02-05">5 février 2027</time> · Spectacle</p>
+    <p class="date-lieu">Centre culturel Jean Gagnant, Limoges (87) · Horaire à venir</p>
+  </div>
+</li></ol>
+        <p class="sans-date" hidden data-sans-date data-anime>Pas de date publique annoncée : la pièce est disponible en tournée.</p>
+      </div>
+    </div>
+  </div>
+</article><article class="chapitre chapitre--clair" id="echo" aria-labelledby="titre-echo">
+  <div class="conteneur chapitre-grille">
+    <header class="chapitre-tete">
+      <p class="chapitre-num" data-anime>03 / 05 · Création 2025</p>
+      <h2 class="chapitre-titre" id="titre-echo" data-anime="lettres">L’écho d’une chute</h2>
+      <p class="chapitre-sous" data-anime>cocréation avec le Collectif Melpo</p>
+      <p class="chapitre-accroche" data-anime="mots">« Être à l’écoute de soi, des autres, de l’environnement. »</p>
+    </header>
+    <figure class="media chapitre-media" data-fx="parallaxe" data-fx-force="7" style="--cadrage:50% 36%;aspect-ratio:3 / 2">
+  <picture>
+    <img src="/assets/images/echo-1-1600.webp" srcset="/assets/images/echo-1-640.webp 640w, /assets/images/echo-1-1200.webp 1200w, /assets/images/echo-1-1600.webp 1600w" sizes="(max-width: 760px) 100vw, 55vw" alt="L’écho d’une chute : une danseuse enjambe sa partenaire allongée sur une place grise" width="1600" height="1066" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    <div class="chapitre-texte">
+      <dl class="fiche" data-anime="cascade">
+        <div><dt>Format</dt><dd>Duo de danse pour l’espace public, art de rue</dd></div>
+        <div><dt>Durée</dt><dd>45 min (version de 20 min possible)</dd></div>
+        <div><dt>Public</dt><dd>Tout public</dd></div>
+      </dl>
+      <p class="chapitre-propos" data-anime>Tout part de l’écoute. Autour d’un élément de décor et d’une musique originale, deux danseuses explorent ce que veut dire écouter : soi-même, l’autre, le lieu. Le public est entraîné dans cette attention particulière, au milieu de la ville.</p>
+      <h3 class="mini-titre" data-anime>Équipe</h3>
+      <ul class="equipe-mini" data-anime="cascade"><li><strong>Audrey Allafort</strong>, chorégraphie et interprétation</li><li><strong>Mathilde Rader</strong>, chorégraphie et interprétation</li><li><strong>Juliette Pascaud</strong>, composition musicale</li><li><strong>Antoine Petit</strong>, composition musicale</li></ul>
+      <p class="chapitre-actions" data-anime><a href="/contact?sujet=programmation&amp;creation=echo#demande" class="bouton" data-libelle="Contact">Programmer L’écho d’une chute</a></p>
+    </div>
+    <div class="chapitre-galerie">
+      <figure class="media chapitre-photo" data-fx="vitesse" data-fx-force="2" style="--cadrage:50% 33%;aspect-ratio:4 / 5">
+  <picture>
+    <img src="/assets/images/echo-2-800.webp" srcset="/assets/images/echo-2-480.webp 480w, /assets/images/echo-2-800.webp 800w" sizes="(max-width: 760px) 50vw, 22vw" alt="L’écho d’une chute : les deux danseuses assises sur un escalier de béton" width="800" height="1000" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media chapitre-photo" data-fx="vitesse" data-fx-force="2" style="--cadrage:50% 56%;aspect-ratio:4 / 5">
+  <picture>
+    <img src="/assets/images/echo-3-800.webp" srcset="/assets/images/echo-3-480.webp 480w, /assets/images/echo-3-800.webp 800w" sizes="(max-width: 760px) 50vw, 22vw" alt="L’écho d’une chute : une danseuse debout au milieu d’un grand terrain" width="800" height="1000" loading="lazy" decoding="async">
+  </picture>
+</figure>
+      <p class="credit">Teaser © Juliette Pascaud</p>
+    </div>
+    <div class="chapitre-plus">
+      <div data-anime><div class="teaser teaser--chapitre" data-youtube="927IyIRduNA" data-titre="L’écho d’une chute">
+  <figure class="media teaser-media" style="--cadrage:50% 50%;aspect-ratio:16 / 9">
+  <picture>
+    <img src="/assets/images/teaser-echo-1280.webp" srcset="/assets/images/teaser-echo-640.webp 640w, /assets/images/teaser-echo-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 50vw" alt="" width="1280" height="720" loading="lazy" decoding="async">
+  </picture>
+</figure>
+  <button type="button" class="teaser-bouton"><span class="teaser-play" aria-hidden="true"></span><span class="teaser-libelle">Lancer le teaser de L’écho d’une chute</span></button>
+  <p class="teaser-nom" aria-hidden="true">L’écho d’une chute <span>2025</span></p>
+</div></div>
+      <div class="chapitre-reperes">
+        <h3 class="mini-titre" data-anime>Repères</h3>
+        <ul class="liste-filet" data-anime="cascade"><li>Première le 15 août 2025, Festival des arts de la rue, Argentat-sur-Dordogne</li><li>Résidences : Maison des arts et de la danse (Limoges), salle Chavagne – Saint-Eutrope (Saintes), Atelier Corps en tête (Argentat), La Mégisserie et L’Étoile bleue (Saint-Junien), Graines de rue (Bessines-sur-Gartempe)</li></ul>
+        <h3 class="mini-titre" data-anime>Soutiens</h3>
+        <ul class="liste-filet" data-anime="cascade"><li>Ville de Limoges</li><li>En collaboration avec le Collectif Melpo</li></ul>
+      </div>
+      <div class="chapitre-dates">
+        <h3 class="mini-titre" data-anime>Prochaines dates</h3>
+        <ol class="dates-liste dates-liste--compacte" data-anime="cascade"><li class="date" data-debut="2026-12-04T18:00" data-fin="">
+  <figure class="media date-rond" style="--cadrage:50% 50%;aspect-ratio:1 / 1">
+  <picture>
+    <img src="/assets/images/rond-echo-900.webp" srcset="/assets/images/rond-echo-320.webp 320w, /assets/images/rond-echo-640.webp 640w, /assets/images/rond-echo-900.webp 900w" sizes="96px" alt="" width="900" height="900" loading="lazy" decoding="async">
+  </picture>
+</figure>
+  <p class="date-jour" aria-hidden="true"><span>4</span>déc.</p>
+  <div class="date-corps">
+    <h3 class="date-titre"><a href="/creations#echo" data-libelle="Créations">L’écho d’une chute</a></h3>
+    <p class="date-quand"><time datetime="2026-12-04T18:00">4 décembre 2026, 18 h</time> · Spectacle</p>
+    <p class="date-lieu">Médiathèque, Montbron (16) · Avec le Collectif Melpo</p>
+  </div>
+</li></ol>
+        <p class="sans-date" hidden data-sans-date data-anime>Pas de date publique annoncée : la pièce est disponible en tournée.</p>
+      </div>
+    </div>
+  </div>
+</article><article class="chapitre chapitre--plateau chapitre--inverse plateau" id="doline" aria-labelledby="titre-doline">
+  <div class="conteneur chapitre-grille">
+    <header class="chapitre-tete">
+      <p class="chapitre-num" data-anime>04 / 05 · Création 2022</p>
+      <h2 class="chapitre-titre" id="titre-doline" data-anime="lettres">DOLINE</h2>
+      <p class="chapitre-sous" data-anime>une expérience visuelle et sonore</p>
+      <p class="chapitre-accroche" data-anime="mots">« Une expérience visuelle et sonore. »</p>
+    </header>
+    <figure class="media chapitre-media" data-fx="parallaxe" data-fx-force="7" style="--cadrage:50% 45%;aspect-ratio:3 / 2">
+  <picture>
+    <img src="/assets/images/doline-2-1600.webp" srcset="/assets/images/doline-2-640.webp 640w, /assets/images/doline-2-1200.webp 1200w, /assets/images/doline-2-1600.webp 1600w" sizes="(max-width: 760px) 100vw, 55vw" alt="DOLINE : la danseuse devant un écran de particules lumineuses" width="1600" height="1066" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    <div class="chapitre-texte">
+      <dl class="fiche" data-anime="cascade">
+        <div><dt>Format</dt><dd>Danse, musique, images et arts numériques, proche du ciné-concert</dd></div>
+        <div><dt>Durée</dt><dd>1 h</dd></div>
+        <div><dt>Public</dt><dd>Tout public</dd></div>
+      </dl>
+      <p class="chapitre-propos" data-anime>La danseuse, héroïne d’un récit, emmène le public dans un voyage onirique : une forêt de jour puis de nuit, et soudain une cavité sans fond, la doline, qui ouvre sur un monde étrange et psychédélique. Trois interprètes sur le plateau : une danseuse, un musicien, un vidéaste qui joue les images en direct.</p>
+      <h3 class="mini-titre" data-anime>Équipe</h3>
+      <ul class="equipe-mini" data-anime="cascade"><li><strong>Mathilde Rader</strong>, danse</li><li><strong>Olivier Duperron</strong>, musique</li><li><strong>Dimitri Sourzac</strong>, images</li><li><strong>Laura Salles</strong>, lumières</li><li><strong>Antoine Petit</strong>, son</li></ul>
+      <p class="chapitre-actions" data-anime><a href="/contact?sujet=programmation&amp;creation=doline#demande" class="bouton" data-libelle="Contact">Programmer DOLINE</a></p>
+    </div>
+    <div class="chapitre-galerie">
+      <figure class="media chapitre-photo" data-fx="vitesse" data-fx-force="2" style="--cadrage:70% 74%;aspect-ratio:4 / 5">
+  <picture>
+    <img src="/assets/images/doline-1-800.webp" srcset="/assets/images/doline-1-480.webp 480w, /assets/images/doline-1-800.webp 800w" sizes="(max-width: 760px) 50vw, 22vw" alt="DOLINE : la danseuse seule dans une lumière violette, au bord du plateau" width="800" height="1000" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media chapitre-photo" data-fx="vitesse" data-fx-force="2" style="--cadrage:47% 50%;aspect-ratio:4 / 5">
+  <picture>
+    <img src="/assets/images/doline-3-800.webp" srcset="/assets/images/doline-3-480.webp 480w, /assets/images/doline-3-800.webp 800w" sizes="(max-width: 760px) 50vw, 22vw" alt="DOLINE : une forêt projetée derrière la danseuse" width="800" height="1000" loading="lazy" decoding="async">
+  </picture>
+</figure>
+      <p class="credit">Images © Dimitri Sourzac</p>
+    </div>
+    <div class="chapitre-plus">
+      <div data-anime><div class="teaser teaser--chapitre" data-youtube="h4x7FIZXTtc" data-titre="DOLINE">
+  <figure class="media teaser-media" style="--cadrage:50% 50%;aspect-ratio:16 / 9">
+  <picture>
+    <img src="/assets/images/teaser-doline-1280.webp" srcset="/assets/images/teaser-doline-640.webp 640w, /assets/images/teaser-doline-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 50vw" alt="" width="1280" height="720" loading="lazy" decoding="async">
+  </picture>
+</figure>
+  <button type="button" class="teaser-bouton"><span class="teaser-play" aria-hidden="true"></span><span class="teaser-libelle">Lancer le teaser de DOLINE</span></button>
+  <p class="teaser-nom" aria-hidden="true">DOLINE <span>2022</span></p>
+</div></div>
+      <div class="chapitre-reperes">
+        <h3 class="mini-titre" data-anime>Repères</h3>
+        <ul class="liste-filet" data-anime="cascade"><li>Première le 29 octobre 2022, Espace Noriac, Limoges</li><li>Résidences : Des Lendemains qui chantent, SMAC de Tulle ; Les Polyculteurs, Saint-Cyr</li></ul>
+        <h3 class="mini-titre" data-anime>Soutiens</h3>
+        <ul class="liste-filet" data-anime="cascade"><li>Région Nouvelle-Aquitaine et DRAC, dispositif Cultures connectées</li><li>Caisse des dépôts</li><li>Coproduction : La Métairie des arts, Saint-Pantaléon-de-Larche</li><li>Aide matérielle : CDN Théâtre de l’Union, Limoges</li></ul>
+      </div>
+      <div class="chapitre-dates">
+        <h3 class="mini-titre" data-anime>Prochaines dates</h3>
+        <p class="sans-date" data-sans-date data-anime>Pas de date publique annoncée : la pièce est disponible en tournée.</p>
+      </div>
+    </div>
+  </div>
+</article><article class="chapitre chapitre--clair" id="souffle" aria-labelledby="titre-souffle">
+  <div class="conteneur chapitre-grille">
+    <header class="chapitre-tete">
+      <p class="chapitre-num" data-anime>05 / 05 · Création 2021</p>
+      <h2 class="chapitre-titre" id="titre-souffle" data-anime="lettres">Souffle</h2>
+      <p class="chapitre-sous" data-anime>duo danse et guitares</p>
+      <p class="chapitre-accroche" data-anime="mots">« Ils communiquent sans toucher, ni parole. »</p>
+    </header>
+    <figure class="media chapitre-media" data-fx="parallaxe" data-fx-force="7" style="--cadrage:46% 38%;aspect-ratio:3 / 2">
+  <picture>
+    <img src="/assets/images/souffle-1-1600.webp" srcset="/assets/images/souffle-1-640.webp 640w, /assets/images/souffle-1-1200.webp 1200w, /assets/images/souffle-1-1600.webp 1600w" sizes="(max-width: 760px) 100vw, 55vw" alt="Souffle : la danseuse derrière le guitariste, en pleine nature" width="1600" height="1066" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    <div class="chapitre-texte">
+      <dl class="fiche" data-anime="cascade">
+        <div><dt>Format</dt><dd>Duo danse et guitares, en extérieur ou en intérieur, sonorisé</dd></div>
+        <div><dt>Durée</dt><dd>30 min ou 1 h</dd></div>
+        <div><dt>Public</dt><dd>Tout public</dd></div>
+      </dl>
+      <p class="chapitre-propos" data-anime>La guitare et la danse contemporaine se rencontrent. La guitare acoustique accompagne les mouvements aériens de la danseuse, l’électrique creuse des ambiances plus profondes. Deux êtres s’observent et s’apprivoisent, avec douceur ou rudesse, reliés par un souffle invisible.</p>
+      <h3 class="mini-titre" data-anime>Équipe</h3>
+      <ul class="equipe-mini" data-anime="cascade"><li><strong>Mathilde Rader</strong>, danse</li><li><strong>Antoine Petit</strong>, guitares</li></ul>
+      <p class="chapitre-actions" data-anime><a href="/contact?sujet=programmation&amp;creation=souffle#demande" class="bouton" data-libelle="Contact">Programmer Souffle</a></p>
+    </div>
+    <div class="chapitre-galerie">
+      <figure class="media chapitre-photo" data-fx="vitesse" data-fx-force="2" style="--cadrage:50% 57%;aspect-ratio:4 / 5">
+  <picture>
+    <img src="/assets/images/souffle-2-800.webp" srcset="/assets/images/souffle-2-480.webp 480w, /assets/images/souffle-2-800.webp 800w" sizes="(max-width: 760px) 50vw, 22vw" alt="Souffle joué dans un parc, entre les arbres" width="800" height="1000" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media chapitre-photo" data-fx="vitesse" data-fx-force="2" style="--cadrage:50% 41%;aspect-ratio:4 / 5">
+  <picture>
+    <img src="/assets/images/souffle-3-800.webp" srcset="/assets/images/souffle-3-480.webp 480w, /assets/images/souffle-3-800.webp 800w" sizes="(max-width: 760px) 50vw, 22vw" alt="Souffle en noir et blanc dans un cloître : la danseuse s’élance au-dessus d’une chaise" width="800" height="1000" loading="lazy" decoding="async">
+  </picture>
+</figure>
+      <p class="credit">Photos © Annie Bossut, Pierre-Jean Muet, Thierry Laporte</p>
+    </div>
+    <div class="chapitre-plus">
+      <div data-anime><div class="teaser teaser--chapitre" data-youtube="Bx0AugE4iY0" data-titre="Souffle">
+  <figure class="media teaser-media" style="--cadrage:50% 50%;aspect-ratio:16 / 9">
+  <picture>
+    <img src="/assets/images/teaser-souffle-1280.webp" srcset="/assets/images/teaser-souffle-640.webp 640w, /assets/images/teaser-souffle-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 50vw" alt="" width="1280" height="720" loading="lazy" decoding="async">
+  </picture>
+</figure>
+  <button type="button" class="teaser-bouton"><span class="teaser-play" aria-hidden="true"></span><span class="teaser-libelle">Lancer le teaser de Souffle</span></button>
+  <p class="teaser-nom" aria-hidden="true">Souffle <span>2021</span></p>
+</div></div>
+      <div class="chapitre-reperes">
+        <h3 class="mini-titre" data-anime>Repères</h3>
+        <ul class="liste-filet" data-anime="cascade"><li>Première le 14 juin 2021, château de La Borie, Solignac</li><li>21 dates à l’agenda depuis 2021, dont le festival Mimos (Périgueux), Festival national de Bellac, Pionnat dans la rue, festival Pote (Besançon)…</li></ul>
+        <h3 class="mini-titre" data-anime>Soutiens</h3>
+        <ul class="liste-filet" data-anime="cascade"><li>Département de la Haute-Vienne</li><li>Résidences : centre culturel Jean-Gagnant, L’IF (Limoges), Graines de rue (Bessines)</li></ul>
+      </div>
+      <div class="chapitre-dates">
+        <h3 class="mini-titre" data-anime>Prochaines dates</h3>
+        <ol class="dates-liste dates-liste--compacte" data-anime="cascade"><li class="date" data-debut="2026-11-27T20:30" data-fin="">
+  <figure class="media date-rond" style="--cadrage:50% 50%;aspect-ratio:1 / 1">
+  <picture>
+    <img src="/assets/images/rond-souffle-900.webp" srcset="/assets/images/rond-souffle-320.webp 320w, /assets/images/rond-souffle-640.webp 640w, /assets/images/rond-souffle-900.webp 900w" sizes="96px" alt="" width="900" height="900" loading="lazy" decoding="async">
+  </picture>
+</figure>
+  <p class="date-jour" aria-hidden="true"><span>27</span>nov.</p>
+  <div class="date-corps">
+    <h3 class="date-titre"><a href="/creations#souffle" data-libelle="Créations">Souffle</a></h3>
+    <p class="date-quand"><time datetime="2026-11-27T20:30">27 novembre 2026, 20 h 30</time> · Spectacle</p>
+    <p class="date-lieu">Bal du Souffle, Colomiers (31)</p>
+  </div>
+</li></ol>
+        <p class="sans-date" hidden data-sans-date data-anime>Pas de date publique annoncée : la pièce est disponible en tournée.</p>
+      </div>
+    </div>
+  </div>
+</article>
+<section class="appel plateau" id="appel" aria-labelledby="appel-titre">
+  <div class="appel-disque" data-effet="disque-final" data-visuel aria-hidden="true"><img src="/assets/images/logo-160.png" alt="" width="160" height="160" loading="lazy"></div>
+  <div class="conteneur appel-texte">
+    <h2 id="appel-titre" class="titre-section" data-anime="lignes">Une pièce pour votre lieu ?</h2>
+    <p data-anime>Dites-nous où, quand et pour quel public : la compagnie vous répond avec la création et la version qui conviennent.</p>
+    <p class="appel-actions" data-anime><a href="/contact?sujet=programmation#demande" class="bouton bouton--clair" data-libelle="Contact" data-survol="magnetique">Écrire à la compagnie</a>
+      <a class="lien-fleche" href="tel:+33615031678">Appeler 06 15 03 16 78</a></p>
+  </div>
+</section>
+</main>
+<footer class="pied" id="pied">
+  <div class="conteneur pied-grille">
+    <div class="pied-marque">
+      <img src="/assets/images/logo-160.png" alt="" width="72" height="72" loading="lazy">
+      <p><strong>Compagnie la Virevoltée</strong><br>57b avenue Garibaldi, 87000 Limoges</p>
+      <p><a href="tel:+33615031678">06 15 03 16 78</a><br><a href="mailto:cie.lavirevoltee@gmail.com">cie.lavirevoltee@gmail.com</a></p>
+    </div>
+    <nav aria-label="Sommaire">
+      <p class="pied-titre">Sommaire</p>
+      <ul><li><a href="/" data-libelle="Accueil">Accueil</a></li><li><a href="/creations" data-libelle="Créations" aria-current="page">Créations</a></li><li><a href="/agenda" data-libelle="Agenda">Agenda</a></li><li><a href="/transmission" data-libelle="Transmission">Transmission</a></li><li><a href="/contact" data-libelle="Contact">Contact</a></li><li><a href="#haut" data-sans-transition>Retour en haut</a></li></ul>
+    </nav>
+    <div>
+      <p class="pied-titre">Suivre la compagnie</p>
+      <ul>
+        <li><a href="https://www.instagram.com/cie_la.virevoltee/" target="_blank" rel="noopener">Instagram <span class="visuellement-cache">(nouvel onglet)</span></a></li>
+        <li><a href="https://www.facebook.com/Cie-la-Virevolt%C3%A9e-Mathilde-Rader-115902940333047" target="_blank" rel="noopener">Facebook <span class="visuellement-cache">(nouvel onglet)</span></a></li>
+        <li><a href="https://www.helloasso.com/associations/compagnie-la-virevoltee/adhesions/adhesion" target="_blank" rel="noopener">Adhérer à l’association <span class="visuellement-cache">(nouvel onglet)</span></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="conteneur pied-bas"><p>Mentions légales : à compléter · Politique de confidentialité : à compléter</p><p>Maquette de démonstration : formulaires simulés, rien n’est envoyé.</p><p>© Compagnie la Virevoltée</p></div>
+</footer>
+<div data-barre-fixe>
+  <a class="bouton bouton--contour" href="tel:+33615031678">Appeler</a>
+  <a class="bouton" href="/contact?sujet=programmation#demande" data-libelle="Contact">Programmer</a>
+</div>
+</body>
+</html>

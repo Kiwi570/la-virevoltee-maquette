@@ -1,0 +1,3818 @@
+{
+  "dossier": "/home/claude/la-virevoltee-maquette/recu",
+  "date": "2026-11-20T15:32:11.417Z",
+  "detection": "mesures sharp seulement",
+  "planches": [
+    "planche.jpg",
+    "planche-2.jpg",
+    "planche-3.jpg"
+  ],
+  "legende_planche": "cadre jaune : sujet ; croix rouge : cadrage ; fond rose : à vérifier",
+  "doublons": [
+    {
+      "garder": "olivier-duperron.jpg",
+      "ecarter": "olivier-duperron-rogne.jpg",
+      "type": "quasi-doublon",
+      "distance": 8,
+      "ressemblance": 0.93
+    }
+  ],
+  "images": [
+    {
+      "fichier": "logo-sombre.png",
+      "nom": "logo-sombre",
+      "drapeau": "logo",
+      "largeur": 500,
+      "hauteur": 500,
+      "ratio": "1:1",
+      "ratio_valeur": 1,
+      "orientation": "carre",
+      "format": "png",
+      "poids": 32741,
+      "transparence": true,
+      "sujet": {
+        "x": 21.9,
+        "y": 21.9,
+        "l": 56.3,
+        "h": 56.3,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        50,
+        50
+      ],
+      "cadrage_css": "50% 50%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.64,
+          "ton": "clair",
+          "recouvre_sujet": 0.21
+        },
+        {
+          "cote": "bas",
+          "score": 0.63,
+          "ton": "clair",
+          "recouvre_sujet": 0.21
+        },
+        {
+          "cote": "gauche",
+          "score": 0.54,
+          "ton": "clair",
+          "recouvre_sujet": 0.25
+        },
+        {
+          "cote": "droite",
+          "score": 0.52,
+          "ton": "clair",
+          "recouvre_sujet": 0.26
+        }
+      ],
+      "qualite": {
+        "nettete": 62.3,
+        "bruit": 0.08,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "224d9e17178e4d22",
+      "drapeaux": [
+        "logo"
+      ]
+    },
+    {
+      "fichier": "kathleen-missud.jpg",
+      "nom": "kathleen-missud",
+      "drapeau": "autre",
+      "largeur": 1335,
+      "hauteur": 2000,
+      "ratio": "2:3",
+      "ratio_valeur": 0.668,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 385095,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 95.5,
+        "h": 100,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        40,
+        49
+      ],
+      "cadrage_css": "40% 49%",
+      "zones_calmes": [
+        {
+          "cote": "droite",
+          "score": 0.2,
+          "ton": "moyen",
+          "recouvre_sujet": 0.89
+        },
+        {
+          "cote": "bas",
+          "score": 0.17,
+          "ton": "sombre",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "haut",
+          "score": 0.15,
+          "ton": "sombre",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "gauche",
+          "score": 0.14,
+          "ton": "sombre",
+          "recouvre_sujet": 1
+        }
+      ],
+      "qualite": {
+        "nettete": 14.5,
+        "bruit": 1.36,
+        "compression": 0.9,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "4604b226e6e46d7e",
+      "drapeaux": [
+        "autre"
+      ]
+    },
+    {
+      "fichier": "aurelie-fieschi.jpg",
+      "nom": "aurelie-fieschi",
+      "drapeau": "autre",
+      "largeur": 2000,
+      "hauteur": 1333,
+      "ratio": "3:2",
+      "ratio_valeur": 1.5,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 817584,
+      "transparence": false,
+      "sujet": {
+        "x": 37.5,
+        "y": 13.6,
+        "l": 34.4,
+        "h": 68.2,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        53,
+        44
+      ],
+      "cadrage_css": "53% 44%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0.57,
+          "ton": "sombre",
+          "recouvre_sujet": 0.04
+        },
+        {
+          "cote": "bas",
+          "score": 0.51,
+          "ton": "sombre",
+          "recouvre_sujet": 0.17
+        },
+        {
+          "cote": "droite",
+          "score": 0.46,
+          "ton": "sombre",
+          "recouvre_sujet": 0.2
+        },
+        {
+          "cote": "haut",
+          "score": 0.38,
+          "ton": "sombre",
+          "recouvre_sujet": 0.21
+        }
+      ],
+      "qualite": {
+        "nettete": 69,
+        "bruit": 2.76,
+        "compression": 1.11,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "e4d8f8f8e4e4f0f0",
+      "drapeaux": [
+        "autre"
+      ]
+    },
+    {
+      "fichier": "residence-ldqc-04102020-session1.jpg",
+      "nom": "residence-ldqc-04102020-session1",
+      "drapeau": "autre",
+      "largeur": 2000,
+      "hauteur": 1125,
+      "ratio": "16:9",
+      "ratio_valeur": 1.778,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 67054,
+      "transparence": false,
+      "sujet": {
+        "x": 31.3,
+        "y": 22.2,
+        "l": 34.4,
+        "h": 16.7,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        46,
+        28
+      ],
+      "cadrage_css": "46% 28%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.92,
+          "ton": "sombre",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "gauche",
+          "score": 0.91,
+          "ton": "sombre",
+          "recouvre_sujet": 0.04
+        },
+        {
+          "cote": "droite",
+          "score": 0.89,
+          "ton": "sombre",
+          "recouvre_sujet": 0.02
+        },
+        {
+          "cote": "haut",
+          "score": 0.84,
+          "ton": "sombre",
+          "recouvre_sujet": 0.13
+        }
+      ],
+      "qualite": {
+        "nettete": 14.1,
+        "bruit": 0.14,
+        "compression": 2.03,
+        "faible": true,
+        "raisons": [
+          "compression visible"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "006060e08cec6000",
+      "drapeaux": [
+        "autre",
+        "compression visible",
+        "calme bas/gauche/droite/haut"
+      ]
+    },
+    {
+      "fichier": "partenaires.jpg",
+      "nom": "partenaires",
+      "drapeau": "autre",
+      "largeur": 1440,
+      "hauteur": 960,
+      "ratio": "3:2",
+      "ratio_valeur": 1.5,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 157123,
+      "transparence": false,
+      "sujet": {
+        "x": 6.3,
+        "y": 4.5,
+        "l": 90.6,
+        "h": 90.9,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        55,
+        57
+      ],
+      "cadrage_css": "55% 57%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.03,
+          "ton": "moyen",
+          "recouvre_sujet": 0.79
+        },
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.77
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.84
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 0.79
+        }
+      ],
+      "qualite": {
+        "nettete": 31.6,
+        "bruit": 0.74,
+        "compression": 1.31,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "0d99999b5a8f9fda",
+      "drapeaux": [
+        "autre"
+      ]
+    },
+    {
+      "fichier": "nous-contacter.jpg",
+      "nom": "nous-contacter",
+      "drapeau": "autre",
+      "largeur": 1335,
+      "hauteur": 2000,
+      "ratio": "2:3",
+      "ratio_valeur": 0.668,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 442133,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 95.5,
+        "h": 100,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        51,
+        40
+      ],
+      "cadrage_css": "51% 40%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0.34,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "bas",
+          "score": 0.34,
+          "ton": "sombre",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "droite",
+          "score": 0.29,
+          "ton": "sombre",
+          "recouvre_sujet": 0.89
+        },
+        {
+          "cote": "haut",
+          "score": 0.29,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        }
+      ],
+      "qualite": {
+        "nettete": 13.6,
+        "bruit": 1.34,
+        "compression": 0.9,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "637060644a470603",
+      "drapeaux": [
+        "autre"
+      ]
+    },
+    {
+      "fichier": "maxresdefault.jpg",
+      "nom": "maxresdefault",
+      "drapeau": "autre",
+      "largeur": 1280,
+      "hauteur": 720,
+      "ratio": "16:9",
+      "ratio_valeur": 1.778,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 138700,
+      "transparence": false,
+      "sujet": {
+        "x": 21.9,
+        "y": 0,
+        "l": 78.1,
+        "h": 72.2,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        71,
+        29
+      ],
+      "cadrage_css": "71% 29%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.43,
+          "ton": "sombre",
+          "recouvre_sujet": 0.16
+        },
+        {
+          "cote": "gauche",
+          "score": 0.37,
+          "ton": "sombre",
+          "recouvre_sujet": 0.33
+        },
+        {
+          "cote": "droite",
+          "score": 0.01,
+          "ton": "moyen",
+          "recouvre_sujet": 0.72
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 0.78
+        }
+      ],
+      "qualite": {
+        "nettete": 29.3,
+        "bruit": 1.14,
+        "compression": 1.35,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "9eb6b6aee7c7c7e1",
+      "drapeaux": [
+        "autre"
+      ]
+    },
+    {
+      "fichier": "maxresdefault-2.jpg",
+      "nom": "maxresdefault-2",
+      "drapeau": "autre",
+      "largeur": 1280,
+      "hauteur": 720,
+      "ratio": "16:9",
+      "ratio_valeur": 1.778,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 277864,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 100,
+        "h": 100,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        47,
+        48
+      ],
+      "cadrage_css": "47% 48%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        }
+      ],
+      "qualite": {
+        "nettete": 56.5,
+        "bruit": 2.82,
+        "compression": 1.23,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "b0b0a88e0cdacc85",
+      "drapeaux": [
+        "autre"
+      ]
+    },
+    {
+      "fichier": "maxresdefault-3.webp",
+      "nom": "maxresdefault-3",
+      "drapeau": "autre",
+      "largeur": 1280,
+      "hauteur": 720,
+      "ratio": "16:9",
+      "ratio_valeur": 1.778,
+      "orientation": "paysage",
+      "format": "webp",
+      "poids": 30514,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 5.6,
+        "l": 90.6,
+        "h": 94.4,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        54,
+        42
+      ],
+      "cadrage_css": "54% 42%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.5,
+          "ton": "sombre",
+          "recouvre_sujet": 0.91
+        },
+        {
+          "cote": "haut",
+          "score": 0.32,
+          "ton": "moyen",
+          "recouvre_sujet": 0.76
+        },
+        {
+          "cote": "droite",
+          "score": 0.31,
+          "ton": "sombre",
+          "recouvre_sujet": 0.72
+        },
+        {
+          "cote": "gauche",
+          "score": 0.18,
+          "ton": "sombre",
+          "recouvre_sujet": 0.94
+        }
+      ],
+      "qualite": {
+        "nettete": 28.5,
+        "bruit": 0.24,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "f8fcfcec4c6c2420",
+      "drapeaux": [
+        "autre"
+      ]
+    },
+    {
+      "fichier": "maxresdefault-4.jpg",
+      "nom": "maxresdefault-4",
+      "drapeau": "autre",
+      "largeur": 1280,
+      "hauteur": 720,
+      "ratio": "16:9",
+      "ratio_valeur": 1.778,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 49691,
+      "transparence": false,
+      "sujet": {
+        "x": 34.4,
+        "y": 38.9,
+        "l": 31.3,
+        "h": 22.2,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        50,
+        50
+      ],
+      "cadrage_css": "50% 50%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.89,
+          "ton": "sombre",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "bas",
+          "score": 0.85,
+          "ton": "sombre",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "gauche",
+          "score": 0.66,
+          "ton": "sombre",
+          "recouvre_sujet": 0.03
+        },
+        {
+          "cote": "droite",
+          "score": 0.65,
+          "ton": "sombre",
+          "recouvre_sujet": 0.03
+        }
+      ],
+      "qualite": {
+        "nettete": 22.5,
+        "bruit": 0.34,
+        "compression": 1.92,
+        "faible": true,
+        "raisons": [
+          "compression visible"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "48e4e878f0f2b292",
+      "drapeaux": [
+        "autre",
+        "compression visible",
+        "calme haut/bas/gauche/droite"
+      ]
+    },
+    {
+      "fichier": "maxresdefault-5.jpg",
+      "nom": "maxresdefault-5",
+      "drapeau": "autre",
+      "largeur": 1280,
+      "hauteur": 720,
+      "ratio": "16:9",
+      "ratio_valeur": 1.778,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 26869,
+      "transparence": false,
+      "sujet": {
+        "x": 46.9,
+        "y": 27.8,
+        "l": 9.4,
+        "h": 50,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        52,
+        43
+      ],
+      "cadrage_css": "52% 43%",
+      "zones_calmes": [
+        {
+          "cote": "droite",
+          "score": 0.95,
+          "ton": "sombre",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "haut",
+          "score": 0.89,
+          "ton": "sombre",
+          "recouvre_sujet": 0.02
+        },
+        {
+          "cote": "gauche",
+          "score": 0.86,
+          "ton": "sombre",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "bas",
+          "score": 0.86,
+          "ton": "sombre",
+          "recouvre_sujet": 0.03
+        }
+      ],
+      "qualite": {
+        "nettete": 8.3,
+        "bruit": 0.17,
+        "compression": 1.95,
+        "faible": true,
+        "raisons": [
+          "compression visible"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "5820d292d0f0f0f0",
+      "drapeaux": [
+        "autre",
+        "compression visible",
+        "calme droite/haut/gauche/bas"
+      ]
+    },
+    {
+      "fichier": "sddefault.webp",
+      "nom": "sddefault",
+      "drapeau": "autre",
+      "largeur": 640,
+      "hauteur": 480,
+      "ratio": "4:3",
+      "ratio_valeur": 1.333,
+      "orientation": "paysage",
+      "format": "webp",
+      "poids": 26114,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 100,
+        "h": 100,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        51,
+        38
+      ],
+      "cadrage_css": "51% 38%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.19,
+          "ton": "sombre",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "droite",
+          "score": 0.14,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "gauche",
+          "score": 0.07,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "haut",
+          "score": 0.03,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        }
+      ],
+      "qualite": {
+        "nettete": 38.8,
+        "bruit": 1.03,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "640 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "c0d092956868f440",
+      "drapeaux": [
+        "autre",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "choregraphe-regard-exterieur.jpg",
+      "nom": "choregraphe-regard-exterieur",
+      "drapeau": "lieu",
+      "largeur": 2000,
+      "hauteur": 1335,
+      "ratio": "3:2",
+      "ratio_valeur": 1.498,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 927463,
+      "transparence": false,
+      "sujet": {
+        "x": 18.8,
+        "y": 4.5,
+        "l": 50,
+        "h": 77.3,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        47,
+        39
+      ],
+      "cadrage_css": "47% 39%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.46,
+          "ton": "sombre",
+          "recouvre_sujet": 0.24
+        },
+        {
+          "cote": "droite",
+          "score": 0.4,
+          "ton": "sombre",
+          "recouvre_sujet": 0.17
+        },
+        {
+          "cote": "gauche",
+          "score": 0.25,
+          "ton": "sombre",
+          "recouvre_sujet": 0.41
+        },
+        {
+          "cote": "haut",
+          "score": 0.18,
+          "ton": "sombre",
+          "recouvre_sujet": 0.44
+        }
+      ],
+      "qualite": {
+        "nettete": 90.4,
+        "bruit": 2.91,
+        "compression": 1.07,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "b0d0d2d8e8f4f0e8",
+      "drapeaux": [
+        "lieu"
+      ]
+    },
+    {
+      "fichier": "choregraphe-regard-exterieur-2.jpg",
+      "nom": "choregraphe-regard-exterieur-2",
+      "drapeau": "lieu",
+      "largeur": 2000,
+      "hauteur": 1333,
+      "ratio": "3:2",
+      "ratio_valeur": 1.5,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 148464,
+      "transparence": false,
+      "sujet": {
+        "x": 12.5,
+        "y": 13.6,
+        "l": 71.9,
+        "h": 68.2,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        29,
+        42
+      ],
+      "cadrage_css": "29% 42%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.7,
+          "ton": "sombre",
+          "recouvre_sujet": 0.35
+        },
+        {
+          "cote": "haut",
+          "score": 0.6,
+          "ton": "sombre",
+          "recouvre_sujet": 0.44
+        },
+        {
+          "cote": "droite",
+          "score": 0.58,
+          "ton": "sombre",
+          "recouvre_sujet": 0.42
+        },
+        {
+          "cote": "gauche",
+          "score": 0.46,
+          "ton": "sombre",
+          "recouvre_sujet": 0.47
+        }
+      ],
+      "qualite": {
+        "nettete": 22.1,
+        "bruit": 0.25,
+        "compression": 1.41,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "b84c9c9ccc8cace8",
+      "drapeaux": [
+        "lieu",
+        "calme bas"
+      ]
+    },
+    {
+      "fichier": "titre-1.jpg",
+      "nom": "titre-1",
+      "drapeau": "autre",
+      "largeur": 1455,
+      "hauteur": 2000,
+      "ratio": "0.73",
+      "ratio_valeur": 0.728,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 171885,
+      "transparence": false,
+      "sujet": {
+        "x": 8.3,
+        "y": 34.4,
+        "l": 79.2,
+        "h": 34.4,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        39,
+        50
+      ],
+      "cadrage_css": "39% 50%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.9,
+          "ton": "clair",
+          "recouvre_sujet": 0.01
+        },
+        {
+          "cote": "bas",
+          "score": 0.87,
+          "ton": "clair",
+          "recouvre_sujet": 0.09
+        },
+        {
+          "cote": "droite",
+          "score": 0.61,
+          "ton": "clair",
+          "recouvre_sujet": 0.24
+        },
+        {
+          "cote": "gauche",
+          "score": 0.48,
+          "ton": "clair",
+          "recouvre_sujet": 0.27
+        }
+      ],
+      "qualite": {
+        "nettete": 29.2,
+        "bruit": 0.68,
+        "compression": 0.96,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "11491b3337064114",
+      "drapeaux": [
+        "autre",
+        "calme haut/bas"
+      ]
+    },
+    {
+      "fichier": "titre-1-2.jpg",
+      "nom": "titre-1-2",
+      "drapeau": "autre",
+      "largeur": 1620,
+      "hauteur": 1080,
+      "ratio": "3:2",
+      "ratio_valeur": 1.5,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 52634,
+      "transparence": false,
+      "sujet": {
+        "x": 6.3,
+        "y": 4.5,
+        "l": 62.5,
+        "h": 54.5,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        47,
+        32
+      ],
+      "cadrage_css": "47% 32%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.95,
+          "ton": "sombre",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "droite",
+          "score": 0.69,
+          "ton": "sombre",
+          "recouvre_sujet": 0.12
+        },
+        {
+          "cote": "gauche",
+          "score": 0.55,
+          "ton": "sombre",
+          "recouvre_sujet": 0.46
+        },
+        {
+          "cote": "haut",
+          "score": 0.38,
+          "ton": "sombre",
+          "recouvre_sujet": 0.54
+        }
+      ],
+      "qualite": {
+        "nettete": 4,
+        "bruit": 0.12,
+        "compression": 0.94,
+        "faible": true,
+        "raisons": [
+          "floue"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "e9f1f9b121502040",
+      "drapeaux": [
+        "autre",
+        "floue",
+        "calme bas/droite"
+      ]
+    },
+    {
+      "fichier": "education-artistique-culturelle.jpg",
+      "nom": "education-artistique-culturelle",
+      "drapeau": "autre",
+      "largeur": 657,
+      "hauteur": 438,
+      "ratio": "3:2",
+      "ratio_valeur": 1.5,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 67596,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 100,
+        "h": 95.5,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        50,
+        48
+      ],
+      "cadrage_css": "50% 48%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.87
+        }
+      ],
+      "qualite": {
+        "nettete": 70.5,
+        "bruit": 1.74,
+        "compression": 1.14,
+        "faible": true,
+        "raisons": [
+          "657 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "33ebb89053aba5f0",
+      "drapeaux": [
+        "autre",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "caserne.jpg",
+      "nom": "caserne",
+      "drapeau": "autre",
+      "largeur": 657,
+      "hauteur": 438,
+      "ratio": "3:2",
+      "ratio_valeur": 1.5,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 62942,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 100,
+        "h": 95.5,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        50,
+        50
+      ],
+      "cadrage_css": "50% 50%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.87
+        }
+      ],
+      "qualite": {
+        "nettete": 57.9,
+        "bruit": 1.53,
+        "compression": 1.13,
+        "faible": true,
+        "raisons": [
+          "657 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "b3b2e6e667b6f2d6",
+      "drapeaux": [
+        "autre",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "24-mai-2021-doline.jpg",
+      "nom": "24-mai-2021-doline",
+      "drapeau": "autre",
+      "largeur": 1334,
+      "hauteur": 2000,
+      "ratio": "2:3",
+      "ratio_valeur": 0.667,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 268658,
+      "transparence": false,
+      "sujet": {
+        "x": 31.8,
+        "y": 31.3,
+        "l": 63.6,
+        "h": 68.8,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        70,
+        78
+      ],
+      "cadrage_css": "70% 78%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.86,
+          "ton": "sombre",
+          "recouvre_sujet": 0.07
+        },
+        {
+          "cote": "gauche",
+          "score": 0.8,
+          "ton": "sombre",
+          "recouvre_sujet": 0.14
+        },
+        {
+          "cote": "droite",
+          "score": 0.1,
+          "ton": "moyen",
+          "recouvre_sujet": 0.61
+        },
+        {
+          "cote": "bas",
+          "score": 0.05,
+          "ton": "sombre",
+          "recouvre_sujet": 0.64
+        }
+      ],
+      "qualite": {
+        "nettete": 17.2,
+        "bruit": 0.48,
+        "compression": 0.92,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "ffdf1e1f4f7bf3e6",
+      "drapeaux": [
+        "autre",
+        "calme haut/gauche"
+      ]
+    },
+    {
+      "fichier": "24-mai-2021-doline-2.png",
+      "nom": "24-mai-2021-doline-2",
+      "drapeau": "autre",
+      "largeur": 2000,
+      "hauteur": 1125,
+      "ratio": "16:9",
+      "ratio_valeur": 1.778,
+      "orientation": "paysage",
+      "format": "png",
+      "poids": 5122433,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 100,
+        "h": 100,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        52,
+        53
+      ],
+      "cadrage_css": "52% 53%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        }
+      ],
+      "qualite": {
+        "nettete": 35.5,
+        "bruit": 1.65,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "446c6c6467634165",
+      "drapeaux": [
+        "autre"
+      ]
+    },
+    {
+      "fichier": "24-mai-2021-doline-3.png",
+      "nom": "24-mai-2021-doline-3",
+      "drapeau": "autre",
+      "largeur": 2000,
+      "hauteur": 1125,
+      "ratio": "16:9",
+      "ratio_valeur": 1.778,
+      "orientation": "paysage",
+      "format": "png",
+      "poids": 2860616,
+      "transparence": true,
+      "sujet": {
+        "x": 43.8,
+        "y": 22.2,
+        "l": 18.8,
+        "h": 33.3,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        53,
+        41
+      ],
+      "cadrage_css": "53% 41%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0.85,
+          "ton": "moyen",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "bas",
+          "score": 0.84,
+          "ton": "moyen",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "droite",
+          "score": 0.81,
+          "ton": "sombre",
+          "recouvre_sujet": 0.02
+        },
+        {
+          "cote": "haut",
+          "score": 0.75,
+          "ton": "moyen",
+          "recouvre_sujet": 0.07
+        }
+      ],
+      "qualite": {
+        "nettete": 17.2,
+        "bruit": 1.95,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "d0e4f4d2d8ecf0f8",
+      "drapeaux": [
+        "autre",
+        "calme gauche/bas/droite/haut"
+      ]
+    },
+    {
+      "fichier": "saisons-passees.jpg",
+      "nom": "saisons-passees",
+      "drapeau": "autre",
+      "largeur": 2000,
+      "hauteur": 1635,
+      "ratio": "5:4",
+      "ratio_valeur": 1.223,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 406993,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 11.1,
+        "l": 31.3,
+        "h": 85.2,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        8,
+        47
+      ],
+      "cadrage_css": "8% 47%",
+      "zones_calmes": [
+        {
+          "cote": "droite",
+          "score": 0.82,
+          "ton": "sombre",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "haut",
+          "score": 0.53,
+          "ton": "sombre",
+          "recouvre_sujet": 0.21
+        },
+        {
+          "cote": "bas",
+          "score": 0.37,
+          "ton": "sombre",
+          "recouvre_sujet": 0.28
+        },
+        {
+          "cote": "gauche",
+          "score": 0.08,
+          "ton": "moyen",
+          "recouvre_sujet": 0.67
+        }
+      ],
+      "qualite": {
+        "nettete": 16.5,
+        "bruit": 0.69,
+        "compression": 1.45,
+        "faible": true,
+        "raisons": [
+          "compression visible"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "1007070713250719",
+      "drapeaux": [
+        "autre",
+        "compression visible",
+        "calme droite"
+      ]
+    },
+    {
+      "fichier": "24-mai-2021-doline-4.jpg",
+      "nom": "24-mai-2021-doline-4",
+      "drapeau": "autre",
+      "largeur": 1181,
+      "hauteur": 1771,
+      "ratio": "2:3",
+      "ratio_valeur": 0.667,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 184034,
+      "transparence": false,
+      "sujet": {
+        "x": 27.3,
+        "y": 18.8,
+        "l": 36.4,
+        "h": 56.3,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        49,
+        54
+      ],
+      "cadrage_css": "49% 54%",
+      "zones_calmes": [
+        {
+          "cote": "droite",
+          "score": 0.77,
+          "ton": "sombre",
+          "recouvre_sujet": 0.05
+        },
+        {
+          "cote": "bas",
+          "score": 0.71,
+          "ton": "sombre",
+          "recouvre_sujet": 0.11
+        },
+        {
+          "cote": "gauche",
+          "score": 0.67,
+          "ton": "sombre",
+          "recouvre_sujet": 0.18
+        },
+        {
+          "cote": "haut",
+          "score": 0.67,
+          "ton": "sombre",
+          "recouvre_sujet": 0.17
+        }
+      ],
+      "qualite": {
+        "nettete": 30.4,
+        "bruit": 0.97,
+        "compression": 0.92,
+        "faible": true,
+        "raisons": [
+          "1181 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "6440e0e8e8d0f234",
+      "drapeaux": [
+        "autre",
+        "petite",
+        "calme droite/bas/gauche/haut"
+      ]
+    },
+    {
+      "fichier": "souffle-compagnie-virevol.jpg",
+      "nom": "souffle-compagnie-virevol",
+      "drapeau": "autre",
+      "largeur": 2000,
+      "hauteur": 1333,
+      "ratio": "3:2",
+      "ratio_valeur": 1.5,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 466122,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 90.6,
+        "h": 95.5,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        46,
+        38
+      ],
+      "cadrage_css": "46% 38%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 0.73
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.91
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 0.79
+        }
+      ],
+      "qualite": {
+        "nettete": 30,
+        "bruit": 0.88,
+        "compression": 1.3,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "6e6c34122d1d9510",
+      "drapeaux": [
+        "autre"
+      ]
+    },
+    {
+      "fichier": "souffle-compagnie-virevol-2.jpg",
+      "nom": "souffle-compagnie-virevol-2",
+      "drapeau": "autre",
+      "largeur": 2000,
+      "hauteur": 2000,
+      "ratio": "1:1",
+      "ratio_valeur": 1,
+      "orientation": "carre",
+      "format": "jpeg",
+      "poids": 722241,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 3.1,
+        "l": 90.6,
+        "h": 71.9,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        51,
+        38
+      ],
+      "cadrage_css": "51% 38%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.39,
+          "ton": "sombre",
+          "recouvre_sujet": 0.26
+        },
+        {
+          "cote": "gauche",
+          "score": 0.14,
+          "ton": "sombre",
+          "recouvre_sujet": 0.72
+        },
+        {
+          "cote": "droite",
+          "score": 0.09,
+          "ton": "sombre",
+          "recouvre_sujet": 0.55
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 0.83
+        }
+      ],
+      "qualite": {
+        "nettete": 24,
+        "bruit": 1.3,
+        "compression": 1.27,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "d8daa4542c8cdcfc",
+      "drapeaux": [
+        "autre"
+      ]
+    },
+    {
+      "fichier": "souffle-compagnie-virevol-3.jpg",
+      "nom": "souffle-compagnie-virevol-3",
+      "drapeau": "autre",
+      "largeur": 1771,
+      "hauteur": 996,
+      "ratio": "16:9",
+      "ratio_valeur": 1.778,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 605447,
+      "transparence": false,
+      "sujet": {
+        "x": 18.8,
+        "y": 27.8,
+        "l": 46.9,
+        "h": 55.6,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        38,
+        54
+      ],
+      "cadrage_css": "38% 54%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.83,
+          "ton": "sombre",
+          "recouvre_sujet": 0.1
+        },
+        {
+          "cote": "droite",
+          "score": 0.8,
+          "ton": "sombre",
+          "recouvre_sujet": 0.08
+        },
+        {
+          "cote": "bas",
+          "score": 0.55,
+          "ton": "sombre",
+          "recouvre_sujet": 0.25
+        },
+        {
+          "cote": "gauche",
+          "score": 0.44,
+          "ton": "sombre",
+          "recouvre_sujet": 0.29
+        }
+      ],
+      "qualite": {
+        "nettete": 12.8,
+        "bruit": 1.33,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "40e068646082ca70",
+      "drapeaux": [
+        "autre",
+        "calme haut/droite"
+      ]
+    },
+    {
+      "fichier": "souffle-compagnie-virevol-4.jpg",
+      "nom": "souffle-compagnie-virevol-4",
+      "drapeau": "autre",
+      "largeur": 943,
+      "hauteur": 944,
+      "ratio": "1:1",
+      "ratio_valeur": 0.999,
+      "orientation": "carre",
+      "format": "jpeg",
+      "poids": 560235,
+      "transparence": false,
+      "sujet": {
+        "x": 6.3,
+        "y": 0,
+        "l": 93.8,
+        "h": 96.9,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        54,
+        41
+      ],
+      "cadrage_css": "54% 41%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.04,
+          "ton": "sombre",
+          "recouvre_sujet": 0.85
+        },
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.82
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.97
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 0.94
+        }
+      ],
+      "qualite": {
+        "nettete": 48.6,
+        "bruit": 2.7,
+        "compression": 0.98,
+        "faible": true,
+        "raisons": [
+          "943 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "9eb6a6cc9b337191",
+      "drapeaux": [
+        "autre",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "doline-compagnie-virevol.png",
+      "nom": "doline-compagnie-virevol",
+      "drapeau": "autre",
+      "largeur": 2000,
+      "hauteur": 1125,
+      "ratio": "16:9",
+      "ratio_valeur": 1.778,
+      "orientation": "paysage",
+      "format": "png",
+      "poids": 1842146,
+      "transparence": true,
+      "sujet": {
+        "x": 15.6,
+        "y": 22.2,
+        "l": 65.6,
+        "h": 66.7,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        52,
+        51
+      ],
+      "cadrage_css": "52% 51%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.77,
+          "ton": "sombre",
+          "recouvre_sujet": 0.24
+        },
+        {
+          "cote": "gauche",
+          "score": 0.59,
+          "ton": "sombre",
+          "recouvre_sujet": 0.41
+        },
+        {
+          "cote": "droite",
+          "score": 0.58,
+          "ton": "sombre",
+          "recouvre_sujet": 0.35
+        },
+        {
+          "cote": "bas",
+          "score": 0.51,
+          "ton": "sombre",
+          "recouvre_sujet": 0.45
+        }
+      ],
+      "qualite": {
+        "nettete": 20.5,
+        "bruit": 0.35,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "002030b0f0d4b28e",
+      "drapeaux": [
+        "autre",
+        "calme haut"
+      ]
+    },
+    {
+      "fichier": "doline-compagnie-virevol-2.png",
+      "nom": "doline-compagnie-virevol-2",
+      "drapeau": "autre",
+      "largeur": 2000,
+      "hauteur": 1125,
+      "ratio": "16:9",
+      "ratio_valeur": 1.778,
+      "orientation": "paysage",
+      "format": "png",
+      "poids": 1112568,
+      "transparence": false,
+      "sujet": {
+        "x": 25,
+        "y": 16.7,
+        "l": 56.3,
+        "h": 55.6,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        52,
+        35
+      ],
+      "cadrage_css": "52% 35%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.83,
+          "ton": "sombre",
+          "recouvre_sujet": 0.12
+        },
+        {
+          "cote": "gauche",
+          "score": 0.8,
+          "ton": "sombre",
+          "recouvre_sujet": 0.21
+        },
+        {
+          "cote": "droite",
+          "score": 0.75,
+          "ton": "sombre",
+          "recouvre_sujet": 0.3
+        },
+        {
+          "cote": "haut",
+          "score": 0.7,
+          "ton": "sombre",
+          "recouvre_sujet": 0.29
+        }
+      ],
+      "qualite": {
+        "nettete": 9.8,
+        "bruit": 0.24,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "04393132d0d4b080",
+      "drapeaux": [
+        "autre",
+        "calme bas/gauche/droite/haut"
+      ]
+    },
+    {
+      "fichier": "doline-compagnie-virevol-3.png",
+      "nom": "doline-compagnie-virevol-3",
+      "drapeau": "autre",
+      "largeur": 2000,
+      "hauteur": 1125,
+      "ratio": "16:9",
+      "ratio_valeur": 1.778,
+      "orientation": "paysage",
+      "format": "png",
+      "poids": 1322615,
+      "transparence": false,
+      "sujet": {
+        "x": 28.1,
+        "y": 33.3,
+        "l": 46.9,
+        "h": 44.4,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        56,
+        56
+      ],
+      "cadrage_css": "56% 56%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.94,
+          "ton": "sombre",
+          "recouvre_sujet": 0.02
+        },
+        {
+          "cote": "gauche",
+          "score": 0.83,
+          "ton": "sombre",
+          "recouvre_sujet": 0.13
+        },
+        {
+          "cote": "bas",
+          "score": 0.8,
+          "ton": "sombre",
+          "recouvre_sujet": 0.17
+        },
+        {
+          "cote": "droite",
+          "score": 0.79,
+          "ton": "sombre",
+          "recouvre_sujet": 0.17
+        }
+      ],
+      "qualite": {
+        "nettete": 21.8,
+        "bruit": 0.48,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "0030307858707004",
+      "drapeaux": [
+        "autre",
+        "calme haut/gauche/bas/droite"
+      ]
+    },
+    {
+      "fichier": "doline-compagnie-virevol-4.png",
+      "nom": "doline-compagnie-virevol-4",
+      "drapeau": "autre",
+      "largeur": 2000,
+      "hauteur": 1125,
+      "ratio": "16:9",
+      "ratio_valeur": 1.778,
+      "orientation": "paysage",
+      "format": "png",
+      "poids": 1581415,
+      "transparence": false,
+      "sujet": {
+        "x": 34.4,
+        "y": 16.7,
+        "l": 31.3,
+        "h": 44.4,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        51,
+        40
+      ],
+      "cadrage_css": "51% 40%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.89,
+          "ton": "sombre",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "gauche",
+          "score": 0.76,
+          "ton": "sombre",
+          "recouvre_sujet": 0.06
+        },
+        {
+          "cote": "droite",
+          "score": 0.74,
+          "ton": "sombre",
+          "recouvre_sujet": 0.06
+        },
+        {
+          "cote": "haut",
+          "score": 0.61,
+          "ton": "sombre",
+          "recouvre_sujet": 0.16
+        }
+      ],
+      "qualite": {
+        "nettete": 20.8,
+        "bruit": 0.52,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "00707171f0f0b000",
+      "drapeaux": [
+        "autre",
+        "calme bas/gauche/droite"
+      ]
+    },
+    {
+      "fichier": "doline-compagnie-virevol-5.png",
+      "nom": "doline-compagnie-virevol-5",
+      "drapeau": "autre",
+      "largeur": 2000,
+      "hauteur": 1125,
+      "ratio": "16:9",
+      "ratio_valeur": 1.778,
+      "orientation": "paysage",
+      "format": "png",
+      "poids": 1368631,
+      "transparence": false,
+      "sujet": {
+        "x": 40.6,
+        "y": 11.1,
+        "l": 28.1,
+        "h": 50,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        56,
+        31
+      ],
+      "cadrage_css": "56% 31%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.93,
+          "ton": "sombre",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "gauche",
+          "score": 0.9,
+          "ton": "sombre",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "droite",
+          "score": 0.76,
+          "ton": "sombre",
+          "recouvre_sujet": 0.11
+        },
+        {
+          "cote": "haut",
+          "score": 0.65,
+          "ton": "sombre",
+          "recouvre_sujet": 0.19
+        }
+      ],
+      "qualite": {
+        "nettete": 17.3,
+        "bruit": 0.44,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "1939b9f9d0b0b800",
+      "drapeaux": [
+        "autre",
+        "calme bas/gauche/droite/haut"
+      ]
+    },
+    {
+      "fichier": "echo-chute-compagnie-virevol.jpg",
+      "nom": "echo-chute-compagnie-virevol",
+      "drapeau": "autre",
+      "largeur": 2000,
+      "hauteur": 1125,
+      "ratio": "16:9",
+      "ratio_valeur": 1.778,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 598569,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 5.6,
+        "l": 100,
+        "h": 94.4,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        50,
+        59
+      ],
+      "cadrage_css": "50% 59%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.04,
+          "ton": "sombre",
+          "recouvre_sujet": 0.84
+        },
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.94
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.94
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 1
+        }
+      ],
+      "qualite": {
+        "nettete": 45.1,
+        "bruit": 1.24,
+        "compression": 1.16,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "e88aab4cbae4c424",
+      "drapeaux": [
+        "autre"
+      ]
+    },
+    {
+      "fichier": "echo-chute-compagnie-virevol-2.png",
+      "nom": "echo-chute-compagnie-virevol-2",
+      "drapeau": "autre",
+      "largeur": 2000,
+      "hauteur": 1125,
+      "ratio": "16:9",
+      "ratio_valeur": 1.778,
+      "orientation": "paysage",
+      "format": "png",
+      "poids": 3535037,
+      "transparence": true,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 96.9,
+        "h": 94.4,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        44,
+        36
+      ],
+      "cadrage_css": "44% 36%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.41,
+          "ton": "moyen",
+          "recouvre_sujet": 0.81
+        },
+        {
+          "cote": "gauche",
+          "score": 0.31,
+          "ton": "moyen",
+          "recouvre_sujet": 0.94
+        },
+        {
+          "cote": "droite",
+          "score": 0.23,
+          "ton": "moyen",
+          "recouvre_sujet": 0.87
+        },
+        {
+          "cote": "haut",
+          "score": 0.23,
+          "ton": "moyen",
+          "recouvre_sujet": 0.97
+        }
+      ],
+      "qualite": {
+        "nettete": 15.6,
+        "bruit": 0.74,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "a04197b6ccc466c4",
+      "drapeaux": [
+        "autre"
+      ]
+    },
+    {
+      "fichier": "echo-chute-compagnie-virevol-3.png",
+      "nom": "echo-chute-compagnie-virevol-3",
+      "drapeau": "autre",
+      "largeur": 2000,
+      "hauteur": 1125,
+      "ratio": "16:9",
+      "ratio_valeur": 1.778,
+      "orientation": "paysage",
+      "format": "png",
+      "poids": 3690426,
+      "transparence": true,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 100,
+        "h": 72.2,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        47,
+        29
+      ],
+      "cadrage_css": "47% 29%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.71,
+          "ton": "moyen",
+          "recouvre_sujet": 0.21
+        },
+        {
+          "cote": "droite",
+          "score": 0.37,
+          "ton": "moyen",
+          "recouvre_sujet": 0.72
+        },
+        {
+          "cote": "gauche",
+          "score": 0.27,
+          "ton": "moyen",
+          "recouvre_sujet": 0.72
+        },
+        {
+          "cote": "haut",
+          "score": 0.11,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        }
+      ],
+      "qualite": {
+        "nettete": 20.7,
+        "bruit": 0.8,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "e0da93957868b8d4",
+      "drapeaux": [
+        "autre",
+        "calme bas"
+      ]
+    },
+    {
+      "fichier": "echo-chute-compagnie-virevol-4.jpg",
+      "nom": "echo-chute-compagnie-virevol-4",
+      "drapeau": "autre",
+      "largeur": 2000,
+      "hauteur": 1125,
+      "ratio": "16:9",
+      "ratio_valeur": 1.778,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 601657,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 100,
+        "h": 100,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        53,
+        56
+      ],
+      "cadrage_css": "53% 56%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.21,
+          "ton": "sombre",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        }
+      ],
+      "qualite": {
+        "nettete": 47,
+        "bruit": 1.53,
+        "compression": 1.17,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "788ce8ad8dcc4cbb",
+      "drapeaux": [
+        "autre"
+      ]
+    },
+    {
+      "fichier": "nocturnes-compagnie-virevol.jpg",
+      "nom": "nocturnes-compagnie-virevol",
+      "drapeau": "autre",
+      "largeur": 1125,
+      "hauteur": 2000,
+      "ratio": "9:16",
+      "ratio_valeur": 0.563,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 113328,
+      "transparence": false,
+      "sujet": {
+        "x": 22.2,
+        "y": 12.5,
+        "l": 44.4,
+        "h": 68.8,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        51,
+        52
+      ],
+      "cadrage_css": "51% 52%",
+      "zones_calmes": [
+        {
+          "cote": "droite",
+          "score": 0.81,
+          "ton": "sombre",
+          "recouvre_sujet": 0.11
+        },
+        {
+          "cote": "bas",
+          "score": 0.71,
+          "ton": "sombre",
+          "recouvre_sujet": 0.21
+        },
+        {
+          "cote": "haut",
+          "score": 0.69,
+          "ton": "sombre",
+          "recouvre_sujet": 0.29
+        },
+        {
+          "cote": "gauche",
+          "score": 0.67,
+          "ton": "sombre",
+          "recouvre_sujet": 0.31
+        }
+      ],
+      "qualite": {
+        "nettete": 12,
+        "bruit": 0.25,
+        "compression": 0.98,
+        "faible": true,
+        "raisons": [
+          "1125 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "10b03238d8d84c80",
+      "drapeaux": [
+        "autre",
+        "petite",
+        "calme droite/bas/haut/gauche"
+      ]
+    },
+    {
+      "fichier": "nocturnes-compagnie-virevol-2.jpg",
+      "nom": "nocturnes-compagnie-virevol-2",
+      "drapeau": "autre",
+      "largeur": 1334,
+      "hauteur": 2000,
+      "ratio": "2:3",
+      "ratio_valeur": 0.667,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 136688,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 9.4,
+        "l": 95.5,
+        "h": 56.3,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        46,
+        37
+      ],
+      "cadrage_css": "46% 37%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.8,
+          "ton": "sombre",
+          "recouvre_sujet": 0.02
+        },
+        {
+          "cote": "droite",
+          "score": 0.5,
+          "ton": "sombre",
+          "recouvre_sujet": 0.5
+        },
+        {
+          "cote": "gauche",
+          "score": 0.36,
+          "ton": "sombre",
+          "recouvre_sujet": 0.56
+        },
+        {
+          "cote": "haut",
+          "score": 0.32,
+          "ton": "sombre",
+          "recouvre_sujet": 0.7
+        }
+      ],
+      "qualite": {
+        "nettete": 35,
+        "bruit": 0.27,
+        "compression": 0.83,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "4969496968632b49",
+      "drapeaux": [
+        "autre",
+        "calme bas"
+      ]
+    },
+    {
+      "fichier": "nocturnes-compagnie-virevol-3.jpg",
+      "nom": "nocturnes-compagnie-virevol-3",
+      "drapeau": "autre",
+      "largeur": 2000,
+      "hauteur": 1333,
+      "ratio": "3:2",
+      "ratio_valeur": 1.5,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 262835,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 13.6,
+        "l": 96.9,
+        "h": 81.8,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        44,
+        58
+      ],
+      "cadrage_css": "44% 58%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.57,
+          "ton": "sombre",
+          "recouvre_sujet": 0.59
+        },
+        {
+          "cote": "droite",
+          "score": 0.48,
+          "ton": "sombre",
+          "recouvre_sujet": 0.75
+        },
+        {
+          "cote": "gauche",
+          "score": 0.31,
+          "ton": "sombre",
+          "recouvre_sujet": 0.82
+        },
+        {
+          "cote": "bas",
+          "score": 0.28,
+          "ton": "sombre",
+          "recouvre_sujet": 0.84
+        }
+      ],
+      "qualite": {
+        "nettete": 26.2,
+        "bruit": 0.63,
+        "compression": 1.28,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "49c1d4d0d3b6ae2f",
+      "drapeaux": [
+        "autre"
+      ]
+    },
+    {
+      "fichier": "nocturnes-compagnie-virevol-4.jpg",
+      "nom": "nocturnes-compagnie-virevol-4",
+      "drapeau": "autre",
+      "largeur": 2000,
+      "hauteur": 1333,
+      "ratio": "3:2",
+      "ratio_valeur": 1.5,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 136604,
+      "transparence": false,
+      "sujet": {
+        "x": 3.1,
+        "y": 18.2,
+        "l": 78.1,
+        "h": 77.3,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        46,
+        57
+      ],
+      "cadrage_css": "46% 57%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.65,
+          "ton": "sombre",
+          "recouvre_sujet": 0.37
+        },
+        {
+          "cote": "droite",
+          "score": 0.5,
+          "ton": "sombre",
+          "recouvre_sujet": 0.41
+        },
+        {
+          "cote": "bas",
+          "score": 0.36,
+          "ton": "sombre",
+          "recouvre_sujet": 0.68
+        },
+        {
+          "cote": "gauche",
+          "score": 0.25,
+          "ton": "sombre",
+          "recouvre_sujet": 0.71
+        }
+      ],
+      "qualite": {
+        "nettete": 15.6,
+        "bruit": 0.18,
+        "compression": 1.4,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "028686cd8c8c8c9c",
+      "drapeaux": [
+        "autre",
+        "calme haut"
+      ]
+    },
+    {
+      "fichier": "nocturnes-compagnie-virevol-5.jpg",
+      "nom": "nocturnes-compagnie-virevol-5",
+      "drapeau": "autre",
+      "largeur": 2000,
+      "hauteur": 1333,
+      "ratio": "3:2",
+      "ratio_valeur": 1.5,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 132419,
+      "transparence": false,
+      "sujet": {
+        "x": 28.1,
+        "y": 18.2,
+        "l": 56.3,
+        "h": 68.2,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        49,
+        58
+      ],
+      "cadrage_css": "49% 58%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0.61,
+          "ton": "sombre",
+          "recouvre_sujet": 0.2
+        },
+        {
+          "cote": "droite",
+          "score": 0.54,
+          "ton": "sombre",
+          "recouvre_sujet": 0.42
+        },
+        {
+          "cote": "haut",
+          "score": 0.54,
+          "ton": "sombre",
+          "recouvre_sujet": 0.27
+        },
+        {
+          "cote": "bas",
+          "score": 0.54,
+          "ton": "sombre",
+          "recouvre_sujet": 0.34
+        }
+      ],
+      "qualite": {
+        "nettete": 12.4,
+        "bruit": 0.3,
+        "compression": 1.42,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "8c707a4a4a59585a",
+      "drapeaux": [
+        "autre"
+      ]
+    },
+    {
+      "fichier": "regard-exterieur-etienne-gaillochet.jpg",
+      "nom": "regard-exterieur-etienne-gaillochet",
+      "drapeau": "lieu",
+      "largeur": 1333,
+      "hauteur": 2000,
+      "ratio": "2:3",
+      "ratio_valeur": 0.667,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 553477,
+      "transparence": false,
+      "sujet": {
+        "x": 50,
+        "y": 0,
+        "l": 45.5,
+        "h": 71.9,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        83,
+        37
+      ],
+      "cadrage_css": "83% 37%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0.66,
+          "ton": "sombre",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "bas",
+          "score": 0.57,
+          "ton": "sombre",
+          "recouvre_sujet": 0.09
+        },
+        {
+          "cote": "haut",
+          "score": 0.46,
+          "ton": "sombre",
+          "recouvre_sujet": 0.46
+        },
+        {
+          "cote": "droite",
+          "score": 0.28,
+          "ton": "sombre",
+          "recouvre_sujet": 0.64
+        }
+      ],
+      "qualite": {
+        "nettete": 31.3,
+        "bruit": 2.01,
+        "compression": 0.93,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "bffcd8d8db993da7",
+      "drapeaux": [
+        "lieu",
+        "calme gauche"
+      ]
+    },
+    {
+      "fichier": "regard-exterieur-etienne-gaillochet-2.jpg",
+      "nom": "regard-exterieur-etienne-gaillochet-2",
+      "drapeau": "lieu",
+      "largeur": 2000,
+      "hauteur": 1502,
+      "ratio": "4:3",
+      "ratio_valeur": 1.332,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 395337,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 100,
+        "h": 100,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        46,
+        49
+      ],
+      "cadrage_css": "46% 49%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        }
+      ],
+      "qualite": {
+        "nettete": 19.8,
+        "bruit": 0.6,
+        "compression": 1.34,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "306476ca1967dbc9",
+      "drapeaux": [
+        "lieu"
+      ]
+    },
+    {
+      "fichier": "regard-exterieur-etienne-gaillochet-3.jpg",
+      "nom": "regard-exterieur-etienne-gaillochet-3",
+      "drapeau": "lieu",
+      "largeur": 1000,
+      "hauteur": 1500,
+      "ratio": "2:3",
+      "ratio_valeur": 0.667,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 173220,
+      "transparence": false,
+      "sujet": {
+        "x": 13.6,
+        "y": 28.1,
+        "l": 81.8,
+        "h": 53.1,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        51,
+        51
+      ],
+      "cadrage_css": "51% 51%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.61,
+          "ton": "sombre",
+          "recouvre_sujet": 0.16
+        },
+        {
+          "cote": "gauche",
+          "score": 0.53,
+          "ton": "sombre",
+          "recouvre_sujet": 0.35
+        },
+        {
+          "cote": "bas",
+          "score": 0.41,
+          "ton": "sombre",
+          "recouvre_sujet": 0.38
+        },
+        {
+          "cote": "droite",
+          "score": 0.4,
+          "ton": "sombre",
+          "recouvre_sujet": 0.47
+        }
+      ],
+      "qualite": {
+        "nettete": 28.6,
+        "bruit": 1.03,
+        "compression": 1.45,
+        "faible": true,
+        "raisons": [
+          "1000 px de large",
+          "compression visible"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "bcf5e5f33361f7ff",
+      "drapeaux": [
+        "lieu",
+        "petite",
+        "compression visible"
+      ]
+    },
+    {
+      "fichier": "regard-exterieur-etienne-gaillochet-4.jpg",
+      "nom": "regard-exterieur-etienne-gaillochet-4",
+      "drapeau": "lieu",
+      "largeur": 1080,
+      "hauteur": 1054,
+      "ratio": "1:1",
+      "ratio_valeur": 1.025,
+      "orientation": "carre",
+      "format": "jpeg",
+      "poids": 28753,
+      "transparence": false,
+      "sujet": {
+        "x": 3.1,
+        "y": 31.3,
+        "l": 78.1,
+        "h": 65.6,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        21,
+        63
+      ],
+      "cadrage_css": "21% 63%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.89,
+          "ton": "clair",
+          "recouvre_sujet": 0.08
+        },
+        {
+          "cote": "droite",
+          "score": 0.71,
+          "ton": "clair",
+          "recouvre_sujet": 0.35
+        },
+        {
+          "cote": "bas",
+          "score": 0.34,
+          "ton": "moyen",
+          "recouvre_sujet": 0.71
+        },
+        {
+          "cote": "gauche",
+          "score": 0.27,
+          "ton": "moyen",
+          "recouvre_sujet": 0.61
+        }
+      ],
+      "qualite": {
+        "nettete": 8.9,
+        "bruit": 0.1,
+        "compression": 0.96,
+        "faible": true,
+        "raisons": [
+          "1080 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "17ac4c6069646949",
+      "drapeaux": [
+        "lieu",
+        "petite",
+        "calme haut/droite"
+      ]
+    },
+    {
+      "fichier": "regard-exterieur-etienne-gaillochet-5.jpg",
+      "nom": "regard-exterieur-etienne-gaillochet-5",
+      "drapeau": "lieu",
+      "largeur": 810,
+      "hauteur": 1080,
+      "ratio": "3:4",
+      "ratio_valeur": 0.75,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 61502,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 9.4,
+        "l": 100,
+        "h": 90.6,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        56,
+        65
+      ],
+      "cadrage_css": "56% 65%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.34,
+          "ton": "clair",
+          "recouvre_sujet": 0.73
+        },
+        {
+          "cote": "gauche",
+          "score": 0.31,
+          "ton": "clair",
+          "recouvre_sujet": 0.91
+        },
+        {
+          "cote": "bas",
+          "score": 0.07,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.91
+        }
+      ],
+      "qualite": {
+        "nettete": 11.1,
+        "bruit": 0.38,
+        "compression": 1.37,
+        "faible": true,
+        "raisons": [
+          "810 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "3091a3434b490898",
+      "drapeaux": [
+        "lieu",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "nocturnes.jpg",
+      "nom": "nocturnes",
+      "drapeau": "autre",
+      "largeur": 2000,
+      "hauteur": 1333,
+      "ratio": "3:2",
+      "ratio_valeur": 1.5,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 153539,
+      "transparence": false,
+      "sujet": {
+        "x": 15.6,
+        "y": 18.2,
+        "l": 59.4,
+        "h": 72.7,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        41,
+        45
+      ],
+      "cadrage_css": "41% 45%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.66,
+          "ton": "sombre",
+          "recouvre_sujet": 0.29
+        },
+        {
+          "cote": "droite",
+          "score": 0.63,
+          "ton": "sombre",
+          "recouvre_sujet": 0.27
+        },
+        {
+          "cote": "bas",
+          "score": 0.5,
+          "ton": "sombre",
+          "recouvre_sujet": 0.44
+        },
+        {
+          "cote": "gauche",
+          "score": 0.46,
+          "ton": "sombre",
+          "recouvre_sujet": 0.44
+        }
+      ],
+      "qualite": {
+        "nettete": 13,
+        "bruit": 0.46,
+        "compression": 1.28,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "9836e5ccc6ac3072",
+      "drapeaux": [
+        "autre",
+        "calme haut"
+      ]
+    },
+    {
+      "fichier": "doline.png",
+      "nom": "doline",
+      "drapeau": "autre",
+      "largeur": 2000,
+      "hauteur": 1125,
+      "ratio": "16:9",
+      "ratio_valeur": 1.778,
+      "orientation": "paysage",
+      "format": "png",
+      "poids": 1464876,
+      "transparence": false,
+      "sujet": {
+        "x": 28.1,
+        "y": 22.2,
+        "l": 40.6,
+        "h": 55.6,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        53,
+        46
+      ],
+      "cadrage_css": "53% 46%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.82,
+          "ton": "sombre",
+          "recouvre_sujet": 0.15
+        },
+        {
+          "cote": "gauche",
+          "score": 0.81,
+          "ton": "sombre",
+          "recouvre_sujet": 0.17
+        },
+        {
+          "cote": "droite",
+          "score": 0.78,
+          "ton": "sombre",
+          "recouvre_sujet": 0.12
+        },
+        {
+          "cote": "bas",
+          "score": 0.75,
+          "ton": "sombre",
+          "recouvre_sujet": 0.15
+        }
+      ],
+      "qualite": {
+        "nettete": 15.5,
+        "bruit": 0.41,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "003030b1f0d0f04c",
+      "drapeaux": [
+        "autre",
+        "calme haut/gauche/droite/bas"
+      ]
+    },
+    {
+      "fichier": "co-creation-echo-chute.png",
+      "nom": "co-creation-echo-chute",
+      "drapeau": "autre",
+      "largeur": 2000,
+      "hauteur": 1125,
+      "ratio": "16:9",
+      "ratio_valeur": 1.778,
+      "orientation": "paysage",
+      "format": "png",
+      "poids": 3904122,
+      "transparence": true,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 100,
+        "h": 88.9,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        48,
+        33
+      ],
+      "cadrage_css": "48% 33%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.4,
+          "ton": "moyen",
+          "recouvre_sujet": 0.68
+        },
+        {
+          "cote": "droite",
+          "score": 0.16,
+          "ton": "moyen",
+          "recouvre_sujet": 0.89
+        },
+        {
+          "cote": "gauche",
+          "score": 0.02,
+          "ton": "sombre",
+          "recouvre_sujet": 0.89
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        }
+      ],
+      "qualite": {
+        "nettete": 23.3,
+        "bruit": 0.78,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "da9e8c98cd703032",
+      "drapeaux": [
+        "autre"
+      ]
+    },
+    {
+      "fichier": "creations.jpg",
+      "nom": "creations",
+      "drapeau": "autre",
+      "largeur": 2000,
+      "hauteur": 1502,
+      "ratio": "4:3",
+      "ratio_valeur": 1.332,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 301005,
+      "transparence": false,
+      "sujet": {
+        "x": 3.1,
+        "y": 0,
+        "l": 96.9,
+        "h": 91.7,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        51,
+        41
+      ],
+      "cadrage_css": "51% 41%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.28,
+          "ton": "clair",
+          "recouvre_sujet": 0.74
+        },
+        {
+          "cote": "gauche",
+          "score": 0.08,
+          "ton": "clair",
+          "recouvre_sujet": 0.85
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 0.92
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.97
+        }
+      ],
+      "qualite": {
+        "nettete": 12.9,
+        "bruit": 0.54,
+        "compression": 1.3,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "f758531e9c0e0901",
+      "drapeaux": [
+        "autre"
+      ]
+    },
+    {
+      "fichier": "souffle.jpg",
+      "nom": "souffle",
+      "drapeau": "autre",
+      "largeur": 1440,
+      "hauteur": 960,
+      "ratio": "3:2",
+      "ratio_valeur": 1.5,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 224711,
+      "transparence": false,
+      "sujet": {
+        "x": 3.1,
+        "y": 0,
+        "l": 96.9,
+        "h": 95.5,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        41,
+        53
+      ],
+      "cadrage_css": "41% 53%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 0.88
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 0.97
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.84
+        }
+      ],
+      "qualite": {
+        "nettete": 82.1,
+        "bruit": 1.12,
+        "compression": 1.15,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "33f9c9d9a9632b81",
+      "drapeaux": [
+        "autre"
+      ]
+    },
+    {
+      "fichier": "audrey-allafort.jpg",
+      "nom": "audrey-allafort",
+      "drapeau": "portrait",
+      "largeur": 2000,
+      "hauteur": 1125,
+      "ratio": "16:9",
+      "ratio_valeur": 1.778,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 97347,
+      "transparence": false,
+      "sujet": {
+        "x": 15.6,
+        "y": 22.2,
+        "l": 59.4,
+        "h": 77.8,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        50,
+        64
+      ],
+      "cadrage_css": "50% 64%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.83,
+          "ton": "sombre",
+          "recouvre_sujet": 0.22
+        },
+        {
+          "cote": "droite",
+          "score": 0.7,
+          "ton": "sombre",
+          "recouvre_sujet": 0.29
+        },
+        {
+          "cote": "gauche",
+          "score": 0.6,
+          "ton": "sombre",
+          "recouvre_sujet": 0.47
+        },
+        {
+          "cote": "bas",
+          "score": 0.43,
+          "ton": "sombre",
+          "recouvre_sujet": 0.59
+        }
+      ],
+      "qualite": {
+        "nettete": 9.3,
+        "bruit": 0.22,
+        "compression": 1.3,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "20305868e1e1b0f0",
+      "drapeaux": [
+        "portrait",
+        "calme haut/droite"
+      ]
+    },
+    {
+      "fichier": "olivier-duperron.jpg",
+      "nom": "olivier-duperron",
+      "drapeau": "portrait",
+      "largeur": 1340,
+      "hauteur": 2000,
+      "ratio": "2:3",
+      "ratio_valeur": 0.67,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 275995,
+      "transparence": false,
+      "sujet": {
+        "x": 9.1,
+        "y": 21.9,
+        "l": 68.2,
+        "h": 65.6,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        49,
+        57
+      ],
+      "cadrage_css": "49% 57%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.5,
+          "ton": "sombre",
+          "recouvre_sujet": 0.26
+        },
+        {
+          "cote": "droite",
+          "score": 0.37,
+          "ton": "sombre",
+          "recouvre_sujet": 0.28
+        },
+        {
+          "cote": "gauche",
+          "score": 0.25,
+          "ton": "sombre",
+          "recouvre_sujet": 0.51
+        },
+        {
+          "cote": "bas",
+          "score": 0.13,
+          "ton": "sombre",
+          "recouvre_sujet": 0.44
+        }
+      ],
+      "qualite": {
+        "nettete": 30.5,
+        "bruit": 0.96,
+        "compression": 0.97,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "657131d1c4d6d475",
+      "drapeaux": [
+        "portrait"
+      ]
+    },
+    {
+      "fichier": "dimitri-sourzac.jpg",
+      "nom": "dimitri-sourzac",
+      "drapeau": "portrait",
+      "largeur": 1600,
+      "hauteur": 1600,
+      "ratio": "1:1",
+      "ratio_valeur": 1,
+      "orientation": "carre",
+      "format": "jpeg",
+      "poids": 608530,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 100,
+        "h": 96.9,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        50,
+        42
+      ],
+      "cadrage_css": "50% 42%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.97
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 0.97
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 0.91
+        }
+      ],
+      "qualite": {
+        "nettete": 47.1,
+        "bruit": 1.69,
+        "compression": 1.11,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "788c14d3a2921345",
+      "drapeaux": [
+        "portrait"
+      ]
+    },
+    {
+      "fichier": "antoine-petit.jpg",
+      "nom": "antoine-petit",
+      "drapeau": "portrait",
+      "largeur": 1944,
+      "hauteur": 1296,
+      "ratio": "3:2",
+      "ratio_valeur": 1.5,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 239883,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 4.5,
+        "l": 96.9,
+        "h": 90.9,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        52,
+        50
+      ],
+      "cadrage_css": "52% 50%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.31,
+          "ton": "moyen",
+          "recouvre_sujet": 0.84
+        },
+        {
+          "cote": "haut",
+          "score": 0.3,
+          "ton": "sombre",
+          "recouvre_sujet": 0.84
+        },
+        {
+          "cote": "gauche",
+          "score": 0.24,
+          "ton": "sombre",
+          "recouvre_sujet": 0.91
+        },
+        {
+          "cote": "droite",
+          "score": 0.21,
+          "ton": "sombre",
+          "recouvre_sujet": 0.84
+        }
+      ],
+      "qualite": {
+        "nettete": 8.4,
+        "bruit": 0.41,
+        "compression": 0.84,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "b1e069f9aa717163",
+      "drapeaux": [
+        "portrait"
+      ]
+    },
+    {
+      "fichier": "mathilde-rader.jpg",
+      "nom": "mathilde-rader",
+      "drapeau": "portrait",
+      "largeur": 1920,
+      "hauteur": 1245,
+      "ratio": "1.54",
+      "ratio_valeur": 1.542,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 106027,
+      "transparence": false,
+      "sujet": {
+        "x": 43.8,
+        "y": 19,
+        "l": 18.8,
+        "h": 42.9,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        53,
+        40
+      ],
+      "cadrage_css": "53% 40%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0.93,
+          "ton": "sombre",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "droite",
+          "score": 0.8,
+          "ton": "sombre",
+          "recouvre_sujet": 0.03
+        },
+        {
+          "cote": "bas",
+          "score": 0.78,
+          "ton": "sombre",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "haut",
+          "score": 0.73,
+          "ton": "sombre",
+          "recouvre_sujet": 0.09
+        }
+      ],
+      "qualite": {
+        "nettete": 12.7,
+        "bruit": 0.46,
+        "compression": 1.5,
+        "faible": true,
+        "raisons": [
+          "compression visible"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "5332b2b2327cf0d0",
+      "drapeaux": [
+        "portrait",
+        "compression visible",
+        "calme gauche/droite/bas/haut"
+      ]
+    },
+    {
+      "fichier": "juliette-pascaud.jpg",
+      "nom": "juliette-pascaud",
+      "drapeau": "portrait",
+      "largeur": 768,
+      "hauteur": 1024,
+      "ratio": "3:4",
+      "ratio_valeur": 0.75,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 61070,
+      "transparence": false,
+      "sujet": {
+        "x": 25,
+        "y": 0,
+        "l": 70.8,
+        "h": 96.9,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        59,
+        26
+      ],
+      "cadrage_css": "59% 26%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.59,
+          "ton": "sombre",
+          "recouvre_sujet": 0.65
+        },
+        {
+          "cote": "gauche",
+          "score": 0.57,
+          "ton": "sombre",
+          "recouvre_sujet": 0.36
+        },
+        {
+          "cote": "haut",
+          "score": 0.4,
+          "ton": "moyen",
+          "recouvre_sujet": 0.71
+        },
+        {
+          "cote": "droite",
+          "score": 0.28,
+          "ton": "moyen",
+          "recouvre_sujet": 0.87
+        }
+      ],
+      "qualite": {
+        "nettete": 12.5,
+        "bruit": 0.58,
+        "compression": 1.8,
+        "faible": true,
+        "raisons": [
+          "768 px de large",
+          "compression visible"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "f8f4f6f5a6e66767",
+      "drapeaux": [
+        "portrait",
+        "petite",
+        "compression visible"
+      ]
+    },
+    {
+      "fichier": "olivier-duperron-rogne.jpg",
+      "nom": "olivier-duperron-rogne",
+      "drapeau": null,
+      "largeur": 1322,
+      "hauteur": 2000,
+      "ratio": "2:3",
+      "ratio_valeur": 0.661,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 316931,
+      "transparence": false,
+      "sujet": {
+        "x": 9.1,
+        "y": 21.9,
+        "l": 68.2,
+        "h": 65.6,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        49,
+        57
+      ],
+      "cadrage_css": "49% 57%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.59,
+          "ton": "sombre",
+          "recouvre_sujet": 0.26
+        },
+        {
+          "cote": "droite",
+          "score": 0.48,
+          "ton": "sombre",
+          "recouvre_sujet": 0.28
+        },
+        {
+          "cote": "gauche",
+          "score": 0.35,
+          "ton": "sombre",
+          "recouvre_sujet": 0.51
+        },
+        {
+          "cote": "bas",
+          "score": 0.13,
+          "ton": "sombre",
+          "recouvre_sujet": 0.44
+        }
+      ],
+      "qualite": {
+        "nettete": 30,
+        "bruit": 0.94,
+        "compression": 0.97,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "6470b0d0c4d694f4",
+      "doublon_de": {
+        "fichier": "olivier-duperron.jpg",
+        "type": "quasi-doublon",
+        "distance": 8,
+        "ressemblance": 0.93
+      },
+      "drapeaux": [
+        "quasi-doublon de olivier-duperron.jpg"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "date": "2026-11-20T15:37:27.010Z",
+  "plan": "/home/claude/la-virevoltee-maquette/plan-images.json",
+  "attendus": 2,
+  "recus": 2,
+  "planches": [
+    "planche.jpg"
+  ],
+  "inconnus": [],
+  "manquants": [],
+  "a_regenerer": [],
+  "images": [
+    {
+      "nom": "grok/transmission-coaching",
+      "attendu": "transmission-coaching.jpg",
+      "fichier": "transmission-coaching.jpg",
+      "priorite": "Conseillée",
+      "problemes": [],
+      "indications": [
+        "mains : 0, doigts reconnus - (indicatif, à regarder)"
+      ],
+      "largeur": 1168,
+      "hauteur": 784,
+      "boites": [],
+      "mains": {
+        "annoncees": true,
+        "vues": 0,
+        "doigts": []
+      }
+    },
+    {
+      "nom": "grok/transmission-dada",
+      "attendu": "transmission-dada.jpg",
+      "fichier": "transmission-dada.jpg",
+      "priorite": "Conseillée",
+      "problemes": [],
+      "indications": [
+        "mains : 0, doigts reconnus - (indicatif, à regarder)"
+      ],
+      "largeur": 1168,
+      "hauteur": 784,
+      "boites": [],
+      "mains": {
+        "annoncees": true,
+        "vues": 0,
+        "doigts": []
+      }
+    }
+  ]
+}

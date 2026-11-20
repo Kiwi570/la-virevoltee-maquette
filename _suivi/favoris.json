@@ -1,0 +1,256 @@
+{
+ "explication": "Maquettes favorites de l'utilisateur : le niveau et le style visés, sur l'accueil ET les pages intérieures. Jamais à copier (ni leur idée, ni leur mise en page) : même harmonie, même fluidité, même soin.",
+ "activite": [
+  "spectacle"
+ ],
+ "metier": "compagnie de danse contemporaine",
+ "besoin": [],
+ "ton": [
+  "énergique"
+ ],
+ "univers": [],
+ "ambiance": [],
+ "concept": [],
+ "depot": "la-virevoltee-maquette",
+ "favorites_dans_la_bibliotheque": 22,
+ "favorites": [
+  {
+   "rang": 1,
+   "maquette": "les-plus-hautes-eaux-maquette",
+   "client": "compagnie de théâtre gestuel et clown pour tous publics, tournée dans le Grand Ouest",
+   "metier": "compagnie de théâtre",
+   "pourquoi": "Compagnie de théâtre : nuit bleue, photos bichromes qui reprennent couleur sous une nappe d'eau WebGL, échelle de crue.",
+   "proche": [
+    "même métier"
+   ],
+   "lumiere": "sombre",
+   "note_maquette": 90,
+   "en_ligne": "https://les-plus-hautes-eaux-maquette.vercel.app",
+   "vues": [
+    {
+     "page": "accueil",
+     "role": "ouverture",
+     "id": "les-plus-hautes-eaux-maquette/haut",
+     "note_section": 5,
+     "titre": "Héros sous la montée des eaux",
+     "capture": "medias/les-plus-hautes-eaux-maquette/haut-p1440.jpg",
+     "video": "medias/les-plus-hautes-eaux-maquette/haut-p720.mp4",
+     "fiche": "sections/les-plus-hautes-eaux-maquette/haut.json",
+     "en_ligne": "https://les-plus-hautes-eaux-maquette.vercel.app"
+    },
+    {
+     "page": "accueil",
+     "role": "manifeste",
+     "id": "les-plus-hautes-eaux-maquette/crue-1910",
+     "note_section": 4,
+     "titre": "L'origine du nom, 1910",
+     "capture": "medias/les-plus-hautes-eaux-maquette/crue-1910-p1440.jpg",
+     "video": "medias/les-plus-hautes-eaux-maquette/crue-1910-p720.mp4",
+     "fiche": "sections/les-plus-hautes-eaux-maquette/crue-1910.json",
+     "en_ligne": "https://les-plus-hautes-eaux-maquette.vercel.app"
+    },
+    {
+     "page": "spectacles/carnet-de-routes",
+     "role": "ouverture",
+     "id": "les-plus-hautes-eaux-maquette/spectacles-carnet-de-routes-f-hero",
+     "note_section": 4,
+     "titre": "Tête de fiche spectacle",
+     "capture": "medias/les-plus-hautes-eaux-maquette/spectacles-carnet-de-routes-f-hero-p1440.jpg",
+     "video": "medias/les-plus-hautes-eaux-maquette/spectacles-carnet-de-routes-f-hero-p720.mp4",
+     "fiche": "sections/les-plus-hautes-eaux-maquette/spectacles-carnet-de-routes-f-hero.json",
+     "en_ligne": "https://les-plus-hautes-eaux-maquette.vercel.app/spectacles/carnet-de-routes"
+    },
+    {
+     "page": "agenda",
+     "role": "agenda",
+     "id": "les-plus-hautes-eaux-maquette/agenda-t-venir",
+     "note_section": 4,
+     "titre": "Prochaines représentations",
+     "capture": "medias/les-plus-hautes-eaux-maquette/agenda-t-venir-p1440.jpg",
+     "video": "medias/les-plus-hautes-eaux-maquette/agenda-t-venir-p720.mp4",
+     "fiche": "sections/les-plus-hautes-eaux-maquette/agenda-t-venir.json",
+     "en_ligne": "https://les-plus-hautes-eaux-maquette.vercel.app/agenda"
+    }
+   ]
+  },
+  {
+   "rang": 2,
+   "maquette": "meteofr-maquette",
+   "client": "service de météo indépendant par commune avec application Android (prévisions, radar, vigilance)",
+   "metier": "service météo",
+   "pourquoi": "Météo : bleu ciel, données en grand, cartes et courbes.",
+   "proche": [
+    "activité proche",
+    "ambiance énergique"
+   ],
+   "lumiere": "mixte",
+   "note_maquette": 83,
+   "en_ligne": "https://meteofr-maquette.vercel.app",
+   "vues": [
+    {
+     "page": "accueil",
+     "role": "ouverture",
+     "id": "meteofr-maquette/ciel",
+     "note_section": 5,
+     "titre": "Le ciel de votre commune, en direct.",
+     "capture": "medias/meteofr-maquette/ciel-p1440.jpg",
+     "video": "medias/meteofr-maquette/ciel-p720.mp4",
+     "fiche": "sections/meteofr-maquette/ciel.json",
+     "en_ligne": "https://meteofr-maquette.vercel.app"
+    },
+    {
+     "page": "accueil",
+     "role": "outil-interactif",
+     "id": "meteofr-maquette/heures",
+     "note_section": 5,
+     "titre": "Les 24 prochaines heures, en accéléré",
+     "capture": "medias/meteofr-maquette/heures-p1440.jpg",
+     "video": "medias/meteofr-maquette/heures-p720.mp4",
+     "fiche": "sections/meteofr-maquette/heures.json",
+     "en_ligne": "https://meteofr-maquette.vercel.app"
+    },
+    {
+     "page": "commune",
+     "role": "ouverture",
+     "id": "meteofr-maquette/commune-debut",
+     "note_section": 5,
+     "titre": "Paris",
+     "capture": "medias/meteofr-maquette/commune-debut-p1440.jpg",
+     "video": "medias/meteofr-maquette/commune-debut-p720.mp4",
+     "fiche": "sections/meteofr-maquette/commune-debut.json",
+     "en_ligne": "https://meteofr-maquette.vercel.app/commune"
+    },
+    {
+     "page": "application",
+     "role": "offre",
+     "id": "meteofr-maquette/application-fonctions",
+     "note_section": 4,
+     "titre": "Tout ce que fait l'appli",
+     "capture": "medias/meteofr-maquette/application-fonctions-p1440.jpg",
+     "video": "medias/meteofr-maquette/application-fonctions-p720.mp4",
+     "fiche": "sections/meteofr-maquette/application-fonctions.json",
+     "en_ligne": "https://meteofr-maquette.vercel.app/application"
+    }
+   ]
+  },
+  {
+   "rang": 3,
+   "maquette": "nolanis-maquette",
+   "client": "Agence de communication visuelle à Strasbourg : print et web, espaces publicitaires, publipostage, photo et vidéo, objets publicitaires, sauvegarde en ligne, formation photo",
+   "metier": "agence de communication visuelle",
+   "pourquoi": "Agence de communication : beige, éventail de couleurs, cartes nettes, sommaire des métiers.",
+   "proche": [
+    "activité proche",
+    "ambiance énergique"
+   ],
+   "lumiere": "clair",
+   "note_maquette": 86,
+   "en_ligne": "https://nolanis-maquette.vercel.app",
+   "vues": [
+    {
+     "page": "accueil",
+     "role": "ouverture",
+     "id": "nolanis-maquette/debut",
+     "note_section": 5,
+     "titre": "Votre agence de communication visuelle à Strasbourg",
+     "capture": "medias/nolanis-maquette/debut-p1440.jpg",
+     "video": "medias/nolanis-maquette/debut-p720.mp4",
+     "fiche": "sections/nolanis-maquette/debut.json",
+     "en_ligne": "https://nolanis-maquette.vercel.app"
+    },
+    {
+     "page": "accueil",
+     "role": "services",
+     "id": "nolanis-maquette/services",
+     "note_section": 4,
+     "titre": "La liasse des épreuves",
+     "capture": "medias/nolanis-maquette/services-p1440.jpg",
+     "video": "medias/nolanis-maquette/services-p720.mp4",
+     "fiche": "sections/nolanis-maquette/services.json",
+     "en_ligne": "https://nolanis-maquette.vercel.app"
+    },
+    {
+     "page": "formations",
+     "role": "ouverture",
+     "id": "nolanis-maquette/formations-debut",
+     "note_section": 4,
+     "titre": "Choisir l’image juste",
+     "capture": "medias/nolanis-maquette/formations-debut-p1440.jpg",
+     "video": "medias/nolanis-maquette/formations-debut-p720.mp4",
+     "fiche": "sections/nolanis-maquette/formations-debut.json",
+     "en_ligne": "https://nolanis-maquette.vercel.app/formations"
+    },
+    {
+     "page": "contact",
+     "role": "outil-interactif",
+     "id": "nolanis-maquette/contact-devis",
+     "note_section": 4,
+     "titre": "Votre demande, en trois étapes",
+     "capture": "medias/nolanis-maquette/contact-devis-p1440.jpg",
+     "video": "medias/nolanis-maquette/contact-devis-p720.mp4",
+     "fiche": "sections/nolanis-maquette/contact-devis.json",
+     "en_ligne": "https://nolanis-maquette.vercel.app/contact"
+    }
+   ]
+  },
+  {
+   "rang": 4,
+   "maquette": "vizrok-maquette",
+   "client": "boutique de vêtements de sport, accessoires et nutrition d'une marque fabriquée à la demande",
+   "metier": "vêtements de sport",
+   "pourquoi": "Vêtements de sport : noir et vert néon, capitales, produits sur fond noir.",
+   "proche": [
+    "ambiance énergique"
+   ],
+   "lumiere": "mixte",
+   "note_maquette": 86,
+   "en_ligne": "https://vizrok-maquette.vercel.app",
+   "vues": [
+    {
+     "page": "accueil",
+     "role": "ouverture",
+     "id": "vizrok-maquette/debut",
+     "note_section": 5,
+     "titre": "Built to Perform.",
+     "capture": "medias/vizrok-maquette/debut-p1440.jpg",
+     "video": "medias/vizrok-maquette/debut-p720.mp4",
+     "fiche": "sections/vizrok-maquette/debut.json",
+     "en_ligne": "https://vizrok-maquette.vercel.app"
+    },
+    {
+     "page": "accueil",
+     "role": "produits",
+     "id": "vizrok-maquette/collections",
+     "note_section": 5,
+     "titre": "Quatre disques, dix-huit pièces.",
+     "capture": "medias/vizrok-maquette/collections-p1440.jpg",
+     "video": "medias/vizrok-maquette/collections-p720.mp4",
+     "fiche": "sections/vizrok-maquette/collections.json",
+     "en_ligne": "https://vizrok-maquette.vercel.app"
+    },
+    {
+     "page": "boutique",
+     "role": "ouverture",
+     "id": "vizrok-maquette/boutique-debut",
+     "note_section": 4,
+     "titre": "Boutique",
+     "capture": "medias/vizrok-maquette/boutique-debut-p1440.jpg",
+     "video": "medias/vizrok-maquette/boutique-debut-p720.mp4",
+     "fiche": "sections/vizrok-maquette/boutique-debut.json",
+     "en_ligne": "https://vizrok-maquette.vercel.app/boutique"
+    },
+    {
+     "page": "nutrition",
+     "role": "produits",
+     "id": "vizrok-maquette/nutrition-gamme",
+     "note_section": 5,
+     "titre": "Cinq produits, un shaker.",
+     "capture": "medias/vizrok-maquette/nutrition-gamme-p1440.jpg",
+     "video": "medias/vizrok-maquette/nutrition-gamme-p720.mp4",
+     "fiche": "sections/vizrok-maquette/nutrition-gamme.json",
+     "en_ligne": "https://vizrok-maquette.vercel.app/nutrition"
+    }
+   ]
+  }
+ ]
+}

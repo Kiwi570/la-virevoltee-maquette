@@ -1,0 +1,671 @@
+/* Compagnie la Virevoltée — direction « Virevolte » : lin, encre, plateau et rouge brique du logo.
+   Syne ExtraBold en capitales pour les titres, Manrope pour le texte. Un seul système pour toutes les pages. */
+@font-face { font-family: 'Syne'; src: url('/assets/fonts/syne-latin-800-normal.woff2') format('woff2'); font-weight: 800; font-display: swap; }
+@font-face { font-family: 'Syne'; src: url('/assets/fonts/syne-latin-700-normal.woff2') format('woff2'); font-weight: 700; font-display: swap; }
+@font-face { font-family: 'Manrope'; src: url('/assets/fonts/manrope-latin-400-normal.woff2') format('woff2'); font-weight: 400; font-display: swap; }
+@font-face { font-family: 'Manrope'; src: url('/assets/fonts/manrope-latin-600-normal.woff2') format('woff2'); font-weight: 600; font-display: swap; }
+@font-face { font-family: 'Manrope'; src: url('/assets/fonts/manrope-latin-700-normal.woff2') format('woff2'); font-weight: 700; font-display: swap; }
+/* Polices de secours ajustées : le texte ne saute pas à l'arrivée des vraies polices. */
+@font-face { font-family: 'Syne secours'; src: local('Arial Black'), local('Arial'); size-adjust: 104%; ascent-override: 92%; descent-override: 26%; }
+@font-face { font-family: 'Manrope secours'; src: local('Arial'); size-adjust: 103%; ascent-override: 104%; descent-override: 28%; }
+
+:root {
+  --lin: #F3EDE4; --sable: #E9E0D2; --plateau: #18131A; --brique: #8C3C3C; --encre: #1C1618;
+  --brique-clair: #E9A79D; --lin-doux: #D8CEC2;
+  --accent: var(--brique);
+  --police-titres: 'Syne', 'Syne secours', 'Arial Black', sans-serif;
+  --police-texte: 'Manrope', 'Manrope secours', Arial, sans-serif;
+  --largeur: 1280px;
+  --rayon: 4px;
+  --espace: clamp(56px, 7vw, 104px);
+}
+body { font-size: clamp(1rem, .97rem + .18vw, 1.125rem); }
+h1, h2, h3 { font-weight: 800; }
+::selection { background: var(--brique); color: #fff; }
+
+/* Fonds : lin par défaut, plateau pour la scène, les teasers et l'appel final. */
+.plateau { background: var(--plateau); color: var(--lin); --texte: var(--lin); --fond: var(--plateau); --accent: var(--brique-clair); --texte-doux: var(--lin-doux); --ligne: rgba(243, 237, 228, .22); }
+.plateau .bouton:not(.bouton--contour):not(.bouton--clair) { background: var(--brique-clair); color: var(--plateau); }
+
+/* Typographie commune. */
+.surtitre { font-family: var(--police-texte); font-weight: 700; font-size: max(13px, .8rem); letter-spacing: .18em; text-transform: uppercase; margin: 0 0 1.1em; color: var(--accent); }
+.titre-section { font-family: var(--police-titres); font-weight: 800; text-transform: uppercase; font-size: clamp(1.5rem, min(2.9vw, 6vh), 3rem); line-height: 1.05; letter-spacing: -.01em; max-width: 22ch; }
+.titre-section--petit { font-size: clamp(1.6rem, 3vw, 2.4rem); }
+.titre-geant { font-family: var(--police-titres); font-weight: 800; text-transform: uppercase; line-height: .96; letter-spacing: -.015em;
+  font-size: clamp(2.7rem, min(8.4vw, 12vh), 8.6rem); margin: 0 0 .32em; }
+.titre-geant .l { display: block; }
+.titre-geant .l--accent, .mot-accent { color: var(--brique-clair); }
+.titre-geant--encre .l--accent, .titre-geant--encre .mot-accent { color: var(--brique); }
+.titre-geant--moyen { font-size: clamp(2.4rem, min(6vw, 10vh), 6.2rem); }
+.note { font-size: max(13px, .9rem); color: var(--texte-doux); }
+.credit { font-size: 12px; letter-spacing: .04em; color: var(--texte-doux); margin: .6em 0 0; }
+.lien-fleche { display: inline-flex; align-items: center; gap: .55em; min-height: 44px; font-weight: 700; text-decoration: none; border-bottom: 2px solid currentColor; padding-bottom: 2px; line-height: 1.2; }
+.lien-fleche::after { content: '→'; transition: transform .3s var(--courbe); }
+.lien-fleche:hover::after { transform: translateX(4px); }
+.lien-fleche--clair { color: var(--lin); }
+.bouton { font-weight: 700; letter-spacing: .01em; }
+.bouton:hover { filter: brightness(1.08); }
+.bouton--clair { background: var(--lin); color: var(--plateau); }
+.liste-filet { list-style: none; padding: 0; margin: 0 0 1.4em; }
+.liste-filet li { padding: .7em 0; border-top: 1px solid var(--ligne); }
+.mini-titre { font-family: var(--police-texte); font-weight: 700; font-size: max(12px, .78rem); letter-spacing: .16em; text-transform: uppercase; color: var(--accent); margin: 1.6em 0 .6em; }
+.fiche { margin: 0 0 1.4em; display: grid; gap: 0; }
+.fiche > div { display: grid; grid-template-columns: minmax(7em, 30%) minmax(0, 1fr); gap: 1em; padding: .75em 0; border-top: 1px solid var(--ligne); }
+.fiche dt { font-weight: 700; font-size: max(12px, .8rem); letter-spacing: .12em; text-transform: uppercase; color: var(--texte-doux); padding-top: .2em; }
+.fiche dd { margin: 0; }
+
+/* En-tête : opaque, lin. */
+[data-entete] { background: var(--lin); color: var(--encre); border-bottom: 1px solid rgba(28, 22, 24, .1); }
+.entete-logo { gap: 12px; text-decoration: none; }
+.entete-logo img { width: 44px; height: 44px; }
+.entete-nom { font-family: var(--police-titres); font-weight: 800; font-size: 1.05rem; text-transform: uppercase; letter-spacing: .02em; white-space: nowrap; }
+[data-nav] a { font-weight: 600; }
+[data-nav] a[aria-current] { color: var(--brique); }
+.entete-actions .bouton { min-height: 44px; padding: .55em 1.2em; }
+#menu { background: var(--plateau); color: var(--lin); }
+#menu .menu-lien { font-family: var(--police-titres); font-weight: 800; text-transform: uppercase; }
+#menu .bouton { background: var(--brique-clair); color: var(--plateau); }
+.menu-mail { display: inline-flex; min-height: 44px; align-items: center; margin-left: 12px; color: var(--lin); }
+@media (max-width: 420px) { .entete-nom { display: none; } }
+
+/* Intro : panneau lin, disque du logo et son anneau de texte. */
+.ouverture-panneau { background: var(--lin); color: var(--encre); }
+.ouverture-objet { position: relative; width: clamp(150px, 22vmin, 220px); aspect-ratio: 1; display: grid; place-items: center; }
+.ouverture-objet .ouverture-logo { width: 60%; height: auto; position: relative; z-index: 1; }
+.toupie-anneau { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+.toupie-anneau text { font-family: var(--police-texte); font-weight: 700; font-size: 14.5px; letter-spacing: .14em; text-transform: uppercase; fill: currentColor; }
+
+/* Toupie : objet d'ouverture de chaque page, tourne doucement et accélère avec le défilement. */
+.toupie { position: relative; width: clamp(120px, 14vw, 196px); aspect-ratio: 1; display: grid; place-items: center; border-radius: 50%; }
+.toupie-logo { width: 62%; height: auto; position: relative; z-index: 1; filter: drop-shadow(0 6px 18px rgba(0, 0, 0, .25)); }
+.toupie .toupie-anneau { color: var(--lin); }
+.toupie--page .toupie-anneau { color: var(--brique); }
+
+/* Ouvertures : composition propre à chaque page, mêmes composants. */
+.ouv { position: relative; }
+.ouv-intro { max-width: 34em; font-size: clamp(1.02rem, .98rem + .3vw, 1.2rem); }
+.ouv-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; margin-bottom: 1.2em; }
+.ouv-info { display: inline-flex; flex-wrap: wrap; align-items: center; gap: .3em .7em; margin: 0; padding: .55em 1.1em; border: 1px solid rgba(243, 237, 228, .45); border-radius: 999px; font-weight: 600; font-size: max(13px, .92rem); }
+.ouv-info-label { text-transform: uppercase; letter-spacing: .14em; font-size: max(12px, .75rem); color: var(--brique-clair); }
+.ouv-info--encre { border-color: rgba(28, 22, 24, .25); }
+
+/* Accueil : la danseuse à droite sur toute la hauteur, le titre géant à gauche sur le plateau, la toupie à la jonction. */
+.ouv--accueil { min-height: 100svh; background-color: var(--plateau); color: var(--lin); display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); padding-top: var(--entete-h); overflow: hidden; }
+.ouv--accueil .ouv-fond { grid-column: 2; grid-row: 1; margin: 0; position: relative; min-height: 100%; }
+.ouv--accueil .ouv-texte { grid-column: 1; grid-row: 1; align-self: end; width: auto; margin: 0; padding: clamp(24px, 5vh, 56px) clamp(20px, 3vw, 48px) clamp(28px, 6vh, 64px) max(var(--gouttiere), calc((100vw - var(--largeur)) / 2)); position: relative; z-index: 2; }
+.ouv-fond img { width: 100%; height: 100%; object-fit: cover; object-position: var(--cadrage); }
+.ouv--accueil .ouv-fond::after { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(24, 19, 26, .55) 0%, rgba(24, 19, 26, 0) 22%); pointer-events: none; }
+.ouv--accueil .surtitre, .ouv--404 .surtitre { color: var(--lin); opacity: .92; }
+.toupie--ouverture { position: absolute; left: calc(55.5% - clamp(60px, 7vw, 98px) - 36px); top: calc(var(--entete-h) + clamp(20px, 5vh, 56px)); z-index: 3; }
+.credit--ouv { position: absolute; right: var(--gouttiere); bottom: 10px; z-index: 2; color: var(--lin); margin: 0; background: rgba(24, 19, 26, .82); padding: 2px 8px; border-radius: 3px; }
+.ouv--404 .ouv-fond { position: absolute; inset: 0; height: 100%; margin: 0; }
+.ouv--404 .ouv-fond::after { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(24, 19, 26, .86) 0%, rgba(24, 19, 26, .5) 50%, rgba(24, 19, 26, .1) 85%); pointer-events: none; }
+.ouv--404 .ouv-texte { position: relative; z-index: 2; }
+@media (max-width: 760px) {
+  .ouv--accueil { grid-template-columns: minmax(0, 1fr); grid-template-rows: auto auto; min-height: 0; }
+  .ouv--accueil .ouv-fond { grid-column: 1; grid-row: 1; height: 38svh; min-height: 0; }
+  .ouv--accueil .ouv-intro { display: none; }
+  .ouv--accueil .ouv-texte { grid-column: 1; grid-row: 2; padding: 22px var(--gouttiere) 28px; }
+  .ouv-fond img { object-position: var(--cadrage-mobile, var(--cadrage)); }
+  .ouv--accueil .ouv-fond::after { background: linear-gradient(0deg, rgba(24, 19, 26, .7) 0%, rgba(24, 19, 26, 0) 35%); }
+  .toupie--ouverture { width: 92px; left: auto; right: 14px; top: calc(var(--entete-h) + 38svh - 70px); }
+  .credit--ouv { bottom: auto; top: calc(var(--entete-h) + 10px); right: 12px; }
+}
+
+/* Démarche et citation. */
+.demarche { padding-block: var(--espace); }
+.demarche-grille { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: clamp(28px, 6vw, 96px); align-items: center; }
+.demarche-texte p:not(.surtitre) { max-width: 36em; }
+.demarche-media { aspect-ratio: 4 / 5; border-radius: 50% 50% var(--rayon) var(--rayon) / 30% 30% var(--rayon) var(--rayon); overflow: hidden; }
+.demarche-media img { width: 100%; height: 100%; object-fit: cover; object-position: var(--cadrage); }
+.citation { grid-column: 1 / -1; margin: clamp(24px, 4vw, 56px) 0 0; padding-top: clamp(24px, 4vw, 48px); border-top: 2px solid var(--encre); }
+.citation p { font-family: var(--police-titres); font-weight: 700; font-size: clamp(1.6rem, 3.6vw, 3.4rem); line-height: 1.12; max-width: 22ch; margin: 0 0 .4em; text-wrap: balance; }
+.citation em { font-style: normal; color: var(--brique); }
+.citation footer { font-weight: 700; letter-spacing: .14em; text-transform: uppercase; font-size: max(12px, .8rem); color: var(--texte-doux); }
+@media (max-width: 760px) { .demarche-grille { grid-template-columns: minmax(0, 1fr); } }
+
+/* Roue des créations : l'anneau tourne d'un cran par création (72°), la fiche change au centre. */
+.roue { background: var(--sable); position: relative; }
+html.js:not(.secours) .roue { height: 300svh; }
+.roue-collant { padding-block: clamp(40px, 7vh, 80px); }
+html.js:not(.secours) .roue-collant { position: sticky; top: 0; height: 100svh; padding-top: calc(var(--entete-h) + clamp(16px, 3vh, 36px)); display: flex; flex-direction: column; overflow: hidden; }
+.roue-tete { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 6px 32px; }
+.roue-tete .titre-section { margin: 0; font-size: clamp(1.8rem, min(4vw, 6.4vh), 3.6rem); max-width: 20ch; }
+.roue-tete .surtitre { width: 100%; margin-bottom: .6em; }
+.roue-indice { margin: 0; color: var(--texte-doux); font-size: max(13px, .9rem); }
+.roue-scene { flex: 1; min-height: 0; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(24px, 5vw, 72px); align-items: center; padding-block: clamp(12px, 3vh, 32px); }
+.roue-disque { position: relative; width: min(78%, 52svh, 540px); aspect-ratio: 1; justify-self: center; }
+.roue-anneau { position: absolute; inset: 0; border-radius: 50%; border: 1.5px dashed rgba(140, 60, 60, .45); }
+.roue-anneau { container-type: inline-size; transform: rotate(var(--rot, 0deg)); }
+.roue-pastille { --a: calc(var(--i) * 72deg - 90deg); position: absolute; left: 50%; top: 50%; width: max(44px, 21%); aspect-ratio: 1; padding: 0; border: 3px solid var(--sable); border-radius: 50%; overflow: hidden; background: var(--plateau);
+  transform: translate(-50%, -50%) rotate(var(--a)) translateX(50cqw) rotate(calc(-1 * var(--a) - var(--rot, 0deg))); transition: box-shadow .3s; }
+.roue-pastille .media, .roue-pastille img { width: 100%; height: 100%; object-fit: cover; }
+.roue-pastille.est-active { box-shadow: 0 0 0 3px var(--brique); }
+.roue-centre { position: absolute; inset: 17%; border-radius: 50%; overflow: hidden; background: var(--brique); }
+.roue-image { position: absolute; inset: 0; margin: 0; }
+.roue-image img { width: 100%; height: 100%; object-fit: cover; }
+html.js:not(.secours) .roue-image { clip-path: circle(0% at 50% 50%); visibility: hidden; z-index: 0; transition: clip-path .6s var(--courbe), visibility 0s .6s; }
+html.js:not(.secours) .roue-image.est-active { clip-path: circle(71% at 50% 50%); visibility: visible; z-index: 1; transition: clip-path .6s var(--courbe), visibility 0s 0s; }
+/* Carte : les points apparaissent saison après saison. */
+html.js:not(.secours):not([data-arrivee="retour"]) .carte-figure:not(.fx-fini) :is(.carte-point, .carte-encart):not(.on) { visibility: hidden; transform: scale(.3); }
+.carte-point, .carte-encart { transform-box: fill-box; transform-origin: center; transition: visibility 0s, transform .5s var(--courbe); }
+.roue-fiches { list-style: none; margin: 0; padding: 0; display: grid; }
+.roue-fiche { grid-area: 1 / 1; align-self: center; }
+.roue-fiche-rond { display: none; }
+html.js:not(.secours) .roue-fiche { visibility: hidden; transform: translateY(18px); transition: none; }
+html.js:not(.secours) .roue-fiche.est-active { visibility: visible; transform: none; transition: transform .5s var(--courbe), visibility 0s 0s; }
+.roue-num { font-weight: 700; letter-spacing: .14em; font-size: max(12px, .8rem); color: var(--brique); margin: 0 0 .6em; }
+.roue-num span { font-family: var(--police-titres); font-size: 1.6em; letter-spacing: 0; }
+.roue-fiches { container-type: inline-size; }
+.roue-titre { font-family: var(--police-titres); text-transform: uppercase; font-size: min(calc(100cqi / 10.8), 6.5vh, 4rem); line-height: 1; margin: 0 0 .15em; }
+.roue-sous { font-weight: 600; color: var(--texte-doux); margin-bottom: .9em; }
+.fiche-mini { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px 24px; margin: 0 0 1em; }
+.fiche-mini dt { font-size: max(12px, .74rem); letter-spacing: .14em; text-transform: uppercase; font-weight: 700; color: var(--texte-doux); }
+.fiche-mini dd { margin: 0; font-weight: 600; }
+.roue-accroche { font-size: clamp(1.05rem, 1.6vw, 1.35rem); font-weight: 600; max-width: 28ch; }
+@media (max-height: 820px) and (min-width: 761px) { .roue-accroche { display: none; } .roue-disque { width: min(78%, 48svh, 480px); } }
+@media (max-height: 500px) and (min-width: 761px) { .roue-sous, .fiche-mini { display: none; } .roue-titre { font-size: 1.8rem; } .roue-disque { width: min(70%, 40svh); } }
+@media (max-width: 760px) {
+  html.js:not(.secours) .roue { height: auto; }
+  html.js:not(.secours) .roue-collant { position: relative; height: auto; overflow: visible; padding-top: clamp(56px, 12vw, 80px); padding-bottom: 56px; }
+  .roue-scene { grid-template-columns: minmax(0, 1fr); }
+  .roue-disque { width: min(72vw, 360px); margin-block: 10vw; }
+  .roue-fiches { gap: 36px; }
+  html.js:not(.secours) .roue-fiche { visibility: visible; transform: none; grid-area: auto; }
+  .roue-fiche { padding-top: 18px; border-top: 1px solid var(--ligne); display: grid; grid-template-columns: 88px minmax(0, 1fr); gap: 0 16px; }
+  .roue-fiche > * { grid-column: 2; }
+  .roue-fiche-rond { display: block; grid-column: 1; grid-row: 1 / span 4; width: 88px; aspect-ratio: 1; border-radius: 50%; overflow: hidden; margin: 0; }
+  .roue-fiche-rond img { width: 100%; height: 100%; object-fit: cover; }
+  .roue-disque { display: none; }
+}
+:is(html.secours, html:not(.js)) .roue-fiches { gap: 32px; }
+:is(html.secours, html:not(.js)) .roue-fiche { grid-area: auto; }
+
+/* Prochaines dates. */
+.dates { padding-block: var(--espace); }
+.dates-grille { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: clamp(28px, 6vw, 96px); align-items: start; }
+.chiffres { list-style: none; padding: 0; margin: 1.6em 0; display: grid; gap: 14px; }
+.chiffres li { display: grid; grid-template-columns: 2.6em minmax(0, 1fr); gap: 16px; align-items: baseline; }
+.chiffres strong { font-family: var(--police-titres); font-weight: 800; font-size: clamp(1.8rem, 3vw, 2.6rem); color: var(--brique); line-height: 1; text-align: right; font-variant-numeric: tabular-nums; }
+.dates-liste { list-style: none; margin: 0; padding: 0; }
+.date { display: grid; grid-template-columns: 64px 5.6em minmax(0, 1fr); gap: 16px 20px; align-items: center; padding: 18px 0; border-top: 1px solid var(--ligne); }
+.date:last-child { border-bottom: 1px solid var(--ligne); }
+.date-rond { width: 64px; aspect-ratio: 1; border-radius: 50%; overflow: hidden; margin: 0; }
+.date-rond img { width: 100%; height: 100%; object-fit: cover; }
+.date-rond--vide { display: block; background: radial-gradient(circle, var(--brique) 0 34%, transparent 35%), var(--sable); }
+.date-jour { margin: 0; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; font-size: max(12px, .8rem); line-height: 1.1; color: var(--texte-doux); }
+.date-jour span { display: block; font-family: var(--police-titres); font-size: 1.6rem; letter-spacing: 0; color: var(--encre); white-space: nowrap; }
+.plateau .date-jour span { color: var(--lin); }
+.date-titre { font-family: var(--police-titres); font-weight: 800; text-transform: uppercase; font-size: clamp(1.15rem, 1.7vw, 1.45rem); margin: 0 0 .2em; }
+.date-titre a { text-decoration: none; }
+.date-titre a:hover { color: var(--accent); }
+.date-quand, .date-lieu { margin: 0; font-size: max(14px, .95rem); }
+.date-lieu { color: var(--texte-doux); }
+.dates-liste--compacte .date { grid-template-columns: 52px 5.6em minmax(0, 1fr); }
+.dates-liste--compacte .date-rond { width: 52px; }
+@media (max-width: 760px) {
+  .dates-grille { grid-template-columns: minmax(0, 1fr); }
+  .date { grid-template-columns: 52px minmax(0, 1fr); }
+  .date-rond { width: 52px; }
+  .date-jour { display: none; }
+}
+
+/* Teasers sur fond plateau. */
+.teasers { padding-block: var(--espace); }
+.teasers-tete { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 0 48px; align-items: end; margin-bottom: clamp(28px, 4vw, 48px); }
+.teasers-tete .surtitre { grid-column: 1 / -1; }
+.teasers-grille { display: grid; grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr); gap: clamp(14px, 2vw, 24px); }
+.teasers-petits { display: grid; gap: clamp(14px, 2vw, 24px); }
+.teaser { position: relative; border-radius: var(--rayon); overflow: hidden; background: #000; isolation: isolate; }
+.teaser .teaser-media { aspect-ratio: 16 / 9; margin: 0; }
+.teaser .teaser-media img { width: 100%; height: 100%; object-fit: cover; transition: transform .8s var(--courbe); }
+.teaser:hover .teaser-media img { transform: scale(1.04); }
+.teaser::after { content: ''; position: absolute; inset: 0; background: linear-gradient(0deg, rgba(10, 8, 12, .78), rgba(10, 8, 12, 0) 55%); pointer-events: none; z-index: 1; }
+.teaser-bouton { position: absolute; inset: 0; z-index: 3; display: grid; place-items: center; width: 100%; background: none; border: 0; color: var(--lin); padding: 0; }
+.teaser-play { width: clamp(52px, 7vw, 84px); aspect-ratio: 1; border-radius: 50%; background: var(--brique); display: grid; place-items: center; transition: transform .35s var(--courbe); box-shadow: 0 8px 30px rgba(0, 0, 0, .35); }
+.teaser-play::before { content: ''; margin-left: 12%; border-style: solid; border-width: .62em 0 .62em 1.05em; border-color: transparent transparent transparent var(--lin); font-size: clamp(14px, 1.6vw, 20px); }
+.teaser-bouton:hover .teaser-play, .teaser-bouton:focus-visible .teaser-play { transform: scale(1.1); }
+.teaser-libelle { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.teaser-nom { position: absolute; left: 16px; bottom: 12px; margin: 0; z-index: 2; font-family: var(--police-titres); font-weight: 800; text-transform: uppercase; font-size: clamp(1rem, 1.6vw, 1.3rem); color: var(--lin); }
+.teaser-nom span { font-family: var(--police-texte); font-weight: 600; font-size: max(12px, .75rem); letter-spacing: .1em; margin-left: .5em; color: var(--brique-clair); }
+.teaser--grand .teaser-nom { font-size: clamp(1.4rem, 2.6vw, 2.2rem); left: 24px; bottom: 18px; }
+.teaser iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; z-index: 4; }
+.teaser.lecture::after, .teaser.lecture .teaser-nom { display: none; }
+.teasers-grand { align-self: start; }
+@media (max-width: 760px) { .teasers-tete, .teasers-grille { grid-template-columns: minmax(0, 1fr); } }
+
+/* Transmission (accueil) : trois cartes. */
+.transmettre { padding-block: var(--espace); }
+.transmettre-tete { margin-bottom: clamp(28px, 4vw, 56px); }
+.cartes-trois { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(18px, 3vw, 40px); }
+.carte-t h3 { font-family: var(--police-titres); text-transform: uppercase; font-size: clamp(1.3rem, 2vw, 1.7rem); margin: .9em 0 .3em; }
+.carte-t-media { border-radius: var(--rayon); overflow: hidden; }
+.carte-t-media img { width: 100%; height: 100%; object-fit: cover; transition: transform .8s var(--courbe); }
+.carte-t:hover .carte-t-media img { transform: scale(1.04); }
+@media (max-width: 860px) { .cartes-trois { grid-template-columns: minmax(0, 1fr); } }
+
+/* Équipe : six portraits qui tournent légèrement en arrivant. */
+.equipe { padding-block: var(--espace); background: var(--sable); }
+.equipe-tete { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 0 48px; align-items: end; margin-bottom: clamp(28px, 4vw, 56px); }
+.equipe-tete .surtitre { grid-column: 1 / -1; }
+.equipe-liste { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: clamp(14px, 2vw, 28px); }
+html.js:not(.secours):not([data-arrivee="retour"]) .equipe-liste[data-anime="cascade"] > * { transform: translate3d(0, 2.4rem, 0) rotate(var(--r)); }
+html.js:not(.secours):not([data-arrivee="retour"]) .equipe-liste[data-anime="cascade"].vu > * { transform: none; }
+.portrait-media { border-radius: 999px 999px var(--rayon) var(--rayon); overflow: hidden; }
+.portrait-media img { width: 100%; height: 100%; object-fit: cover; object-position: var(--cadrage); }
+.portrait h3 { font-family: var(--police-titres); font-weight: 800; text-transform: uppercase; font-size: clamp(1rem, 1.3vw, 1.2rem); margin: .8em 0 .2em; }
+.portrait-role { font-weight: 700; color: var(--brique); font-size: max(13px, .88rem); margin-bottom: .5em; }
+.portrait-texte { font-size: max(14px, .9rem); color: var(--texte-doux); display: none; }
+@media (max-width: 1100px) { .equipe-liste { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 760px) { .equipe-tete { grid-template-columns: minmax(0, 1fr); } .equipe-liste { grid-template-columns: repeat(2, minmax(0, 1fr)); } .portrait-texte { display: none; } }
+
+/* Lieux : villes en grand qui filent, soutiens et résidences. */
+.routes { padding-block: var(--espace); overflow: hidden; }
+.routes-ruban { margin-bottom: clamp(24px, 4vw, 48px); color: var(--brique); }
+.routes-ruban p { margin: 0; font-family: var(--police-titres); font-weight: 800; text-transform: uppercase; font-size: clamp(2.4rem, 7vw, 6.6rem); line-height: 1.05; white-space: nowrap; }
+.routes-ruban p + p { color: transparent; -webkit-text-stroke: 1.5px var(--encre); }
+.routes-grille { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 0 clamp(24px, 4vw, 56px); }
+.routes-grille > :first-child { grid-column: 1 / -1; margin-bottom: clamp(16px, 3vw, 32px); }
+.routes-col .liste-filet { columns: 2; column-gap: clamp(16px, 2.4vw, 32px); }
+.routes-col .liste-filet li { break-inside: avoid; }
+@media (max-width: 560px) { .routes-col .liste-filet { columns: 1; } }
+.routes-col h3 { font-family: var(--police-texte); font-weight: 700; font-size: max(12px, .8rem); letter-spacing: .16em; text-transform: uppercase; color: var(--brique); }
+@media (max-width: 860px) { .routes-grille { grid-template-columns: minmax(0, 1fr); } }
+
+/* Appel final : le disque grandit et tourne. */
+.appel { position: relative; overflow: hidden; padding-block: clamp(96px, 16vw, 220px); text-align: center; isolation: isolate; }
+.appel-disque { position: absolute; left: 50%; top: 50%; width: min(78vmin, 760px); aspect-ratio: 1; translate: -50% -50%; z-index: -1; opacity: .22; }
+.appel-disque img { width: 100%; height: 100%; }
+.appel-texte { container-type: inline-size; }
+.appel h2 { margin-inline: auto; max-width: none; font-size: min(calc(100cqi / 14), 10vh, 5.6rem); }
+.appel p { max-width: 34em; margin-inline: auto; }
+.appel-actions { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 14px 28px; margin-top: 1.6em; }
+.appel .lien-fleche { color: var(--lin); }
+
+/* Créations : grand titre puis bandeau de disques. */
+.ouv--creations { padding-top: calc(var(--entete-h) + clamp(24px, 5vh, 56px)); padding-bottom: clamp(32px, 6vh, 64px); }
+.ouv-creations-haut { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, .65fr); gap: clamp(20px, 4vw, 64px); align-items: end; }
+.ouv-creations-cote .toupie { margin-bottom: 16px; width: clamp(104px, 10vw, 150px); }
+.bandeau-ronds { margin-top: clamp(24px, 5vh, 56px); }
+.bandeau-ronds ol { list-style: none; padding: 0 var(--gouttiere); margin: 0; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: clamp(10px, 2vw, 28px); max-width: calc(var(--largeur) + 2 * var(--gouttiere)); margin-inline: auto; }
+.bandeau-rond { display: grid; justify-items: center; text-decoration: none; text-align: center; gap: 4px; }
+.bandeau-media { width: 100%; aspect-ratio: 1; border-radius: 50%; overflow: hidden; margin: 0 0 8px; transition: transform .5s var(--courbe); }
+.bandeau-media img { width: 100%; height: 100%; object-fit: cover; }
+.bandeau-rond:hover .bandeau-media { transform: rotate(-6deg) scale(1.03); }
+.bandeau-ronds li { container-type: inline-size; }
+.bandeau-nom { font-family: var(--police-titres); font-weight: 800; text-transform: uppercase; font-size: max(12px, min(1.15rem, calc(100cqi / 12.5))); line-height: 1.1; overflow-wrap: anywhere; }
+.bandeau-annee { font-size: max(12px, .8rem); font-weight: 700; color: var(--brique); }
+@media (max-height: 820px) and (min-width: 761px) { .bandeau-ronds ol { max-width: min(calc(var(--largeur) + 2 * var(--gouttiere)), 118svh); } .ouv-creations-cote .ouv-intro { display: none; } }
+@media (max-width: 760px) {
+  .ouv-creations-haut { grid-template-columns: minmax(0, 1fr); }
+  .ouv-creations-cote .toupie { position: absolute; right: 14px; top: calc(var(--entete-h) + 10px); width: 84px; }
+  .bandeau-ronds ol { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 8px; }
+  .bandeau-ronds li { flex: 0 0 36vw; scroll-snap-align: start; }
+}
+
+/* Chapitres des créations. */
+.chapitre { padding-block: var(--espace); }
+.chapitre--clair + .chapitre--clair { border-top: 1px solid var(--ligne); }
+.chapitre-grille { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(24px, 4vw, 64px) clamp(28px, 5vw, 80px); align-items: start; }
+.chapitre-tete { grid-column: 1 / -1; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 0 clamp(28px, 5vw, 80px); align-items: start; }
+.chapitre-titre { grid-column: 1 / -1; }
+.chapitre-num { grid-column: 1 / -1; font-weight: 700; letter-spacing: .14em; font-size: max(12px, .8rem); color: var(--accent); }
+.chapitre-titre { font-family: var(--police-titres); font-weight: 800; text-transform: uppercase; font-size: clamp(2.4rem, min(8vw, 13vh), 8rem); line-height: .95; margin: 0 0 .25em; overflow-wrap: anywhere; }
+.chapitre-sous { grid-column: 1; grid-row: 3; font-weight: 700; color: var(--texte-doux); margin: .6em 0 0; }
+.chapitre-accroche { grid-column: 2; grid-row: 3; font-family: var(--police-titres); font-weight: 700; font-size: clamp(1.3rem, 2.4vw, 2.1rem); line-height: 1.15; margin: 0; color: var(--accent); }
+.chapitre-media { border-radius: var(--rayon); overflow: hidden; }
+.chapitre-media img { width: 100%; height: 100%; object-fit: cover; object-position: var(--cadrage); }
+.chapitre-texte { align-self: center; }
+.chapitre-propos { font-size: clamp(1.02rem, 1rem + .25vw, 1.18rem); }
+.equipe-mini { list-style: none; padding: 0; margin: 0 0 1.6em; display: grid; gap: .35em; }
+.chapitre-galerie { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(12px, 2vw, 24px); align-content: start; }
+.chapitre-photo { border-radius: var(--rayon); overflow: hidden; }
+.chapitre-photo img { width: 100%; height: 100%; object-fit: cover; object-position: var(--cadrage); }
+.chapitre-galerie .credit { grid-column: 1 / -1; }
+.chapitre-plus { display: grid; gap: clamp(20px, 3vw, 40px); align-content: start; }
+.chapitre--inverse .chapitre-media { order: 2; }
+.chapitre--inverse .chapitre-galerie { order: 4; }
+.chapitre--inverse .chapitre-plus { order: 3; }
+.sans-date { font-weight: 600; }
+.plateau .chapitre-tete .chapitre-titre { color: var(--lin); }
+@media (max-width: 860px) {
+  .chapitre-grille, .chapitre-tete { grid-template-columns: minmax(0, 1fr); }
+  .chapitre-accroche { grid-column: 1; grid-row: auto; margin-top: .8em; }
+  .chapitre--inverse .chapitre-media, .chapitre--inverse .chapitre-galerie, .chapitre--inverse .chapitre-plus { order: 0; }
+}
+
+/* Agenda : la prochaine date dans le disque, la photo du public à droite. */
+.ouv--agenda { min-height: min(100svh, 980px); padding-top: var(--entete-h); display: grid; align-items: center; overflow: hidden; }
+.ouv-agenda-photo { position: absolute; top: var(--entete-h); right: 0; bottom: 0; width: 46%; margin: 0; }
+.ouv-agenda-photo img { width: 100%; height: 100%; object-fit: cover; object-position: var(--cadrage); }
+.ouv-agenda-grille { position: relative; z-index: 1; padding-block: clamp(24px, 5vh, 56px); }
+.ouv-agenda-texte { max-width: 54%; }
+.prochaine { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: clamp(16px, 3vw, 36px); align-items: center; margin: clamp(12px, 3vh, 32px) 0 clamp(16px, 3vh, 32px); }
+.prochaine-disque { width: clamp(132px, min(16vw, 24vh), 220px); aspect-ratio: 1; border-radius: 50%; background: var(--brique); color: var(--lin); display: grid; place-content: center; text-align: center; line-height: .9; }
+.prochaine-jour { font-family: var(--police-titres); font-weight: 800; font-size: clamp(2.8rem, min(6vw, 9vh), 5.4rem); font-variant-numeric: tabular-nums; }
+.prochaine-mois { font-weight: 700; text-transform: uppercase; letter-spacing: .14em; font-size: max(13px, .95rem); margin-top: .9em; line-height: 1.1; }
+.prochaine-jour { line-height: 1; }
+@media (max-width: 460px) { .prochaine { grid-template-columns: 88px minmax(0, 1fr); gap: 14px; } .prochaine-disque { width: 88px; } .prochaine-jour { font-size: 2.2rem; } .prochaine-titre { font-size: 5.4vw; } .ouv--agenda .surtitre { margin-bottom: .4em; } }
+.prochaine-corps .surtitre { margin-bottom: .5em; }
+.prochaine-titre { font-family: var(--police-titres); font-weight: 800; text-transform: uppercase; font-size: clamp(1.6rem, 3.2vw, 2.8rem); line-height: 1; margin: 0 0 .25em; }
+.prochaine-lieu { margin: 0; font-weight: 600; }
+@media (max-width: 760px) {
+  .ouv--agenda { min-height: 0; padding-bottom: 0; }
+  .ouv-agenda-photo { position: relative; top: auto; width: 100%; height: 36svh; order: 2; }
+  .ouv--agenda { display: flex; flex-direction: column; }
+  .ouv-agenda-texte { max-width: none; }
+}
+
+/* Module agenda-des-dates : couleurs du site. */
+.agd { --couleur-accent: var(--brique); --couleur-sur-accent: #fff; --couleur-ligne: var(--ligne); --couleur-texte-doux: var(--texte-doux); --couleur-surface: var(--sable); --couleur-secondaire: var(--encre); --couleur-fond: var(--lin); --police-mono: var(--police-texte); }
+.agenda-dates .agd__h2.titre-section { font-family: var(--police-titres); font-size: clamp(1.5rem, min(2.9vw, 6vh), 3rem); }
+.agd__cadre { position: relative; }
+.agd__titre { font-family: var(--police-titres); text-transform: uppercase; }
+.agd__pastille { border-radius: 50%; background: var(--sable); }
+
+/* Carte des villes. */
+.carte-tournee { padding-block: var(--espace); }
+.carte-grille { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: clamp(28px, 5vw, 80px); align-items: center; }
+.carte-annee { font-family: var(--police-titres); font-weight: 800; font-size: clamp(3.4rem, 8vw, 7rem); line-height: 1; color: var(--brique-clair); margin: .2em 0; font-variant-numeric: tabular-nums; }
+.carte-figure { position: relative; margin: 0; }
+.carte-svg { width: 100%; height: auto; overflow: visible; }
+.carte-france { fill: rgba(243, 237, 228, .07); stroke: rgba(243, 237, 228, .5); stroke-width: 1.5; }
+.carte-point circle { fill: var(--brique-clair); fill-opacity: .85; stroke: var(--plateau); stroke-width: 2; }
+.carte-point text { fill: var(--lin); font-family: var(--police-texte); font-weight: 700; font-size: 26px; paint-order: stroke; stroke: var(--plateau); stroke-width: 6px; }
+.carte-encart { position: absolute; left: 0; bottom: 0; padding: 14px 18px; border: 1px solid var(--ligne); border-radius: var(--rayon); background: var(--plateau); }
+.carte-encart p { margin: 0; font-size: max(13px, .9rem); }
+.carte-encart-pays { font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--brique-clair); }
+.carte-encart-n { color: var(--texte-doux); }
+@media (max-width: 760px) { .carte-grille { grid-template-columns: minmax(0, 1fr); } .carte-point text { font-size: 34px; } .carte-point text:not(.fort) { display: none; } .carte-encart { position: relative; margin-top: 12px; display: inline-block; } }
+
+/* Transmission : photo des bras à gauche, texte à droite. */
+.ouv--transmission { padding-top: var(--entete-h); }
+.ouv-trans-grille { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); min-height: calc(100svh - var(--entete-h)); }
+.ouv-trans-media { margin: 0; min-height: 100%; }
+.ouv-trans-media img { width: 100%; height: 100%; object-fit: cover; object-position: var(--cadrage); }
+.ouv-trans-texte { position: relative; padding: clamp(28px, 6vh, 72px) var(--gouttiere) clamp(28px, 5vh, 56px) clamp(28px, 5vw, 80px); display: flex; flex-direction: column; justify-content: center; }
+.toupie--trans { position: absolute; right: var(--gouttiere); top: clamp(16px, 4vh, 40px); width: clamp(100px, 9vw, 140px); }
+.credit--trans { position: absolute; left: var(--gouttiere); bottom: 10px; margin: 0; color: var(--lin); background: rgba(24, 19, 26, .82); padding: 2px 8px; border-radius: 3px; }
+@media (max-width: 760px) {
+  .ouv-trans-grille { grid-template-columns: minmax(0, 1fr); min-height: 0; }
+  .ouv-trans-media { order: 2; height: 42svh; }
+  .toupie--trans { width: 84px; top: 14px; }
+  .credit--trans { display: none; }
+}
+
+.eac, .dada, .regard { padding-block: var(--espace); }
+.eac-grille { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(28px, 6vw, 96px); align-items: start; }
+.eac-photos { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin: 1.4em 0; max-width: 520px; }
+.eac-photo { border-radius: var(--rayon); overflow: hidden; }
+.eac-photo img { width: 100%; height: 100%; object-fit: cover; }
+.frise { position: relative; padding-left: 32px; color: var(--brique); }
+.frise-trait { position: absolute; left: 0; top: 8px; bottom: 8px; width: 4px; height: calc(100% - 16px); }
+.frise-liste { list-style: none; padding: 0; margin: 0; color: var(--encre); display: grid; gap: clamp(20px, 3vw, 36px); }
+.frise-saison { position: relative; }
+.frise-saison::before { content: ''; position: absolute; left: -38px; top: .35em; width: 16px; height: 16px; border-radius: 50%; background: var(--brique); box-shadow: 0 0 0 5px var(--lin); }
+.frise-annee { font-family: var(--police-titres); font-weight: 800; font-size: clamp(1.4rem, 2.4vw, 2rem); color: var(--brique); margin: 0 0 .4em; }
+.frise-saison ul { padding-left: 1.1em; margin: 0; display: grid; gap: .4em; }
+.coaching { padding-block: var(--espace); }
+.coaching-grille, .dada-grille, .regard-grille { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(28px, 6vw, 96px); align-items: center; }
+.coaching-media, .dada-media, .regard-photo { border-radius: var(--rayon); overflow: hidden; }
+.coaching-media img, .dada-media img, .regard-photo img { width: 100%; height: 100%; object-fit: cover; }
+.coaching-ref { font-weight: 700; color: var(--brique-clair); }
+.dada { background: var(--sable); }
+.dada-visuels { position: relative; }
+.dada-logo { position: absolute; right: -12px; bottom: -36px; width: clamp(96px, 11vw, 150px); margin: 0; background: #fff; border-radius: 50%; padding: 10px; box-shadow: 0 10px 30px rgba(28, 22, 24, .18); }
+.dada-logo img { width: 100%; height: auto; border-radius: 50%; }
+.annees { margin: 1.4em 0 0; display: grid; }
+.annees > div { display: grid; grid-template-columns: 6.5em minmax(0, 1fr); gap: 1em; padding: .9em 0; border-top: 1px solid var(--ligne); }
+.annees dt { font-family: var(--police-titres); font-weight: 800; color: var(--brique); }
+.annees dd { margin: 0; }
+.annees ul { margin: 0; padding-left: 1.1em; display: grid; gap: .3em; }
+.regard-photos { display: grid; gap: 16px; }
+.regard-photo--2 { width: 72%; justify-self: end; margin-top: -12%; box-shadow: 0 0 0 10px var(--lin); }
+@media (max-width: 860px) { .eac-grille, .coaching-grille, .dada-grille, .regard-grille { grid-template-columns: minmax(0, 1fr); } .dada-logo { right: 8px; } }
+
+/* Contact : Mathilde dans le disque. */
+.ouv--contact { padding-top: calc(var(--entete-h) + clamp(20px, 5vh, 56px)); padding-bottom: clamp(32px, 6vh, 72px); min-height: min(100svh, 900px); display: grid; align-items: center; }
+.ouv-contact-grille { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: clamp(28px, 6vw, 96px); align-items: center; }
+.contact-disque { width: min(100%, 52svh, 480px); aspect-ratio: 1; border-radius: 50%; overflow: hidden; justify-self: center; box-shadow: 0 0 0 clamp(8px, 1.4vw, 16px) var(--brique); }
+.contact-portrait { margin: 0; height: 100%; }
+.contact-portrait img { width: 100%; height: 100%; object-fit: cover; }
+.contact-qui { font-size: clamp(1rem, 1.4vw, 1.2rem); }
+.contact-grand { font-family: var(--police-titres); font-weight: 800; font-size: clamp(1.3rem, min(3vw, 5vh), 2.6rem); line-height: 1.25; margin: .4em 0 .8em; }
+.contact-grand a { text-decoration: none; display: inline-flex; min-height: 44px; align-items: center; }
+.contact-grand .contact-mail { font-family: var(--police-texte); font-weight: 700; font-size: max(15px, .62em); overflow-wrap: anywhere; }
+.contact-grand a:hover { color: var(--brique); }
+@media (max-width: 760px) {
+  .ouv-contact-grille { grid-template-columns: minmax(0, 1fr); }
+  .contact-disque { width: min(56vw, 260px); justify-self: start; }
+  .contact-grand { font-size: clamp(1.15rem, 5.6vw, 1.6rem); }
+}
+
+.demande { padding-block: var(--espace); background: var(--sable); }
+.demande-grille { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: clamp(28px, 6vw, 96px); align-items: start; }
+.demande-cote { position: sticky; top: calc(var(--entete-h) + 24px); }
+.demande-media { width: 72%; border-radius: 999px 999px var(--rayon) var(--rayon); overflow: hidden; margin-top: 1.4em; }
+.demande-media img { width: 100%; height: 100%; object-fit: cover; }
+.formulaire { display: grid; gap: 18px; }
+.etape { min-width: 0; border: 0; margin: 0; padding: clamp(18px, 3vw, 32px); background: var(--lin); border-radius: var(--rayon); display: grid; gap: 14px; }
+.etape legend { float: left; width: 100%; padding: 0; margin-bottom: 4px; font-family: var(--police-titres); font-weight: 800; text-transform: uppercase; font-size: clamp(1.1rem, 1.8vw, 1.5rem); display: flex; align-items: center; gap: 12px; }
+.etape-num { display: inline-grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; background: var(--brique); color: #fff; font-size: 1rem; flex: none; }
+.champ { display: grid; gap: 6px; }
+.champ label { font-weight: 700; font-size: max(14px, .92rem); }
+.champ input, .champ select, .champ textarea { width: 100%; min-width: 0; min-height: 48px; padding: 10px 14px; border: 1.5px solid rgba(28, 22, 24, .3); border-radius: var(--rayon); background: #fff; }
+.champ input:focus-visible, .champ select:focus-visible, .champ textarea:focus-visible { border-color: var(--brique); outline: 3px solid rgba(140, 60, 60, .35); outline-offset: 0; }
+.champ-aide { margin: 0; font-size: max(13px, .85rem); color: var(--texte-doux); }
+.champ-erreur { margin: 0; color: #9b1c1c; font-weight: 700; font-size: max(13px, .88rem); }
+.rgpd { font-size: max(13px, .88rem); color: var(--texte-doux); }
+.message-envoi { padding: 16px 18px; background: var(--plateau); color: var(--lin); border-radius: var(--rayon); font-weight: 600; }
+@media (max-width: 860px) { .demande-grille { grid-template-columns: minmax(0, 1fr); } .demande-cote { position: static; } .demande-media { display: none; } }
+
+.pro { padding-block: var(--espace); }
+.pro-grille { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr); gap: clamp(28px, 6vw, 96px); align-items: start; }
+.soutenir { padding: clamp(24px, 3vw, 40px); border: 1px solid var(--ligne); border-radius: var(--rayon); }
+.soutenir-logo { width: 96px; height: 96px; margin-bottom: 16px; }
+.soutenir-liens { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 22px; }
+.soutenir .lien-fleche { color: var(--lin); }
+@media (max-width: 860px) { .pro-grille { grid-template-columns: minmax(0, 1fr); } }
+
+/* 404. */
+.ouv--404 { min-height: 100svh; display: grid; align-items: end; padding: calc(var(--entete-h) + 24px) 0 clamp(32px, 8vh, 80px); overflow: hidden; }
+.ouv--404 .titre-geant { max-width: 16ch; }
+
+/* Pied de page. */
+.pied { background: var(--plateau); color: var(--lin); padding-block: clamp(48px, 7vw, 88px) 24px; --texte-doux: var(--lin-doux); --ligne: rgba(243, 237, 228, .2); }
+.pied-grille { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr) minmax(0, 1fr); gap: 32px; }
+.pied-marque img { width: 72px; height: 72px; margin-bottom: 14px; }
+.pied ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 2px; }
+.pied ul a { display: inline-flex; align-items: center; min-height: 44px; text-decoration: none; }
+.pied ul a:hover { color: var(--brique-clair); }
+.pied a[href^="tel:"], .pied a[href^="mailto:"] { display: inline-flex; min-height: 44px; align-items: center; }
+.pied-titre { font-weight: 700; letter-spacing: .14em; text-transform: uppercase; font-size: max(12px, .78rem); color: var(--brique-clair); }
+.pied-bas { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--ligne); font-size: max(13px, .85rem); color: var(--lin-doux); }
+.pied-bas p { margin: 0; }
+@media (max-width: 760px) { .pied-grille { grid-template-columns: minmax(0, 1fr); } }
+
+/* Barre du téléphone. */
+[data-barre-fixe] { background: var(--lin); border-top: 1px solid rgba(28, 22, 24, .12); }
+
+/* Voile : disque brique, logo et nom de la page. */
+[data-voile] { background: var(--brique); color: var(--lin); }
+.voile-contenu { display: grid; justify-items: center; gap: 14px; }
+.voile-contenu img { width: 84px; height: 84px; border-radius: 50%; box-shadow: 0 0 0 3px var(--lin); }
+[data-voile-libelle] { font-family: var(--police-titres); font-weight: 800; text-transform: uppercase; font-size: clamp(1.6rem, 4vw, 3rem); letter-spacing: .02em; }
+
+/* Écrans bas : le premier écran tient (1366×768, téléphone à l'horizontale). */
+@media (max-height: 820px) and (min-width: 761px) {
+  .ouv--accueil .ouv-intro { margin-bottom: .8em; }
+}
+@media (max-height: 500px) and (min-width: 761px) {
+  .ouv .surtitre, .ouv-intro { display: none; }
+  .ouv-actions { margin-bottom: .6em; }
+  .toupie--ouverture { width: 92px; bottom: 24px; }
+  .ouv-creations-cote .toupie, .toupie--trans { width: 72px; }
+  .bandeau-ronds ol { display: flex; overflow-x: auto; max-width: none; padding-bottom: 6px; }
+  .bandeau-ronds li { flex: 0 0 150px; }
+  .ouv--transmission .ouv-trans-texte { padding-block: 8px; justify-content: flex-start; }
+  .ouv--contact { padding-top: calc(var(--entete-h) + 8px); padding-bottom: 8px; }
+  .ouv--transmission { --haut: 7vh; }
+  .ouv--transmission .ouv-actions, .ouv--contact .ouv-actions { margin-bottom: .3em; }
+  .toupie--trans { display: none; }
+  .ouv-info { padding: .3em .9em; }
+  .contact-qui { display: none; }
+  .prochaine-disque { width: 96px; }
+  .contact-disque { width: 40svh; }
+  .contact-grand { font-size: 1.1rem; }
+  .ouv-trans-grille { min-height: 0; }
+}
+@media (max-width: 760px) {
+}
+
+/* ---- Module agenda-des-dates (bibliothèque), repris tel quel ---- */
+/* Agenda des dates : liste par mois, pastille de date, statut, actions ; dates passées repliées.
+   Identité uniquement par variables ; --agd-pastille règle la taille de la pastille de date. */
+.agd { --agd-pastille: clamp(64px, 7vw, 88px); position: relative; padding-block: clamp(56px, 9vw, 128px); }
+.agd__tete { display: grid; gap: .8rem; max-width: 46rem; margin-bottom: clamp(20px, 3vw, 36px); }
+.agd__h2 { font-size: clamp(2rem, 5vw, 3.6rem); }
+.agd__intro { color: var(--couleur-texte-doux); max-width: 38rem; }
+.agd__prochaine { font-family: var(--police-mono); font-size: max(13px, .88rem); letter-spacing: .04em; color: var(--couleur-accent); min-height: 1.5em; }
+
+/* Filtres par type et compteur */
+.agd__outils { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem 1rem; margin-bottom: clamp(12px, 2vw, 20px); }
+.agd__filtres { display: flex; gap: .4rem; flex: 1 1 auto; min-width: 0; overflow-x: auto; scrollbar-width: none; padding: 3px; margin: -3px; }
+.agd__filtres::-webkit-scrollbar { display: none; }
+.agd__filtre { flex: none; min-height: 44px; padding: 0 1.05rem; border-radius: 999px; border: 1px solid var(--couleur-ligne); background: transparent; font-size: max(13px, .9rem); white-space: nowrap; cursor: pointer; }
+.agd__filtre:hover { border-color: var(--couleur-texte-doux); }
+.agd__filtre[aria-pressed="true"] { background: var(--couleur-accent); color: var(--couleur-sur-accent); border-color: var(--couleur-accent); }
+.agd__compte { margin-left: auto; font-family: var(--police-mono); font-size: max(12px, .8rem); letter-spacing: .06em; color: var(--couleur-texte-doux); white-space: nowrap; }
+
+/* Mois */
+.agd__groupe { margin-top: clamp(28px, 4vw, 48px); }
+.agd__groupe-titre { font-family: var(--police-mono); font-weight: 500; font-size: max(12px, .8rem); letter-spacing: .14em; text-transform: uppercase; color: var(--couleur-texte-doux);
+  padding-bottom: .7rem; border-bottom: 1px solid var(--couleur-ligne); }
+
+/* Une date */
+.agd__liste { list-style: none; margin: 0; padding: 0; display: grid; }
+.agd__date { display: grid; gap: .4rem 1.2rem; padding: clamp(16px, 2.2vw, 26px) 0; border-bottom: 1px solid var(--couleur-ligne); }
+.agd__date--pret { grid-template-columns: var(--agd-pastille) minmax(0, 1fr); align-items: start; }
+.agd__pastille { position: relative; display: grid; place-content: center; justify-items: center; aspect-ratio: 1; border-radius: calc(var(--rayon) * .8);
+  background: var(--couleur-surface); border: 1px solid var(--couleur-ligne); line-height: 1; }
+.agd__num { font-family: var(--police-titres); font-size: calc(var(--agd-pastille) * .42); font-weight: 600; font-variant-numeric: tabular-nums; }
+.agd__mois { margin-top: .3em; font-family: var(--police-mono); font-size: max(12px, .74rem); letter-spacing: .12em; text-transform: uppercase; color: var(--couleur-texte-doux); }
+.agd__corps { display: grid; gap: .35rem; min-width: 0; }
+.agd__titre { font-size: clamp(1.2rem, 2.1vw, 1.65rem); }
+.agd__quand { font-size: max(14px, .95rem); }
+.agd__quand::first-letter { text-transform: uppercase; }
+.agd__lieu, .agd__texte { color: var(--couleur-texte-doux); }
+.agd__statut { justify-self: start; padding: .25em .75em; border-radius: 999px; font-family: var(--police-mono); font-size: max(12px, .74rem); letter-spacing: .08em; text-transform: uppercase;
+  background: var(--couleur-surface); border: 1px solid var(--couleur-ligne); }
+.agd__date[data-statut="bientot"] .agd__statut, .agd__date[data-statut="dernieres"] .agd__statut { background: var(--couleur-accent); color: var(--couleur-sur-accent); border-color: var(--couleur-accent); }
+.agd__date[data-statut="encours"] .agd__statut { background: var(--couleur-secondaire); color: var(--couleur-fond); border-color: var(--couleur-secondaire); }
+.agd__date[data-statut="complet"] .agd__pastille { opacity: .6; }
+.agd__date[data-statut="aconfirmer"] .agd__pastille { border-style: dashed; }
+.agd__actions { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: .45rem; }
+.agd__actions .socle-bouton { font-size: max(14px, .92rem); }
+.agd__vide { color: var(--couleur-texte-doux); padding-block: 1.2rem; }
+
+/* Dates passées : repliées */
+.agd__passees { margin-top: clamp(28px, 4vw, 44px); border-top: 1px solid var(--couleur-ligne); }
+.agd__passees > summary { display: flex; align-items: center; min-height: 52px; cursor: pointer; font-family: var(--police-mono); font-size: max(12px, .82rem); letter-spacing: .1em; text-transform: uppercase; color: var(--couleur-texte-doux); list-style: none; }
+.agd__passees > summary::-webkit-details-marker { display: none; }
+.agd__passees > summary::before { content: '+'; display: inline-grid; place-items: center; width: 1.6em; margin-right: .4em; font-size: 1.2em; transition: transform .3s; }
+.agd__passees[open] > summary::before { transform: rotate(45deg); }
+.agd__liste--passees .agd__date { opacity: .72; }
+.agd__liste--passees .agd__pastille { filter: grayscale(1); }
+
+/* Retour physique de l'ajout à l'agenda : la pastille se tamponne « Ajouté ». */
+.agd__tampon { position: absolute; inset: auto -8% 8% auto; padding: .2em .45em; border: 2px solid var(--couleur-accent); border-radius: 6px; color: var(--couleur-accent);
+  background: color-mix(in oklab, var(--couleur-fond) 80%, transparent); font-family: var(--police-mono); font-size: max(12px, .7rem); letter-spacing: .08em; text-transform: uppercase;
+  transform: rotate(-12deg); opacity: 0; pointer-events: none; }
+.agd__date--ajoutee .agd__tampon { opacity: 1; animation: agd-tampon .45s cubic-bezier(.2, 1.4, .4, 1) both; }
+
+@keyframes agd-tampon { from { opacity: 0; transform: rotate(-24deg) scale(1.9); } to { opacity: 1; transform: rotate(-12deg) scale(1); } }
+
+.agd--anime .agd__date:not(.est-vu) { opacity: 0; transform: translateY(14px); }
+.agd--anime .agd__date { transition: opacity .55s ease, transform .55s cubic-bezier(.2, .7, .2, 1); }
+.agd__date--entre { animation: agd-entre .35s ease both; }
+
+@keyframes agd-entre { from { opacity: 0; transform: translateY(8px); } }
+
+.agd__date--pret > .agd__actions { grid-column: 2; }
+@media (min-width: 900px) {
+  .agd__date--pret { grid-template-columns: var(--agd-pastille) minmax(0, 1fr) auto; }
+  .agd__date--pret > .agd__actions { grid-column: 3; grid-row: 1; align-self: center; justify-content: flex-end; margin-top: 0; max-width: 22rem; }
+}
+@media (max-width: 520px) {
+  .agd { --agd-pastille: 58px; }
+  .agd__actions .socle-bouton { flex: 1 1 auto; }
+}
+
+/* Ouvertures : les éléments joués par l'intro ou à l'arrivée restent cachés jusqu'à leur animation (jamais visibles avant). */
+html.js:not(.secours):not([data-arrivee="retour"]):not(.ouv-pret) :is([data-ouv], .bandeau-ronds li) { opacity: 0; }
+
+/* Titres d'ouverture : la taille suit la largeur de leur colonne (mot le plus long en em, --long) et la hauteur d'écran. */
+:is(.ouv--accueil .ouv-texte, .ouv-titre-boite, .ouv-agenda-texte, .ouv-trans-texte, .ouv-contact-texte, .ouv--404 .ouv-texte) { container-type: inline-size; }
+.ouv .titre-geant { font-size: min(calc(100cqi / var(--long, 10.6)), var(--haut, 11vh), 7.4rem); }
+.ouv--accueil { --long: 10.6; --haut: 10.5vh; }
+.ouv--creations { --long: 11.8; --haut: 10vh; }
+.ouv--agenda { --long: 12.2; --haut: 9vh; }
+.ouv--transmission { --long: 13.2; --haut: 9.5vh; }
+.ouv--contact { --long: 9; --haut: 9.5vh; }
+.ouv--404 { --long: 12.6; --haut: 8vh; }
+.ouv--creations .titre-geant { margin-bottom: 0; }
+@media (max-height: 820px) and (min-width: 761px) { .ouv { --haut: 8.4vh; } .ouv--transmission .ouv-intro { display: none; } }
+@media (max-height: 500px) and (min-width: 761px) { .ouv { --haut: 8vh; } }
+@media (max-width: 760px) { .ouv .titre-geant { font-size: min(calc(100cqi / var(--long, 10.6)), 3.6rem); } }
+
+/* Audit rapide v1 : cibles tactiles, fiche sur téléphone, 404 et Transmission sur petit écran. */
+.agd__ics, .agd__actions .socle-bouton { min-height: 44px; }
+@media (max-width: 760px) {
+  .fiche > div { grid-template-columns: minmax(0, 1fr); gap: .2em; }
+  .ouv--transmission .ouv-intro { display: none; }
+  .ouv--404 { display: block; min-height: 0; padding: var(--entete-h) 0 32px; }
+  .ouv--404 .ouv-fond { position: relative; inset: auto; height: 26svh; }
+  .ouv--404 .ouv-fond::after { background: linear-gradient(0deg, rgba(24, 19, 26, .7) 0%, rgba(24, 19, 26, 0) 40%); }
+  .ouv--404 .ouv-texte { padding-top: 20px; }
+  .ouv--404 .ouv-intro { display: none; }
+}
+
+/* Petits textes : 13 px au moins sur ordinateur. */
+.credit, .mention-ia, .roue-num, .fiche dt, .fiche-mini dt, .mini-titre, .chapitre-num, .routes-col h3, .pied-titre, .agd__compte, .agd__groupe-titre, .ouv-info-label, .bandeau-annee, .date-jour, .carte-encart p { font-size: max(13px, .8rem); }
+.roue-num span { font-size: 1.5em; }
+
+/* Sans JavaScript, l'en-tête est dans le flux : les ouvertures plein écran se raccourcissent d'autant. */
+@media (min-width: 761px) { html:not(.js) :is(.ouv--accueil, .ouv--404) { min-height: calc(100svh - 72px); } }
+@media (max-width: 760px) { .roue-titre { font-size: min(calc((100cqi - 104px) / 10.8), 2.4rem); } }
+
+.formulaire, .etape { grid-template-columns: minmax(0, 1fr); }
+.agd__titre { overflow-wrap: anywhere; }
+@media (max-width: 460px) { .prochaine-titre { font-size: 4.8vw; } .agd__titre { font-size: 1.1rem; } }
+
+/* Audit standard v1 : premiers écrans des petits téléphones. */
+@media (max-width: 760px) {
+  .ouv--accueil .ouv-fond { height: clamp(110px, calc(100svh - 520px), 320px); }
+  .toupie--ouverture { top: calc(var(--entete-h) + 10px); }
+  .ouv--accueil .lien-fleche--clair { display: none; }
+  .ouv .surtitre { font-size: 12px; letter-spacing: .12em; margin-bottom: .6em; }
+  .contact-disque { width: min(30vw, 130px); box-shadow: 0 0 0 6px var(--brique); }
+  .ouv-contact-grille { gap: 18px; }
+  .ouv--contact { padding-top: calc(var(--entete-h) + 14px); }
+}
+@media (max-width: 760px) and (max-height: 720px) { .contact-qui { display: none; } .contact-grand { margin: .2em 0 .5em; } }
+
+/* Petits écrans (320 px) : aucun mot ne dépasse. */
+.toupie { overflow: hidden; }
+@media (max-width: 760px) {
+  .titre-section { font-size: min(1.5rem, 6.4vw); }
+  .titre-section--petit { font-size: min(1.4rem, 6vw); }
+  .etape legend { font-size: min(1.2rem, 4.4vw); }
+  .portrait h3 { font-size: min(1rem, 4.2vw); overflow-wrap: anywhere; }
+  .chapitre-titre { font-size: min(2.6rem, 8.4vw); }
+  .dates-liste--compacte .date { grid-template-columns: 52px minmax(0, 1fr); }
+  .agd { --agd-pastille: 64px; }
+  .agd__mois { letter-spacing: .04em; }
+  .agd__compte { white-space: normal; margin-left: 0; }
+  .appel h2 { font-size: min(calc(100cqi / 14), 2.6rem); }
+}
+@media (max-width: 760px) { .roue-titre { font-size: min(calc((100cqi - 104px) / 11.6), 2.4rem); } }
+@media (max-width: 760px) { .etape legend { font-size: min(1.2rem, 4vw); } .equipe-liste { gap: 12px; } .portrait h3 { font-size: min(1rem, 3.9vw); } }
+@media (max-width: 760px) { html:not(.js) .ouv--accueil .ouv-fond { height: clamp(100px, calc(100svh - 620px), 260px); } }
+@media (max-width: 760px) { .credit--ouv { left: 12px; right: auto; } }

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>La Virevoltée — trois directions</title>
+<style>
+@font-face{font-family:Syne;src:url(fonts/syne-latin-800-normal.woff2) format('woff2');font-weight:800}
+@font-face{font-family:Syne;src:url(fonts/syne-latin-700-normal.woff2) format('woff2');font-weight:700}
+@font-face{font-family:Manrope;src:url(fonts/manrope-latin-400-normal.woff2) format('woff2');font-weight:400}
+@font-face{font-family:Manrope;src:url(fonts/manrope-latin-600-normal.woff2) format('woff2');font-weight:600}
+@font-face{font-family:'Instrument Serif';src:url(fonts/instrument-serif-latin-400-normal.woff2) format('woff2')}
+@font-face{font-family:'Instrument Serif';src:url(fonts/instrument-serif-latin-400-italic.woff2) format('woff2');font-style:italic}
+@font-face{font-family:Inter;src:url(fonts/inter-latin-400-normal.woff2) format('woff2');font-weight:400}
+@font-face{font-family:Inter;src:url(fonts/inter-latin-600-normal.woff2) format('woff2');font-weight:600}
+@font-face{font-family:Bricolage;src:url(fonts/bricolage-grotesque-latin-800-normal.woff2) format('woff2');font-weight:800}
+@font-face{font-family:Bricolage;src:url(fonts/bricolage-grotesque-latin-700-normal.woff2) format('woff2');font-weight:700}
+@font-face{font-family:'Instrument Sans';src:url(fonts/instrument-sans-latin-400-normal.woff2) format('woff2');font-weight:400}
+@font-face{font-family:'Instrument Sans';src:url(fonts/instrument-sans-latin-600-normal.woff2) format('woff2');font-weight:600}
+*{box-sizing:border-box;margin:0}
+body{font:15px/1.5 system-ui,sans-serif;background:#e9e6e1;color:#1c1618;padding:28px 20px 60px}
+.tete{max-width:1240px;margin:0 auto 26px;display:flex;gap:18px;align-items:center}
+.tete img{width:64px;height:64px}
+.tete h1{font:700 22px/1.2 system-ui}
+.tete p{color:#555;font-size:14px}
+.dir{max-width:1240px;margin:0 auto 34px;border-radius:14px;overflow:hidden;box-shadow:0 2px 18px rgba(0,0,0,.12);display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr)}
+.maquette{position:relative;min-height:520px;overflow:hidden}
+.maquette>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.infos{padding:28px 30px;display:flex;flex-direction:column;gap:14px;font-size:14.5px}
+.infos h2{font:700 13px/1 system-ui;letter-spacing:.14em;text-transform:uppercase}
+.infos .nom{font-size:30px;line-height:1.05;margin-top:-4px}
+.nuancier{display:flex;gap:8px;flex-wrap:wrap}
+.nuancier span{flex:1 1 0;min-width:84px;border-radius:8px;padding:44px 8px 7px;font:600 11.5px/1.25 system-ui;box-shadow:inset 0 0 0 1px rgba(0,0,0,.08)}
+.infos ul{padding-left:18px;display:grid;gap:5px}
+.infos b{font-weight:600}
+.reco{display:inline-block;font:700 11px/1 system-ui;letter-spacing:.08em;padding:6px 9px;border-radius:99px;margin-left:6px;vertical-align:middle}
+.bande{display:flex;gap:6px;height:84px}
+.bande img{flex:1;min-width:0;object-fit:cover;border-radius:6px}
+/* A */
+.a .infos{background:#F3EDE4;color:#1C1618}
+.a .maquette{background:#18131A}
+.a .maquette>img{object-position:50% 40%}
+.a .voileA{position:absolute;inset:0;background:linear-gradient(90deg,rgba(24,19,26,.82) 0%,rgba(24,19,26,.35) 55%,rgba(24,19,26,0) 80%)}
+.a .ent{position:absolute;top:0;left:0;right:0;height:58px;background:#F3EDE4;display:flex;align-items:center;gap:22px;padding:0 22px;font:600 13px Manrope}
+.a .ent img{width:36px;height:36px}
+.a .ent .b{margin-left:auto;background:#8C3C3C;color:#fff;padding:9px 14px;border-radius:99px}
+.a .txt{position:absolute;left:30px;bottom:34px;right:40%;color:#F3EDE4}
+.a .sur{font:600 12px Manrope;letter-spacing:.16em;text-transform:uppercase;opacity:.85}
+.a .titre{font:800 clamp(30px,4.2vw,54px)/.95 Syne;text-transform:uppercase;letter-spacing:-.01em;margin:10px 0 14px}
+.a .titre em{font-style:normal;color:#E7A39A}
+.a .p{font:400 15px/1.5 Manrope;max-width:30ch}
+.a .boutons{display:flex;gap:10px;margin-top:16px;flex-wrap:wrap;font:600 13px Manrope}
+.a .bt{background:#8C3C3C;color:#fff;padding:11px 16px;border-radius:99px}
+.a .info{border:1px solid rgba(243,237,228,.5);padding:10px 14px;border-radius:99px}
+.a .disque{position:absolute;right:30px;top:86px;width:120px;height:120px;border-radius:50%;border:1.5px dashed rgba(243,237,228,.55);display:grid;place-items:center;font:600 11px Manrope;color:#F3EDE4;text-align:center;line-height:1.3}
+.a .nom{font-family:Syne;font-weight:800;text-transform:uppercase}
+.a .reco{background:#8C3C3C;color:#fff}
+/* B */
+.b .infos{background:#121014;color:#EFE7DC}
+.b .infos h2{color:#E8A54B}
+.b .maquette{background:#121014}
+.b .maquette>img{object-position:50% 50%}
+.b .halo{position:absolute;inset:0;background:radial-gradient(circle at 38% 40%,rgba(18,16,20,0) 0,rgba(18,16,20,.25) 30%,rgba(18,16,20,.92) 68%)}
+.b .ent{position:absolute;top:0;left:0;right:0;height:58px;display:flex;align-items:center;gap:22px;padding:0 22px;font:400 13px Inter;color:#EFE7DC;background:#121014}
+.b .ent img{width:36px;height:36px}
+.b .ent .b2{margin-left:auto;border:1px solid #C2554B;color:#EFE7DC;padding:9px 14px;border-radius:4px}
+.b .txt{position:absolute;left:30px;bottom:34px;right:30px;color:#EFE7DC}
+.b .titre{font:400 clamp(38px,5vw,68px)/.95 'Instrument Serif';margin:8px 0 12px}
+.b .titre em{color:#E8A54B}
+.b .sur{font:600 11.5px Inter;letter-spacing:.18em;text-transform:uppercase;color:#E8A54B}
+.b .p{font:400 15px/1.55 Inter;max-width:44ch;color:#d9d0c4}
+.b .corde{position:absolute;left:0;right:0;top:63%;height:40px}
+.b .boutons{display:flex;gap:10px;margin-top:16px;font:600 13px Inter}
+.b .bt{background:#C2554B;color:#fff;padding:11px 16px;border-radius:4px}
+.b .info{color:#EFE7DC;padding:11px 0}
+.b .nom{font-family:'Instrument Serif';font-weight:400;font-size:40px}
+.b .nom em{color:#E8A54B}
+.b .reco{background:#2a2530;color:#EFE7DC}
+/* C */
+.c .infos{background:#F1EADC;color:#141213}
+.c .maquette{background:#F1EADC;padding:76px 26px 26px;display:grid;grid-template-rows:auto 1fr;gap:16px}
+.c .ent{position:absolute;top:0;left:0;right:0;height:58px;display:flex;align-items:center;gap:22px;padding:0 22px;font:600 13px 'Instrument Sans';color:#141213;border-bottom:1px solid #141213}
+.c .ent img{width:36px;height:36px}
+.c .ent .b3{margin-left:auto;background:#141213;color:#F1EADC;padding:9px 14px}
+.c .titre{font:800 clamp(34px,4.4vw,60px)/.92 Bricolage;letter-spacing:-.03em;color:#141213}
+.c .titre em{font-style:normal;color:#8C3C3C}
+.c .sequence{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;align-items:stretch}
+.c .sequence figure{position:relative;overflow:hidden;background:#ddd}
+.c .sequence img{width:100%;height:100%;object-fit:cover;display:block;filter:none}
+.c .sequence figcaption{position:absolute;left:6px;bottom:6px;font:600 10.5px 'Instrument Sans';background:#F1EADC;padding:2px 6px}
+.c .sequence{padding-bottom:30px}.c .sequence figure:nth-child(2){transform:translateY(10px)}
+.c .sequence figure:nth-child(3){transform:translateY(20px)}
+.c .sequence figure:nth-child(4){transform:translateY(30px)}
+.c .p{font:400 15px/1.5 'Instrument Sans';max-width:46ch;color:#3a3536}
+.c .nom{font-family:Bricolage;font-weight:800;letter-spacing:-.02em}
+.c .reco{background:#141213;color:#F1EADC}
+@media (max-width:900px){.dir{grid-template-columns:1fr}.maquette{min-height:460px}.a .txt{right:30px}}
+</style>
+</head>
+<body>
+<div class="tete"><img src="img/logo.png" alt="Logo de la Virevoltée"><div><h1>Compagnie la Virevoltée — trois directions pour la maquette</h1><p>Le même contenu, les mêmes photos (les vôtres, aucune image générée en ouverture) et le rouge brique de votre logo, trois façons de les mettre en scène.</p></div></div>
+
+<section class="dir a">
+  <div class="maquette">
+    <img src="img/aurelie-fieschi.jpg" alt="Danseuse qui tourne, jupe fleurie déployée, devant une paroi rocheuse">
+    <div class="voileA"></div>
+    <div class="ent"><img src="img/logo.png" alt=""><span>Créations</span><span>Agenda</span><span>Transmission</span><span>Contact</span><span class="b">Programmer</span></div>
+    <div class="disque">le logo tourne<br>et s'ouvre<br>sur la page</div>
+    <div class="txt"><p class="sur">Compagnie de danse contemporaine · Limoges</p><p class="titre">Une danse <em>organique</em> et explosive</p><p class="p">Danse, musique, images : cinq créations pour la rue et pour la scène.</p><div class="boutons"><span class="bt">Programmer un spectacle</span><span class="info">Prochaine date · 27 nov. · Souffle, Colomiers</span></div></div>
+  </div>
+  <div class="infos">
+    <h2>Direction A <span class="reco">RECOMMANDÉE</span></h2>
+    <p class="nom">Virevolte</p>
+    <p><b>Ambiance :</b> lumineuse et énergique, comme un studio en plein jour ; le tourbillon de votre nom.</p>
+    <div class="nuancier">
+      <span style="background:#F3EDE4">Lin<br>#F3EDE4<br>fond</span>
+      <span style="background:#E6DCCD">Sable<br>#E6DCCD<br>bandes</span>
+      <span style="background:#18131A;color:#F3EDE4">Plateau<br>#18131A<br>scène, appel</span>
+      <span style="background:#8C3C3C;color:#fff">Brique<br>#8C3C3C<br>logo, boutons</span>
+    </div>
+    <p><b>Typographies :</b> <span style="font:800 17px Syne;text-transform:uppercase">Syne ExtraBold</span> en capitales pour les titres, <span style="font:400 15px Manrope">Manrope pour le texte</span>.</p>
+    <ul>
+      <li><b>Idée :</b> la virevolte. À l'intro, le disque du logo tourne sur lui-même puis s'ouvre en cercle sur la danseuse ; les changements de page passent par ce même disque.</li>
+      <li><b>Animations :</b> lettres des titres qui arrivent en tournoyant, roue des cinq créations qui tourne au défilement, photos qui s'inclinent selon la vitesse, noms des 33 villes traversées qui filent en grand, compteur des 55 dates.</li>
+      <li><b>Accueil :</b> ouverture plein cadre · démarche et citation de Nietzsche · roue des créations · prochaines dates · teasers sur fond plateau · transmission · l'équipe en six portraits · lieux et partenaires · appel « Programmer ».</li>
+      <li><b>Niveau visé :</b> Nolanis (clair, net) et Vizrok (capitales énergiques).</li>
+    </ul>
+    <div class="bande"><img src="img/creations.jpg" alt=""><img src="img/souffle.jpg" alt=""><img src="img/nocturnes-compagnie-virevol-5.jpg" alt=""></div>
+  </div>
+</section>
+
+<section class="dir b">
+  <div class="maquette">
+    <img src="img/nocturnes.jpg" alt="NOCTURNES : la danseuse et le musicien dans un rond de lumière">
+    <div class="halo"></div>
+    <div class="ent"><img src="img/logo.png" alt=""><span>Créations</span><span>Agenda</span><span>Transmission</span><span>Contact</span><span class="b2">Programmer</span></div>
+    <svg class="corde" viewBox="0 0 600 40" preserveAspectRatio="none" aria-hidden="true"><path d="M0 20 C 120 6, 220 34, 300 20 S 480 6, 600 20" fill="none" stroke="#E8A54B" stroke-width="1.4"/></svg>
+    <div class="txt"><p class="sur">Danse et musique en direct</p><p class="titre">Entre crépuscules <em>et aubes</em></p><p class="p">La Virevoltée invite musiciens, vidéastes et éclairagistes à danser avec elle.</p><div class="boutons"><span class="bt">Programmer un spectacle</span><span class="info">27 nov. · Souffle · Colomiers</span></div></div>
+  </div>
+  <div class="infos">
+    <h2>Direction B</h2>
+    <p class="nom">Le <em>plateau</em></p>
+    <p><b>Ambiance :</b> la salle juste avant le noir, une poursuite s'allume ; poétique, musicale.</p>
+    <div class="nuancier">
+      <span style="background:#121014;color:#EFE7DC;box-shadow:inset 0 0 0 1px #333">Plateau<br>#121014<br>fond</span>
+      <span style="background:#EFE7DC;color:#121014">Ivoire<br>#EFE7DC<br>agenda, contact</span>
+      <span style="background:#C2554B;color:#fff">Brique éclairée<br>#C2554B<br>boutons</span>
+      <span style="background:#E8A54B">Ambre<br>#E8A54B<br>la lumière</span>
+    </div>
+    <p><b>Typographies :</b> <span style="font:400 21px 'Instrument Serif'">Instrument Serif, <i>un mot en italique</i></span>, <span style="font:400 14px Inter">Inter pour le texte</span>.</p>
+    <ul>
+      <li><b>Idée :</b> la corde. Antoine Petit est dans toutes les créations : une corde de guitare traverse le site et vibre selon la vitesse du défilement ; touchée, elle sonne une note (le son seulement après un geste).</li>
+      <li><b>Animations :</b> photos de scène qui s'éclairent sous un halo en entrant, titres qui montent ligne à ligne, teasers en grand, agenda sur fond ivoire.</li>
+      <li><b>Niveau visé :</b> Les Plus Hautes Eaux (même métier) et Pierre Becq, sans leur reprendre l'eau ni le bois.</li>
+    </ul>
+    <div class="bande"><img src="img/nocturnes-compagnie-virevol-5.jpg" alt=""><img src="img/doline-compagnie-virevol-2.jpg" alt=""><img src="img/souffle-compagnie-virevol-3.jpg" alt=""></div>
+  </div>
+</section>
+
+<section class="dir c">
+  <div class="maquette">
+    <div class="ent"><img src="img/logo.png" alt=""><span>Créations</span><span>Agenda</span><span>Transmission</span><span>Contact</span><span class="b3">Programmer</span></div>
+    <div><p class="titre">Le geste,<br><em>image par image</em></p><p class="p" style="margin-top:10px">Chaque création se déroule comme une chronophotographie : ses photos s'enchaînent au défilement.</p></div>
+    <div class="sequence">
+      <figure><img src="img/echo-chute-compagnie-virevol-2.jpg" alt=""><figcaption>01</figcaption></figure>
+      <figure><img src="img/regard-exterieur-etienne-gaillochet-2.jpg" alt=""><figcaption>02</figcaption></figure>
+      <figure><img src="img/creations.jpg" alt=""><figcaption>03</figcaption></figure>
+      <figure><img src="img/choregraphe-regard-exterieur-2.jpg" alt=""><figcaption>04</figcaption></figure>
+    </div>
+  </div>
+  <div class="infos">
+    <h2>Direction C</h2>
+    <p class="nom">Geste décomposé</p>
+    <p><b>Ambiance :</b> revue d'art contemporain, claire et graphique ; le mouvement montré image par image.</p>
+    <div class="nuancier">
+      <span style="background:#F1EADC">Crème<br>#F1EADC<br>fond</span>
+      <span style="background:#CFC8BC">Béton<br>#CFC8BC<br>bandes</span>
+      <span style="background:#141213;color:#F1EADC">Encre<br>#141213<br>texte, boutons</span>
+      <span style="background:#8C3C3C;color:#fff">Brique<br>#8C3C3C<br>un mot par titre</span>
+    </div>
+    <p><b>Typographies :</b> <span style="font:800 18px Bricolage;letter-spacing:-.02em">Bricolage Grotesque</span> pour les titres, <span style="font:400 15px 'Instrument Sans'">Instrument Sans pour le texte</span>.</p>
+    <ul>
+      <li><b>Idée :</b> la chronophotographie. Les photos d'un même spectacle s'empilent puis s'étalent en planche-contact au défilement ; numérotées comme des images de film.</li>
+      <li><b>Animations :</b> séquences qui se déplient, photos qui glissent l'une sur l'autre, filets qui se tracent, agenda en tableau net.</li>
+      <li><b>Niveau visé :</b> Artic (revue crème et encre) et Fit-Tri (un seul système sur tout le site).</li>
+    </ul>
+    <div class="bande"><img src="img/saisons-passees.jpg" alt=""><img src="img/echo-chute-compagnie-virevol-2.jpg" alt=""><img src="img/regard-exterieur-etienne-gaillochet-2.jpg" alt=""></div>
+  </div>
+</section>
+</body>
+</html>

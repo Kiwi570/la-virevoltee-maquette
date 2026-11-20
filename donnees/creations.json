@@ -1,0 +1,156 @@
+[
+  {
+    "cle": "inshift",
+    "titre": "InShift",
+    "sousTitre": "ou comment bouger les lignes",
+    "annee": "Création 2027",
+    "anneeCourte": "2027",
+    "format": "Solo de danse pour la rue, les lieux non dédiés et l’intérieur",
+    "formatCourt": "Solo · rue et salle",
+    "duree": "29 min environ",
+    "public": "Tout public",
+    "accroche": "Une performance qui se joue et déjoue des codes du spectacle vivant.",
+    "propos": "Un solo qui parle des changements qui nous traversent : personnels, émotionnels, physiques, psychiques, et de ce qu’ils déplacent. Sur une musique originale, la danse change de rythme, de gestuelle et d’espace pour surprendre le public là où il ne l’attend pas.",
+    "equipe": [
+      { "nom": "Mathilde Rader", "role": "chorégraphie et interprétation" },
+      { "nom": "Antoine Petit", "role": "composition musicale" },
+      { "nom": "Etienne Gaillochet", "role": "regard extérieur" }
+    ],
+    "reperes": [
+      "Étapes de travail les 15 et 20 novembre 2025 aux Rencontres chorégraphiques de Lomé (Togo)",
+      "Première les 27 et 28 mai 2027 au festival Prêt-à-jouer, Fribourg (Suisse)"
+    ],
+    "soutiens": [
+      "Coproduction : New Danse Studio, Brive ; Rencontres chorégraphiques de Lomé – FA’ARTS Festival",
+      "Soutien : Le Regard du Cygne, Paris",
+      "Partenariats en cours"
+    ],
+    "credits": "Photos © Yao Bobby, 300 Records Média, Abobolais, Komlan Ametogbe",
+    "teaser": "",
+    "fond": "clair",
+    "rond": "rond-inshift",
+    "images": ["inshift-1", "inshift-2", "inshift-3"]
+  },
+  {
+    "cle": "nocturnes",
+    "titre": "NOCTURNES",
+    "sousTitre": "concert spectacle",
+    "annee": "Création 2025",
+    "anneeCourte": "2025",
+    "format": "Duo danse et musique, forme hybride entre spectacle et concert",
+    "formatCourt": "Duo danse et musique · salle",
+    "duree": "1 h",
+    "public": "Tout public",
+    "accroche": "Entre crépuscules et aubes nocturnes.",
+    "propos": "Deuxième duo de Mathilde Rader et Antoine Petit après Souffle. Une traversée des ambiances de la nuit : la danse passe de l’énergie à l’explosion puis à la poésie ; la musique mêle guitare électrique, électro et sound design, sous une lumière créée en direct.",
+    "equipe": [
+      { "nom": "Mathilde Rader", "role": "danse, création et interprétation" },
+      { "nom": "Antoine Petit", "role": "musique, création et interprétation" },
+      { "nom": "Sébastien Budria", "role": "lumières, création et interprétation" }
+    ],
+    "reperes": [
+      "Première le 21 février 2025, Centre culturel John-Lennon, Limoges",
+      "Résidences : centres culturels Jean-Gagnant et John-Lennon, Opéra – Maison des arts et de la danse (Limoges), La Mégisserie (Saint-Junien)"
+    ],
+    "soutiens": [
+      "Ville de Limoges",
+      "Opéra de Limoges – Maison des arts et de la danse (soutien à la création lumière)"
+    ],
+    "credits": "Photos © Alex Overton",
+    "teaser": "6UYM9atbzvA",
+    "fond": "plateau",
+    "rond": "rond-nocturnes",
+    "images": ["nocturnes-1", "nocturnes-2", "nocturnes-3"]
+  },
+  {
+    "cle": "echo",
+    "titre": "L’écho d’une chute",
+    "sousTitre": "cocréation avec le Collectif Melpo",
+    "annee": "Création 2025",
+    "anneeCourte": "2025",
+    "format": "Duo de danse pour l’espace public, art de rue",
+    "formatCourt": "Duo · espace public",
+    "duree": "45 min (version de 20 min possible)",
+    "public": "Tout public",
+    "accroche": "Être à l’écoute de soi, des autres, de l’environnement.",
+    "propos": "Tout part de l’écoute. Autour d’un élément de décor et d’une musique originale, deux danseuses explorent ce que veut dire écouter : soi-même, l’autre, le lieu. Le public est entraîné dans cette attention particulière, au milieu de la ville.",
+    "equipe": [
+      { "nom": "Audrey Allafort", "role": "chorégraphie et interprétation" },
+      { "nom": "Mathilde Rader", "role": "chorégraphie et interprétation" },
+      { "nom": "Juliette Pascaud", "role": "composition musicale" },
+      { "nom": "Antoine Petit", "role": "composition musicale" }
+    ],
+    "reperes": [
+      "Première le 15 août 2025, Festival des arts de la rue, Argentat-sur-Dordogne",
+      "Résidences : Maison des arts et de la danse (Limoges), salle Chavagne – Saint-Eutrope (Saintes), Atelier Corps en tête (Argentat), La Mégisserie et L’Étoile bleue (Saint-Junien), Graines de rue (Bessines-sur-Gartempe)"
+    ],
+    "soutiens": ["Ville de Limoges", "En collaboration avec le Collectif Melpo"],
+    "credits": "Teaser © Juliette Pascaud",
+    "teaser": "927IyIRduNA",
+    "fond": "clair",
+    "rond": "rond-echo",
+    "images": ["echo-1", "echo-2", "echo-3"]
+  },
+  {
+    "cle": "doline",
+    "titre": "DOLINE",
+    "sousTitre": "une expérience visuelle et sonore",
+    "annee": "Création 2022",
+    "anneeCourte": "2022",
+    "format": "Danse, musique, images et arts numériques, proche du ciné-concert",
+    "formatCourt": "Danse, musique, images · salle",
+    "duree": "1 h",
+    "public": "Tout public",
+    "accroche": "Une expérience visuelle et sonore.",
+    "propos": "La danseuse, héroïne d’un récit, emmène le public dans un voyage onirique : une forêt de jour puis de nuit, et soudain une cavité sans fond, la doline, qui ouvre sur un monde étrange et psychédélique. Trois interprètes sur le plateau : une danseuse, un musicien, un vidéaste qui joue les images en direct.",
+    "equipe": [
+      { "nom": "Mathilde Rader", "role": "danse" },
+      { "nom": "Olivier Duperron", "role": "musique" },
+      { "nom": "Dimitri Sourzac", "role": "images" },
+      { "nom": "Laura Salles", "role": "lumières" },
+      { "nom": "Antoine Petit", "role": "son" }
+    ],
+    "reperes": [
+      "Première le 29 octobre 2022, Espace Noriac, Limoges",
+      "Résidences : Des Lendemains qui chantent, SMAC de Tulle ; Les Polyculteurs, Saint-Cyr"
+    ],
+    "soutiens": [
+      "Région Nouvelle-Aquitaine et DRAC, dispositif Cultures connectées",
+      "Caisse des dépôts",
+      "Coproduction : La Métairie des arts, Saint-Pantaléon-de-Larche",
+      "Aide matérielle : CDN Théâtre de l’Union, Limoges"
+    ],
+    "credits": "Images © Dimitri Sourzac",
+    "teaser": "h4x7FIZXTtc",
+    "fond": "plateau",
+    "rond": "rond-doline",
+    "images": ["doline-2", "doline-1", "doline-3"]
+  },
+  {
+    "cle": "souffle",
+    "titre": "Souffle",
+    "sousTitre": "duo danse et guitares",
+    "annee": "Création 2021",
+    "anneeCourte": "2021",
+    "format": "Duo danse et guitares, en extérieur ou en intérieur, sonorisé",
+    "formatCourt": "Duo danse et guitares · dehors ou dedans",
+    "duree": "30 min ou 1 h",
+    "public": "Tout public",
+    "accroche": "Ils communiquent sans toucher, ni parole.",
+    "propos": "La guitare et la danse contemporaine se rencontrent. La guitare acoustique accompagne les mouvements aériens de la danseuse, l’électrique creuse des ambiances plus profondes. Deux êtres s’observent et s’apprivoisent, avec douceur ou rudesse, reliés par un souffle invisible.",
+    "equipe": [
+      { "nom": "Mathilde Rader", "role": "danse" },
+      { "nom": "Antoine Petit", "role": "guitares" }
+    ],
+    "reperes": [
+      "Première le 14 juin 2021, château de La Borie, Solignac",
+      "21 dates à l’agenda depuis 2021, dont le festival Mimos (Périgueux), Festival national de Bellac, Pionnat dans la rue, festival Pote (Besançon)…"
+    ],
+    "soutiens": ["Département de la Haute-Vienne", "Résidences : centre culturel Jean-Gagnant, L’IF (Limoges), Graines de rue (Bessines)"],
+    "credits": "Photos © Annie Bossut, Pierre-Jean Muet, Thierry Laporte",
+    "teaser": "Bx0AugE4iY0",
+    "fond": "clair",
+    "rond": "rond-souffle",
+    "images": ["souffle-1", "souffle-2", "souffle-3"]
+  }
+]

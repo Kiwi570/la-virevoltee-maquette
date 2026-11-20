@@ -1,0 +1,559 @@
+[
+ {
+  "source": "recu/logo-sombre.png",
+  "nom": "logo",
+  "role": "logo",
+  "alt": "Compagnie la Virevoltée"
+ },
+ {
+  "source": "recu/aurelie-fieschi.jpg",
+  "nom": "accueil-ouverture",
+  "role": "ouverture",
+  "alt": "Une danseuse virevolte devant une paroi de roche, sa jupe fleurie déployée autour d’elle",
+  "beaute": 5,
+  "mobile": "9:16",
+  "zone_texte": "gauche",
+  "page": "accueil"
+ },
+ {
+  "source": "recu/souffle-compagnie-virevol-3.jpg",
+  "nom": "accueil-demarche",
+  "role": "galerie",
+  "alt": "Souffle : la danseuse roule au sol, le guitariste joue derrière elle dans la pénombre",
+  "beaute": 4,
+  "ratio": "4:5",
+  "largeurs": [
+   480,
+   800
+  ]
+ },
+ {
+  "source": "recu/creations.jpg",
+  "nom": "rond-inshift",
+  "role": "vignette",
+  "alt": "InShift : la danseuse, chemise bleue, se plie au-dessus d’un cercle de corde tracé sur le sable, au Togo",
+  "beaute": 5,
+  "ratio": "1:1",
+  "largeurs": [
+   320,
+   640,
+   900
+  ]
+ },
+ {
+  "source": "recu/nocturnes.jpg",
+  "nom": "rond-nocturnes",
+  "role": "vignette",
+  "alt": "NOCTURNES : la danseuse et le musicien penchés l’un vers l’autre, un projecteur rond derrière eux",
+  "beaute": 4,
+  "ratio": "1:1",
+  "largeurs": [
+   320,
+   640,
+   900
+  ]
+ },
+ {
+  "source": "recu/echo-chute-compagnie-virevol-2.png",
+  "nom": "rond-echo",
+  "role": "vignette",
+  "alt": "L’écho d’une chute : une danseuse en équilibre au-dessus de sa partenaire allongée sur une place grise",
+  "beaute": 4,
+  "ratio": "1:1",
+  "largeurs": [
+   320,
+   640,
+   900
+  ],
+  "cadrage": [
+   64,
+   50
+  ]
+ },
+ {
+  "source": "recu/doline-compagnie-virevol-2.png",
+  "nom": "rond-doline",
+  "role": "vignette",
+  "alt": "DOLINE : la danseuse sur un cube devant un grand écran bleu-vert, musicien et vidéaste de chaque côté",
+  "beaute": 4,
+  "ratio": "1:1",
+  "largeurs": [
+   320,
+   640,
+   900
+  ],
+  "cadrage": [
+   50,
+   45
+  ]
+ },
+ {
+  "source": "recu/souffle.jpg",
+  "nom": "rond-souffle",
+  "role": "vignette",
+  "alt": "Souffle : la danseuse et le guitariste assis face à face sur des chaises de jardin",
+  "beaute": 4,
+  "ratio": "1:1",
+  "largeurs": [
+   320,
+   640,
+   900
+  ]
+ },
+ {
+  "source": "recu/nocturnes-compagnie-virevol-5.jpg",
+  "nom": "teaser-nocturnes",
+  "role": "galerie",
+  "alt": "NOCTURNES : le plateau noir, une rangée de projecteurs ronds et leur reflet sur le sol",
+  "beaute": 4,
+  "ratio": "16:9",
+  "largeurs": [
+   640,
+   1280
+  ]
+ },
+ {
+  "source": "recu/echo-chute-compagnie-virevol.jpg",
+  "nom": "teaser-echo",
+  "role": "galerie",
+  "alt": "L’écho d’une chute devant le public assis sur les marches d’une halle",
+  "beaute": 4,
+  "ratio": "16:9",
+  "largeurs": [
+   640,
+   1280
+  ]
+ },
+ {
+  "source": "recu/doline-compagnie-virevol.png",
+  "nom": "teaser-doline",
+  "role": "galerie",
+  "alt": "DOLINE : la danseuse devant une image de forêt projetée",
+  "beaute": 4,
+  "ratio": "16:9",
+  "largeurs": [
+   640,
+   1280
+  ]
+ },
+ {
+  "source": "recu/souffle-compagnie-virevol-2.jpg",
+  "nom": "teaser-souffle",
+  "role": "galerie",
+  "alt": "Souffle sous les arbres : la danseuse tend le bras, le guitariste joue",
+  "beaute": 4,
+  "ratio": "16:9",
+  "largeurs": [
+   640,
+   1280
+  ]
+ },
+ {
+  "source": "recu/mathilde-rader.jpg",
+  "nom": "equipe-mathilde",
+  "role": "portrait",
+  "alt": "Mathilde Rader",
+  "beaute": 4,
+  "ratio": "4:5"
+ },
+ {
+  "source": "recu/antoine-petit.jpg",
+  "nom": "equipe-antoine",
+  "role": "portrait",
+  "alt": "Antoine Petit",
+  "beaute": 4,
+  "ratio": "4:5",
+  "cadrage": [
+   22,
+   50
+  ]
+ },
+ {
+  "source": "recu/audrey-allafort.jpg",
+  "nom": "equipe-audrey",
+  "role": "portrait",
+  "alt": "Audrey Allafort",
+  "beaute": 4,
+  "ratio": "4:5"
+ },
+ {
+  "source": "recu/juliette-pascaud.jpg",
+  "nom": "equipe-juliette",
+  "role": "portrait",
+  "alt": "Juliette Pascaud",
+  "beaute": 3,
+  "ratio": "4:5"
+ },
+ {
+  "source": "recu/dimitri-sourzac.jpg",
+  "nom": "equipe-dimitri",
+  "role": "portrait",
+  "alt": "Dimitri Sourzac",
+  "beaute": 4,
+  "ratio": "4:5"
+ },
+ {
+  "source": "recu/olivier-duperron-rogne.jpg",
+  "nom": "equipe-olivier",
+  "role": "portrait",
+  "alt": "Olivier Duperron",
+  "beaute": 3,
+  "ratio": "4:5",
+  "cadrage": [
+   48,
+   32
+  ]
+ },
+ {
+  "source": "recu/kathleen-missud.jpg",
+  "nom": "transmission-ouverture",
+  "role": "ouverture",
+  "alt": "Deux bras qui se tiennent : une main serre l’avant-bras de l’autre danseur",
+  "beaute": 4,
+  "ratio": "4:5",
+  "largeurs": [
+   480,
+   800,
+   1200
+  ],
+  "page": "transmission"
+ },
+ {
+  "source": "recu/education-artistique-culturelle.jpg",
+  "nom": "transmission-eac",
+  "role": "vignette",
+  "alt": "Atelier d’éducation artistique : élèves et danseuse en mouvement",
+  "beaute": 3,
+  "ratio": "3:2",
+  "largeurs": [
+   480,
+   640
+  ]
+ },
+ {
+  "source": "recu/caserne.jpg",
+  "nom": "transmission-marceau",
+  "role": "vignette",
+  "alt": "Si Marceau m’était dansé : les élèves dansent devant la caserne Marceau",
+  "beaute": 3,
+  "ratio": "3:2",
+  "largeurs": [
+   480,
+   640
+  ]
+ },
+ {
+  "source": "recu/titre-1.jpg",
+  "nom": "dada-logo",
+  "role": "logo",
+  "alt": "Logo du Dada Collectif"
+ },
+ {
+  "source": "recu/choregraphe-regard-exterieur-2.jpg",
+  "nom": "choregraphie-beatus",
+  "role": "galerie",
+  "alt": "Une danseuse en robe rouge face à un musicien jouant d’un instrument ancien à archet",
+  "beaute": 5,
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   1200
+  ]
+ },
+ {
+  "source": "recu/choregraphe-regard-exterieur.jpg",
+  "nom": "choregraphie-foret",
+  "role": "galerie",
+  "alt": "Une danseuse en trench immobile au milieu d’une forêt d’automne",
+  "beaute": 4,
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   1200
+  ]
+ },
+ {
+  "source": "recu/grok/transmission-coaching.jpg",
+  "nom": "grok/transmission-coaching",
+  "role": "galerie",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   1200
+  ],
+  "alt": "Un groupe de musique répète sur une petite scène pendant qu’une danseuse lui montre un geste",
+  "beaute": 4,
+  "page": "transmission",
+  "emplacement": "Transmission · Coaching scénique",
+  "priorite": "Conseillée",
+  "consigne_scene": "A small rock band (guitar, bass, drummer) rehearsing on the low wooden stage of a small concert hall during the afternoon, seen from the side of the stage; in the foreground, a woman dance coach seen from behind, in a dark loose shirt, raising one arm to show a stage movement to the singer; warm work lights and a few colored stage lights, haze, motion blur on the musicians, no visible faces, no brand names on instruments or amplifiers, no audience."
+ },
+ {
+  "source": "recu/grok/transmission-dada.jpg",
+  "nom": "grok/transmission-dada",
+  "role": "galerie",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   1200
+  ],
+  "alt": "Entraînement de danseurs au sol dans un studio baigné de lumière",
+  "beaute": 4,
+  "page": "transmission",
+  "emplacement": "Transmission · Dada Collectif",
+  "priorite": "Conseillée",
+  "consigne_scene": "Four contemporary dancers training floorwork together in a bright dance studio with a light grey floor and tall windows, late morning daylight; bodies rolling and pushing off the floor, loose everyday clothes in muted colors, strong motion blur on the moving limbs, faces turned away or hidden by hair and movement; calm, focused, generous mood; nothing on the walls, no mirror reflections of faces, no text."
+ },
+ {
+  "source": "recu/creations.jpg",
+  "nom": "inshift-1",
+  "role": "galerie",
+  "alt": "InShift au Togo : la danseuse se plie au-dessus d’un cercle de corde, le public assis autour",
+  "beaute": 5,
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   1200,
+   1600
+  ]
+ },
+ {
+  "source": "recu/regard-exterieur-etienne-gaillochet-2.jpg",
+  "nom": "inshift-2",
+  "role": "galerie",
+  "alt": "InShift : en noir et blanc, la danseuse tire une corde, concentrée",
+  "beaute": 5,
+  "ratio": "4:5",
+  "largeurs": [
+   480,
+   800
+  ]
+ },
+ {
+  "source": "recu/regard-exterieur-etienne-gaillochet.jpg",
+  "nom": "inshift-3",
+  "role": "galerie",
+  "alt": "InShift : agenouillée, la danseuse enroule la corde à terre",
+  "beaute": 4,
+  "ratio": "4:5",
+  "largeurs": [
+   480,
+   800
+  ]
+ },
+ {
+  "source": "recu/nocturnes-compagnie-virevol-3.jpg",
+  "nom": "nocturnes-1",
+  "role": "galerie",
+  "alt": "NOCTURNES : le guitariste joue d’une guitare électrique, la danseuse floue au premier plan",
+  "beaute": 4,
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   1200,
+   1600
+  ]
+ },
+ {
+  "source": "recu/nocturnes-compagnie-virevol-4.jpg",
+  "nom": "nocturnes-2",
+  "role": "galerie",
+  "alt": "NOCTURNES en noir et blanc : le musicien à son clavier, la danseuse en mouvement",
+  "beaute": 4,
+  "ratio": "4:5",
+  "largeurs": [
+   480,
+   800
+  ],
+  "cadrage": [
+   70,
+   55
+  ]
+ },
+ {
+  "source": "recu/nocturnes-compagnie-virevol-2.jpg",
+  "nom": "nocturnes-3",
+  "role": "galerie",
+  "alt": "NOCTURNES : la danseuse et le musicien sur le plateau sombre",
+  "beaute": 4,
+  "ratio": "4:5",
+  "largeurs": [
+   480,
+   800
+  ]
+ },
+ {
+  "source": "recu/echo-chute-compagnie-virevol-2.png",
+  "nom": "echo-1",
+  "role": "galerie",
+  "alt": "L’écho d’une chute : une danseuse enjambe sa partenaire allongée sur une place grise",
+  "beaute": 4,
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   1200,
+   1600
+  ]
+ },
+ {
+  "source": "recu/co-creation-echo-chute.png",
+  "nom": "echo-2",
+  "role": "galerie",
+  "alt": "L’écho d’une chute : les deux danseuses assises sur un escalier de béton",
+  "beaute": 4,
+  "ratio": "4:5",
+  "largeurs": [
+   480,
+   800
+  ]
+ },
+ {
+  "source": "recu/echo-chute-compagnie-virevol-4.jpg",
+  "nom": "echo-3",
+  "role": "galerie",
+  "alt": "L’écho d’une chute : une danseuse debout au milieu d’un grand terrain",
+  "beaute": 3,
+  "ratio": "4:5",
+  "largeurs": [
+   480,
+   800
+  ]
+ },
+ {
+  "source": "recu/24-mai-2021-doline.jpg",
+  "nom": "doline-1",
+  "role": "galerie",
+  "alt": "DOLINE : la danseuse seule dans une lumière violette, au bord du plateau",
+  "beaute": 4,
+  "ratio": "4:5",
+  "largeurs": [
+   480,
+   800
+  ]
+ },
+ {
+  "source": "recu/doline-compagnie-virevol-4.png",
+  "nom": "doline-2",
+  "role": "galerie",
+  "alt": "DOLINE : la danseuse devant un écran de particules lumineuses",
+  "beaute": 4,
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   1200,
+   1600
+  ],
+  "cadrage": [
+   45,
+   45
+  ]
+ },
+ {
+  "source": "recu/doline-compagnie-virevol-5.png",
+  "nom": "doline-3",
+  "role": "galerie",
+  "alt": "DOLINE : une forêt projetée derrière la danseuse",
+  "beaute": 3,
+  "ratio": "4:5",
+  "largeurs": [
+   480,
+   800
+  ],
+  "cadrage": [
+   45,
+   50
+  ]
+ },
+ {
+  "source": "recu/souffle-compagnie-virevol.jpg",
+  "nom": "souffle-1",
+  "role": "galerie",
+  "alt": "Souffle : la danseuse derrière le guitariste, en pleine nature",
+  "beaute": 4,
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   1200,
+   1600
+  ]
+ },
+ {
+  "source": "recu/partenaires.jpg",
+  "nom": "souffle-2",
+  "role": "galerie",
+  "alt": "Souffle joué dans un parc, entre les arbres",
+  "beaute": 4,
+  "ratio": "4:5",
+  "largeurs": [
+   480,
+   800
+  ]
+ },
+ {
+  "source": "recu/souffle-compagnie-virevol-4.jpg",
+  "nom": "souffle-3",
+  "role": "galerie",
+  "alt": "Souffle en noir et blanc dans un cloître : la danseuse s’élance au-dessus d’une chaise",
+  "beaute": 3,
+  "ratio": "4:5",
+  "largeurs": [
+   480,
+   800
+  ]
+ },
+ {
+  "source": "recu/echo-chute-compagnie-virevol.jpg",
+  "nom": "agenda-ouverture",
+  "role": "ouverture",
+  "alt": "Le public assis sur les marches d’une halle regarde une danseuse sur la place",
+  "beaute": 4,
+  "mobile": "9:16",
+  "zone_texte": "gauche",
+  "page": "agenda"
+ },
+ {
+  "source": "recu/mathilde-rader.jpg",
+  "nom": "contact-mathilde",
+  "role": "portrait",
+  "alt": "Mathilde Rader, directrice artistique de la compagnie",
+  "beaute": 4,
+  "ratio": "1:1",
+  "largeurs": [
+   480,
+   800
+  ],
+  "page": "contact"
+ },
+ {
+  "source": "recu/nous-contacter.jpg",
+  "nom": "contact-epaule",
+  "role": "galerie",
+  "alt": "Une main posée sur une épaule, en gros plan",
+  "beaute": 4,
+  "ratio": "4:5",
+  "largeurs": [
+   480,
+   800
+  ]
+ },
+ {
+  "source": "recu/nocturnes-compagnie-virevol-5.jpg",
+  "nom": "page-404",
+  "role": "404",
+  "alt": "Un plateau noir, une rangée de projecteurs ronds allumés et leur reflet sur le sol",
+  "beaute": 4,
+  "mobile": "9:16",
+  "zone_texte": "gauche"
+ },
+ {
+  "source": "recu/regard-exterieur-etienne-gaillochet-2.jpg",
+  "nom": "creations-ouverture",
+  "role": "ouverture",
+  "alt": "InShift : la danseuse tire une corde, en noir et blanc",
+  "beaute": 5,
+  "ratio": "16:9",
+  "mobile": "4:5",
+  "zone_texte": "gauche",
+  "page": "creations"
+ }
+]

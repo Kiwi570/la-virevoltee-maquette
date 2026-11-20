@@ -1,0 +1,8 @@
+[
+  { "nom": "Mathilde Rader", "role": "Directrice artistique, danseuse et chorégraphe", "texte": "Formée au conservatoire de Brive, à Atlantique Ballet Contemporain (La Rochelle) et au centre Mondap’art (Nîmes), elle fonde la compagnie en 2020.", "image": "equipe-mathilde" },
+  { "nom": "Antoine Petit", "role": "Guitariste, compositeur et « sondier »", "texte": "Présent dans les cinq créations. Passé par les musiques traditionnelles (Keltas, Akan Khelen), il s’est tourné vers l’électronique.", "image": "equipe-antoine" },
+  { "nom": "Audrey Allafort", "role": "Danseuse et chorégraphe", "texte": "Interprète de L’écho d’une chute, elle danse avec la compagnie Coyote Minute et a cofondé le collectif Melpo.", "image": "equipe-audrey" },
+  { "nom": "Juliette Pascaud", "role": "Guitariste et compositrice", "texte": "Compose L’écho d’une chute. Fondatrice du duo Ganache, elle a rejoint l’équipe live de Billie Chedid en 2025.", "image": "equipe-juliette" },
+  { "nom": "Dimitri Sourzac", "role": "Vidéaste", "texte": "Crée et joue en direct les images de DOLINE. Ingénieur de formation, passé par la vidéo, les effets spéciaux et la réalité virtuelle.", "image": "equipe-dimitri" },
+  { "nom": "Olivier Duperron", "role": "Saxophoniste et compositeur", "texte": "Musicien de DOLINE, entre classique, improvisation et électronique ; il enseigne au conservatoire de Limoges.", "image": "equipe-olivier" }
+]

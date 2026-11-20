@@ -1,0 +1,24 @@
+{
+  "siteActuel": "cielavirevoltee.wixsite.com",
+  "pagesTypes": [
+    "/",
+    "/creations",
+    "/agenda",
+    "/transmission",
+    "/contact"
+  ],
+  "effets": [
+    "toupie",
+    "roue",
+    "disque-final",
+    "carte-tournee",
+    "bandeau",
+    "date-disque",
+    "portrait-disque",
+    "logo-tourne",
+    "roue-telephone"
+  ],
+  "grille": {
+    "dispenses": {}
+  }
+}

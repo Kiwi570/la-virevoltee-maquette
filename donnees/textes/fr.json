@@ -1,0 +1,304 @@
+{
+  "commun": {
+    "navigation": "Navigation principale",
+    "menu": "Menu",
+    "fermer": "Fermer",
+    "langueAutre": "English version",
+    "actionEntete": "Programmer",
+    "appeler": "Appeler",
+    "sommaire": "Sommaire",
+    "suivre": "Suivre la compagnie",
+    "retourHaut": "Retour en haut",
+    "maquette": "Maquette de démonstration : formulaires simulés, rien n’est envoyé.",
+    "evitement": "Aller au contenu",
+    "mentionIa": "Illustration générée",
+    "pause": "Pause",
+    "lecture": "Lecture",
+    "introLigne": "Compagnie de danse contemporaine",
+    "toupie": "Compagnie de danse contemporaine · Limoges · depuis 2020 · ",
+    "mentions": "Mentions légales : à compléter",
+    "confidentialite": "Politique de confidentialité : à compléter",
+    "adherer": "Adhérer à l’association",
+    "nouvelOnglet": "(nouvel onglet)",
+    "prochaine": "Prochaine date",
+    "programmer": "Programmer un spectacle",
+    "ecrire": "Écrire à la compagnie",
+    "teaser": "Lancer le teaser de {titre}",
+    "teaserNote": "Vidéo YouTube chargée au clic.",
+    "credit": "Photo © {nom}"
+  },
+  "pages": {
+    "404": {
+      "titre": "Page introuvable : Compagnie la Virevoltée",
+      "description": "Cette page n’existe pas ou plus.",
+      "nav": "Page introuvable",
+      "partageAlt": "Page introuvable",
+      "accroche": "Faux pas"
+    },
+    "accueil": {
+      "titre": "Compagnie la Virevoltée : danse contemporaine à Limoges",
+      "description": "Compagnie de danse contemporaine créée à Limoges en 2020 par Mathilde Rader : cinq créations pour la rue et la scène, éducation artistique, coaching scénique.",
+      "nav": "Accueil",
+      "partageAlt": "Une danseuse virevolte, jupe fleurie déployée : Compagnie la Virevoltée",
+      "accroche": "Une danse organique et explosive"
+    },
+    "creations": {
+      "titre": "Créations : InShift, NOCTURNES, L’écho d’une chute, DOLINE, Souffle",
+      "description": "Les cinq créations de la Compagnie la Virevoltée : format, durée, équipe, teasers et dates, pour les programmateurs et le public.",
+      "nav": "Créations",
+      "partageAlt": "Les cinq créations de la Compagnie la Virevoltée",
+      "accroche": "Cinq créations, de la rue à la scène"
+    },
+    "agenda": {
+      "titre": "Agenda : les dates de la Compagnie la Virevoltée",
+      "description": "Les prochaines dates de la compagnie, la carte des villes traversées depuis 2021 et toutes les saisons passées.",
+      "nav": "Agenda",
+      "partageAlt": "Le public assis sur des marches regarde une danseuse : agenda de la Virevoltée",
+      "accroche": "Les dates de la Virevoltée"
+    },
+    "transmission": {
+      "titre": "Transmission : éducation artistique, coaching scénique, Dada Collectif",
+      "description": "Ateliers et créations avec les élèves, coaching scénique pour les groupes de musique, entraînement gratuit du Dada Collectif à Limoges.",
+      "nav": "Transmission",
+      "partageAlt": "Deux bras qui se tiennent : la transmission selon la Virevoltée",
+      "accroche": "Transmettre la danse, de corps à corps"
+    },
+    "contact": {
+      "titre": "Contact : programmer la Compagnie la Virevoltée",
+      "description": "Programmer une création, monter un projet d’éducation artistique ou un coaching scénique : écrire ou appeler Mathilde Rader.",
+      "nav": "Contact",
+      "partageAlt": "Mathilde Rader, directrice artistique de la Compagnie la Virevoltée",
+      "accroche": "Programmer la Virevoltée"
+    }
+  },
+  "accueil": {
+    "hero": {
+      "sur": "Compagnie de danse contemporaine · Limoges",
+      "l1": "Une danse",
+      "l2": "organique",
+      "l3": "et explosive",
+      "texte": "Danse, musique, images : cinq créations pour la rue et pour la scène, et des ateliers pour tous les publics.",
+      "secondaire": "Voir les créations",
+      "credit": "Aurélie Fieschi"
+    },
+    "demarche": {
+      "sur": "La compagnie",
+      "titre": "Mélanger les arts pour faire danser tous les publics",
+      "texte1": "Créée en octobre 2020 à Limoges par la danseuse Mathilde Rader, la Virevoltée cherche une danse organique et explosive, un corps très physique au service d’univers singuliers.",
+      "texte2": "Elle invite musiciens, vidéastes et éclairagistes à créer avec elle, partage les savoirs et veut rendre la danse contemporaine visible et accessible à tous.",
+      "citation1": "Il faut avoir du chaos en soi pour accoucher d’une",
+      "citation2": "étoile qui danse.",
+      "auteur": "Friedrich Nietzsche"
+    },
+    "roue": {
+      "sur": "Les créations",
+      "titre": "Cinq pièces, de la rue à la scène",
+      "indice": "Faites défiler : la roue tourne d’une création à l’autre.",
+      "decouvrir": "Découvrir la création",
+      "toutes": "Toutes les créations",
+      "region": "Roue des cinq créations"
+    },
+    "dates": {
+      "sur": "Agenda",
+      "titre": "Prochaines dates",
+      "texte": "Rue, médiathèque, centre culturel, festival : où voir la compagnie cet hiver et au printemps.",
+      "dates": "dates à l’agenda depuis 2021",
+      "villes": "villes traversées, jusqu’à Lomé et Fribourg",
+      "creations": "créations en tournée",
+      "tout": "Tout l’agenda"
+    },
+    "teasers": {
+      "sur": "Voir la danse",
+      "titre": "La compagnie en mouvement",
+      "texte": "Quatre teasers, de la salle obscure à la place publique."
+    },
+    "transmission": {
+      "sur": "Transmettre",
+      "titre": "Danser avec les élèves, les musiciens, les danseurs",
+      "eacTitre": "Éducation artistique",
+      "eacTexte": "Ateliers puis création d’un spectacle avec les élèves, de l’école au lycée, avec la DRAC et la Ligue de l’enseignement.",
+      "coachingTitre": "Coaching scénique",
+      "coachingTexte": "Accompagner les groupes de musique du studio à la scène, dans le respect de leur identité.",
+      "dadaTitre": "Dada Collectif",
+      "dadaTexte": "Un entraînement gratuit entre danseurs, chaque jeudi de 11 h à 13 h, à Limoges.",
+      "lien": "La transmission"
+    },
+    "equipe": {
+      "sur": "L’équipe",
+      "titre": "Une danseuse, et les artistes qu’elle invite",
+      "texte": "Autour de Mathilde Rader, des musiciens, une danseuse et un vidéaste qui signent les créations avec elle."
+    },
+    "routes": {
+      "sur": "Sur les routes",
+      "titre": "Ils accueillent et soutiennent la compagnie",
+      "soutiens": "Soutiens et partenaires",
+      "residences": "Accueils en résidence"
+    },
+    "appel": {
+      "titre": "Programmer la Virevoltée",
+      "texte": "Festival, saison culturelle, médiathèque, établissement scolaire : parlons de votre projet et de la création qui lui va."
+    }
+  },
+  "creations": {
+    "ouverture": {
+      "sur": "Créations",
+      "l1": "Cinq créations,",
+      "l2": "de la rue",
+      "l3": "à la scène",
+      "texte": "Solos, duos et ciné-concert : chaque pièce mêle la danse à une musique jouée en direct, et toutes sont tout public.",
+      "info": "Solo ou duo · 20 min à 1 h · rue ou salle",
+      "credit": "Komlan Ametogbe, Yao Bobby, 300 Records Média, Abobolais"
+    },
+    "format": "Format",
+    "duree": "Durée",
+    "public": "Public",
+    "equipe": "Équipe",
+    "reperes": "Repères",
+    "soutiens": "Soutiens",
+    "dates": "Prochaines dates",
+    "sansDate": "Pas de date publique annoncée : la pièce est disponible en tournée.",
+    "programmer": "Programmer {titre}",
+    "agenda": "Voir l’agenda",
+    "sommaire": "Les cinq créations",
+    "appelTitre": "Une pièce pour votre lieu ?",
+    "appelTexte": "Dites-nous où, quand et pour quel public : la compagnie vous répond avec la création et la version qui conviennent."
+  },
+  "agenda": {
+    "ouverture": {
+      "sur": "Prochaine date",
+      "lieu": "Lieu",
+      "dans": "Dans",
+      "voir": "Voir la création",
+      "toutes": "Toutes les dates à venir",
+      "l1": "Les dates",
+      "l2": "de la",
+      "l3": "Virevoltée"
+    },
+    "venir": {
+      "titre": "Les dates de la compagnie",
+      "texte": "Les dates se classent toutes seules selon le jour : à venir en haut, saisons passées repliées en bas. Filtrez par création.",
+      "vide": "Aucune date de ce type pour le moment.",
+      "filtres": "Filtrer par création"
+    },
+    "carte": {
+      "sur": "La carte",
+      "titre": "Les villes traversées depuis 2021",
+      "texte": "Surtout en Nouvelle-Aquitaine, jusqu’à Paris, Besançon, Fribourg et le Togo. Les points apparaissent saison après saison.",
+      "togo": "Togo",
+      "suisse": "Suisse",
+      "legende": "Un point par ville, plus grand quand la compagnie y est venue plusieurs fois.",
+      "aria": "Carte de France des villes où la compagnie a joué depuis 2021",
+      "togoDates": "{n} dates en novembre 2025"
+    },
+    "appelTitre": "Accueillir la compagnie",
+    "appelTexte": "Votre saison, votre festival, votre médiathèque : écrivez-nous pour une date."
+  },
+  "transmission": {
+    "ouverture": {
+      "sur": "Transmission",
+      "l1": "Transmettre",
+      "l2": "la danse,",
+      "l3": "de corps à corps",
+      "texte": "Ateliers et créations avec les élèves, coaching scénique pour les groupes de musique, entraînement partagé entre danseurs : la compagnie transmet autant qu’elle crée.",
+      "action": "Monter un projet",
+      "info": "Dada Collectif : chaque jeudi, 11 h – 13 h, gratuit",
+      "credit": "Kathleen Missud"
+    },
+    "eac": {
+      "sur": "Éducation artistique et culturelle",
+      "titre": "Créer avec les élèves",
+      "texte": "Avec les écoles, les collèges, les lycées et les conservatoires : des ateliers, puis un spectacle créé avec les élèves et joué devant un public.",
+      "action": "Proposer un projet à la compagnie"
+    },
+    "coaching": {
+      "sur": "Coaching scénique",
+      "titre": "Du studio à la scène",
+      "texte": "Pour les groupes de musique professionnels, en voie de professionnalisation ou amateurs : construire une présence scénique qui respecte les choix artistiques et l’identité du groupe.",
+      "formation": "Mathilde Rader est formée à l’accompagnement artistique (« Quelles postures pédagogiques ? », Collectif RPM, 2021).",
+      "reference": "En 2026, elle a préparé Hemingway Effect aux Inouïs du Printemps de Bourges.",
+      "action": "Demander un coaching"
+    },
+    "dada": {
+      "sur": "Dada Collectif",
+      "titre": "S’entraîner ensemble, chaque jeudi",
+      "texte": "Créé en septembre 2022 et porté par l’association, le Dada Collectif propose un entraînement régulier du danseur. Les intervenants, bénévoles, se relaient chaque semaine.",
+      "quand": "Quand",
+      "quandValeur": "Le jeudi, de 11 h à 13 h, de septembre à juin",
+      "ou": "Où",
+      "ouValeur": "MAD Jean-Moulin, quartier de Beaubreuil, Limoges",
+      "qui": "Pour qui",
+      "quiValeur": "Toute personne ayant une pratique régulière du mouvement",
+      "prix": "Prix",
+      "prixValeur": "Gratuit",
+      "membres": "Membres : Audrey Allafort, Pascal Delétage, Eléonor Lemaire, Laura Messina, Mathilde Rader.",
+      "action": "Venir à un entraînement"
+    },
+    "regard": {
+      "sur": "Chorégraphie et regard extérieur",
+      "titre": "Danser pour les autres",
+      "texte": "Clips, ensembles vocaux, musique ancienne, théâtre : Mathilde Rader chorégraphie, danse et accompagne d’autres artistes."
+    },
+    "appelTitre": "Un projet avec la compagnie ?",
+    "appelTexte": "Établissement scolaire, groupe de musique, structure culturelle : racontez-nous votre projet."
+  },
+  "contact": {
+    "ouverture": {
+      "sur": "Contact",
+      "l1": "Parlons de",
+      "l2": "votre projet",
+      "nom": "Mathilde Rader",
+      "role": "Administration, diffusion et direction artistique",
+      "action": "Écrire une demande",
+      "info": "Réponse par e-mail ou par téléphone"
+    },
+    "demande": {
+      "titre": "Votre demande",
+      "texte": "Trois questions, et la compagnie revient vers vous.",
+      "etape1": "Votre projet",
+      "sujet": "Objet de la demande",
+      "sujetProgrammation": "Programmer une création",
+      "sujetMediation": "Projet d’éducation artistique",
+      "sujetCoaching": "Coaching scénique",
+      "sujetDada": "Dada Collectif",
+      "sujetAutre": "Autre demande",
+      "creation": "Création concernée",
+      "creationAucune": "Je ne sais pas encore",
+      "etape2": "Quand et où",
+      "periode": "Période souhaitée",
+      "periodeAide": "Par exemple : printemps 2027, ou une date précise",
+      "lieu": "Ville et lieu",
+      "lieuAide": "Salle, espace public, établissement…",
+      "etape3": "Vos coordonnées",
+      "nomChamp": "Nom et prénom",
+      "structure": "Structure (facultatif)",
+      "email": "E-mail",
+      "telephone": "Téléphone (facultatif)",
+      "message": "Votre message",
+      "rgpd": "Vos coordonnées servent uniquement à répondre à votre demande. Elles ne sont ni cédées ni utilisées pour de la publicité.",
+      "envoyer": "Envoyer la demande",
+      "simule": "Maquette : aucun message n’a été envoyé. Sur le site final, la demande arrivera dans la boîte de la compagnie."
+    },
+    "pro": {
+      "titre": "Pour programmer la compagnie",
+      "association": "Association la Virevoltée, loi 1901, créée le 29 septembre 2020",
+      "siege": "Siège",
+      "siret": "SIRET",
+      "ape": "Code APE",
+      "licences": "Licences d’entrepreneur de spectacles",
+      "licencesValeur": "L-D-20-005985 (catégorie 2) · L-D-20-005986 (catégorie 3)",
+      "bureau": "Bureau",
+      "bureauValeur": "Nicolas Sarre, président · Laura Messina, trésorière · Miguel Araujo, secrétaire"
+    },
+    "soutenir": {
+      "titre": "Soutenir la compagnie",
+      "texte": "Adhérer à l’association, c’est aider la compagnie à créer et à transmettre. L’adhésion se fait en ligne sur HelloAsso."
+    }
+  },
+  "introuvable": {
+    "sur": "Erreur 404",
+    "titre": "Faux pas : cette page n’est pas au programme",
+    "texte": "Le lien est peut-être ancien, ou la page a changé de nom. Le reste du spectacle continue par ici.",
+    "retour": "Revenir à l’accueil",
+    "agenda": "Voir l’agenda"
+  }
+}

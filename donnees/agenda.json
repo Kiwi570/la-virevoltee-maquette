@@ -1,0 +1,526 @@
+[
+ {
+  "debut": "2027-05-27",
+  "fin": "2027-05-28",
+  "creation": "inshift",
+  "titre": "InShift",
+  "type": "Première",
+  "lieu": "Festival Prêt-à-jouer",
+  "ville": "Fribourg",
+  "dept": "Suisse"
+ },
+ {
+  "debut": "2027-02-05",
+  "creation": "nocturnes",
+  "titre": "NOCTURNES",
+  "type": "Spectacle",
+  "lieu": "Centre culturel Jean Gagnant",
+  "ville": "Limoges",
+  "dept": "87",
+  "note": "Horaire à venir"
+ },
+ {
+  "debut": "2026-12-04T18:00",
+  "creation": "echo",
+  "titre": "L’écho d’une chute",
+  "type": "Spectacle",
+  "lieu": "Médiathèque",
+  "ville": "Montbron",
+  "dept": "16",
+  "note": "Avec le Collectif Melpo"
+ },
+ {
+  "debut": "2026-11-27T20:30",
+  "creation": "souffle",
+  "titre": "Souffle",
+  "type": "Spectacle",
+  "lieu": "Bal du Souffle",
+  "ville": "Colomiers",
+  "dept": "31"
+ },
+ {
+  "debut": "2026-11-03",
+  "creation": "inshift",
+  "titre": "InShift",
+  "type": "Étape de travail",
+  "lieu": "Le Regard du Cygne, Spectacles Sauvages",
+  "ville": "Paris",
+  "dept": "75",
+  "note": "16 h et 20 h"
+ },
+ {
+  "debut": "2026-10-26T18:30",
+  "creation": "inshift",
+  "titre": "InShift",
+  "type": "Sortie de résidence",
+  "lieu": "New Danse Studio",
+  "ville": "Brive",
+  "dept": "19"
+ },
+ {
+  "debut": "2026-08-19",
+  "fin": "2026-08-22",
+  "creation": "echo",
+  "titre": "L’écho d’une chute",
+  "type": "Spectacle",
+  "lieu": "Festival international de théâtre de rue",
+  "ville": "Aurillac",
+  "dept": "15",
+  "note": "10 h, P85, lycée Émile-Duclaux"
+ },
+ {
+  "debut": "2026-06-30T17:00",
+  "creation": "mediation",
+  "titre": "En MatièreS de Danse",
+  "type": "Médiation",
+  "lieu": "École du Vigenal",
+  "ville": "Limoges",
+  "dept": "87",
+  "note": "Déambulation avec six classes"
+ },
+ {
+  "debut": "2026-06-02T11:00",
+  "creation": "echo",
+  "titre": "L’écho d’une chute",
+  "type": "Spectacle",
+  "lieu": "Festival Danse et Dis",
+  "ville": "Davignac",
+  "dept": "19",
+  "note": "Avec la Ligue de l’enseignement"
+ },
+ {
+  "debut": "2025-11-20",
+  "creation": "inshift",
+  "titre": "InShift",
+  "type": "Étape de travail",
+  "lieu": "Institut français du Togo, Rencontres chorégraphiques de Lomé",
+  "ville": "Lomé",
+  "dept": "Togo"
+ },
+ {
+  "debut": "2025-11-15",
+  "creation": "inshift",
+  "titre": "InShift",
+  "type": "Étape de travail",
+  "lieu": "Rencontres chorégraphiques de Lomé",
+  "ville": "Agbodrafo",
+  "dept": "Togo"
+ },
+ {
+  "debut": "2025-11-10",
+  "fin": "2025-11-22",
+  "creation": "mediation",
+  "titre": "Formation et regard extérieur",
+  "type": "Médiation",
+  "lieu": "Rencontres chorégraphiques de Lomé, FA’ARTS",
+  "ville": "Lomé",
+  "dept": "Togo",
+  "note": "Avec l’association Assib’Arts"
+ },
+ {
+  "debut": "2025-11-06",
+  "creation": "echo",
+  "titre": "L’écho d’une chute (extrait)",
+  "type": "Performance",
+  "lieu": "Vernissage de l’exposition Diaphane, Hôtel de Région",
+  "ville": "Bordeaux",
+  "dept": "33"
+ },
+ {
+  "debut": "2025-08-15T15:45",
+  "creation": "echo",
+  "titre": "L’écho d’une chute",
+  "type": "Première",
+  "lieu": "Festival Les Arts de la rue",
+  "ville": "Argentat-sur-Dordogne",
+  "dept": "19"
+ },
+ {
+  "debut": "2025-07-05T18:00",
+  "creation": "autre",
+  "titre": "Déambulation dansée",
+  "type": "Performance",
+  "lieu": "Les 10 ans de la Métairie des Arts",
+  "ville": "Saint-Pantaléon-de-Larche",
+  "dept": "19"
+ },
+ {
+  "debut": "2025-07-02",
+  "creation": "autre",
+  "titre": "Débris",
+  "type": "Performance",
+  "ville": "Vicq-sur-Breuilh",
+  "dept": "87"
+ },
+ {
+  "debut": "2025-06-28T15:00",
+  "creation": "autre",
+  "titre": "Débris",
+  "type": "Performance",
+  "lieu": "Festival Urbaka",
+  "ville": "Limoges",
+  "dept": "87"
+ },
+ {
+  "debut": "2025-06-25T19:30",
+  "creation": "mediation",
+  "titre": "Débris",
+  "type": "Médiation",
+  "lieu": "Cartes blanches des élèves, MAD Jean-Moulin",
+  "ville": "Limoges",
+  "dept": "87",
+  "note": "Création avec une classe du Conservatoire"
+ },
+ {
+  "debut": "2025-05-24T11:00",
+  "creation": "autre",
+  "titre": "LI.EL.E.UX",
+  "type": "Performance",
+  "lieu": "Design Ouïk, marché",
+  "ville": "La Souterraine",
+  "dept": "23",
+  "note": "Avec le Dada Collectif"
+ },
+ {
+  "debut": "2025-05-22T19:00",
+  "creation": "autre",
+  "titre": "LI.EL.E.UX",
+  "type": "Performance",
+  "lieu": "Design Ouïk, centre Yves-Furet",
+  "ville": "La Souterraine",
+  "dept": "23",
+  "note": "Avec le Dada Collectif"
+ },
+ {
+  "debut": "2025-05-17T11:00",
+  "creation": "mediation",
+  "titre": "Si Marceau m’était dansé",
+  "type": "Médiation",
+  "lieu": "Caserne Marceau",
+  "ville": "Limoges",
+  "dept": "87",
+  "note": "Création avec les élèves du Conservatoire"
+ },
+ {
+  "debut": "2025-02-21T20:00",
+  "creation": "nocturnes",
+  "titre": "NOCTURNES",
+  "type": "Première",
+  "lieu": "Centre culturel John-Lennon",
+  "ville": "Limoges",
+  "dept": "87",
+  "note": "Soirée partagée avec le Collectif Melpo"
+ },
+ {
+  "debut": "2024-11-22T14:30",
+  "creation": "nocturnes",
+  "titre": "NOCTURNES",
+  "type": "Avant-première",
+  "lieu": "MAD Jean-Moulin",
+  "ville": "Limoges",
+  "dept": "87",
+  "note": "Ouverte aux professionnels"
+ },
+ {
+  "debut": "2024-10-10T19:00",
+  "creation": "autre",
+  "titre": "Performance dansée",
+  "type": "Performance",
+  "lieu": "Vernissage Diaphane, crypte de l’Espace Noriac",
+  "ville": "Limoges",
+  "dept": "87",
+  "note": "Mathilde Rader et Audrey Allafort"
+ },
+ {
+  "debut": "2024-10-04T20:30",
+  "creation": "souffle",
+  "titre": "Souffle",
+  "type": "Spectacle",
+  "lieu": "Salle Pennevayre",
+  "ville": "Verneuil-sur-Vienne",
+  "dept": "87"
+ },
+ {
+  "debut": "2024-07-13",
+  "fin": "2024-07-14",
+  "creation": "echo",
+  "titre": "L’écho d’une chute",
+  "type": "Spectacle",
+  "lieu": "Fune Festival",
+  "ville": "Limoges",
+  "dept": "87"
+ },
+ {
+  "debut": "2024-07-05",
+  "creation": "souffle",
+  "titre": "Souffle",
+  "type": "Spectacle",
+  "lieu": "Festival Mimos, jardin des Arènes",
+  "ville": "Périgueux",
+  "dept": "24",
+  "note": "12 h et 18 h 30"
+ },
+ {
+  "debut": "2024-07-04",
+  "creation": "souffle",
+  "titre": "Souffle",
+  "type": "Spectacle",
+  "lieu": "Festival Mimos, place de la Vertu",
+  "ville": "Périgueux",
+  "dept": "24",
+  "note": "11 h et 18 h"
+ },
+ {
+  "debut": "2024-07-03",
+  "creation": "souffle",
+  "titre": "Souffle",
+  "type": "Spectacle",
+  "lieu": "Festival Mimos, parc Aristide-Briand",
+  "ville": "Périgueux",
+  "dept": "24",
+  "note": "12 h 30 et 17 h"
+ },
+ {
+  "debut": "2024-06-29",
+  "creation": "echo",
+  "titre": "L’écho d’une chute",
+  "type": "Spectacle",
+  "lieu": "Événement privé",
+  "ville": "Meuzac",
+  "dept": "87"
+ },
+ {
+  "debut": "2024-06-15",
+  "creation": "mediation",
+  "titre": "Halles’ons danser",
+  "type": "Médiation",
+  "lieu": "École du Vigenal, place de la Motte",
+  "ville": "Limoges",
+  "dept": "87",
+  "note": "Avec une classe de CE2-CM1"
+ },
+ {
+  "debut": "2024-05-24",
+  "fin": "2024-05-25",
+  "creation": "echo",
+  "titre": "L’écho d’une chute",
+  "type": "Spectacle",
+  "lieu": "Festival Cigogne en fête",
+  "ville": "Saint-Laurent-de-la-Prée",
+  "dept": "17",
+  "note": "Version de 20 minutes"
+ },
+ {
+  "debut": "2024-05-15",
+  "fin": "2024-05-16",
+  "creation": "mediation",
+  "titre": "ORIG17NES",
+  "type": "Médiation",
+  "lieu": "Nouveau Festival",
+  "ville": "Bordeaux",
+  "dept": "33",
+  "note": "Avec les élèves de 1re SAPAT du lycée des Vaseix"
+ },
+ {
+  "debut": "2024-04-27T11:00",
+  "creation": "echo",
+  "titre": "L’écho d’une chute",
+  "type": "Sortie de résidence",
+  "lieu": "Atelier Corps en tête",
+  "ville": "Argentat-sur-Dordogne",
+  "dept": "19",
+  "note": "Version de 20 minutes"
+ },
+ {
+  "debut": "2024-03-23",
+  "fin": "2024-03-24",
+  "creation": "mediation",
+  "titre": "Stage floorwork et acrodanse",
+  "type": "Stage",
+  "ville": "Limoges",
+  "dept": "87"
+ },
+ {
+  "debut": "2023-11-25T20:30",
+  "creation": "souffle",
+  "titre": "Souffle",
+  "type": "Spectacle",
+  "lieu": "Espace Confluences",
+  "ville": "Condat-sur-Vienne",
+  "dept": "87"
+ },
+ {
+  "debut": "2023-10-13T20:00",
+  "creation": "souffle",
+  "titre": "Souffle",
+  "type": "Spectacle",
+  "lieu": "Espace Noriac",
+  "ville": "Limoges",
+  "dept": "87"
+ },
+ {
+  "debut": "2023-07-06T21:00",
+  "creation": "souffle",
+  "titre": "Souffle",
+  "type": "Spectacle",
+  "lieu": "Festival national de Bellac",
+  "ville": "Magnac-Laval",
+  "dept": "87"
+ },
+ {
+  "debut": "2023-07-01T19:00",
+  "creation": "souffle",
+  "titre": "Souffle",
+  "type": "Spectacle",
+  "lieu": "Festival Pionnat dans la rue",
+  "ville": "Ménardeix",
+  "dept": "23"
+ },
+ {
+  "debut": "2023-04-29T18:00",
+  "creation": "souffle",
+  "titre": "Souffle",
+  "type": "Spectacle",
+  "lieu": "New Danse Studio",
+  "ville": "Brive",
+  "dept": "19"
+ },
+ {
+  "debut": "2023-04-11",
+  "fin": "2023-04-12",
+  "creation": "mediation",
+  "titre": "Stage outils d’écriture",
+  "type": "Stage",
+  "lieu": "La Mégisserie",
+  "ville": "Saint-Junien",
+  "dept": "87"
+ },
+ {
+  "debut": "2022-11-12T20:00",
+  "creation": "souffle",
+  "titre": "Souffle",
+  "type": "Spectacle",
+  "lieu": "P’tit Bidule",
+  "ville": "Saint-Junien",
+  "dept": "87"
+ },
+ {
+  "debut": "2022-10-29T20:00",
+  "creation": "doline",
+  "titre": "DOLINE",
+  "type": "Première",
+  "lieu": "Espace Noriac",
+  "ville": "Limoges",
+  "dept": "87"
+ },
+ {
+  "debut": "2022-08-10T16:00",
+  "creation": "souffle",
+  "titre": "Souffle",
+  "type": "Spectacle",
+  "lieu": "Cloître",
+  "ville": "Tulle",
+  "dept": "19"
+ },
+ {
+  "debut": "2022-08-09T17:00",
+  "creation": "doline",
+  "titre": "DOLINE",
+  "type": "Sortie de résidence",
+  "lieu": "Les Polyculteurs",
+  "ville": "Saint-Cyr",
+  "dept": "87"
+ },
+ {
+  "debut": "2022-05-21",
+  "creation": "souffle",
+  "titre": "Souffle",
+  "type": "Spectacle",
+  "lieu": "La Pelle jaune",
+  "ville": "La Croisille-sur-Briance",
+  "dept": "87",
+  "note": "Avec un atelier danse et musique"
+ },
+ {
+  "debut": "2022-02-20",
+  "creation": "souffle",
+  "titre": "Souffle",
+  "type": "Spectacle",
+  "lieu": "Espace Noriac",
+  "ville": "Limoges",
+  "dept": "87"
+ },
+ {
+  "debut": "2022-02-04",
+  "creation": "souffle",
+  "titre": "Souffle",
+  "type": "Sortie de résidence",
+  "lieu": "Graines de rue",
+  "ville": "Bessines-sur-Gartempe",
+  "dept": "87"
+ },
+ {
+  "debut": "2021-11-05",
+  "creation": "souffle",
+  "titre": "Souffle",
+  "type": "Spectacle",
+  "lieu": "Festival Pote",
+  "ville": "Besançon",
+  "dept": "25"
+ },
+ {
+  "debut": "2021-10-22",
+  "creation": "souffle",
+  "titre": "Souffle",
+  "type": "Sortie de résidence",
+  "lieu": "Centre culturel Jean-Gagnant",
+  "ville": "Limoges",
+  "dept": "87"
+ },
+ {
+  "debut": "2021-10-16",
+  "creation": "souffle",
+  "titre": "Souffle",
+  "type": "Spectacle",
+  "lieu": "Culture au grand jour",
+  "ville": "Janailhac",
+  "dept": "87"
+ },
+ {
+  "debut": "2021-09-03",
+  "creation": "souffle",
+  "titre": "Souffle",
+  "type": "Spectacle",
+  "lieu": "Bistrot Culture",
+  "ville": "Ainay-le-Château",
+  "dept": "03"
+ },
+ {
+  "debut": "2021-08-13",
+  "creation": "souffle",
+  "titre": "Souffle",
+  "type": "Spectacle",
+  "lieu": "Concerts à la maison",
+  "ville": "Saint-Sylvestre",
+  "dept": "87"
+ },
+ {
+  "debut": "2021-06-14",
+  "creation": "souffle",
+  "titre": "Souffle",
+  "type": "Première",
+  "lieu": "Château de La Borie",
+  "ville": "Solignac",
+  "dept": "87",
+  "note": "Commande de la Compagnie Arabesque"
+ },
+ {
+  "debut": "2021-05-24",
+  "creation": "doline",
+  "titre": "DOLINE",
+  "type": "Sortie de résidence",
+  "lieu": "Métairie des Arts",
+  "ville": "Saint-Pantaléon-de-Larche",
+  "dept": "19"
+ }
+]

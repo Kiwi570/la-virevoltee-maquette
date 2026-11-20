@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PerformingGroup",
+  "name": "Compagnie la Virevoltée",
+  "url": "https://la-virevoltee-maquette.vercel.app/",
+  "telephone": "+33615031678",
+  "email": "cie.lavirevoltee@gmail.com",
+  "foundingDate": "2020-10",
+  "founder": { "@type": "Person", "name": "Mathilde Rader" },
+  "address": { "@type": "PostalAddress", "streetAddress": "57b avenue Garibaldi", "postalCode": "87000", "addressLocality": "Limoges", "addressCountry": "FR" },
+  "sameAs": ["https://www.instagram.com/cie_la.virevoltee/", "https://www.facebook.com/Cie-la-Virevolt%C3%A9e-Mathilde-Rader-115902940333047"],
+  "description": "Compagnie de danse contemporaine basée à Limoges, créée en 2020 par la danseuse Mathilde Rader : spectacles pour la rue et la scène, éducation artistique, coaching scénique."
+}

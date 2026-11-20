@@ -1,0 +1,3189 @@
+{
+  "logo": {
+    "nom": "logo",
+    "source": "recu/logo-sombre.png",
+    "role": "logo",
+    "alt": "Compagnie la Virevoltée",
+    "grok": false,
+    "mention": null,
+    "beaute": null,
+    "empreinte": "afa02af76bf80688",
+    "ratio": null,
+    "largeurs": [
+      240,
+      480
+    ],
+    "mobile": null,
+    "cadrage": null,
+    "sujet": null,
+    "zones_calmes": null,
+    "zone_texte": null,
+    "recadrage": null,
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "logo-240.webp",
+      "logo-480.webp"
+    ],
+    "poids": {
+      "logo-240.webp": 6576,
+      "logo-480.webp": 14614
+    },
+    "media": "c.media({ nom: 'logo', alt: \"Compagnie la Virevoltée\", sizes: '240px' })"
+  },
+  "accueil-ouverture": {
+    "nom": "accueil-ouverture",
+    "source": "recu/aurelie-fieschi.jpg",
+    "role": "ouverture",
+    "alt": "Une danseuse virevolte devant une paroi de roche, sa jupe fleurie déployée autour d’elle",
+    "grok": false,
+    "mention": null,
+    "beaute": 5,
+    "empreinte": "e76f394a0408c856",
+    "ratio": "16:9",
+    "largeurs": [
+      640,
+      1280,
+      1920
+    ],
+    "mobile": {
+      "ratio": "9:16",
+      "largeurs": [
+        640,
+        1080
+      ],
+      "cadrage": "50% 44%"
+    },
+    "cadrage": "53% 50%",
+    "sujet": {
+      "x": 37.5,
+      "y": 14,
+      "l": 34.4,
+      "h": 80.8
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0.57,
+        "ton": "sombre"
+      },
+      {
+        "cote": "bas",
+        "score": 0.51,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.46,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0.38,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": "gauche",
+    "recadrage": {
+      "left": 0,
+      "top": 24,
+      "width": 2000,
+      "height": 1125,
+      "source": [
+        2000,
+        1333
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "accueil-ouverture-640.webp",
+      "accueil-ouverture-1280.webp",
+      "accueil-ouverture-1920.webp",
+      "accueil-ouverture-mobile-640.webp",
+      "accueil-ouverture-mobile-1080.webp"
+    ],
+    "poids": {
+      "accueil-ouverture-640.webp": 48204,
+      "accueil-ouverture-1280.webp": 201398,
+      "accueil-ouverture-1920.webp": 302424,
+      "accueil-ouverture-mobile-640.webp": 216616,
+      "accueil-ouverture-mobile-1080.webp": 295598
+    },
+    "media": "c.media({ nom: 'accueil-ouverture', alt: \"Une danseuse virevolte devant une paroi de roche, sa jupe fleurie déployée autour d’elle\", cadrage: '53% 50%', cadrageMobile: '50% 44%', sizes: '100vw', priorite: true })"
+  },
+  "accueil-demarche": {
+    "nom": "accueil-demarche",
+    "source": "recu/souffle-compagnie-virevol-3.jpg",
+    "role": "galerie",
+    "alt": "Souffle : la danseuse roule au sol, le guitariste joue derrière elle dans la pénombre",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "d053c2aef6a4afcc",
+    "ratio": "4:5",
+    "largeurs": [
+      480,
+      800
+    ],
+    "mobile": null,
+    "cadrage": "50% 54%",
+    "sujet": {
+      "x": 7.4,
+      "y": 27.8,
+      "l": 92.6,
+      "h": 55.6
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.83,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.8,
+        "ton": "sombre"
+      },
+      {
+        "cote": "bas",
+        "score": 0.55,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.44,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 274,
+      "top": 0,
+      "width": 797,
+      "height": 996,
+      "source": [
+        1771,
+        996
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "accueil-demarche-480.webp",
+      "accueil-demarche-800.webp"
+    ],
+    "poids": {
+      "accueil-demarche-480.webp": 15764,
+      "accueil-demarche-800.webp": 33956
+    },
+    "media": "c.media({ nom: 'accueil-demarche', alt: \"Souffle : la danseuse roule au sol, le guitariste joue derrière elle dans la pénombre\", cadrage: '50% 54%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 5' })"
+  },
+  "rond-inshift": {
+    "nom": "rond-inshift",
+    "source": "recu/creations.jpg",
+    "role": "vignette",
+    "alt": "InShift : la danseuse, chemise bleue, se plie au-dessus d’un cercle de corde tracé sur le sable, au Togo",
+    "grok": false,
+    "mention": null,
+    "beaute": 5,
+    "empreinte": "a026c4d437b2da6e",
+    "ratio": "1:1",
+    "largeurs": [
+      320,
+      640,
+      900
+    ],
+    "mobile": null,
+    "cadrage": "50% 41%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 91.7
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.28,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.08,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "clair"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 269,
+      "top": 0,
+      "width": 1502,
+      "height": 1502,
+      "source": [
+        2000,
+        1502
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "rond-inshift-320.webp",
+      "rond-inshift-640.webp",
+      "rond-inshift-900.webp"
+    ],
+    "poids": {
+      "rond-inshift-320.webp": 14114,
+      "rond-inshift-640.webp": 33788,
+      "rond-inshift-900.webp": 52624
+    },
+    "media": "c.media({ nom: 'rond-inshift', alt: \"InShift : la danseuse, chemise bleue, se plie au-dessus d’un cercle de corde tracé sur le sable, au Togo\", cadrage: '50% 41%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '1 / 1' })"
+  },
+  "rond-nocturnes": {
+    "nom": "rond-nocturnes",
+    "source": "recu/nocturnes.jpg",
+    "role": "vignette",
+    "alt": "NOCTURNES : la danseuse et le musicien penchés l’un vers l’autre, un projecteur rond derrière eux",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "3cf9798adc125d33",
+    "ratio": "1:1",
+    "largeurs": [
+      320,
+      640,
+      900
+    ],
+    "mobile": null,
+    "cadrage": "49% 45%",
+    "sujet": {
+      "x": 10.9,
+      "y": 18.2,
+      "l": 89.1,
+      "h": 72.7
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.66,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.63,
+        "ton": "sombre"
+      },
+      {
+        "cote": "bas",
+        "score": 0.5,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.46,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 167,
+      "top": 0,
+      "width": 1333,
+      "height": 1333,
+      "source": [
+        2000,
+        1333
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "rond-nocturnes-320.webp",
+      "rond-nocturnes-640.webp",
+      "rond-nocturnes-900.webp"
+    ],
+    "poids": {
+      "rond-nocturnes-320.webp": 7002,
+      "rond-nocturnes-640.webp": 17564,
+      "rond-nocturnes-900.webp": 28528
+    },
+    "media": "c.media({ nom: 'rond-nocturnes', alt: \"NOCTURNES : la danseuse et le musicien penchés l’un vers l’autre, un projecteur rond derrière eux\", cadrage: '49% 45%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '1 / 1' })"
+  },
+  "rond-echo": {
+    "nom": "rond-echo",
+    "source": "recu/echo-chute-compagnie-virevol-2.png",
+    "role": "vignette",
+    "alt": "L’écho d’une chute : une danseuse en équilibre au-dessus de sa partenaire allongée sur une place grise",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "e5445ebd5f2335fc",
+    "ratio": "1:1",
+    "largeurs": [
+      320,
+      640,
+      900
+    ],
+    "mobile": null,
+    "cadrage": "50% 50%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 94.4
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.41,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.31,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.23,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0.23,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 718,
+      "top": 0,
+      "width": 1125,
+      "height": 1125,
+      "source": [
+        2000,
+        1125
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "rond-echo-320.webp",
+      "rond-echo-640.webp",
+      "rond-echo-900.webp"
+    ],
+    "poids": {
+      "rond-echo-320.webp": 10524,
+      "rond-echo-640.webp": 31038,
+      "rond-echo-900.webp": 51090
+    },
+    "media": "c.media({ nom: 'rond-echo', alt: \"L’écho d’une chute : une danseuse en équilibre au-dessus de sa partenaire allongée sur une place grise\", sizes: '(max-width: 760px) 50vw, 25vw', ratio: '1 / 1' })"
+  },
+  "rond-doline": {
+    "nom": "rond-doline",
+    "source": "recu/doline-compagnie-virevol-2.png",
+    "role": "vignette",
+    "alt": "DOLINE : la danseuse sur un cube devant un grand écran bleu-vert, musicien et vidéaste de chaque côté",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "afe97b43685c0bac",
+    "ratio": "1:1",
+    "largeurs": [
+      320,
+      640,
+      900
+    ],
+    "mobile": null,
+    "cadrage": "50% 45%",
+    "sujet": {
+      "x": 5.5,
+      "y": 16.7,
+      "l": 94.5,
+      "h": 55.6
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.83,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.8,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.75,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0.7,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 438,
+      "top": 0,
+      "width": 1125,
+      "height": 1125,
+      "source": [
+        2000,
+        1125
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "rond-doline-320.webp",
+      "rond-doline-640.webp",
+      "rond-doline-900.webp"
+    ],
+    "poids": {
+      "rond-doline-320.webp": 4242,
+      "rond-doline-640.webp": 10856,
+      "rond-doline-900.webp": 17000
+    },
+    "media": "c.media({ nom: 'rond-doline', alt: \"DOLINE : la danseuse sur un cube devant un grand écran bleu-vert, musicien et vidéaste de chaque côté\", cadrage: '50% 45%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '1 / 1' })"
+  },
+  "rond-souffle": {
+    "nom": "rond-souffle",
+    "source": "recu/souffle.jpg",
+    "role": "vignette",
+    "alt": "Souffle : la danseuse et le guitariste assis face à face sur des chaises de jardin",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "65ba71d7d2d0ae47",
+    "ratio": "1:1",
+    "largeurs": [
+      320,
+      640,
+      900
+    ],
+    "mobile": null,
+    "cadrage": "50% 53%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 95.5
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "sombre"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 110,
+      "top": 0,
+      "width": 960,
+      "height": 960,
+      "source": [
+        1440,
+        960
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "rond-souffle-320.webp",
+      "rond-souffle-640.webp",
+      "rond-souffle-900.webp"
+    ],
+    "poids": {
+      "rond-souffle-320.webp": 28890,
+      "rond-souffle-640.webp": 84814,
+      "rond-souffle-900.webp": 141190
+    },
+    "media": "c.media({ nom: 'rond-souffle', alt: \"Souffle : la danseuse et le guitariste assis face à face sur des chaises de jardin\", cadrage: '50% 53%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '1 / 1' })"
+  },
+  "teaser-nocturnes": {
+    "nom": "teaser-nocturnes",
+    "source": "recu/nocturnes-compagnie-virevol-5.jpg",
+    "role": "galerie",
+    "alt": "NOCTURNES : le plateau noir, une rangée de projecteurs ronds et leur reflet sur le sol",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "63c1f6d0cae22e5f",
+    "ratio": "16:9",
+    "largeurs": [
+      640,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "49% 50%",
+    "sujet": {
+      "x": 28.1,
+      "y": 3.1,
+      "l": 56.3,
+      "h": 80.8
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0.61,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.54,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0.54,
+        "ton": "sombre"
+      },
+      {
+        "cote": "bas",
+        "score": 0.54,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 208,
+      "width": 2000,
+      "height": 1125,
+      "source": [
+        2000,
+        1333
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "teaser-nocturnes-640.webp",
+      "teaser-nocturnes-1280.webp"
+    ],
+    "poids": {
+      "teaser-nocturnes-640.webp": 8870,
+      "teaser-nocturnes-1280.webp": 21336
+    },
+    "media": "c.media({ nom: 'teaser-nocturnes', alt: \"NOCTURNES : le plateau noir, une rangée de projecteurs ronds et leur reflet sur le sol\", cadrage: '49% 50%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '16 / 9' })"
+  },
+  "teaser-echo": {
+    "nom": "teaser-echo",
+    "source": "recu/echo-chute-compagnie-virevol.jpg",
+    "role": "galerie",
+    "alt": "L’écho d’une chute devant le public assis sur les marches d’une halle",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "b528c96d2353d37b",
+    "ratio": "16:9",
+    "largeurs": [
+      640,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "50% 59%",
+    "sujet": {
+      "x": 0,
+      "y": 5.6,
+      "l": 100,
+      "h": 94.4
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.04,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "clair"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 2000,
+      "height": 1125,
+      "source": [
+        2000,
+        1125
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "teaser-echo-640.webp",
+      "teaser-echo-1280.webp"
+    ],
+    "poids": {
+      "teaser-echo-640.webp": 56248,
+      "teaser-echo-1280.webp": 164758
+    },
+    "media": "c.media({ nom: 'teaser-echo', alt: \"L’écho d’une chute devant le public assis sur les marches d’une halle\", cadrage: '50% 59%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '16 / 9' })"
+  },
+  "teaser-doline": {
+    "nom": "teaser-doline",
+    "source": "recu/doline-compagnie-virevol.png",
+    "role": "galerie",
+    "alt": "DOLINE : la danseuse devant une image de forêt projetée",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "2f31eb90a553b537",
+    "ratio": "16:9",
+    "largeurs": [
+      640,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "52% 51%",
+    "sujet": {
+      "x": 15.6,
+      "y": 22.2,
+      "l": 65.6,
+      "h": 66.7
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.77,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.59,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.58,
+        "ton": "sombre"
+      },
+      {
+        "cote": "bas",
+        "score": 0.51,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 2000,
+      "height": 1125,
+      "source": [
+        2000,
+        1125
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "teaser-doline-640.webp",
+      "teaser-doline-1280.webp"
+    ],
+    "poids": {
+      "teaser-doline-640.webp": 10410,
+      "teaser-doline-1280.webp": 28436
+    },
+    "media": "c.media({ nom: 'teaser-doline', alt: \"DOLINE : la danseuse devant une image de forêt projetée\", cadrage: '52% 51%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '16 / 9' })"
+  },
+  "teaser-souffle": {
+    "nom": "teaser-souffle",
+    "source": "recu/souffle-compagnie-virevol-2.jpg",
+    "role": "galerie",
+    "alt": "Souffle sous les arbres : la danseuse tend le bras, le guitariste joue",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "8b01b8750880fe93",
+    "ratio": "16:9",
+    "largeurs": [
+      640,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "51% 50%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 90.6,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.39,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.14,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.09,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 198,
+      "width": 2000,
+      "height": 1125,
+      "source": [
+        2000,
+        2000
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "teaser-souffle-640.webp",
+      "teaser-souffle-1280.webp"
+    ],
+    "poids": {
+      "teaser-souffle-640.webp": 34196,
+      "teaser-souffle-1280.webp": 89794
+    },
+    "media": "c.media({ nom: 'teaser-souffle', alt: \"Souffle sous les arbres : la danseuse tend le bras, le guitariste joue\", cadrage: '51% 50%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '16 / 9' })"
+  },
+  "equipe-mathilde": {
+    "nom": "equipe-mathilde",
+    "source": "recu/mathilde-rader.jpg",
+    "role": "portrait",
+    "alt": "Mathilde Rader",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "2a90a868ad62c8e4",
+    "ratio": "4:5",
+    "largeurs": [
+      480,
+      640,
+      784
+    ],
+    "mobile": null,
+    "cadrage": "50% 40%",
+    "sujet": {
+      "x": 32.2,
+      "y": 19,
+      "l": 36.2,
+      "h": 42.9
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0.93,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.8,
+        "ton": "sombre"
+      },
+      {
+        "cote": "bas",
+        "score": 0.78,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0.73,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 520,
+      "top": 0,
+      "width": 996,
+      "height": 1245,
+      "source": [
+        1920,
+        1245
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "compression visible"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "equipe-mathilde-480.webp",
+      "equipe-mathilde-640.webp",
+      "equipe-mathilde-784.webp"
+    ],
+    "poids": {
+      "equipe-mathilde-480.webp": 18482,
+      "equipe-mathilde-640.webp": 28410,
+      "equipe-mathilde-784.webp": 38662
+    },
+    "media": "c.media({ nom: 'equipe-mathilde', alt: \"Mathilde Rader\", cadrage: '50% 40%', sizes: '(max-width: 760px) 100vw, 40vw', ratio: '4 / 5' })"
+  },
+  "equipe-antoine": {
+    "nom": "equipe-antoine",
+    "source": "recu/antoine-petit.jpg",
+    "role": "portrait",
+    "alt": "Antoine Petit",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "6463bf4f9622b2ec",
+    "ratio": "4:5",
+    "largeurs": [
+      480,
+      640,
+      784
+    ],
+    "mobile": null,
+    "cadrage": "41% 50%",
+    "sujet": {
+      "x": 0,
+      "y": 4.5,
+      "l": 100,
+      "h": 90.9
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.31,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0.3,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.24,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.21,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1037,
+      "height": 1296,
+      "source": [
+        1944,
+        1296
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "equipe-antoine-480.webp",
+      "equipe-antoine-640.webp",
+      "equipe-antoine-784.webp"
+    ],
+    "poids": {
+      "equipe-antoine-480.webp": 8888,
+      "equipe-antoine-640.webp": 13660,
+      "equipe-antoine-784.webp": 18714
+    },
+    "media": "c.media({ nom: 'equipe-antoine', alt: \"Antoine Petit\", cadrage: '41% 50%', sizes: '(max-width: 760px) 100vw, 40vw', ratio: '4 / 5' })"
+  },
+  "equipe-audrey": {
+    "nom": "equipe-audrey",
+    "source": "recu/audrey-allafort.jpg",
+    "role": "portrait",
+    "alt": "Audrey Allafort",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "3b554026f2fed4ae",
+    "ratio": "4:5",
+    "largeurs": [
+      480,
+      640,
+      784
+    ],
+    "mobile": null,
+    "cadrage": "50% 64%",
+    "sujet": {
+      "x": 0,
+      "y": 22.2,
+      "l": 100,
+      "h": 77.8
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.83,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.7,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.6,
+        "ton": "sombre"
+      },
+      {
+        "cote": "bas",
+        "score": 0.43,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 550,
+      "top": 0,
+      "width": 900,
+      "height": 1125,
+      "source": [
+        2000,
+        1125
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "equipe-audrey-480.webp",
+      "equipe-audrey-640.webp",
+      "equipe-audrey-784.webp"
+    ],
+    "poids": {
+      "equipe-audrey-480.webp": 14504,
+      "equipe-audrey-640.webp": 20652,
+      "equipe-audrey-784.webp": 25040
+    },
+    "media": "c.media({ nom: 'equipe-audrey', alt: \"Audrey Allafort\", cadrage: '50% 64%', sizes: '(max-width: 760px) 100vw, 40vw', ratio: '4 / 5' })"
+  },
+  "equipe-juliette": {
+    "nom": "equipe-juliette",
+    "source": "recu/juliette-pascaud.jpg",
+    "role": "portrait",
+    "alt": "Juliette Pascaud",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "3bb7698765d8fc3e",
+    "ratio": "4:5",
+    "largeurs": [
+      480,
+      640,
+      784
+    ],
+    "mobile": null,
+    "cadrage": "59% 28%",
+    "sujet": {
+      "x": 25,
+      "y": 0,
+      "l": 70.8,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.59,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.57,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0.4,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.28,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 768,
+      "height": 960,
+      "source": [
+        768,
+        1024
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "768 px de large",
+      "compression visible"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "equipe-juliette-480.webp",
+      "equipe-juliette-640.webp",
+      "equipe-juliette-784.webp"
+    ],
+    "poids": {
+      "equipe-juliette-480.webp": 14360,
+      "equipe-juliette-640.webp": 23040,
+      "equipe-juliette-784.webp": 30622
+    },
+    "media": "c.media({ nom: 'equipe-juliette', alt: \"Juliette Pascaud\", cadrage: '59% 28%', sizes: '(max-width: 760px) 100vw, 40vw', ratio: '4 / 5' })"
+  },
+  "equipe-dimitri": {
+    "nom": "equipe-dimitri",
+    "source": "recu/dimitri-sourzac.jpg",
+    "role": "portrait",
+    "alt": "Dimitri Sourzac",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "679034ad7677f558",
+    "ratio": "4:5",
+    "largeurs": [
+      480,
+      640,
+      784
+    ],
+    "mobile": null,
+    "cadrage": "50% 42%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 96.9
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 160,
+      "top": 0,
+      "width": 1280,
+      "height": 1600,
+      "source": [
+        1600,
+        1600
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "equipe-dimitri-480.webp",
+      "equipe-dimitri-640.webp",
+      "equipe-dimitri-784.webp"
+    ],
+    "poids": {
+      "equipe-dimitri-480.webp": 70528,
+      "equipe-dimitri-640.webp": 108598,
+      "equipe-dimitri-784.webp": 148678
+    },
+    "media": "c.media({ nom: 'equipe-dimitri', alt: \"Dimitri Sourzac\", cadrage: '50% 42%', sizes: '(max-width: 760px) 100vw, 40vw', ratio: '4 / 5' })"
+  },
+  "equipe-olivier": {
+    "nom": "equipe-olivier",
+    "source": "recu/olivier-duperron-rogne.jpg",
+    "role": "portrait",
+    "alt": "Olivier Duperron",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "7dec677932f064f3",
+    "ratio": "4:5",
+    "largeurs": [
+      480,
+      640,
+      784
+    ],
+    "mobile": null,
+    "cadrage": "48% 33%",
+    "sujet": {
+      "x": 9.1,
+      "y": 20.6,
+      "l": 68.2,
+      "h": 79.4
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.59,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.48,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.35,
+        "ton": "sombre"
+      },
+      {
+        "cote": "bas",
+        "score": 0.13,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 97,
+      "width": 1322,
+      "height": 1653,
+      "source": [
+        1322,
+        2000
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "equipe-olivier-480.webp",
+      "equipe-olivier-640.webp",
+      "equipe-olivier-784.webp"
+    ],
+    "poids": {
+      "equipe-olivier-480.webp": 22950,
+      "equipe-olivier-640.webp": 36212,
+      "equipe-olivier-784.webp": 50514
+    },
+    "media": "c.media({ nom: 'equipe-olivier', alt: \"Olivier Duperron\", cadrage: '48% 33%', sizes: '(max-width: 760px) 100vw, 40vw', ratio: '4 / 5' })"
+  },
+  "transmission-ouverture": {
+    "nom": "transmission-ouverture",
+    "source": "recu/kathleen-missud.jpg",
+    "role": "ouverture",
+    "alt": "Deux bras qui se tiennent : une main serre l’avant-bras de l’autre danseur",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "f2e3c14a4e6d4725",
+    "ratio": "4:5",
+    "largeurs": [
+      480,
+      800,
+      1200
+    ],
+    "mobile": {
+      "ratio": "9:16",
+      "largeurs": [
+        640,
+        1080
+      ],
+      "cadrage": "47% 49%"
+    },
+    "cadrage": "40% 50%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 95.5,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "droite",
+        "score": 0.2,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.17,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0.15,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.14,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 146,
+      "width": 1335,
+      "height": 1669,
+      "source": [
+        1335,
+        2000
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "transmission-ouverture-480.webp",
+      "transmission-ouverture-800.webp",
+      "transmission-ouverture-1200.webp",
+      "transmission-ouverture-mobile-640.webp",
+      "transmission-ouverture-mobile-1080.webp"
+    ],
+    "poids": {
+      "transmission-ouverture-480.webp": 14112,
+      "transmission-ouverture-800.webp": 40548,
+      "transmission-ouverture-1200.webp": 123528,
+      "transmission-ouverture-mobile-640.webp": 31474,
+      "transmission-ouverture-mobile-1080.webp": 121036
+    },
+    "media": "c.media({ nom: 'transmission-ouverture', alt: \"Deux bras qui se tiennent : une main serre l’avant-bras de l’autre danseur\", cadrage: '40% 50%', cadrageMobile: '47% 49%', sizes: '100vw', priorite: true })"
+  },
+  "transmission-eac": {
+    "nom": "transmission-eac",
+    "source": "recu/education-artistique-culturelle.jpg",
+    "role": "vignette",
+    "alt": "Atelier d’éducation artistique : élèves et danseuse en mouvement",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "96caeae19e8298a8",
+    "ratio": "3:2",
+    "largeurs": [
+      480,
+      640
+    ],
+    "mobile": null,
+    "cadrage": "50% 48%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 95.5
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "sombre"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 657,
+      "height": 438,
+      "source": [
+        657,
+        438
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "657 px de large"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "transmission-eac-480.webp",
+      "transmission-eac-640.webp"
+    ],
+    "poids": {
+      "transmission-eac-480.webp": 41594,
+      "transmission-eac-640.webp": 63624
+    },
+    "media": "c.media({ nom: 'transmission-eac', alt: \"Atelier d’éducation artistique : élèves et danseuse en mouvement\", cadrage: '50% 48%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '3 / 2' })"
+  },
+  "transmission-marceau": {
+    "nom": "transmission-marceau",
+    "source": "recu/caserne.jpg",
+    "role": "vignette",
+    "alt": "Si Marceau m’était dansé : les élèves dansent devant la caserne Marceau",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "7f0eda5c2f2b5d94",
+    "ratio": "3:2",
+    "largeurs": [
+      480,
+      640
+    ],
+    "mobile": null,
+    "cadrage": "50% 50%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 95.5
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 657,
+      "height": 438,
+      "source": [
+        657,
+        438
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "657 px de large"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "transmission-marceau-480.webp",
+      "transmission-marceau-640.webp"
+    ],
+    "poids": {
+      "transmission-marceau-480.webp": 37438,
+      "transmission-marceau-640.webp": 56504
+    },
+    "media": "c.media({ nom: 'transmission-marceau', alt: \"Si Marceau m’était dansé : les élèves dansent devant la caserne Marceau\", sizes: '(max-width: 760px) 50vw, 25vw', ratio: '3 / 2' })"
+  },
+  "dada-logo": {
+    "nom": "dada-logo",
+    "source": "recu/titre-1.jpg",
+    "role": "logo",
+    "alt": "Logo du Dada Collectif",
+    "grok": false,
+    "mention": null,
+    "beaute": null,
+    "empreinte": "33ba06827f3136b8",
+    "ratio": null,
+    "largeurs": [
+      240,
+      480
+    ],
+    "mobile": null,
+    "cadrage": null,
+    "sujet": null,
+    "zones_calmes": null,
+    "zone_texte": null,
+    "recadrage": null,
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "dada-logo-240.webp",
+      "dada-logo-480.webp"
+    ],
+    "poids": {
+      "dada-logo-240.webp": 5108,
+      "dada-logo-480.webp": 14672
+    },
+    "media": "c.media({ nom: 'dada-logo', alt: \"Logo du Dada Collectif\", sizes: '240px' })"
+  },
+  "choregraphie-beatus": {
+    "nom": "choregraphie-beatus",
+    "source": "recu/choregraphe-regard-exterieur-2.jpg",
+    "role": "galerie",
+    "alt": "Une danseuse en robe rouge face à un musicien jouant d’un instrument ancien à archet",
+    "grok": false,
+    "mention": null,
+    "beaute": 5,
+    "empreinte": "0bfc674b93f89216",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      1200
+    ],
+    "mobile": null,
+    "cadrage": "29% 42%",
+    "sujet": {
+      "x": 12.5,
+      "y": 13.6,
+      "l": 71.9,
+      "h": 68.2
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.7,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0.6,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.58,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.46,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 2000,
+      "height": 1333,
+      "source": [
+        2000,
+        1333
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "choregraphie-beatus-640.webp",
+      "choregraphie-beatus-1200.webp"
+    ],
+    "poids": {
+      "choregraphie-beatus-640.webp": 11840,
+      "choregraphie-beatus-1200.webp": 29296
+    },
+    "media": "c.media({ nom: 'choregraphie-beatus', alt: \"Une danseuse en robe rouge face à un musicien jouant d’un instrument ancien à archet\", cadrage: '29% 42%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
+  },
+  "choregraphie-foret": {
+    "nom": "choregraphie-foret",
+    "source": "recu/choregraphe-regard-exterieur.jpg",
+    "role": "galerie",
+    "alt": "Une danseuse en trench immobile au milieu d’une forêt d’automne",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "a4a1dfc7ff3ca6a0",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      1200
+    ],
+    "mobile": null,
+    "cadrage": "47% 39%",
+    "sujet": {
+      "x": 18.8,
+      "y": 4.5,
+      "l": 50,
+      "h": 77.4
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.46,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.4,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.25,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0.18,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 2000,
+      "height": 1333,
+      "source": [
+        2000,
+        1335
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "choregraphie-foret-640.webp",
+      "choregraphie-foret-1200.webp"
+    ],
+    "poids": {
+      "choregraphie-foret-640.webp": 78192,
+      "choregraphie-foret-1200.webp": 271678
+    },
+    "media": "c.media({ nom: 'choregraphie-foret', alt: \"Une danseuse en trench immobile au milieu d’une forêt d’automne\", cadrage: '47% 39%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
+  },
+  "grok/transmission-coaching": {
+    "nom": "grok/transmission-coaching",
+    "source": "recu/grok/transmission-coaching.jpg",
+    "role": "galerie",
+    "alt": "Un groupe de musique répète sur une petite scène pendant qu’une danseuse lui montre un geste",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "f269f03df2dcad1f",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      1200
+    ],
+    "mobile": null,
+    "cadrage": "34% 49%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 96.9,
+      "h": 96.1
+    },
+    "zones_calmes": [
+      {
+        "cote": "droite",
+        "score": 0.19,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0.08,
+        "ton": "sombre"
+      },
+      {
+        "cote": "bas",
+        "score": 0.08,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1600,
+      "height": 1067,
+      "source": [
+        1600,
+        1074
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "grok/transmission-coaching-640.webp",
+      "grok/transmission-coaching-1200.webp"
+    ],
+    "poids": {
+      "grok/transmission-coaching-640.webp": 23194,
+      "grok/transmission-coaching-1200.webp": 50538
+    },
+    "media": "c.media({ nom: 'grok/transmission-coaching', alt: \"Un groupe de musique répète sur une petite scène pendant qu’une danseuse lui montre un geste\", cadrage: '34% 49%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
+  },
+  "grok/transmission-dada": {
+    "nom": "grok/transmission-dada",
+    "source": "recu/grok/transmission-dada.jpg",
+    "role": "galerie",
+    "alt": "Entraînement de danseurs au sol dans un studio baigné de lumière",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "137d18a586e6d53c",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      1200
+    ],
+    "mobile": null,
+    "cadrage": "61% 59%",
+    "sujet": {
+      "x": 9.4,
+      "y": 26.8,
+      "l": 90.6,
+      "h": 54.9
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.49,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.28,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.18,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.11,
+        "ton": "clair"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 7,
+      "width": 1600,
+      "height": 1067,
+      "source": [
+        1600,
+        1074
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "grok/transmission-dada-640.webp",
+      "grok/transmission-dada-1200.webp"
+    ],
+    "poids": {
+      "grok/transmission-dada-640.webp": 21804,
+      "grok/transmission-dada-1200.webp": 47304
+    },
+    "media": "c.media({ nom: 'grok/transmission-dada', alt: \"Entraînement de danseurs au sol dans un studio baigné de lumière\", cadrage: '61% 59%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
+  },
+  "inshift-1": {
+    "nom": "inshift-1",
+    "source": "recu/creations.jpg",
+    "role": "galerie",
+    "alt": "InShift au Togo : la danseuse se plie au-dessus d’un cercle de corde, le public assis autour",
+    "grok": false,
+    "mention": null,
+    "beaute": 5,
+    "empreinte": "932d94493d03f6b9",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      1200,
+      1600
+    ],
+    "mobile": null,
+    "cadrage": "51% 46%",
+    "sujet": {
+      "x": 3.1,
+      "y": 0,
+      "l": 96.9,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.28,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.08,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "clair"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 2000,
+      "height": 1333,
+      "source": [
+        2000,
+        1502
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "inshift-1-640.webp",
+      "inshift-1-1200.webp",
+      "inshift-1-1600.webp"
+    ],
+    "poids": {
+      "inshift-1-640.webp": 27296,
+      "inshift-1-1200.webp": 58914,
+      "inshift-1-1600.webp": 84476
+    },
+    "media": "c.media({ nom: 'inshift-1', alt: \"InShift au Togo : la danseuse se plie au-dessus d’un cercle de corde, le public assis autour\", cadrage: '51% 46%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
+  },
+  "inshift-2": {
+    "nom": "inshift-2",
+    "source": "recu/regard-exterieur-etienne-gaillochet-2.jpg",
+    "role": "galerie",
+    "alt": "InShift : en noir et blanc, la danseuse tire une corde, concentrée",
+    "grok": false,
+    "mention": null,
+    "beaute": 5,
+    "empreinte": "ec90271f60404446",
+    "ratio": "4:5",
+    "largeurs": [
+      480,
+      800
+    ],
+    "mobile": null,
+    "cadrage": "50% 49%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 319,
+      "top": 0,
+      "width": 1202,
+      "height": 1502,
+      "source": [
+        2000,
+        1502
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "inshift-2-480.webp",
+      "inshift-2-800.webp"
+    ],
+    "poids": {
+      "inshift-2-480.webp": 32710,
+      "inshift-2-800.webp": 68514
+    },
+    "media": "c.media({ nom: 'inshift-2', alt: \"InShift : en noir et blanc, la danseuse tire une corde, concentrée\", cadrage: '50% 49%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 5' })"
+  },
+  "inshift-3": {
+    "nom": "inshift-3",
+    "source": "recu/regard-exterieur-etienne-gaillochet.jpg",
+    "role": "galerie",
+    "alt": "InShift : agenouillée, la danseuse enroule la corde à terre",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "493fe7d800df9288",
+    "ratio": "4:5",
+    "largeurs": [
+      480,
+      800
+    ],
+    "mobile": null,
+    "cadrage": "83% 44%",
+    "sujet": {
+      "x": 50,
+      "y": 0,
+      "l": 45.5,
+      "h": 86.3
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0.66,
+        "ton": "sombre"
+      },
+      {
+        "cote": "bas",
+        "score": 0.57,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0.46,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.28,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1333,
+      "height": 1666,
+      "source": [
+        1333,
+        2000
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "inshift-3-480.webp",
+      "inshift-3-800.webp"
+    ],
+    "poids": {
+      "inshift-3-480.webp": 30524,
+      "inshift-3-800.webp": 83960
+    },
+    "media": "c.media({ nom: 'inshift-3', alt: \"InShift : agenouillée, la danseuse enroule la corde à terre\", cadrage: '83% 44%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 5' })"
+  },
+  "nocturnes-1": {
+    "nom": "nocturnes-1",
+    "source": "recu/nocturnes-compagnie-virevol-3.jpg",
+    "role": "galerie",
+    "alt": "NOCTURNES : le guitariste joue d’une guitare électrique, la danseuse floue au premier plan",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "cfa763537dcdb88e",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      1200,
+      1600
+    ],
+    "mobile": null,
+    "cadrage": "44% 58%",
+    "sujet": {
+      "x": 0,
+      "y": 13.6,
+      "l": 96.9,
+      "h": 81.8
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.57,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.48,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.31,
+        "ton": "sombre"
+      },
+      {
+        "cote": "bas",
+        "score": 0.28,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 2000,
+      "height": 1333,
+      "source": [
+        2000,
+        1333
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "nocturnes-1-640.webp",
+      "nocturnes-1-1200.webp",
+      "nocturnes-1-1600.webp"
+    ],
+    "poids": {
+      "nocturnes-1-640.webp": 15292,
+      "nocturnes-1-1200.webp": 38134,
+      "nocturnes-1-1600.webp": 61130
+    },
+    "media": "c.media({ nom: 'nocturnes-1', alt: \"NOCTURNES : le guitariste joue d’une guitare électrique, la danseuse floue au premier plan\", cadrage: '44% 58%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
+  },
+  "nocturnes-2": {
+    "nom": "nocturnes-2",
+    "source": "recu/nocturnes-compagnie-virevol-4.jpg",
+    "role": "galerie",
+    "alt": "NOCTURNES en noir et blanc : le musicien à son clavier, la danseuse en mouvement",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "0fc92a8b75e92481",
+    "ratio": "4:5",
+    "largeurs": [
+      480,
+      800
+    ],
+    "mobile": null,
+    "cadrage": "50% 55%",
+    "sujet": {
+      "x": 0,
+      "y": 18.2,
+      "l": 71,
+      "h": 77.3
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.65,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.5,
+        "ton": "sombre"
+      },
+      {
+        "cote": "bas",
+        "score": 0.36,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.25,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 867,
+      "top": 0,
+      "width": 1066,
+      "height": 1333,
+      "source": [
+        2000,
+        1333
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "nocturnes-2-480.webp",
+      "nocturnes-2-800.webp"
+    ],
+    "poids": {
+      "nocturnes-2-480.webp": 4562,
+      "nocturnes-2-800.webp": 8812
+    },
+    "media": "c.media({ nom: 'nocturnes-2', alt: \"NOCTURNES en noir et blanc : le musicien à son clavier, la danseuse en mouvement\", cadrage: '50% 55%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 5' })"
+  },
+  "nocturnes-3": {
+    "nom": "nocturnes-3",
+    "source": "recu/nocturnes-compagnie-virevol-2.jpg",
+    "role": "galerie",
+    "alt": "NOCTURNES : la danseuse et le musicien sur le plateau sombre",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "4d17ad622b302af9",
+    "ratio": "4:5",
+    "largeurs": [
+      480,
+      800
+    ],
+    "mobile": null,
+    "cadrage": "46% 44%",
+    "sujet": {
+      "x": 0,
+      "y": 11.3,
+      "l": 95.5,
+      "h": 67.5
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.8,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.5,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.36,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0.32,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1334,
+      "height": 1668,
+      "source": [
+        1334,
+        2000
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "nocturnes-3-480.webp",
+      "nocturnes-3-800.webp"
+    ],
+    "poids": {
+      "nocturnes-3-480.webp": 12306,
+      "nocturnes-3-800.webp": 23658
+    },
+    "media": "c.media({ nom: 'nocturnes-3', alt: \"NOCTURNES : la danseuse et le musicien sur le plateau sombre\", cadrage: '46% 44%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 5' })"
+  },
+  "echo-1": {
+    "nom": "echo-1",
+    "source": "recu/echo-chute-compagnie-virevol-2.png",
+    "role": "galerie",
+    "alt": "L’écho d’une chute : une danseuse enjambe sa partenaire allongée sur une place grise",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "21aef905cb94b747",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      1200,
+      1600
+    ],
+    "mobile": null,
+    "cadrage": "50% 36%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 94.4
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.41,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.31,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.23,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0.23,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 36,
+      "top": 0,
+      "width": 1688,
+      "height": 1125,
+      "source": [
+        2000,
+        1125
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "echo-1-640.webp",
+      "echo-1-1200.webp",
+      "echo-1-1600.webp"
+    ],
+    "poids": {
+      "echo-1-640.webp": 21570,
+      "echo-1-1200.webp": 53174,
+      "echo-1-1600.webp": 80268
+    },
+    "media": "c.media({ nom: 'echo-1', alt: \"L’écho d’une chute : une danseuse enjambe sa partenaire allongée sur une place grise\", cadrage: '50% 36%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
+  },
+  "echo-2": {
+    "nom": "echo-2",
+    "source": "recu/co-creation-echo-chute.png",
+    "role": "galerie",
+    "alt": "L’écho d’une chute : les deux danseuses assises sur un escalier de béton",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "5eab8686937c4a6e",
+    "ratio": "4:5",
+    "largeurs": [
+      480,
+      800
+    ],
+    "mobile": null,
+    "cadrage": "50% 33%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 88.9
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.4,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.16,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.02,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 510,
+      "top": 0,
+      "width": 900,
+      "height": 1125,
+      "source": [
+        2000,
+        1125
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "echo-2-480.webp",
+      "echo-2-800.webp"
+    ],
+    "poids": {
+      "echo-2-480.webp": 32138,
+      "echo-2-800.webp": 64824
+    },
+    "media": "c.media({ nom: 'echo-2', alt: \"L’écho d’une chute : les deux danseuses assises sur un escalier de béton\", cadrage: '50% 33%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 5' })"
+  },
+  "echo-3": {
+    "nom": "echo-3",
+    "source": "recu/echo-chute-compagnie-virevol-4.jpg",
+    "role": "galerie",
+    "alt": "L’écho d’une chute : une danseuse debout au milieu d’un grand terrain",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "8e6df6868be609cf",
+    "ratio": "4:5",
+    "largeurs": [
+      480,
+      800
+    ],
+    "mobile": null,
+    "cadrage": "50% 56%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.21,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "sombre"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 610,
+      "top": 0,
+      "width": 900,
+      "height": 1125,
+      "source": [
+        2000,
+        1125
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "echo-3-480.webp",
+      "echo-3-800.webp"
+    ],
+    "poids": {
+      "echo-3-480.webp": 58540,
+      "echo-3-800.webp": 132688
+    },
+    "media": "c.media({ nom: 'echo-3', alt: \"L’écho d’une chute : une danseuse debout au milieu d’un grand terrain\", cadrage: '50% 56%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 5' })"
+  },
+  "doline-1": {
+    "nom": "doline-1",
+    "source": "recu/24-mai-2021-doline.jpg",
+    "role": "galerie",
+    "alt": "DOLINE : la danseuse seule dans une lumière violette, au bord du plateau",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "8aa76f0553e2d28c",
+    "ratio": "4:5",
+    "largeurs": [
+      480,
+      800
+    ],
+    "mobile": null,
+    "cadrage": "70% 74%",
+    "sujet": {
+      "x": 31.8,
+      "y": 17.6,
+      "l": 63.6,
+      "h": 82.4
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.86,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.8,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.1,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.05,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 332,
+      "width": 1334,
+      "height": 1668,
+      "source": [
+        1334,
+        2000
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "doline-1-480.webp",
+      "doline-1-800.webp"
+    ],
+    "poids": {
+      "doline-1-480.webp": 20966,
+      "doline-1-800.webp": 43326
+    },
+    "media": "c.media({ nom: 'doline-1', alt: \"DOLINE : la danseuse seule dans une lumière violette, au bord du plateau\", cadrage: '70% 74%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 5' })"
+  },
+  "doline-2": {
+    "nom": "doline-2",
+    "source": "recu/doline-compagnie-virevol-4.png",
+    "role": "galerie",
+    "alt": "DOLINE : la danseuse devant un écran de particules lumineuses",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "7ce3b216402a48be",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      1200,
+      1600
+    ],
+    "mobile": null,
+    "cadrage": "50% 45%",
+    "sujet": {
+      "x": 37.4,
+      "y": 16.7,
+      "l": 37.1,
+      "h": 44.4
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.89,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.76,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.74,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0.61,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 56,
+      "top": 0,
+      "width": 1688,
+      "height": 1125,
+      "source": [
+        2000,
+        1125
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "doline-2-640.webp",
+      "doline-2-1200.webp",
+      "doline-2-1600.webp"
+    ],
+    "poids": {
+      "doline-2-640.webp": 16254,
+      "doline-2-1200.webp": 41100,
+      "doline-2-1600.webp": 57986
+    },
+    "media": "c.media({ nom: 'doline-2', alt: \"DOLINE : la danseuse devant un écran de particules lumineuses\", cadrage: '50% 45%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
+  },
+  "doline-3": {
+    "nom": "doline-3",
+    "source": "recu/doline-compagnie-virevol-5.png",
+    "role": "galerie",
+    "alt": "DOLINE : une forêt projetée derrière la danseuse",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "31062ae8392d5e43",
+    "ratio": "4:5",
+    "largeurs": [
+      480,
+      800
+    ],
+    "mobile": null,
+    "cadrage": "47% 50%",
+    "sujet": {
+      "x": 37.6,
+      "y": 11.1,
+      "l": 62.4,
+      "h": 50
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.93,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.9,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.76,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0.65,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 474,
+      "top": 0,
+      "width": 900,
+      "height": 1125,
+      "source": [
+        2000,
+        1125
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "doline-3-480.webp",
+      "doline-3-800.webp"
+    ],
+    "poids": {
+      "doline-3-480.webp": 16286,
+      "doline-3-800.webp": 32650
+    },
+    "media": "c.media({ nom: 'doline-3', alt: \"DOLINE : une forêt projetée derrière la danseuse\", cadrage: '47% 50%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 5' })"
+  },
+  "souffle-1": {
+    "nom": "souffle-1",
+    "source": "recu/souffle-compagnie-virevol.jpg",
+    "role": "galerie",
+    "alt": "Souffle : la danseuse derrière le guitariste, en pleine nature",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "0f2d2fde77bed756",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      1200,
+      1600
+    ],
+    "mobile": null,
+    "cadrage": "46% 38%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 90.6,
+      "h": 95.5
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 2000,
+      "height": 1333,
+      "source": [
+        2000,
+        1333
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "souffle-1-640.webp",
+      "souffle-1-1200.webp",
+      "souffle-1-1600.webp"
+    ],
+    "poids": {
+      "souffle-1-640.webp": 37312,
+      "souffle-1-1200.webp": 92832,
+      "souffle-1-1600.webp": 147352
+    },
+    "media": "c.media({ nom: 'souffle-1', alt: \"Souffle : la danseuse derrière le guitariste, en pleine nature\", cadrage: '46% 38%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
+  },
+  "souffle-2": {
+    "nom": "souffle-2",
+    "source": "recu/partenaires.jpg",
+    "role": "galerie",
+    "alt": "Souffle joué dans un parc, entre les arbres",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "a87333e0ab3ff9bd",
+    "ratio": "4:5",
+    "largeurs": [
+      480,
+      800
+    ],
+    "mobile": null,
+    "cadrage": "50% 57%",
+    "sujet": {
+      "x": 0,
+      "y": 4.5,
+      "l": 100,
+      "h": 90.9
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.03,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 408,
+      "top": 0,
+      "width": 768,
+      "height": 960,
+      "source": [
+        1440,
+        960
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "souffle-2-480.webp",
+      "souffle-2-800.webp"
+    ],
+    "poids": {
+      "souffle-2-480.webp": 40218,
+      "souffle-2-800.webp": 75278
+    },
+    "media": "c.media({ nom: 'souffle-2', alt: \"Souffle joué dans un parc, entre les arbres\", cadrage: '50% 57%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 5' })"
+  },
+  "souffle-3": {
+    "nom": "souffle-3",
+    "source": "recu/souffle-compagnie-virevol-4.jpg",
+    "role": "galerie",
+    "alt": "Souffle en noir et blanc dans un cloître : la danseuse s’élance au-dessus d’une chaise",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "ffc87e6d376db6a7",
+    "ratio": "4:5",
+    "largeurs": [
+      480,
+      800
+    ],
+    "mobile": null,
+    "cadrage": "50% 41%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 96.9
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.04,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "clair"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 132,
+      "top": 0,
+      "width": 755,
+      "height": 944,
+      "source": [
+        943,
+        944
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "943 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,06 fois (source de 755 px après recadrage)"
+    ],
+    "fichiers": [
+      "souffle-3-480.webp",
+      "souffle-3-800.webp"
+    ],
+    "poids": {
+      "souffle-3-480.webp": 45982,
+      "souffle-3-800.webp": 100362
+    },
+    "media": "c.media({ nom: 'souffle-3', alt: \"Souffle en noir et blanc dans un cloître : la danseuse s’élance au-dessus d’une chaise\", cadrage: '50% 41%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 5' })"
+  },
+  "agenda-ouverture": {
+    "nom": "agenda-ouverture",
+    "source": "recu/echo-chute-compagnie-virevol.jpg",
+    "role": "ouverture",
+    "alt": "Le public assis sur les marches d’une halle regarde une danseuse sur la place",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "16d1d96c2baba944",
+    "ratio": "16:9",
+    "largeurs": [
+      640,
+      1280,
+      1920
+    ],
+    "mobile": {
+      "ratio": "9:16",
+      "largeurs": [
+        640
+      ],
+      "cadrage": "50% 59%"
+    },
+    "cadrage": "50% 59%",
+    "sujet": {
+      "x": 0,
+      "y": 5.6,
+      "l": 100,
+      "h": 94.4
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.04,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "clair"
+      }
+    ],
+    "zone_texte": "gauche",
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 2000,
+      "height": 1125,
+      "source": [
+        2000,
+        1125
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "version téléphone sans 1080 px (source trop petite)"
+    ],
+    "fichiers": [
+      "agenda-ouverture-640.webp",
+      "agenda-ouverture-1280.webp",
+      "agenda-ouverture-1920.webp",
+      "agenda-ouverture-mobile-640.webp"
+    ],
+    "poids": {
+      "agenda-ouverture-640.webp": 56248,
+      "agenda-ouverture-1280.webp": 164758,
+      "agenda-ouverture-1920.webp": 286058,
+      "agenda-ouverture-mobile-640.webp": 95290
+    },
+    "media": "c.media({ nom: 'agenda-ouverture', alt: \"Le public assis sur les marches d’une halle regarde une danseuse sur la place\", cadrage: '50% 59%', cadrageMobile: '50% 59%', sizes: '100vw', priorite: true })"
+  },
+  "contact-mathilde": {
+    "nom": "contact-mathilde",
+    "source": "recu/mathilde-rader.jpg",
+    "role": "portrait",
+    "alt": "Mathilde Rader, directrice artistique de la compagnie",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "601246a2f8c354f4",
+    "ratio": "1:1",
+    "largeurs": [
+      480,
+      800
+    ],
+    "mobile": null,
+    "cadrage": "50% 40%",
+    "sujet": {
+      "x": 35.8,
+      "y": 19,
+      "l": 29,
+      "h": 42.9
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0.93,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.8,
+        "ton": "sombre"
+      },
+      {
+        "cote": "bas",
+        "score": 0.78,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0.73,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 395,
+      "top": 0,
+      "width": 1245,
+      "height": 1245,
+      "source": [
+        1920,
+        1245
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "compression visible"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "contact-mathilde-480.webp",
+      "contact-mathilde-800.webp"
+    ],
+    "poids": {
+      "contact-mathilde-480.webp": 12618,
+      "contact-mathilde-800.webp": 29030
+    },
+    "media": "c.media({ nom: 'contact-mathilde', alt: \"Mathilde Rader, directrice artistique de la compagnie\", cadrage: '50% 40%', sizes: '(max-width: 760px) 100vw, 40vw', ratio: '1 / 1' })"
+  },
+  "contact-epaule": {
+    "nom": "contact-epaule",
+    "source": "recu/nous-contacter.jpg",
+    "role": "galerie",
+    "alt": "Une main posée sur une épaule, en gros plan",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "c9b9c2e51249d920",
+    "ratio": "4:5",
+    "largeurs": [
+      480,
+      800
+    ],
+    "mobile": null,
+    "cadrage": "51% 48%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 95.5,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0.34,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.34,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.29,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0.29,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1335,
+      "height": 1669,
+      "source": [
+        1335,
+        2000
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "contact-epaule-480.webp",
+      "contact-epaule-800.webp"
+    ],
+    "poids": {
+      "contact-epaule-480.webp": 11674,
+      "contact-epaule-800.webp": 40006
+    },
+    "media": "c.media({ nom: 'contact-epaule', alt: \"Une main posée sur une épaule, en gros plan\", cadrage: '51% 48%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 5' })"
+  },
+  "page-404": {
+    "nom": "page-404",
+    "source": "recu/nocturnes-compagnie-virevol-5.jpg",
+    "role": "404",
+    "alt": "Un plateau noir, une rangée de projecteurs ronds allumés et leur reflet sur le sol",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "05a8f24980a6d836",
+    "ratio": "16:9",
+    "largeurs": [
+      800,
+      1600
+    ],
+    "mobile": {
+      "ratio": "9:16",
+      "largeurs": [
+        640,
+        1080
+      ],
+      "cadrage": "50% 58%"
+    },
+    "cadrage": "49% 50%",
+    "sujet": {
+      "x": 28.1,
+      "y": 3.1,
+      "l": 56.3,
+      "h": 80.8
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0.61,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.54,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0.54,
+        "ton": "sombre"
+      },
+      {
+        "cote": "bas",
+        "score": 0.54,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": "gauche",
+    "recadrage": {
+      "left": 0,
+      "top": 208,
+      "width": 2000,
+      "height": 1125,
+      "source": [
+        2000,
+        1333
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "page-404-800.webp",
+      "page-404-1600.webp",
+      "page-404-mobile-640.webp",
+      "page-404-mobile-1080.webp"
+    ],
+    "poids": {
+      "page-404-800.webp": 11768,
+      "page-404-1600.webp": 29108,
+      "page-404-mobile-640.webp": 20348,
+      "page-404-mobile-1080.webp": 40760
+    },
+    "media": "c.media({ nom: 'page-404', alt: \"Un plateau noir, une rangée de projecteurs ronds allumés et leur reflet sur le sol\", cadrage: '49% 50%', cadrageMobile: '50% 58%', sizes: '100vw', ratio: '16 / 9' })"
+  },
+  "creations-ouverture": {
+    "nom": "creations-ouverture",
+    "source": "recu/regard-exterieur-etienne-gaillochet-2.jpg",
+    "role": "ouverture",
+    "alt": "InShift : la danseuse tire une corde, en noir et blanc",
+    "grok": false,
+    "mention": null,
+    "beaute": 5,
+    "empreinte": "c233128bed4c0390",
+    "ratio": "16:9",
+    "largeurs": [
+      640,
+      1280,
+      1920
+    ],
+    "mobile": {
+      "ratio": "4:5",
+      "largeurs": [
+        640,
+        1080
+      ],
+      "cadrage": "50% 49%"
+    },
+    "cadrage": "46% 50%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": "gauche",
+    "recadrage": {
+      "left": 0,
+      "top": 173,
+      "width": 2000,
+      "height": 1125,
+      "source": [
+        2000,
+        1502
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "creations-ouverture-640.webp",
+      "creations-ouverture-1280.webp",
+      "creations-ouverture-1920.webp",
+      "creations-ouverture-mobile-640.webp",
+      "creations-ouverture-mobile-1080.webp"
+    ],
+    "poids": {
+      "creations-ouverture-640.webp": 27606,
+      "creations-ouverture-1280.webp": 73956,
+      "creations-ouverture-1920.webp": 126122,
+      "creations-ouverture-mobile-640.webp": 49414,
+      "creations-ouverture-mobile-1080.webp": 100790
+    },
+    "media": "c.media({ nom: 'creations-ouverture', alt: \"InShift : la danseuse tire une corde, en noir et blanc\", cadrage: '46% 50%', cadrageMobile: '50% 49%', sizes: '100vw', priorite: true })"
+  }
+}
