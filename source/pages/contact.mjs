@@ -1,6 +1,6 @@
 /* Contact : Mathilde Rader dans le disque (objet d'ouverture), téléphone et e-mail en grand ; demande en trois
    parties, préremplie par l'adresse (?sujet=…&creation=…) ; informations pour les programmateurs ; adhésion. */
-import { html } from '../../outils/gabarit.mjs';
+import { html, brut } from '../../outils/gabarit.mjs';
 
 export const page = { cle: 'contact', fichier: 'contact', imagePartage: 'contact-mathilde' };
 
@@ -21,7 +21,7 @@ export default (c) => {
     </div>
     <div class="ouv-contact-texte">
       <p class="surtitre" data-ouv>${c.t('contact.ouverture.sur')}</p>
-      <h1 class="titre-geant titre-geant--encre titre-geant--moyen" id="titre-contact" data-anime="gsap"><span class="l">${c.t('contact.ouverture.l1')}</span> <span class="l l--accent">${c.t('contact.ouverture.l2')}</span></h1>
+      <h1 class="titre-geant titre-geant--encre titre-geant--moyen" id="titre-contact" data-anime="gsap" data-grille="typo"><span class="l">${c.t('contact.ouverture.l1')}</span> <span class="l l--accent">${c.t('contact.ouverture.l2')}</span></h1>
       <p class="contact-qui" data-ouv><strong>${c.t('contact.ouverture.nom')}</strong>, ${c.t('contact.ouverture.role')}</p>
       <p class="contact-grand" data-ouv data-info-cle><a href="tel:${k.telephoneLien}">${k.telephone}</a><br><a class="contact-mail" href="mailto:${k.email}">${k.email}</a></p>
       <p class="ouv-actions" data-ouv><a class="bouton" href="#demande" data-action-principale data-sans-transition data-survol="magnetique">${c.t('contact.ouverture.action')}</a> <span class="ouv-info ouv-info--encre">${c.t('contact.ouverture.info')}</span></p>
@@ -39,10 +39,14 @@ export default (c) => {
     <form class="formulaire" data-formulaire novalidate>
       <fieldset class="etape" data-anime>
         <legend><span class="etape-num">1</span> ${c.t('contact.demande.etape1')}</legend>
-        <div class="champ">
-          <label for="sujet">${c.t('contact.demande.sujet')} *</label>
-          <select id="sujet" name="sujet" required>${sujets.map(([v, t]) => html`<option value="${v}">${c.t('contact.demande.' + t)}</option>`)}</select>
-        </div>
+        <fieldset class="tuiles">
+          <legend class="tuiles-titre">${c.t('contact.demande.sujet')}</legend>
+          ${sujets.map(([v, t], i) => html`<label class="tuile">
+            <input type="radio" name="sujet" value="${v}"${i === 0 ? brut(' checked') : ''}>
+            ${['rond-nocturnes', 'transmission-eac', 'rond-souffle', 'dada-logo', null][i] ? c.media({ nom: ['rond-nocturnes', 'transmission-eac', 'rond-souffle', 'dada-logo'][i], alt: '', sizes: '72px', classe: 'tuile-rond' + (i === 3 ? ' tuile-rond--logo' : '') }) : html`<span class="tuile-rond tuile-rond--marque" aria-hidden="true"><img src="/assets/images/logo-160.png" alt="" width="64" height="64" loading="lazy"></span>`}
+            <span class="tuile-nom">${c.t('contact.demande.' + t)}</span>
+          </label>`)}
+        </fieldset>
         <div class="champ">
           <label for="creation">${c.t('contact.demande.creation')}</label>
           <select id="creation" name="creation"><option value="">${c.t('contact.demande.creationAucune')}</option>${c.donnees.creations.map((x) => html`<option value="${x.cle}">${x.titre}</option>`)}</select>
@@ -63,7 +67,10 @@ export default (c) => {
       </fieldset>
       <p class="rgpd">${c.t('contact.demande.rgpd')} ${c.t('commun.confidentialite')}.</p>
       <p><button type="submit" class="bouton">${c.t('contact.demande.envoyer')}</button></p>
-      <p class="message-envoi" data-message-envoi data-texte="${c.s('contact.demande.simule')}" tabindex="-1" role="status" hidden></p>
+      <div class="envoi-retour" data-grille="retour">
+        <div class="tampon" hidden aria-hidden="true"><img src="/assets/images/logo-160.png" alt="" width="96" height="96" loading="lazy"><span>${c.t('contact.demande.tampon')}</span></div>
+        <p class="message-envoi" data-message-envoi data-texte="${c.s('contact.demande.simule')}" tabindex="-1" role="status" hidden></p>
+      </div>
     </form>
   </div>
 </section>

@@ -111,6 +111,7 @@ function pied(c) {
       </ul>
     </div>
   </div>
+  <p class="pied-geant" aria-hidden="true" data-audit-ignorer data-anime="lettres">${c.t('commun.marque')}</p>
   <div class="conteneur pied-bas"><p>${c.t('commun.mentions')} · ${c.t('commun.confidentialite')}</p><p>${c.t('commun.maquette')}</p><p>© ${c.site.nom}</p></div>
 </footer>`;
 }

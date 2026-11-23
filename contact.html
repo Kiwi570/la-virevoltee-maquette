@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr" data-v="1">
+<html lang="fr" data-v="2" data-curseur>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -35,14 +35,14 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 })();</script>
 <link rel="preload" href="/assets/fonts/syne-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/manrope-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/socle.css?v=1">
-<link rel="stylesheet" href="/assets/css/site.css?v=1">
-<link rel="modulepreload" href="/assets/js/site.js?v=1">
-<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<link rel="stylesheet" href="/assets/css/socle.css?v=2">
+<link rel="stylesheet" href="/assets/css/site.css?v=2">
+<link rel="modulepreload" href="/assets/js/site.js?v=2">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=2">
 <script src="/assets/vendor/gsap.min.js" defer></script>
 <script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
 <script src="/assets/vendor/SplitText.min.js" defer></script>
-<script type="module" src="/assets/js/site.js?v=1"></script>
+<script type="module" src="/assets/js/site.js?v=2"></script>
 <meta name="theme-color" content="#F3EDE4">
 <link rel="icon" href="/assets/images/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
@@ -116,7 +116,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     </div>
     <div class="ouv-contact-texte">
       <p class="surtitre" data-ouv>Contact</p>
-      <h1 class="titre-geant titre-geant--encre titre-geant--moyen" id="titre-contact" data-anime="gsap"><span class="l">Parlons de</span> <span class="l l--accent">votre projet</span></h1>
+      <h1 class="titre-geant titre-geant--encre titre-geant--moyen" id="titre-contact" data-anime="gsap" data-grille="typo"><span class="l">Parlons de</span> <span class="l l--accent">votre projet</span></h1>
       <p class="contact-qui" data-ouv><strong>Mathilde Rader</strong>, Administration, diffusion et direction artistique</p>
       <p class="contact-grand" data-ouv data-info-cle><a href="tel:+33615031678">06 15 03 16 78</a><br><a class="contact-mail" href="mailto:cie.lavirevoltee@gmail.com">cie.lavirevoltee@gmail.com</a></p>
       <p class="ouv-actions" data-ouv><a class="bouton" href="#demande" data-action-principale data-sans-transition data-survol="magnetique">Écrire une demande</a> <span class="ouv-info ouv-info--encre">Réponse par e-mail ou par téléphone</span></p>
@@ -137,10 +137,46 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     <form class="formulaire" data-formulaire novalidate>
       <fieldset class="etape" data-anime>
         <legend><span class="etape-num">1</span> Votre projet</legend>
-        <div class="champ">
-          <label for="sujet">Objet de la demande *</label>
-          <select id="sujet" name="sujet" required><option value="programmation">Programmer une création</option><option value="mediation">Projet d’éducation artistique</option><option value="coaching">Coaching scénique</option><option value="dada">Dada Collectif</option><option value="autre">Autre demande</option></select>
-        </div>
+        <fieldset class="tuiles">
+          <legend class="tuiles-titre">Objet de la demande</legend>
+          <label class="tuile">
+            <input type="radio" name="sujet" value="programmation" checked>
+            <figure class="media tuile-rond" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/rond-nocturnes-900.webp" srcset="/assets/images/rond-nocturnes-320.webp 320w, /assets/images/rond-nocturnes-640.webp 640w, /assets/images/rond-nocturnes-900.webp 900w" sizes="72px" alt="" width="900" height="900" loading="lazy" decoding="async">
+  </picture>
+</figure>
+            <span class="tuile-nom">Programmer une création</span>
+          </label><label class="tuile">
+            <input type="radio" name="sujet" value="mediation">
+            <figure class="media tuile-rond" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/transmission-eac-640.webp" srcset="/assets/images/transmission-eac-480.webp 480w, /assets/images/transmission-eac-640.webp 640w" sizes="72px" alt="" width="640" height="427" loading="lazy" decoding="async">
+  </picture>
+</figure>
+            <span class="tuile-nom">Projet d’éducation artistique</span>
+          </label><label class="tuile">
+            <input type="radio" name="sujet" value="coaching">
+            <figure class="media tuile-rond" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/rond-souffle-900.webp" srcset="/assets/images/rond-souffle-320.webp 320w, /assets/images/rond-souffle-640.webp 640w, /assets/images/rond-souffle-900.webp 900w" sizes="72px" alt="" width="900" height="900" loading="lazy" decoding="async">
+  </picture>
+</figure>
+            <span class="tuile-nom">Coaching scénique</span>
+          </label><label class="tuile">
+            <input type="radio" name="sujet" value="dada">
+            <figure class="media tuile-rond tuile-rond--logo" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/dada-logo-480.webp" srcset="/assets/images/dada-logo-240.webp 240w, /assets/images/dada-logo-480.webp 480w" sizes="72px" alt="" width="480" height="660" loading="lazy" decoding="async">
+  </picture>
+</figure>
+            <span class="tuile-nom">Dada Collectif</span>
+          </label><label class="tuile">
+            <input type="radio" name="sujet" value="autre">
+            <span class="tuile-rond tuile-rond--marque" aria-hidden="true"><img src="/assets/images/logo-160.png" alt="" width="64" height="64" loading="lazy"></span>
+            <span class="tuile-nom">Autre demande</span>
+          </label>
+        </fieldset>
         <div class="champ">
           <label for="creation">Création concernée</label>
           <select id="creation" name="creation"><option value="">Je ne sais pas encore</option><option value="inshift">InShift</option><option value="nocturnes">NOCTURNES</option><option value="echo">L’écho d’une chute</option><option value="doline">DOLINE</option><option value="souffle">Souffle</option></select>
@@ -181,7 +217,10 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
       </fieldset>
       <p class="rgpd">Vos coordonnées servent uniquement à répondre à votre demande. Elles ne sont ni cédées ni utilisées pour de la publicité. Politique de confidentialité : à compléter.</p>
       <p><button type="submit" class="bouton">Envoyer la demande</button></p>
-      <p class="message-envoi" data-message-envoi data-texte="Maquette : aucun message n’a été envoyé. Sur le site final, la demande arrivera dans la boîte de la compagnie." tabindex="-1" role="status" hidden></p>
+      <div class="envoi-retour" data-grille="retour">
+        <div class="tampon" hidden aria-hidden="true"><img src="/assets/images/logo-160.png" alt="" width="96" height="96" loading="lazy"><span>Demande prête</span></div>
+        <p class="message-envoi" data-message-envoi data-texte="Maquette : aucun message n’a été envoyé. Sur le site final, la demande arrivera dans la boîte de la compagnie." tabindex="-1" role="status" hidden></p>
+      </div>
     </form>
   </div>
 </section>
@@ -229,6 +268,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
       </ul>
     </div>
   </div>
+  <p class="pied-geant" aria-hidden="true" data-audit-ignorer data-anime="lettres">la Virevoltée</p>
   <div class="conteneur pied-bas"><p>Mentions légales : à compléter · Politique de confidentialité : à compléter</p><p>Maquette de démonstration : formulaires simulés, rien n’est envoyé.</p><p>© Compagnie la Virevoltée</p></div>
 </footer>
 <div data-barre-fixe>

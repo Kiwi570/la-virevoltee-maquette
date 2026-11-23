@@ -29,7 +29,7 @@ export default (c) => {
   <div class="conteneur ouv-agenda-grille">
     <div class="ouv-agenda-texte">
       <p class="surtitre" data-ouv>${c.t('pages.agenda.nav')}</p>
-      <h1 class="titre-geant titre-geant--encre titre-geant--moyen" id="titre-agenda" data-anime="gsap"><span class="l">${c.t('agenda.ouverture.l1')}</span> <span class="l">${c.t('agenda.ouverture.l2')} <span class="mot-accent">${c.t('agenda.ouverture.l3')}</span></span></h1>
+      <h1 class="titre-geant titre-geant--encre titre-geant--moyen" id="titre-agenda" data-anime="gsap" data-grille="typo"><span class="l">${c.t('agenda.ouverture.l1')}</span> <span class="l">${c.t('agenda.ouverture.l2')} <span class="mot-accent">${c.t('agenda.ouverture.l3')}</span></span></h1>
       ${prochaine ? html`<div class="prochaine" data-prochaine-bloc>
         <div class="prochaine-disque" data-iris-centre="disque" data-effet="date-disque"><span class="prochaine-jour" data-p-jour>${p.jour}</span><span class="prochaine-mois" data-p-mois>${p.mois}</span></div>
         <div class="prochaine-corps" data-ouv>
@@ -44,7 +44,7 @@ export default (c) => {
   </div>
 </section>
 
-<section class="agd agenda-dates" id="dates" data-module="agenda-des-dates" aria-labelledby="agd-titre">
+<section class="agd agenda-dates" id="dates" data-module="agenda-des-dates" data-grille="retour" aria-labelledby="agd-titre">
   <div class="conteneur">
     <div class="agd__tete">
       <h2 class="agd__h2 titre-section" id="agd-titre" data-anime="lignes">${c.t('agenda.venir.titre')}</h2>
@@ -85,7 +85,7 @@ export default (c) => {
     <figure class="carte-figure" data-effet="carte-tournee" data-visuel>
       <svg class="carte-svg" viewBox="0 0 ${carte.largeur} ${carte.hauteur}" role="img" aria-label="${c.s('agenda.carte.aria')}">
         <path class="carte-france" d="${carte.france}"/>
-        ${Object.entries(carte.villes).filter(([v]) => parVille[v]).map(([v, [x, y]]) => html`<g class="carte-point" data-an="${parVille[v].an}"><circle cx="${x}" cy="${y}" r="${Math.min(26, 7 + parVille[v].n * 1.4).toFixed(1)}"/>${libelles.includes(v) ? html`<text${forts.includes(v) ? brut(' class="fort"') : ''} x="${(x + 14).toFixed(0)}" y="${(y + 6).toFixed(0)}">${v === 'Saint-Laurent-de-la-Prée' ? 'St-Laurent-de-la-Prée' : v}</text>` : ''}</g>`)}
+        ${Object.entries(carte.villes).filter(([v]) => parVille[v]).map(([v, [x, y]]) => html`<g class="carte-point" data-an="${parVille[v].an}"><title>${v} · ${parVille[v].n} date${parVille[v].n > 1 ? 's' : ''}</title><circle cx="${x}" cy="${y}" r="${Math.min(26, 7 + parVille[v].n * 1.4).toFixed(1)}"/>${libelles.includes(v) ? html`<text${forts.includes(v) ? brut(' class="fort"') : ''} x="${(x + 14).toFixed(0)}" y="${(y + 6).toFixed(0)}">${v === 'Saint-Laurent-de-la-Prée' ? 'St-Laurent-de-la-Prée' : v}</text>` : ''}</g>`)}
       </svg>
       <div class="carte-encart" data-an="2025">
         <p class="carte-encart-pays">${c.t('agenda.carte.togo')}</p>

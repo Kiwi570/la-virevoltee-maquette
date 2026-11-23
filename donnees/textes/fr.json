@@ -25,7 +25,12 @@
     "ecrire": "Écrire à la compagnie",
     "teaser": "Lancer le teaser de {titre}",
     "teaserNote": "Vidéo YouTube chargée au clic.",
-    "credit": "Photo © {nom}"
+    "credit": "Photo © {nom}",
+    "toupieJeu": "Faire tourner la toupie de la Virevoltée",
+    "toupieCurseur": "Tournez",
+    "toupieIndice": "Attrapez-la, lancez-la",
+    "marque": "la Virevoltée",
+    "voir": "Voir"
   },
   "pages": {
     "404": {
@@ -93,7 +98,7 @@
     "roue": {
       "sur": "Les créations",
       "titre": "Cinq pièces, de la rue à la scène",
-      "indice": "Faites défiler : la roue tourne d’une création à l’autre.",
+      "indice": "Faites défiler ou attrapez la roue : elle tourne d’une création à l’autre.",
       "decouvrir": "Découvrir la création",
       "toutes": "Toutes les créations",
       "region": "Roue des cinq créations"
@@ -126,7 +131,9 @@
     "equipe": {
       "sur": "L’équipe",
       "titre": "Une danseuse, et les artistes qu’elle invite",
-      "texte": "Autour de Mathilde Rader, des musiciens, une danseuse et un vidéaste qui signent les créations avec elle."
+      "texte": "Autour de Mathilde Rader, les musiciens, la danseuse et le vidéaste qui signent les créations avec elle. Retournez les cartes.",
+      "retourner": "{nom} : retourner la carte pour lire sa présentation",
+      "curseur": "Retourner"
     },
     "routes": {
       "sur": "Sur les routes",
@@ -161,7 +168,8 @@
     "agenda": "Voir l’agenda",
     "sommaire": "Les cinq créations",
     "appelTitre": "Une pièce pour votre lieu ?",
-    "appelTexte": "Dites-nous où, quand et pour quel public : la compagnie vous répond avec la création et la version qui conviennent."
+    "appelTexte": "Dites-nous où, quand et pour quel public : la compagnie vous répond avec la création et la version qui conviennent.",
+    "rail": "Aller à une création"
   },
   "agenda": {
     "ouverture": {
@@ -276,7 +284,8 @@
       "message": "Votre message",
       "rgpd": "Vos coordonnées servent uniquement à répondre à votre demande. Elles ne sont ni cédées ni utilisées pour de la publicité.",
       "envoyer": "Envoyer la demande",
-      "simule": "Maquette : aucun message n’a été envoyé. Sur le site final, la demande arrivera dans la boîte de la compagnie."
+      "simule": "Maquette : aucun message n’a été envoyé. Sur le site final, la demande arrivera dans la boîte de la compagnie.",
+      "tampon": "Demande prête"
     },
     "pro": {
       "titre": "Pour programmer la compagnie",

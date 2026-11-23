@@ -15,7 +15,7 @@ export default (c) => {
     <div class="ouv-trans-texte">
       ${toupie(c, { iris: true, classe: 'toupie--page toupie--trans' })}
       <p class="surtitre" data-ouv>${c.t('transmission.ouverture.sur')}</p>
-      <h1 class="titre-geant titre-geant--encre titre-geant--moyen" id="titre-transmission" data-anime="gsap"><span class="l">${c.t('transmission.ouverture.l1')}</span> <span class="l">${c.t('transmission.ouverture.l2')}</span> <span class="l l--accent">${c.t('transmission.ouverture.l3')}</span></h1>
+      <h1 class="titre-geant titre-geant--encre titre-geant--moyen" id="titre-transmission" data-anime="gsap" data-grille="typo"><span class="l">${c.t('transmission.ouverture.l1')}</span> <span class="l">${c.t('transmission.ouverture.l2')}</span> <span class="l l--accent">${c.t('transmission.ouverture.l3')}</span></h1>
       <p class="ouv-intro masque-ecran-tres-bas" data-ouv>${c.t('transmission.ouverture.texte')}</p>
       <p class="ouv-actions" data-ouv>${c.lien('contact', { ancre: 'demande', params: 'sujet=mediation', classe: 'bouton', texte: c.t('transmission.ouverture.action'), attrs: 'data-action-principale data-survol="magnetique"' })}</p>
       <p class="ouv-info ouv-info--encre" data-info-cle data-ouv>${c.t('transmission.ouverture.info')}</p>

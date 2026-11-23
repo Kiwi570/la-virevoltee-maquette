@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr" data-v="1">
+<html lang="fr" data-v="2" data-curseur>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -35,14 +35,14 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 })();</script>
 <link rel="preload" href="/assets/fonts/syne-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/manrope-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/socle.css?v=1">
-<link rel="stylesheet" href="/assets/css/site.css?v=1">
-<link rel="modulepreload" href="/assets/js/site.js?v=1">
-<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<link rel="stylesheet" href="/assets/css/socle.css?v=2">
+<link rel="stylesheet" href="/assets/css/site.css?v=2">
+<link rel="modulepreload" href="/assets/js/site.js?v=2">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=2">
 <script src="/assets/vendor/gsap.min.js" defer></script>
 <script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
 <script src="/assets/vendor/SplitText.min.js" defer></script>
-<script type="module" src="/assets/js/site.js?v=1"></script>
+<script type="module" src="/assets/js/site.js?v=2"></script>
 <meta name="theme-color" content="#F3EDE4">
 <link rel="icon" href="/assets/images/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
@@ -109,7 +109,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   <div class="conteneur ouv-creations-haut">
     <div class="ouv-titre-boite">
       <p class="surtitre" data-ouv>Créations</p>
-      <h1 class="titre-geant titre-geant--encre" id="titre-creations" data-anime="gsap"><span class="l">Cinq créations,</span> <span class="l">de la rue</span> <span class="l l--accent">à la scène</span></h1>
+      <h1 class="titre-geant titre-geant--encre" id="titre-creations" data-anime="gsap" data-grille="typo"><span class="l">Cinq créations,</span> <span class="l">de la rue</span> <span class="l l--accent">à la scène</span></h1>
     </div>
     <div class="ouv-creations-cote">
       <div class="toupie toupie--page" data-iris-centre="disque" data-effet="toupie" aria-hidden="true">
@@ -147,6 +147,29 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     </ol>
   </nav>
 </section>
+<nav class="rail" data-sommaire aria-label="Aller à une création">
+  <ol><li><a href="#inshift" data-sans-transition><figure class="media rail-rond" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/rond-inshift-900.webp" srcset="/assets/images/rond-inshift-320.webp 320w, /assets/images/rond-inshift-640.webp 640w, /assets/images/rond-inshift-900.webp 900w" sizes="56px" alt="" width="900" height="900" loading="lazy" decoding="async">
+  </picture>
+</figure><span class="rail-nom">InShift</span></a></li><li><a href="#nocturnes" data-sans-transition><figure class="media rail-rond" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/rond-nocturnes-900.webp" srcset="/assets/images/rond-nocturnes-320.webp 320w, /assets/images/rond-nocturnes-640.webp 640w, /assets/images/rond-nocturnes-900.webp 900w" sizes="56px" alt="" width="900" height="900" loading="lazy" decoding="async">
+  </picture>
+</figure><span class="rail-nom">NOCTURNES</span></a></li><li><a href="#echo" data-sans-transition><figure class="media rail-rond" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/rond-echo-900.webp" srcset="/assets/images/rond-echo-320.webp 320w, /assets/images/rond-echo-640.webp 640w, /assets/images/rond-echo-900.webp 900w" sizes="56px" alt="" width="900" height="900" loading="lazy" decoding="async">
+  </picture>
+</figure><span class="rail-nom">L’écho d’une chute</span></a></li><li><a href="#doline" data-sans-transition><figure class="media rail-rond" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/rond-doline-900.webp" srcset="/assets/images/rond-doline-320.webp 320w, /assets/images/rond-doline-640.webp 640w, /assets/images/rond-doline-900.webp 900w" sizes="56px" alt="" width="900" height="900" loading="lazy" decoding="async">
+  </picture>
+</figure><span class="rail-nom">DOLINE</span></a></li><li><a href="#souffle" data-sans-transition><figure class="media rail-rond" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/rond-souffle-900.webp" srcset="/assets/images/rond-souffle-320.webp 320w, /assets/images/rond-souffle-640.webp 640w, /assets/images/rond-souffle-900.webp 900w" sizes="56px" alt="" width="900" height="900" loading="lazy" decoding="async">
+  </picture>
+</figure><span class="rail-nom">Souffle</span></a></li></ol>
+</nav>
 <article class="chapitre chapitre--clair" id="inshift" aria-labelledby="titre-inshift">
   <div class="conteneur chapitre-grille">
     <header class="chapitre-tete">
@@ -252,7 +275,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     <img src="/assets/images/teaser-nocturnes-1280.webp" srcset="/assets/images/teaser-nocturnes-640.webp 640w, /assets/images/teaser-nocturnes-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 50vw" alt="" width="1280" height="720" loading="lazy" decoding="async">
   </picture>
 </figure>
-  <button type="button" class="teaser-bouton"><span class="teaser-play" aria-hidden="true"></span><span class="teaser-libelle">Lancer le teaser de NOCTURNES</span></button>
+  <button type="button" class="teaser-bouton" data-curseur-label="Voir"><span class="teaser-play" aria-hidden="true"></span><span class="teaser-libelle">Lancer le teaser de NOCTURNES</span></button>
   <p class="teaser-nom" aria-hidden="true">NOCTURNES <span>2025</span></p>
 </div></div>
       <div class="chapitre-reperes">
@@ -323,7 +346,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     <img src="/assets/images/teaser-echo-1280.webp" srcset="/assets/images/teaser-echo-640.webp 640w, /assets/images/teaser-echo-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 50vw" alt="" width="1280" height="720" loading="lazy" decoding="async">
   </picture>
 </figure>
-  <button type="button" class="teaser-bouton"><span class="teaser-play" aria-hidden="true"></span><span class="teaser-libelle">Lancer le teaser de L’écho d’une chute</span></button>
+  <button type="button" class="teaser-bouton" data-curseur-label="Voir"><span class="teaser-play" aria-hidden="true"></span><span class="teaser-libelle">Lancer le teaser de L’écho d’une chute</span></button>
   <p class="teaser-nom" aria-hidden="true">L’écho d’une chute <span>2025</span></p>
 </div></div>
       <div class="chapitre-reperes">
@@ -394,7 +417,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     <img src="/assets/images/teaser-doline-1280.webp" srcset="/assets/images/teaser-doline-640.webp 640w, /assets/images/teaser-doline-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 50vw" alt="" width="1280" height="720" loading="lazy" decoding="async">
   </picture>
 </figure>
-  <button type="button" class="teaser-bouton"><span class="teaser-play" aria-hidden="true"></span><span class="teaser-libelle">Lancer le teaser de DOLINE</span></button>
+  <button type="button" class="teaser-bouton" data-curseur-label="Voir"><span class="teaser-play" aria-hidden="true"></span><span class="teaser-libelle">Lancer le teaser de DOLINE</span></button>
   <p class="teaser-nom" aria-hidden="true">DOLINE <span>2022</span></p>
 </div></div>
       <div class="chapitre-reperes">
@@ -452,7 +475,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     <img src="/assets/images/teaser-souffle-1280.webp" srcset="/assets/images/teaser-souffle-640.webp 640w, /assets/images/teaser-souffle-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 50vw" alt="" width="1280" height="720" loading="lazy" decoding="async">
   </picture>
 </figure>
-  <button type="button" class="teaser-bouton"><span class="teaser-play" aria-hidden="true"></span><span class="teaser-libelle">Lancer le teaser de Souffle</span></button>
+  <button type="button" class="teaser-bouton" data-curseur-label="Voir"><span class="teaser-play" aria-hidden="true"></span><span class="teaser-libelle">Lancer le teaser de Souffle</span></button>
   <p class="teaser-nom" aria-hidden="true">Souffle <span>2021</span></p>
 </div></div>
       <div class="chapitre-reperes">
@@ -511,6 +534,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
       </ul>
     </div>
   </div>
+  <p class="pied-geant" aria-hidden="true" data-audit-ignorer data-anime="lettres">la Virevoltée</p>
   <div class="conteneur pied-bas"><p>Mentions légales : à compléter · Politique de confidentialité : à compléter</p><p>Maquette de démonstration : formulaires simulés, rien n’est envoyé.</p><p>© Compagnie la Virevoltée</p></div>
 </footer>
 <div data-barre-fixe>

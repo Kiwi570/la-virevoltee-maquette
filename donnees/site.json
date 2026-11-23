@@ -3,19 +3,46 @@
   "nomCourt": "la Virevoltée",
   "adresse": "https://la-virevoltee-maquette.vercel.app",
   "siteActuel": "cielavirevoltee.wixsite.com/website",
-  "version": 1,
-  "langues": ["fr"],
-  "navigation": ["accueil", "creations", "agenda", "transmission", "contact"],
-  "actionEntete": { "page": "contact", "ancre": "demande", "params": "sujet=programmation" },
-  "couleurs": { "fond": "#F3EDE4", "texte": "#1C1618", "voile": "#8C3C3C", "ouverture": "#F3EDE4", "menu": "#18131A", "theme": "#F3EDE4" },
+  "version": 2,
+  "langues": [
+    "fr"
+  ],
+  "navigation": [
+    "accueil",
+    "creations",
+    "agenda",
+    "transmission",
+    "contact"
+  ],
+  "actionEntete": {
+    "page": "contact",
+    "ancre": "demande",
+    "params": "sujet=programmation"
+  },
+  "couleurs": {
+    "fond": "#F3EDE4",
+    "texte": "#1C1618",
+    "voile": "#8C3C3C",
+    "ouverture": "#F3EDE4",
+    "menu": "#18131A",
+    "theme": "#F3EDE4"
+  },
   "formeVoile": "iris",
-  "contact": { "telephone": "06 15 03 16 78", "telephoneLien": "+33615031678", "email": "cie.lavirevoltee@gmail.com", "adresse": "57b avenue Garibaldi, 87000 Limoges" },
+  "contact": {
+    "telephone": "06 15 03 16 78",
+    "telephoneLien": "+33615031678",
+    "email": "cie.lavirevoltee@gmail.com",
+    "adresse": "57b avenue Garibaldi, 87000 Limoges"
+  },
   "reseaux": {
     "instagram": "https://www.instagram.com/cie_la.virevoltee/",
     "facebook": "https://www.facebook.com/Cie-la-Virevolt%C3%A9e-Mathilde-Rader-115902940333047",
     "helloasso": "https://www.helloasso.com/associations/compagnie-la-virevoltee/adhesions/adhesion"
   },
-  "polices": ["/assets/fonts/syne-latin-800-normal.woff2", "/assets/fonts/manrope-latin-400-normal.woff2"],
+  "polices": [
+    "/assets/fonts/syne-latin-800-normal.woff2",
+    "/assets/fonts/manrope-latin-400-normal.woff2"
+  ],
   "imagePartage": "accueil-ouverture",
-  "curseur": false
+  "curseur": true
 }

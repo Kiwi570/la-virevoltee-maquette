@@ -1,5 +1,24 @@
 # Journal des versions
 
+## v2 — 23 novembre 2026
+
+Analyse complète du site et version plus ludique.
+
+**Jeu et effet signature**
+- La toupie de l'accueil devient un objet à manipuler, en grand, à cheval sur le titre et la photo. On l'attrape et on la lance, à la souris, au doigt ou au clavier (Entrée, flèches). Elle garde son élan puis ralentit. En tournant, elle déroule des rubans aux couleurs de la jupe de la danseuse. Tant que personne n'y a touché, elle se relance seule toutes les 5 secondes, pour montrer qu'on peut jouer.
+- La roue des créations s'attrape aussi sur ordinateur : la tourner fait défiler la page d'une création à l'autre, puis elle se cale sur la plus proche.
+- Les portraits de l'équipe se retournent au clic (ou au toucher) et montrent la présentation de chaque artiste. Elle était cachée sur téléphone en v1.
+- Formulaire de contact : l'objet de la demande se choisit en tuiles illustrées. Le tampon de la compagnie se pose quand la demande est prête.
+
+**Finitions**
+- Curseur rond rouge brique sur ordinateur. Il grandit sur les liens et affiche « Tournez », « Retourner » ou « Voir » au-dessus des objets à manipuler et des teasers.
+- Le logo tourne sur lui-même pendant le passage d'une page à l'autre.
+- Créations : sur les grands écrans, un rail des cinq disques suit la lecture et permet de sauter d'une création à l'autre.
+- Pied de page : le nom de la compagnie en très grand.
+- Accueil plus court : environ 11,5 écrans au lieu de 13 sur ordinateur. Lieux et partenaires en pastilles, roue plus courte.
+- Carte de l'agenda : chaque point donne sa ville et son nombre de dates au survol.
+- Titres d'ouverture : les lettres tournoient sans couper les mots.
+
 ## v1 — 20 novembre 2026
 
 Première version de la maquette, direction « Virevolte ».

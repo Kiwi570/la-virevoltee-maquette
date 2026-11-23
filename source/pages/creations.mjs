@@ -13,7 +13,7 @@ export default (c) => {
   <div class="conteneur ouv-creations-haut">
     <div class="ouv-titre-boite">
       <p class="surtitre" data-ouv>${c.t('creations.ouverture.sur')}</p>
-      <h1 class="titre-geant titre-geant--encre" id="titre-creations" data-anime="gsap"><span class="l">${c.t('creations.ouverture.l1')}</span> <span class="l">${c.t('creations.ouverture.l2')}</span> <span class="l l--accent">${c.t('creations.ouverture.l3')}</span></h1>
+      <h1 class="titre-geant titre-geant--encre" id="titre-creations" data-anime="gsap" data-grille="typo"><span class="l">${c.t('creations.ouverture.l1')}</span> <span class="l">${c.t('creations.ouverture.l2')}</span> <span class="l l--accent">${c.t('creations.ouverture.l3')}</span></h1>
     </div>
     <div class="ouv-creations-cote">
       ${toupie(c, { iris: true, classe: 'toupie--page' })}
@@ -28,6 +28,10 @@ export default (c) => {
     </ol>
   </nav>
 </section>
+
+<nav class="rail" data-sommaire aria-label="${c.s('creations.rail')}">
+  <ol>${cr.map((x) => html`<li><a href="#${x.cle}" data-sans-transition>${c.media({ nom: x.rond, alt: '', sizes: '56px', classe: 'rail-rond' })}<span class="rail-nom">${x.titre}</span></a></li>`)}</ol>
+</nav>
 
 ${cr.map((x, i) => {
   const dates = aVenir(c, (d) => d.creation === x.cle).slice(0, 3);

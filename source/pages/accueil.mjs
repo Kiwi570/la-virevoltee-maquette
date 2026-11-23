@@ -17,13 +17,15 @@ export default (c) => {
   ${c.media({ nom: 'accueil-ouverture', alt: c.donnees.images['accueil-ouverture'].alt, cadrage: '55% 45%', cadrageMobile: c.donnees.images['accueil-ouverture'].mobile.cadrage, priorite: true, classe: 'ouv-fond', sizes: '100vw', attrs: 'data-fx="parallaxe" data-fx-force="8"' })}
   <div class="conteneur ouv-texte">
     <p class="surtitre ouv-sur" data-ouv>${c.t('accueil.hero.sur')}</p>
-    <h1 class="titre-geant" id="titre-accueil" data-anime="gsap"><span class="l">${c.t('accueil.hero.l1')}</span> <span class="l l--accent">${c.t('accueil.hero.l2')}</span> <span class="l">${c.t('accueil.hero.l3')}</span></h1>
+    <h1 class="titre-geant" id="titre-accueil" data-anime="gsap" data-grille="typo"><span class="l">${c.t('accueil.hero.l1')}</span> <span class="l l--accent">${c.t('accueil.hero.l2')}</span> <span class="l">${c.t('accueil.hero.l3')}</span></h1>
     <p class="ouv-intro masque-ecran-tres-bas" data-ouv>${c.t('accueil.hero.texte')}</p>
     <p class="ouv-actions" data-ouv>${c.lien('contact', { ancre: 'demande', params: 'sujet=programmation', classe: 'bouton', texte: c.t('commun.programmer'), attrs: 'data-action-principale data-survol="magnetique"' })}
       ${c.lien('creations', { classe: 'lien-fleche lien-fleche--clair masque-ecran-tres-bas', texte: c.t('accueil.hero.secondaire') })}</p>
     ${p1 ? html`<p class="ouv-info" data-info-cle data-prochaine data-ouv><span class="ouv-info-label">${c.t('commun.prochaine')}</span> <span data-prochaine-texte>${partiesDate(p1).jour} ${partiesDate(p1).mois} · ${p1.titre} · ${p1.ville}</span></p>` : ''}
   </div>
-  ${toupie(c, { iris: true, classe: 'toupie--ouverture' })}
+  <canvas class="rubans" aria-hidden="true" data-audit-ignorer data-effet="rubans"></canvas>
+  ${toupie(c, { iris: true, classe: 'toupie--ouverture toupie--geante', jeu: true })}
+  <p class="toupie-indice" aria-hidden="true">${c.t('commun.toupieIndice')}</p>
   <p class="credit credit--ouv">${c.t('commun.credit', { nom: c.s('accueil.hero.credit') })}</p>
 </section>
 
@@ -51,7 +53,7 @@ export default (c) => {
       <p class="roue-indice masque-ecran-bas" data-anime>${c.t('accueil.roue.indice')}</p>
     </div>
     <div class="roue-scene conteneur">
-      <div class="roue-disque" data-effet="roue" data-visuel>
+      <div class="roue-disque" data-effet="roue" data-visuel data-curseur-label="${c.s('commun.toupieCurseur')}">
         <div class="roue-anneau">
           ${cr.map((x, i) => html`<button type="button" class="roue-pastille" style="--i:${i}" data-index="${i}" aria-label="${x.titre}">${c.media({ nom: x.rond, alt: '', sizes: '120px', classe: 'roue-pastille-media' })}</button>`)}
         </div>
@@ -135,10 +137,12 @@ export default (c) => {
     </div>
     <ul class="equipe-liste" data-anime="cascade">
       ${c.donnees.equipe.map((p, i) => html`<li class="portrait" style="--r:${[-4, 3, -2, 4, -3, 2][i]}deg">
-        ${c.media({ nom: p.image, alt: '', ratio: '4 / 5', sizes: '(max-width: 760px) 50vw, 16vw', classe: 'portrait-media' })}
+        <div class="portrait-carte" role="button" tabindex="0" aria-pressed="false" aria-label="${c.s('accueil.equipe.retourner', { nom: p.nom })}" data-curseur-label="${c.s('accueil.equipe.curseur')}">
+          <div class="portrait-face">${c.media({ nom: p.image, alt: '', ratio: '4 / 5', sizes: '(max-width: 760px) 50vw, 16vw', classe: 'portrait-media' })}<span class="portrait-pastille" aria-hidden="true">↻</span></div>
+          <div class="portrait-face portrait-dos" data-face="dos"><p class="portrait-texte">${p.texte}</p></div>
+        </div>
         <h3>${p.nom}</h3>
         <p class="portrait-role">${p.role}</p>
-        <p class="portrait-texte">${p.texte}</p>
       </li>`)}
     </ul>
   </div>
@@ -156,11 +160,11 @@ export default (c) => {
     </div>
     <div class="routes-col">
       <h3 data-anime>${c.t('accueil.routes.soutiens')}</h3>
-      <ul class="liste-filet" data-anime="cascade">${c.donnees.lieux.soutiens.map((x) => html`<li>${x}</li>`)}</ul>
+      <ul class="pastilles" data-anime="cascade">${c.donnees.lieux.soutiens.map((x) => html`<li>${x}</li>`)}</ul>
     </div>
     <div class="routes-col">
       <h3 data-anime>${c.t('accueil.routes.residences')}</h3>
-      <ul class="liste-filet" data-anime="cascade">${c.donnees.lieux.residences.map((x) => html`<li>${x}</li>`)}</ul>
+      <ul class="pastilles" data-anime="cascade">${c.donnees.lieux.residences.map((x) => html`<li>${x}</li>`)}</ul>
     </div>
   </div>
 </section>

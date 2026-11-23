@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr" data-v="1">
+<html lang="fr" data-v="2" data-curseur>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -35,14 +35,14 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 })();</script>
 <link rel="preload" href="/assets/fonts/syne-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/manrope-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/socle.css?v=1">
-<link rel="stylesheet" href="/assets/css/site.css?v=1">
-<link rel="modulepreload" href="/assets/js/site.js?v=1">
-<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<link rel="stylesheet" href="/assets/css/socle.css?v=2">
+<link rel="stylesheet" href="/assets/css/site.css?v=2">
+<link rel="modulepreload" href="/assets/js/site.js?v=2">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=2">
 <script src="/assets/vendor/gsap.min.js" defer></script>
 <script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
 <script src="/assets/vendor/SplitText.min.js" defer></script>
-<script type="module" src="/assets/js/site.js?v=1"></script>
+<script type="module" src="/assets/js/site.js?v=2"></script>
 <meta name="theme-color" content="#F3EDE4">
 <link rel="icon" href="/assets/images/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
@@ -113,16 +113,18 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 </figure>
   <div class="conteneur ouv-texte">
     <p class="surtitre ouv-sur" data-ouv>Compagnie de danse contemporaine · Limoges</p>
-    <h1 class="titre-geant" id="titre-accueil" data-anime="gsap"><span class="l">Une danse</span> <span class="l l--accent">organique</span> <span class="l">et explosive</span></h1>
+    <h1 class="titre-geant" id="titre-accueil" data-anime="gsap" data-grille="typo"><span class="l">Une danse</span> <span class="l l--accent">organique</span> <span class="l">et explosive</span></h1>
     <p class="ouv-intro masque-ecran-tres-bas" data-ouv>Danse, musique, images : cinq créations pour la rue et pour la scène, et des ateliers pour tous les publics.</p>
     <p class="ouv-actions" data-ouv><a href="/contact?sujet=programmation#demande" class="bouton" data-libelle="Contact" data-action-principale data-survol="magnetique">Programmer un spectacle</a>
       <a href="/creations" class="lien-fleche lien-fleche--clair masque-ecran-tres-bas" data-libelle="Créations">Voir les créations</a></p>
     <p class="ouv-info" data-info-cle data-prochaine data-ouv><span class="ouv-info-label">Prochaine date</span> <span data-prochaine-texte>27 nov. · Souffle · Colomiers</span></p>
   </div>
-  <div class="toupie toupie--ouverture" data-iris-centre="disque" data-effet="toupie" aria-hidden="true">
+  <canvas class="rubans" aria-hidden="true" data-audit-ignorer data-effet="rubans"></canvas>
+  <div class="toupie toupie--ouverture toupie--geante toupie--jeu" data-iris-centre="disque" data-effet="toupie" role="button" tabindex="0" aria-label="Faire tourner la toupie de la Virevoltée" data-grille="manipuler" data-curseur-label="Tournez">
   <svg class="toupie-anneau" viewBox="0 0 200 200" data-audit-ignorer><defs><path id="anneau-2" d="M100 100 m-82 0 a82 82 0 1 1 164 0 a82 82 0 1 1 -164 0"/></defs><text><textPath href="#anneau-2" textLength="508">Compagnie de danse contemporaine · Limoges · depuis 2020 · </textPath></text></svg>
   <img class="toupie-logo" src="/assets/images/logo-160.png" alt="" width="160" height="160">
 </div>
+  <p class="toupie-indice" aria-hidden="true">Attrapez-la, lancez-la</p>
   <p class="credit credit--ouv">Photo © Aurélie Fieschi</p>
 </section>
 <section class="demarche" id="compagnie" aria-labelledby="demarche-titre">
@@ -149,10 +151,10 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     <div class="conteneur roue-tete">
       <p class="surtitre" data-anime>Les créations</p>
       <h2 id="roue-titre" class="titre-section" data-anime="lignes">Cinq pièces, de la rue à la scène</h2>
-      <p class="roue-indice masque-ecran-bas" data-anime>Faites défiler : la roue tourne d’une création à l’autre.</p>
+      <p class="roue-indice masque-ecran-bas" data-anime>Faites défiler ou attrapez la roue : elle tourne d’une création à l’autre.</p>
     </div>
     <div class="roue-scene conteneur">
-      <div class="roue-disque" data-effet="roue" data-visuel>
+      <div class="roue-disque" data-effet="roue" data-visuel data-curseur-label="Tournez">
         <div class="roue-anneau">
           <button type="button" class="roue-pastille" style="--i:0" data-index="0" aria-label="InShift"><figure class="media roue-pastille-media" style="--cadrage:50% 50%">
   <picture>
@@ -344,7 +346,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     <img src="/assets/images/teaser-nocturnes-1280.webp" srcset="/assets/images/teaser-nocturnes-640.webp 640w, /assets/images/teaser-nocturnes-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 50vw" alt="" width="1280" height="720" loading="lazy" decoding="async">
   </picture>
 </figure>
-  <button type="button" class="teaser-bouton"><span class="teaser-play" aria-hidden="true"></span><span class="teaser-libelle">Lancer le teaser de NOCTURNES</span></button>
+  <button type="button" class="teaser-bouton" data-curseur-label="Voir"><span class="teaser-play" aria-hidden="true"></span><span class="teaser-libelle">Lancer le teaser de NOCTURNES</span></button>
   <p class="teaser-nom" aria-hidden="true">NOCTURNES <span>2025</span></p>
 </div></div>
       <div class="teasers-petits" data-anime="cascade">
@@ -354,7 +356,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     <img src="/assets/images/teaser-echo-1280.webp" srcset="/assets/images/teaser-echo-640.webp 640w, /assets/images/teaser-echo-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 50vw" alt="" width="1280" height="720" loading="lazy" decoding="async">
   </picture>
 </figure>
-  <button type="button" class="teaser-bouton"><span class="teaser-play" aria-hidden="true"></span><span class="teaser-libelle">Lancer le teaser de L’écho d’une chute</span></button>
+  <button type="button" class="teaser-bouton" data-curseur-label="Voir"><span class="teaser-play" aria-hidden="true"></span><span class="teaser-libelle">Lancer le teaser de L’écho d’une chute</span></button>
   <p class="teaser-nom" aria-hidden="true">L’écho d’une chute <span>2025</span></p>
 </div>
         <div class="teaser " data-youtube="h4x7FIZXTtc" data-titre="DOLINE">
@@ -363,7 +365,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     <img src="/assets/images/teaser-doline-1280.webp" srcset="/assets/images/teaser-doline-640.webp 640w, /assets/images/teaser-doline-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 50vw" alt="" width="1280" height="720" loading="lazy" decoding="async">
   </picture>
 </figure>
-  <button type="button" class="teaser-bouton"><span class="teaser-play" aria-hidden="true"></span><span class="teaser-libelle">Lancer le teaser de DOLINE</span></button>
+  <button type="button" class="teaser-bouton" data-curseur-label="Voir"><span class="teaser-play" aria-hidden="true"></span><span class="teaser-libelle">Lancer le teaser de DOLINE</span></button>
   <p class="teaser-nom" aria-hidden="true">DOLINE <span>2022</span></p>
 </div>
         <div class="teaser " data-youtube="Bx0AugE4iY0" data-titre="Souffle">
@@ -372,7 +374,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     <img src="/assets/images/teaser-souffle-1280.webp" srcset="/assets/images/teaser-souffle-640.webp 640w, /assets/images/teaser-souffle-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 50vw" alt="" width="1280" height="720" loading="lazy" decoding="async">
   </picture>
 </figure>
-  <button type="button" class="teaser-bouton"><span class="teaser-play" aria-hidden="true"></span><span class="teaser-libelle">Lancer le teaser de Souffle</span></button>
+  <button type="button" class="teaser-bouton" data-curseur-label="Voir"><span class="teaser-play" aria-hidden="true"></span><span class="teaser-libelle">Lancer le teaser de Souffle</span></button>
   <p class="teaser-nom" aria-hidden="true">Souffle <span>2021</span></p>
 </div>
       </div>
@@ -422,63 +424,75 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     <div class="equipe-tete">
       <p class="surtitre" data-anime>L’équipe</p>
       <h2 id="equipe-titre" class="titre-section" data-anime="lignes">Une danseuse, et les artistes qu’elle invite</h2>
-      <p data-anime>Autour de Mathilde Rader, des musiciens, une danseuse et un vidéaste qui signent les créations avec elle.</p>
+      <p data-anime>Autour de Mathilde Rader, les musiciens, la danseuse et le vidéaste qui signent les créations avec elle. Retournez les cartes.</p>
     </div>
     <ul class="equipe-liste" data-anime="cascade">
       <li class="portrait" style="--r:-4deg">
-        <figure class="media portrait-media" style="--cadrage:50% 50%;aspect-ratio:4 / 5">
+        <div class="portrait-carte" role="button" tabindex="0" aria-pressed="false" aria-label="Mathilde Rader : retourner la carte pour lire sa présentation" data-curseur-label="Retourner">
+          <div class="portrait-face"><figure class="media portrait-media" style="--cadrage:50% 50%;aspect-ratio:4 / 5">
   <picture>
     <img src="/assets/images/equipe-mathilde-784.webp" srcset="/assets/images/equipe-mathilde-480.webp 480w, /assets/images/equipe-mathilde-640.webp 640w, /assets/images/equipe-mathilde-784.webp 784w" sizes="(max-width: 760px) 50vw, 16vw" alt="" width="784" height="980" loading="lazy" decoding="async">
   </picture>
-</figure>
+</figure><span class="portrait-pastille" aria-hidden="true">↻</span></div>
+          <div class="portrait-face portrait-dos" data-face="dos"><p class="portrait-texte">Formée au conservatoire de Brive, à Atlantique Ballet Contemporain (La Rochelle) et au centre Mondap’art (Nîmes), elle fonde la compagnie en 2020.</p></div>
+        </div>
         <h3>Mathilde Rader</h3>
         <p class="portrait-role">Directrice artistique, danseuse et chorégraphe</p>
-        <p class="portrait-texte">Formée au conservatoire de Brive, à Atlantique Ballet Contemporain (La Rochelle) et au centre Mondap’art (Nîmes), elle fonde la compagnie en 2020.</p>
       </li><li class="portrait" style="--r:3deg">
-        <figure class="media portrait-media" style="--cadrage:50% 50%;aspect-ratio:4 / 5">
+        <div class="portrait-carte" role="button" tabindex="0" aria-pressed="false" aria-label="Antoine Petit : retourner la carte pour lire sa présentation" data-curseur-label="Retourner">
+          <div class="portrait-face"><figure class="media portrait-media" style="--cadrage:50% 50%;aspect-ratio:4 / 5">
   <picture>
     <img src="/assets/images/equipe-antoine-784.webp" srcset="/assets/images/equipe-antoine-480.webp 480w, /assets/images/equipe-antoine-640.webp 640w, /assets/images/equipe-antoine-784.webp 784w" sizes="(max-width: 760px) 50vw, 16vw" alt="" width="784" height="980" loading="lazy" decoding="async">
   </picture>
-</figure>
+</figure><span class="portrait-pastille" aria-hidden="true">↻</span></div>
+          <div class="portrait-face portrait-dos" data-face="dos"><p class="portrait-texte">Présent dans les cinq créations. Passé par les musiques traditionnelles (Keltas, Akan Khelen), il s’est tourné vers l’électronique.</p></div>
+        </div>
         <h3>Antoine Petit</h3>
         <p class="portrait-role">Guitariste, compositeur et « sondier »</p>
-        <p class="portrait-texte">Présent dans les cinq créations. Passé par les musiques traditionnelles (Keltas, Akan Khelen), il s’est tourné vers l’électronique.</p>
       </li><li class="portrait" style="--r:-2deg">
-        <figure class="media portrait-media" style="--cadrage:50% 50%;aspect-ratio:4 / 5">
+        <div class="portrait-carte" role="button" tabindex="0" aria-pressed="false" aria-label="Audrey Allafort : retourner la carte pour lire sa présentation" data-curseur-label="Retourner">
+          <div class="portrait-face"><figure class="media portrait-media" style="--cadrage:50% 50%;aspect-ratio:4 / 5">
   <picture>
     <img src="/assets/images/equipe-audrey-784.webp" srcset="/assets/images/equipe-audrey-480.webp 480w, /assets/images/equipe-audrey-640.webp 640w, /assets/images/equipe-audrey-784.webp 784w" sizes="(max-width: 760px) 50vw, 16vw" alt="" width="784" height="980" loading="lazy" decoding="async">
   </picture>
-</figure>
+</figure><span class="portrait-pastille" aria-hidden="true">↻</span></div>
+          <div class="portrait-face portrait-dos" data-face="dos"><p class="portrait-texte">Interprète de L’écho d’une chute, elle danse avec la compagnie Coyote Minute et a cofondé le collectif Melpo.</p></div>
+        </div>
         <h3>Audrey Allafort</h3>
         <p class="portrait-role">Danseuse et chorégraphe</p>
-        <p class="portrait-texte">Interprète de L’écho d’une chute, elle danse avec la compagnie Coyote Minute et a cofondé le collectif Melpo.</p>
       </li><li class="portrait" style="--r:4deg">
-        <figure class="media portrait-media" style="--cadrage:50% 50%;aspect-ratio:4 / 5">
+        <div class="portrait-carte" role="button" tabindex="0" aria-pressed="false" aria-label="Juliette Pascaud : retourner la carte pour lire sa présentation" data-curseur-label="Retourner">
+          <div class="portrait-face"><figure class="media portrait-media" style="--cadrage:50% 50%;aspect-ratio:4 / 5">
   <picture>
     <img src="/assets/images/equipe-juliette-784.webp" srcset="/assets/images/equipe-juliette-480.webp 480w, /assets/images/equipe-juliette-640.webp 640w, /assets/images/equipe-juliette-784.webp 784w" sizes="(max-width: 760px) 50vw, 16vw" alt="" width="784" height="980" loading="lazy" decoding="async">
   </picture>
-</figure>
+</figure><span class="portrait-pastille" aria-hidden="true">↻</span></div>
+          <div class="portrait-face portrait-dos" data-face="dos"><p class="portrait-texte">Compose L’écho d’une chute. Fondatrice du duo Ganache, elle a rejoint l’équipe live de Billie Chedid en 2025.</p></div>
+        </div>
         <h3>Juliette Pascaud</h3>
         <p class="portrait-role">Guitariste et compositrice</p>
-        <p class="portrait-texte">Compose L’écho d’une chute. Fondatrice du duo Ganache, elle a rejoint l’équipe live de Billie Chedid en 2025.</p>
       </li><li class="portrait" style="--r:-3deg">
-        <figure class="media portrait-media" style="--cadrage:50% 50%;aspect-ratio:4 / 5">
+        <div class="portrait-carte" role="button" tabindex="0" aria-pressed="false" aria-label="Dimitri Sourzac : retourner la carte pour lire sa présentation" data-curseur-label="Retourner">
+          <div class="portrait-face"><figure class="media portrait-media" style="--cadrage:50% 50%;aspect-ratio:4 / 5">
   <picture>
     <img src="/assets/images/equipe-dimitri-784.webp" srcset="/assets/images/equipe-dimitri-480.webp 480w, /assets/images/equipe-dimitri-640.webp 640w, /assets/images/equipe-dimitri-784.webp 784w" sizes="(max-width: 760px) 50vw, 16vw" alt="" width="784" height="980" loading="lazy" decoding="async">
   </picture>
-</figure>
+</figure><span class="portrait-pastille" aria-hidden="true">↻</span></div>
+          <div class="portrait-face portrait-dos" data-face="dos"><p class="portrait-texte">Crée et joue en direct les images de DOLINE. Ingénieur de formation, passé par la vidéo, les effets spéciaux et la réalité virtuelle.</p></div>
+        </div>
         <h3>Dimitri Sourzac</h3>
         <p class="portrait-role">Vidéaste</p>
-        <p class="portrait-texte">Crée et joue en direct les images de DOLINE. Ingénieur de formation, passé par la vidéo, les effets spéciaux et la réalité virtuelle.</p>
       </li><li class="portrait" style="--r:2deg">
-        <figure class="media portrait-media" style="--cadrage:50% 50%;aspect-ratio:4 / 5">
+        <div class="portrait-carte" role="button" tabindex="0" aria-pressed="false" aria-label="Olivier Duperron : retourner la carte pour lire sa présentation" data-curseur-label="Retourner">
+          <div class="portrait-face"><figure class="media portrait-media" style="--cadrage:50% 50%;aspect-ratio:4 / 5">
   <picture>
     <img src="/assets/images/equipe-olivier-784.webp" srcset="/assets/images/equipe-olivier-480.webp 480w, /assets/images/equipe-olivier-640.webp 640w, /assets/images/equipe-olivier-784.webp 784w" sizes="(max-width: 760px) 50vw, 16vw" alt="" width="784" height="980" loading="lazy" decoding="async">
   </picture>
-</figure>
+</figure><span class="portrait-pastille" aria-hidden="true">↻</span></div>
+          <div class="portrait-face portrait-dos" data-face="dos"><p class="portrait-texte">Musicien de DOLINE, entre classique, improvisation et électronique ; il enseigne au conservatoire de Limoges.</p></div>
+        </div>
         <h3>Olivier Duperron</h3>
         <p class="portrait-role">Saxophoniste et compositeur</p>
-        <p class="portrait-texte">Musicien de DOLINE, entre classique, improvisation et électronique ; il enseigne au conservatoire de Limoges.</p>
       </li>
     </ul>
   </div>
@@ -495,11 +509,11 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     </div>
     <div class="routes-col">
       <h3 data-anime>Soutiens et partenaires</h3>
-      <ul class="liste-filet" data-anime="cascade"><li>État – Fonds pour le développement de la vie associative</li><li>Ville de Limoges</li><li>Région Nouvelle-Aquitaine et DRAC – Cultures connectées</li><li>Département de la Haute-Vienne</li><li>Caisse des dépôts</li><li>Ligue de l’enseignement</li><li>New Danse Studio</li><li>Assib’Arts</li><li>Maison de l’architecture</li><li>La Métairie des arts</li></ul>
+      <ul class="pastilles" data-anime="cascade"><li>État – Fonds pour le développement de la vie associative</li><li>Ville de Limoges</li><li>Région Nouvelle-Aquitaine et DRAC – Cultures connectées</li><li>Département de la Haute-Vienne</li><li>Caisse des dépôts</li><li>Ligue de l’enseignement</li><li>New Danse Studio</li><li>Assib’Arts</li><li>Maison de l’architecture</li><li>La Métairie des arts</li></ul>
     </div>
     <div class="routes-col">
       <h3 data-anime>Accueils en résidence</h3>
-      <ul class="liste-filet" data-anime="cascade"><li>Centres culturels municipaux de Limoges</li><li>Opéra – Maison des arts et de la danse, Limoges</li><li>La Mégisserie, Saint-Junien</li><li>Graines de rue, Bessines-sur-Gartempe</li><li>Saint-Eutrope, Saintes</li><li>L’Étoile bleue, Saint-Junien</li><li>Les Polyculteurs, Saint-Cyr</li><li>Les Mines Studio, Tulle</li><li>La Métairie des arts, Saint-Pantaléon-de-Larche</li><li>Des Lendemains qui chantent, SMAC de Tulle</li><li>L’Irrésistible Fraternité, Limoges</li><li>La Ruchidée, Limoges</li><li>L’Atelier Corps en tête, Argentat</li></ul>
+      <ul class="pastilles" data-anime="cascade"><li>Centres culturels municipaux de Limoges</li><li>Opéra – Maison des arts et de la danse, Limoges</li><li>La Mégisserie, Saint-Junien</li><li>Graines de rue, Bessines-sur-Gartempe</li><li>Saint-Eutrope, Saintes</li><li>L’Étoile bleue, Saint-Junien</li><li>Les Polyculteurs, Saint-Cyr</li><li>Les Mines Studio, Tulle</li><li>La Métairie des arts, Saint-Pantaléon-de-Larche</li><li>Des Lendemains qui chantent, SMAC de Tulle</li><li>L’Irrésistible Fraternité, Limoges</li><li>La Ruchidée, Limoges</li><li>L’Atelier Corps en tête, Argentat</li></ul>
     </div>
   </div>
 </section>
@@ -533,6 +547,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
       </ul>
     </div>
   </div>
+  <p class="pied-geant" aria-hidden="true" data-audit-ignorer data-anime="lettres">la Virevoltée</p>
   <div class="conteneur pied-bas"><p>Mentions légales : à compléter · Politique de confidentialité : à compléter</p><p>Maquette de démonstration : formulaires simulés, rien n’est envoyé.</p><p>© Compagnie la Virevoltée</p></div>
 </footer>
 <div data-barre-fixe>

@@ -4,9 +4,10 @@ import { html, brut } from '../../outils/gabarit.mjs';
 
 let n = 0;
 /* Toupie : le disque du logo entouré d'un texte en anneau. iris : objet d'ouverture de la page (un seul par page). */
-export function toupie(c, { iris = false, classe = '' } = {}) {
+export function toupie(c, { iris = false, classe = '', jeu = false } = {}) {
   const id = `anneau-${++n}`;
-  return html`<div class="toupie ${classe}"${iris ? brut(' data-iris-centre="disque"') : ''} data-effet="toupie" aria-hidden="true">
+  const attrs = jeu ? ` role="button" tabindex="0" aria-label="${c.s('commun.toupieJeu')}" data-grille="manipuler" data-curseur-label="${c.s('commun.toupieCurseur')}"` : ' aria-hidden="true"';
+  return html`<div class="toupie ${classe}${jeu ? ' toupie--jeu' : ''}"${iris ? brut(' data-iris-centre="disque"') : ''} data-effet="toupie"${brut(attrs)}>
   <svg class="toupie-anneau" viewBox="0 0 200 200" data-audit-ignorer><defs><path id="${id}" d="M100 100 m-82 0 a82 82 0 1 1 164 0 a82 82 0 1 1 -164 0"/></defs><text><textPath href="#${id}" textLength="508">${c.s('commun.toupie')}</textPath></text></svg>
   <img class="toupie-logo" src="/assets/images/logo-160.png" alt="" width="160" height="160">
 </div>`;
@@ -49,7 +50,7 @@ export function ligneDate(c, d) {
 export function teaser(c, cr, nom, classe = '') {
   return html`<div class="teaser ${classe}" data-youtube="${cr.teaser}" data-titre="${cr.titre}">
   ${c.media({ nom, alt: '', classe: 'teaser-media', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '16 / 9' })}
-  <button type="button" class="teaser-bouton"><span class="teaser-play" aria-hidden="true"></span><span class="teaser-libelle">${c.t('commun.teaser', { titre: cr.titre })}</span></button>
+  <button type="button" class="teaser-bouton" data-curseur-label="${c.s('commun.voir')}"><span class="teaser-play" aria-hidden="true"></span><span class="teaser-libelle">${c.t('commun.teaser', { titre: cr.titre })}</span></button>
   <p class="teaser-nom" aria-hidden="true">${cr.titre} <span>${cr.anneeCourte}</span></p>
 </div>`;
 }
